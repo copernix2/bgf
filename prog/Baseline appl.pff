@@ -1,0 +1,13 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[Files]
+Application=.\Baseline appl.ent
+InputData=..\input\Baseline application.csdb
+Paradata=.\Baseline appl.cslog
+
+[ExternalFiles]
+DEPARTEMENT_DICT=..\Ressources\ext_departement.csdb
+EXT_COMMUNE_DICT=..\Ressources\ext_communes.csdb
+REGIONS_DICT=..\Ressources\REG.csdb

@@ -1,0 +1,33 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=BASELINE_APPL
+Name=BASELINE_APPL
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Dict\REG.dcf
+File=..\Dict\Communes.dcf
+File=..\Dict\ext_departement.dcf
+[AppCode]
+File=.\Baseline appl.ent.apc
+[Message]
+File=.\Baseline appl.ent.mgf
+[Help]
+File=.\Baseline appl.ent.qsf
+[Forms]
+File=.\Baseline appl.fmf
+[Resources]
+Folder=.\Resources
+[Dictionary Types]
+Dict-Type=..\Dict\Baseline-Dict.dcf,Input,.\Baseline appl.fmf
+Dict-Type=..\Dict\REG.dcf,External
+Dict-Type=..\Dict\Communes.dcf,External
+Dict-Type=..\Dict\ext_departement.dcf,External

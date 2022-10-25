@@ -1,0 +1,8 @@
+﻿Application     C:\Users\DELL\Desktop\Application  Baseline-Genre\Prog\Baseline appl.ent
+Type            Entry
+Date            Oct 25, 2022
+Time            17:52:27
+
+CSPro Error Summary
+
+WARNING(SECTION_CF_FORM, 254): CF10 should have a subscript - you may get error messages when you run this application

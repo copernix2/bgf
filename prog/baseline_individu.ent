@@ -1,0 +1,23 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=BASELINE_INDIVIDU
+Name=BASELINE_INDIVIDU
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\baseline_individu.ent.apc
+[Message]
+File=.\baseline_individu.ent.mgf
+[Help]
+File=.\baseline_individu.ent.qsf
+[Forms]
+File=.\baseline_individu.fmf
+[Dictionary Types]
+Dict-Type=..\Dics\baseline_individu.dcf,Input,.\baseline_individu.fmf
