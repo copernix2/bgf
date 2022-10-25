@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membres équipe</title>
+	<!-- Bootstrap --> 
+	<script src="/external/jquery/jquery.min.js"></script> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" /> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" /> 
+	<script src="/external/bootstrap/bootstrap.bundle.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="~~  "DataTables/datatables.css"~~">
+		<script type="text/javascript" charset="utf8" src="~~  "DataTables/datatables.js"~~"></script>
+  
+    <style> 
+        .centrer { 
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        left: 65%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        
+        }
+
+        h1, h2 {
+        color: #000000;
+        }
+
+        .center-block {
+        display: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        }
+
+        img{
+        display: block;
+        margin: 0px auto;
+        }
+
+
+
+    </style>
+
+  
+    
+  </head>
+
+
+  <body>    
+     
+	
+	<script>
+    $(document).ready(function() {
+    $('#example').DataTable({
+			"paging":   false,
+			"info":     false,
+			"searching": false,
+			 "order": []
+		});
+	$('#example2').DataTable({
+			"paging":   false,
+			"info":     false,
+			"searching": false,
+			 "order": []
+		});
+	} );
+</script>
+	
+		<br/>
+	
+	<div class="center-block ">        
+        <div class="container-sm">
+            <div class="row">
+					<img src="~~  "omvs.JPG"~~" class='container-fluid' style="height:150px; width:300px;"/>
+			</div> <br/>
+			
+			<div class="row">
+				<div class="col-6">
+					<ul class="list-group list-group-flush">
+					  <li class="list-group-item"><h4>Nom de l'individu</h4></li>
+					 </ul>
+				</div>
+				<div class="col-6">
+					<ul class="list-group list-group-flush">
+					  <li class="list-group-item"><h4>Age</h4></li>
+					 </ul>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-6">
+					<ul class="list-group list-group-flush">
+					  <li class="list-group-item"><b>Mère / Gardienne </b>: ~~SUIVI_MERE_ID~~ - ~~NOM_MERE~~</li>
+					  <li class="list-group-item"><b>Enfant tiré </b>: ~~NUMERO_ENFANT~~ - ~~NOM_ENFANT~~</li>
+					 </ul>
+				</div>
+				<div class="col-6">
+					<ul class="list-group list-group-flush">
+					  <li class="list-group-item">~~AGE_MERE~~ ans</li>
+					  <li class="list-group-item">~~AGE_ENFANT~~ an(s)</li>
+					 </ul>
+				</div>
+			</div>
+			
+			  
+			<table class="display" id="example">
+				<thead>
+					
+					  <tr>
+						
+						<th >Questionnaire </th>
+						<th class="text-center">Action</th>
+					</tr>
+				</thead>
+					<tr> <td>Questionnaire Mère enfant</td>
+					<?
+						string class_color="danger";
+						if STATUT_QUEST_MERE=1 then
+							class_color="success";
+						endif;
+						string quote ="'";
+					?>
+					<td class="text-center"><a class="btn btn-outline-~~class_color~~" href="javascript:CSPro.runLogicAsync('open_quest_mere();');" role="button"> Remplir</a></td></tr>
+				
+					
+					<?
+						if IS_PREGNANT=1 then
+							$.write("<tr> <td>Questionnaire Femme enceinte</td>");
+							class_color="danger";
+							if STATUT_QUEST_PREGNANT=1 then
+								class_color="success";
+							endif;
+							
+							$.write('<td class="text-center"><a class="btn btn-outline-%s" href="javascript:CSPro.runLogicAsync(%sopen_femme_enceinte();%s);" role="button"> Remplir</a></td></tr>',class_color, quote, quote);
+					endif;
+					?>
+					
+				
+				
+			</table>
+			
+		<div>
+			<H3>fiches biologiques</H3>
+			<table class="display" id="example2">
+				<thead>
+					
+					  <tr>
+						<th class="text-center">ID Lame </th>
+						<th >Nom Femme/Enfant </th>
+						<th class="text-center">Age</th>
+						<th class="text-center">Action</th>
+					</tr>
+				</thead>
+					<?
+						forcase SUIVI_MERE_DICT where ID_MEN = ID_MEN_FICHE do
+							if SUIVI_MERE_ID=id_tire and IS_PREGNANT<>1 then 
+								next;
+							endif;
+							class_color="danger";
+							if STATUT_FICHE_BIO_MERE=1 then
+								class_color="success";
+							endif;
+							
+							$.write("<tr>");
+								//id Lame
+								$.write("<td class='text-center'>%05d</td>",ID_LAME_TEST);
+								//Nom personne
+								$.write("<td >%s</td>",NOM_MERE);
+								$.write("<td class='text-center'>%02d</td>",AGE_MERE);
+								$.write('<td class="text-center"><a class="btn btn-outline-%s" href="javascript:CSPro.runLogicAsync(%sopen_fiche_bio(%d);%s);" role="button"> Remplir</a></td></tr>',class_color, quote, SUIVI_MERE_ID, quote);
+							$.write("</tr>");
+							
+						endfor;
+						
+					?>
+					
+				
+				
+					
+			</table>
+		</div>
+     </div>
+
+    </div>
+
+  </body>
+</html>

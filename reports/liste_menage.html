@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <? string reportPath = path.getRelativePath(path.getDirectoryName(filename($))[1:pos("reports",filename($))+8] , 
+													path.getDirectoryName(filename($)));?>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suivi des ménages</title>
+	<!-- Bootstrap --> 
+	<script src="/external/jquery/jquery.min.js"></script> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" /> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" /> 
+	<script src="/external/bootstrap/bootstrap.bundle.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="~~ reportPath+ "DataTables/datatables.css"~~">
+		<script type="text/javascript" charset="utf8" src="~~ reportPath + "DataTables/datatables.js"~~"></script>
+  
+    <style> 
+        .centrer { 
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        left: 65%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        
+        }
+
+        h1, h2 {
+        color: #000000;
+        }
+
+        .center-block {
+        display: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        }
+
+        img{
+        display: block;
+        margin: 0px auto;
+        }
+
+
+
+    </style>
+
+  
+    
+  </head>
+
+
+  <body>    
+     
+	
+	<script>
+    $(document).ready(function() {
+    $('#example').DataTable({
+	
+			"paging":   false,
+			"info":     false
+		});
+	} );
+</script>
+	
+		<br/>
+	
+	<div class="center-block ">        
+        <div class="container-sm">
+            <div class="row">
+					<img src="~~ reportPath + "ipar.png"~~" class='container-fluid'/>
+			</div> <br/>
+
+				
+					<?
+						
+						//calcul ménage
+						
+					
+					?>
+					
+
+			</div>
+		</div>
+
+	
+	
+	
+	<div class="container-sm" >
+
+
+         <center><a class='btn btn-success btn-xs' href="javascript:CSPro.runLogicAsync('New_hh_function();');"> Ajouter </a> 
+		 <a class='btn btn-danger btn-xs' href="javascript:CSPro.do('close');">Fermer</a></center>  <div class="table-responsive"><br/>
+			<table class="display" id="example">
+            <thead>
+                <tr>
+                    <th class="text-center">Commune</th>
+					<th class="text-center">Village</th>
+                    <th class="text-center">Nom du CM</th>
+					 <th class="text-center">Type</th>
+					<th class="text-center">Sexe du CM</th>
+					<th class="text-center">Contact</th>
+                    <th class="text-center">Action</th>
+					
+                </tr>
+            </thead>
+			
+			<?
+				string quote="'";
+				list_MenId.clear();
+				  i=1;
+				 forcase MENAGE_DICT  do
+					list_MenId.add(MEN_ID);					
+					
+					$.write("<tr><td class='text-center'> %s</td>", getlabel(MEN_CODE_COM,MEN_CODE_COM));
+					$.write("<td class='text-center'> %s</td>", getlabel(MEN_CODE_VIL,MEN_CODE_VIL));
+					$.write("<td> %s</td>", MEN_CM);
+					$.write("<td><span class='badge badge-info'> %s </span></td> ", getlabel(MEN_TYPE,MEN_TYPE));
+					$.write("<td><span class='text-center'> %s </span></td> ", getlabel(MEN_SEXECM,MEN_SEXECM));
+					$.write("<td> %s</td>", edit("99 999 99 99", MEN_TEL));
+					
+					$.write('<td>');
+				
+					if MEN_STATUT <= 1  or special(MEN_STATUT) then //concrétisé
+						$.write('<a class="btn btn-outline-danger" href="javascript:CSPro.runLogicAsync(%scomposition_function(%d);%s);" role="button">Composition</a> ', quote, i, quote);
+					elseif MEN_STATUT=2 then
+						$.write('<a class="btn btn-outline-success" href="javascript:CSPro.runLogicAsync(%sOpen_hh_function(%d);%s);" role="button">Ouvrir</a> ', quote, i, quote);
+					else
+						$.write('<a class="btn btn-outline-warning" href="javascript:CSPro.runLogicAsync(%sOpen_hh_function(%d);%s);" role="button">Ouvrir</a> ', quote, i, quote);
+					endif;
+					$.write('<a class="btn btn-outline-danger" href="javascript:CSPro.runLogicAsync(%sdelete_hh_function(%d);%s);" role="button">X</a> ', quote, i, quote);
+					$.write('</td>');
+					$.write('</tr>');
+					inc(i);
+				 endfor;
+				
+			?>
+        </table>
+       </div>
+
+    </div>
+
+  </body>
+</html>

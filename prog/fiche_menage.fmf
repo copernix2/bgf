@@ -1,0 +1,63 @@
+﻿[FormFile]
+Version=CSPro 7.7
+Name=FICHE_MENAGE_FF
+Label=fiche_menage
+DefaultTextFont=-013 0000 0000 0000 0700 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=..\dics\fiche_menage.dcf
+  
+[Form]
+Name=FORM001
+Label=fiche_menage Record
+QuestionTextHeight=548
+Level=1
+Size=371,189
+  
+Item=ID_MEN_FICHE
+Item=MENU_FICHE
+  
+[EndForm]
+  
+[Level]
+Name=FICHE_MENAGE_LEVEL
+Label=fiche_menage Level
+  
+[Group]
+Required=Yes
+Name=FICHE_MENAGE_REC_FORM
+Label=fiche_menage Record
+Form=1
+Max=1
+  
+[Field]
+Name=ID_MEN_FICHE
+Position=240,15,346,35
+Item=ID_MEN_FICHE,FICHE_MENAGE_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=33,18,80,34
+Text=id_men
+ 
+  
+[Field]
+Name=MENU_FICHE
+Position=213,144,228,164
+Item=MENU_FICHE,FICHE_MENAGE_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=31,147,157,163
+Text=Menu fiche ménage
+ 
+[EndGroup]
+  

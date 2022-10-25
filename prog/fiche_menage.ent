@@ -1,0 +1,32 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=FICHE_MENAGE
+Name=FICHE_MENAGE
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\dics\menage.dcf
+File=..\dics\ext_individus.dcf
+[AppCode]
+File=.\fiche_menage.ent.apc
+[Message]
+File=.\fiche_menage.ent.mgf
+[Reports]
+HH_PROFIL=..\reports\hh_profil.html
+[Help]
+File=.\fiche_menage.ent.qsf
+[Forms]
+File=.\fiche_menage.fmf
+[Dictionary Types]
+Dict-Type=..\dics\fiche_menage.dcf,Input,.\fiche_menage.fmf
+Dict-Type=..\dics\menage.dcf,External
+Dict-Type=..\dics\ext_individus.dcf,External

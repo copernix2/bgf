@@ -1,0 +1,170 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=menage
+Name=MENAGE_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=C10F89B838E099C9475C5FCFEAC1DB3AA1D023E181F63BF488156C8700AC1AA4
+
+[Level]
+Label=menage Level
+Name=MENAGE_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Identifiant du DR
+Name=MEN_ID
+Start=2
+Len=32
+DataType=Alpha
+
+[Record]
+Label=menage Record
+Name=MENAGE_REC
+RecordTypeValue='1'
+RecordLen=215
+
+[Item]
+Label=men_code_com
+Name=MEN_CODE_COM
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=men_code_com
+Name=MEN_CODE_COM_VS1
+Value=1;MBORO
+Value=2;LEONA
+Value=3;DAROU KHOUDOSS
+Value=4;NOTTO GOUYE DIAMA
+Value=5;KAYAR
+Value=6;DIENDER GUEDJI
+Value=7;TAIBA NDIAYE
+Value=8;NDIEBENE GANDIOLE
+Value=9;THIEPPE
+Value=10;DIOKOUL DIAWRIGNE
+
+[Item]
+Label=men code vil
+Name=MEN_CODE_VIL
+Start=36
+Len=4
+DataType=Alpha
+
+[ValueSet]
+Label=men code vil
+Name=MEN_CODE_VIL_VS1
+Value=0101;MBORO 3
+Value=0102;MBORO 4
+Value=0103;MBORO 5 (HLM LASSERE)
+Value=0104;MBORO 8
+Value=0205;POTOU
+Value=0206;NDADE
+Value=0207;LEONA
+Value=0208;GABAR
+Value=0309;DIAMBALO
+Value=0310;KEUR DEMBA DIALLO (NDIALLO)
+Value=0311;SAO
+Value=0312;MERINA SAMB
+Value=0413;DIEULEUCKEUR OUOLOF
+Value=0414;DIEULEUCKEUR PEULH
+Value=0415;NGADIAGA
+Value=0416;NOTTO GOUYE DIAMA
+Value=0517;KEUR ABDOU NDOYE
+Value=0518;MBAWANE
+Value=0519;NDIOKHOP GUEDJI
+Value=0520;POINT ROND
+Value=0621;GOLLAM
+Value=0622;NDAME LO
+Value=0623;THIEUDEME
+Value=0624;THOR DJENDER
+Value=0725;TAIBA MBAYE
+Value=0726;MAKA GUEYE BEYE
+Value=0727;TAIBA SANTHIE
+Value=0728;KHELCOM (BAL DIOP)
+Value=0829;RICOTTE
+Value=0830;RIMBAKH GANDIOLE
+Value=0831;GANTOUR
+Value=0832;GOUYE REINE
+Value=0933;GAL DAMEL KALIDOU
+Value=0934;GAL DAMEL NEODO BOUYA
+Value=0935;GOUYE SEGUE
+Value=0936;TEBENE I
+Value=1037;LOMPOUL VILLAGE
+Value=1038;DIOKOUL NDIAYE
+Value=1039;DIAWRIGNE AMADOU BA
+Value=1040;DIAWRIGNE MAME MOUSSE
+Value=9999;Autre village
+
+[Item]
+Label=Nom Prénom chef de ménage
+Name=MEN_CM
+Start=40
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Type ménage
+Name=MEN_TYPE
+Start=140
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Type ménage
+Name=MEN_TYPE_VS1
+Value=1;Menage horticole solaire
+Value=2;Ménage horticole non solaire
+
+[Item]
+Label=Sexe chef de ménage
+Name=MEN_SEXECM
+Start=141
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sexe chef de ménage
+Name=MEN_SEXECM_VS1
+Value=1;Masculin
+Value=2;Féminin
+
+[Item]
+Label=Numéro de téléphone
+Name=MEN_TEL
+Start=142
+Len=9
+DataType=Numeric
+
+[Item]
+Label=Statut du ménage
+Name=MEN_STATUT
+Start=151
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Statut du ménage
+Name=MEN_STATUT_VS1
+Value=1;Non entamé
+Value=2;Partiel
+Value=3;Complet
+
+[Item]
+Label=men_create_date
+Name=MEN_CREATE_DATE
+Start=152
+Len=14
+DataType=Numeric
+
+[Item]
+Label=Autre village
+Name=AUTRE_VILLAGE
+Start=166
+Len=50
+DataType=Alpha

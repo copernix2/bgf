@@ -7,112 +7,18 @@ FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 
 Type=SystemControlled
   
 [Dictionaries]
-File=..\Dics\Baseline-Dict.dcf
+File=..\Dics\ltp.dcf
   
 [Form]
 Name=FORM000
 Label=(Id Items)
 Level=1
-Size=982,300
+Size=523,423
   
 Item=ID
-  
-[EndForm]
-  
-[Form]
-Name=FORM001
-Label=SECTION ID : IDENTIFICATION ET RENSEIGNEMENTS SUR LE MENAGE
-Level=1
-Size=982,300
-  
-Item=ID02
-Item=ID03
-Item=ID04
-Item=ID05
-  
-[EndForm]
-  
-[Form]
-Name=FORM002
-Label=SECTION RC : RENSEIGNEMENTS SUR LA COLLECTE
-Level=1
-Size=884,647
-  
-Item=RC08
-Item=RC09
-Item=RC10
-Item=RC10_A
-Item=RC11
-Item=RC11_A
-  
-[EndForm]
-  
-[Form]
-Name=FORM003
-Label=SECTION PM : PROFIL DU MENAGE
-Level=1
-Size=1470,398
-  
-Item=PM01
-Item=PM02
-Item=PM02_A
-Item=PM03
-Item=PM03_A
-Item=PM04
-Item=PM05
-Item=PM06
-Item=PM07
-  
-[EndForm]
-  
-[Form]
-Name=FORM004
-Label=SECTION RM : REVENUS DU MENAGE
-Level=1
-Size=919,617
-  
-Item=RM1
-Item=RM1_A
-Item=RM2
-Item=RM3000
-Item=RM2_P
-  
-[EndForm]
-  
-[Form]
-Name=FORM011
-Label=Section PR
-Level=1
-Repeat=SOUS_SEC_PR
-Size=1195,651
-  
-Item=PR01
-Item=PR02
-Item=PR03
-Item=PR04
-Item=PR05
-Item=PR05_A
-Item=PR06
-Item=PR06_A
-Item=PR07
-Item=PR07_A
-Item=PR08
-Item=PR08_A
-Item=PR09
-Item=PR09_A
-Item=PR10
-Item=PR10_A
-Item=PR11
-Item=PR12
-  
-[EndForm]
-  
-[Form]
-Name=FORM006
-Label=SECTION CF : CAPITAL FONCIER DU MENGAE
-Level=1
-Size=2063,520
-  
+Item=ID_INDIVIDU_LTP
+Item=LOG_AGENT
+Item=DATE_DEBUT
   
 [EndForm]
   
@@ -120,7 +26,7 @@ Size=2063,520
 Name=FORM007
 Label=SECTION TA : TERRES AGRICOLES DU MENAGE
 Level=1
-Size=1693,552
+Size=2217,995
   
 Item=SECTIO_TA000
   
@@ -130,7 +36,7 @@ Item=SECTIO_TA000
 Name=FORM008
 Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
 Level=1
-Size=2183,536
+Size=300,300
   
 Item=SECTION_TH000
   
@@ -140,24 +46,16 @@ Item=SECTION_TH000
 Name=FORM009
 Label=SECTION LM: LOGEMENT DU MENAGE
 Level=1
-Size=1484,552
+Size=300,300
   
 Item=SECTION_LM000
-  
-[EndForm]
-  
-[Form]
-Name=FORM010
-Label=FIN
-Level=1
-Size=932,244
-  
+Item=DATE_FIN
   
 [EndForm]
   
 [Level]
-Name=BASELINE_DICT_LEVEL
-Label=Baseline-Dict Level
+Name=LTP_DICT_LEVEL
+Label=ltp Level
   
 [Group]
 Required=Yes
@@ -168,10 +66,9 @@ Max=1
   
 [Field]
 Name=ID
-Position=160,27,426,47
-Item=ID,BASELINE_DICT_DICT
+Position=159,30,457,50
+Item=ID,LTP_DICT
 Protected=Yes
-FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=1
@@ -180,705 +77,65 @@ Form=1
 Position=50,30,138,46
 Text=Id du ménage
  
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=BASELINE_DICT_REC_FORM
-Label=SECTION ID : IDENTIFICATION ET RENSEIGNEMENTS SUR LE MENAGE
-Form=2
-Max=1
   
 [Field]
-Name=ID02
-Position=330,57,359,77
-Item=ID02,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=2
-  
-[Text]
-Position=50,60,150,76
-Text=ID02. Commune
- 
-  
-[Field]
-Name=ID03
-Position=330,87,373,107
-Item=ID03,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=2
-  
-[Text]
-Position=50,90,130,106
-Text=ID03. Village
- 
-  
-[Field]
-Name=ID04
-Position=330,117,443,137
-Item=ID04,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=2
-  
-[Text]
-Position=50,120,150,136
-Text=ID04. Commune
- 
-  
-[Field]
-Name=ID05
-Position=330,147,500,167
-Item=ID05,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
+Name=ID_INDIVIDU_LTP
+Position=284,117,313,137
+Item=ID_INDIVIDU_LTP,LTP_DICT
+Protected=Yes
 DataCaptureType=TextBox
-Form=2
+Form=1
   
 [Text]
-Position=50,150,237,166
-Text=ID05.Nom du chef de ménage
+Position=110,120,203,136
+Text=id_individu_ltp
  
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=SECTION_RC_FORM
-Label=SECTION RC : RENSEIGNEMENTS SUR LA COLLECTE
-Form=3
-Max=1
   
 [Field]
-Name=RC08
-Position=449,422,576,442
-Item=RC08,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Name=LOG_AGENT
+Position=301,318,330,338
+Item=LOG_AGENT,LTP_DICT
+Protected=Yes
+ValidationMethod=NoConfirm
 DataCaptureType=TextBox
-Form=3
+Form=1
   
 [Text]
-Position=49,425,284,441
-Text=RC08. N° de Téléphone du répondant
+Position=207,321,279,337
+Text=login agent
  
   
 [Field]
-Name=RC09
-Position=449,452,464,472
-Item=RC09,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=49,455,275,471
-Text=RC09.  Sexe du principal répondant
- 
-  
-[Field]
-Name=RC10
-Position=449,482,478,502
-Item=RC10,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=49,485,316,501
-Text=RC10.  Liens avec le chef de ménage (CM)
- 
-  
-[Field]
-Name=RC10_A
-Position=449,512,699,532
-Item=RC10_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
+Name=DATE_DEBUT
+Position=301,348,498,368
+Item=DATE_DEBUT,LTP_DICT
+Protected=Yes
+ValidationMethod=NoConfirm
 DataCaptureType=TextBox
-Form=3
+Form=1
   
 [Text]
-Position=49,515,288,531
-Text=RC10a. Préciser autre lien avec le CM
+Position=207,351,275,367
+Text=date début
  
-  
-[Field]
-Name=RC11
-Position=449,542,464,562
-Item=RC11,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=49,545,427,561
-Text=RC11. Langue dans laquelle le questionnaire est administré
- 
-  
-[Field]
-Name=RC11_A
-Position=449,572,699,592
-Item=RC11_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=3
-  
-[Text]
-Position=49,575,524,591
-Text=RC11a. Préciser autre langue dans laquelle le questionnaire est administré
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=SECTION_PM_FORM
-Label=SECTION PM : PROFIL DU MENAGE
-Form=4
-Max=1
-  
-[Field]
-Name=PM01
-Position=1275,27,1290,47
-Item=PM01,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=4
-  
-[Text]
-Position=50,30,462,46
-Text=PM01. Depuis quand votre famille s’est installée dans le village ?
- 
-  
-[Field]
-Name=PM02
-Position=1275,87,1290,107
-Item=PM02,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=4
-  
-[Text]
-Position=42,142,355,158
-Text=PM02. Si Sancan, indiquez le lieu de provenance
- 
-  
-[Field]
-Name=PM02_A
-Position=1275,117,1445,137
-Item=PM02_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=4
-  
-[Text]
-Position=42,172,308,188
-Text=PM02a. Préciser autre lieu de provenance
- 
-  
-[Field]
-Name=PM03
-Position=1275,147,1290,167
-Item=PM03,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=4
-  
-[Text]
-Position=50,150,530,166
-Text=PM03. Si Sancan, quelle est la principale raison de la venue dans la zone ?
- 
-  
-[Field]
-Name=PM03_A
-Position=1275,177,1293,197
-Item=PM03_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=4
-  
-[Text]
-Position=42,232,456,248
-Text=PM03a. Préciser autre principale raison de la venue dans la zone
- 
-  
-[Field]
-Name=PM04
-Position=1275,207,1304,227
-Item=PM04,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=4
-  
-[Text]
-Position=42,262,212,278
-Text=PM04. La taille du ménage
- 
-  
-[Field]
-Name=PM05
-Position=1275,237,1304,257
-Item=PM05,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=4
-  
-[Text]
-Position=42,292,496,308
-Text=PM05. Combien de personnes de sexe féminin vivent dans le ménage ?
- 
-  
-[Field]
-Name=PM06
-Position=1275,267,1304,287
-Item=PM06,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=4
-  
-[Text]
-Position=42,322,496,338
-Text=PM06. Combien de personnes de sexe féminin vivent dans le ménage ?
- 
-  
-[Field]
-Name=PM07
-Position=1275,297,1304,317
-Item=PM07,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=4
-  
-[Text]
-Position=47,357,1250,373
-Text=PM07. Est ce que votre ménage a cultivé des terres à des fins agricoles (y compris les vergers et les jardins potagers) ces 12 derniers moins pour sa propre consommation et/ou pour vendre ?
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=SECTION_RM_FORM
-Label=SECTION RM : REVENUS DU MENAGE
-Form=5
-Max=1
-  
-[Field]
-Name=RM1
-Position=644,27,659,47
-Item=RM1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=50,30,435,46
-Text=RM1. Quelle est la principale source de revenu du ménage ?
- 
-  
-[Field]
-Name=RM1_A
-Position=644,57,894,77
-Item=RM1_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=5
-  
-[Text]
-Position=50,60,440,76
-Text=RM1a. Préciser autre principale source de revenu du ménage
- 
-  
-[Field]
-Name=RM2
-Position=644,87,771,107
-Item=RM2,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=5
-  
-[Text]
-Position=50,90,622,106
-Text=RM2. Quel est le montant de la principale source de revenu du ménage sur l’année 2021 ?
- 
-  
-[Field]
-Name=RM2_P
-Position=819,121,848,141
-Item=RM2_P,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=5
-  
-[Text]
-Position=395,124,790,140
-Text=Part de ce montant dans le revenu global(approximativement)
- 
-  
-[Grid]
-Name=RM3000
-Label=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous : (
-Form=5
-Required=Yes
-Type=Item
-TypeName=RM3
-Max=9
-DisplaySize=40,120,201,592
-Orientation=Horizontal
-FieldRowHeight=0
-HeadingRowHeight=0
-UseOccurrenceLabels=Yes
-FreeMovement=No
- 
-[Text]
-Position=0,4,78,28
-Text=Agriculture
- 
-  
-[Text]
-Position=19,4,78,28
-Text=Elevage
- 
-  
-[Text]
-Position=30,4,78,28
-Text=Pêche
- 
-  
-[Text]
-Position=9,0,78,40
-Text=Chasse/ Cueillette
- 
-  
-[Text]
-Position=14,4,78,28
-Text=Artisanat
- 
-  
-[Text]
-Position=11,4,78,28
-Text=Transport
- 
-  
-[Text]
-Position=18,4,78,28
-Text=Salaires
- 
-  
-[Text]
-Position=5,0,78,40
-Text=Transferts migrants
- 
-  
-[Text]
-Position=20,0,78,40
-Text=Autres revenus
- 
-  
-[Column]
-Width=10
-[EndColumn]
-  
-[Column]
-Width=83
-  
-[HeaderText]
-Position=0,0,83,184
-Text=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous : (
- 
-[Field]
-Name=RM3
-Position=46,0,75,20
-Item=RM3,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-  
-[Text]
-Text=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous : (
- 
-[EndColumn]
-  
-[EndGrid]
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=SECTIONPR
-Label=Section PR
-Form=6
-Type=Record
-TypeName=SOUS_SEC_PR
-Max=99
-  
-[Field]
-Name=PR01
-Position=920,66,935,86
-Item=PR01,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,69,898,85
-Text=PR01. Avez-vous bénéficié ou un autre  membre du ménage d’un projet sur la gouvernance foncière en destination de la commune ?
- 
-  
-[Field]
-Name=PR02
-Position=920,96,935,116
-Item=PR02,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,99,656,115
-Text=PR02. Si NON, Existe-t-il un projet sur la gouvernance foncière en destination de la commune ?
- 
-  
-[Field]
-Name=PR03
-Position=920,126,935,146
-Item=PR03,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,129,440,145
-Text=PR03. Si OUI, Nombre de projet(s) bénéficié(s) par le ménage
- 
-  
-[Field]
-Name=PR04
-Position=920,156,935,176
-Item=PR04,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,159,151,175
-Text=PR04. ID_Projet
- 
-  
-[Field]
-Name=PR05
-Position=920,186,977,206
-Item=PR05,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,189,445,205
-Text=PR05. Si OUI, quels sont les outils et méthodes du projet […] ?
- 
-  
-[Field]
-Name=PR05_A
-Position=920,216,1170,236
-Item=PR05_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,219,371,235
-Text=PR05a. Préciser autre outils et méthodes du projet
- 
-  
-[Field]
-Name=PR06
-Position=920,246,1061,266
-Item=PR06,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,249,535,265
-Text=PR06. Quelles sont les activités du projet […]? (plusieurs réponses possibles)
- 
-  
-[Field]
-Name=PR06_A
-Position=920,276,1170,296
-Item=PR06_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,279,329,295
-Text=PR06a. Préciser autre les activités du projet
- 
-  
-[Field]
-Name=PR07
-Position=920,306,1061,326
-Item=PR07,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,309,781,325
-Text=PR07. Quelles sont les activités du projet […] auxquelles vous a participé/bénéficié ? (plusieurs réponses possibles)
- 
-  
-[Field]
-Name=PR07_A
-Position=920,336,1170,356
-Item=PR07_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,339,574,355
-Text=PR07a. Préciser autre activités du projet […] auxquelles vous a participé/bénéficié
- 
-  
-[Field]
-Name=PR08
-Position=920,366,977,386
-Item=PR08,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=CheckBox
-Form=6
-  
-[Text]
-Position=53,369,317,385
-Text=PR08. Qui sont les porteurs du projet […]?
- 
-  
-[Field]
-Name=PR08_A
-Position=920,426,1170,446
-Item=PR08_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,429,313,445
-Text=PR08a. Préciser autres porteurs du projet
- 
-  
-[Field]
-Name=PR09
-Position=920,456,1019,476
-Item=PR09,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,459,375,475
-Text=PR09. Qui sont les parties prenantes du projet […]?
- 
-  
-[Field]
-Name=PR09_A
-Position=920,486,1170,506
-Item=PR09_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,489,371,505
-Text=PR09a. Préciser autres parties prenantes du projet
- 
-  
-[Field]
-Name=PR10
-Position=920,516,991,536
-Item=PR10,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,519,347,535
-Text=PR10. Qui sont les bénéficiaires du projet […]?
- 
-  
-[Field]
-Name=PR10_A
-Position=920,546,1170,566
-Item=PR10_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=6
-  
-[Text]
-Position=53,549,337,565
-Text=PR10a. Préciser autre bénéficiaires du projet
- 
-  
-[Field]
-Name=PR11
-Position=920,576,935,596
-Item=PR11,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,579,438,595
-Text=PR11. Quelle est la période de mise en œuvre du projet […]?
- 
-  
-[Field]
-Name=PR12
-Position=920,606,935,626
-Item=PR12,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=53,609,384,625
-Text=PR12. Quelle appréciation faites-vous du projet […]?
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=SECTION_CF_FORM
-Label=SECTION CF : CAPITAL FONCIER DU MENGAE
-Form=7
-Max=1
 [EndGroup]
   
 [Group]
 Required=Yes
 Name=SECTIO_TA_FORM
 Label=SECTION TA : TERRES AGRICOLES DU MENAGE
-Form=8
+Form=2
 Max=1
   
 [Grid]
 Name=SECTIO_TA000
 Label=SECTION TA : TERRES AGRICOLES DU MENAGE
-Form=8
+Form=2
 Required=Yes
 Type=Record
 TypeName=SECTIO_TA
 Max=10
-DisplaySize=40,30,1668,527
+DisplaySize=70,345,2192,970
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -940,61 +197,55 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=81
+Width=67
   
 [HeaderText]
-Position=0,176,81,280
+Position=0,192,67,328
 Text=TA1. Code de la personne (Rappel du nom et prénom)
  
 [Field]
 Name=TA1
-Position=44,0,73,20
-Item=TA1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=30,0,59,20
+Item=TA1,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,345,16
 Text=TA1. Code de la personne (Rappel du nom et prénom)
  
 [EndColumn]
   
 [Column]
-Width=83
+Width=66
   
 [HeaderText]
-Position=0,240,83,280
+Position=0,272,66,328
 Text=TA2. N° des parcelles
  
 [Field]
 Name=TA2
-Position=46,0,75,20
-Item=TA2,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=29,0,58,20
+Item=TA2,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,139,16
 Text=TA2. N° des parcelles
  
 [EndColumn]
   
 [Column]
-Width=81
+Width=60
   
 [HeaderText]
-Position=0,224,81,280
+Position=0,256,60,328
 Text=TA3. Nature de la parcelle
  
 [Field]
 Name=TA3
-Position=58,0,73,20
-Item=TA3,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=37,0,52,20
+Item=TA3,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,167,16
 Text=TA3. Nature de la parcelle
  
 [EndColumn]
@@ -1003,54 +254,49 @@ Text=TA3. Nature de la parcelle
 Width=107
   
 [HeaderText]
-Position=23,192,107,280
+Position=34,240,107,328
 Text=TA4. Superficie de la parcelle (en ha)
  
 [Field]
 Name=TA4
 Position=0,0,99,20
-Item=TA4,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA4,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,237,16
 Text=TA4. Superficie de la parcelle (en ha)
  
 [EndColumn]
   
 [Column]
-Width=73
+Width=66
   
 [HeaderText]
-Position=0,192,73,280
+Position=0,240,66,328
 Text=TA5. Type de propriété sur la parcelle
  
 [Field]
 Name=TA5
-Position=50,0,65,20
-Item=TA5,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=43,0,58,20
+Item=TA5,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,243,16
 Text=TA5. Type de propriété sur la parcelle
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=709
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=643,208,709,328
+Text=TA5a. Préciser autre type de propriété sur la parcelle
  
 [Field]
 Name=TA5_A
-Position=0,0,421,20
-Item=TA5_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=0,0,701,20
+Item=TA5_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1060,21 +306,19 @@ Text=TA5a. Préciser autre type de propriété sur la parcelle
 [EndColumn]
   
 [Column]
-Width=87
+Width=79
   
 [HeaderText]
-Position=0,192,87,280
+Position=0,224,79,328
 Text=TA6. Depuis combien de temps l’avez-vous acquis ?
  
 [Field]
 Name=TA6
-Position=49,0,78,20
-Item=TA6,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=42,0,71,20
+Item=TA6,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,340,16
 Text=TA6. Depuis combien de temps l’avez-vous acquis ?
  
 [EndColumn]
@@ -1083,34 +327,31 @@ Text=TA6. Depuis combien de temps l’avez-vous acquis ?
 Width=89
   
 [HeaderText]
-Position=0,208,89,280
+Position=0,256,89,328
 Text=TA7. Mode d’acquisition de la parcelle ?
  
 [Field]
 Name=TA7
 Position=66,0,81,20
-Item=TA7,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA7,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,259,16
 Text=TA7. Mode d’acquisition de la parcelle ?
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=709
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=621,224,709,328
+Text=TA7a. Préciser autre mode d'acquisition de la parcelle
  
 [Field]
 Name=TA7_A
-Position=0,0,421,20
-Item=TA7_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=0,0,701,20
+Item=TA7_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1123,34 +364,31 @@ Text=TA7a. Préciser autre mode d'acquisition de la parcelle
 Width=148
   
 [HeaderText]
-Position=0,176,148,280
+Position=0,224,148,328
 Text=TA8. Si TA7=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
  
 [Field]
 Name=TA8
 Position=125,0,140,20
-Item=TA8,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA8,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,696,16
 Text=TA8. Si TA7=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=709
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=641,240,709,328
+Text=TA8a. Préciser autre type de demande
  
 [Field]
 Name=TA8_A
-Position=0,0,421,20
-Item=TA8_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=0,0,701,20
+Item=TA8_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1160,21 +398,19 @@ Text=TA8a. Préciser autre type de demande
 [EndColumn]
   
 [Column]
-Width=84
+Width=68
   
 [HeaderText]
-Position=0,160,84,280
+Position=0,192,68,328
 Text=TA9. Si TA7=5, Depuis quand la demande a été satisfaite ?
  
 [Field]
 Name=TA9
-Position=47,0,76,20
-Item=TA9,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=31,0,60,20
+Item=TA9,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,379,16
 Text=TA9. Si TA7=5, Depuis quand la demande a été satisfaite ?
  
 [EndColumn]
@@ -1183,60 +419,54 @@ Text=TA9. Si TA7=5, Depuis quand la demande a été satisfaite ?
 Width=104
   
 [HeaderText]
-Position=0,112,104,280
+Position=0,160,104,328
 Text=TA10. Si TA7=5, est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative ?
  
 [Field]
 Name=TA10
 Position=81,0,96,20
-Item=TA10,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA10,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,740,16
 Text=TA10. Si TA7=5, est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative ?
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=709
   
 [HeaderText]
-Position=345,192,429,280
+Position=638,208,709,328
 Text=TA11. Si Oui à TA10, préciser le Nom de l’initiative
  
 [Field]
 Name=TA11
-Position=0,0,421,20
-Item=TA11,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=0,0,701,20
+Item=TA11,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,326,16
 Text=TA11. Si Oui à TA10, préciser le Nom de l’initiative
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=709
   
 [HeaderText]
-Position=345,224,429,280
+Position=642,240,709,328
 Text=TA12. Si Oui à TA10, comment ?
  
 [Field]
 Name=TA12
-Position=0,0,421,20
-Item=TA12,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=0,0,701,20
+Item=TA12,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,206,16
 Text=TA12. Si Oui à TA10, comment ?
  
 [EndColumn]
@@ -1245,18 +475,16 @@ Text=TA12. Si Oui à TA10, comment ?
 Width=94
   
 [HeaderText]
-Position=0,160,94,280
+Position=0,208,94,328
 Text=TA19 La Contrepartie d’acquisition si achat, prêt ou gage à TA7 est en argent?
  
 [Field]
 Name=TA19_1
 Position=70,0,85,20
-Item=TA19_1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA19_1,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,503,16
 Text=TA19 La Contrepartie d’acquisition si achat, prêt ou gage à TA7 est en argent?
  
 [EndColumn]
@@ -1265,18 +493,16 @@ Text=TA19 La Contrepartie d’acquisition si achat, prêt ou gage à TA7 est en 
 Width=135
   
 [HeaderText]
-Position=48,240,135,280
+Position=48,288,135,328
 Text=Contrepartie en argent
  
 [Field]
 Name=TA19_A
 Position=0,0,127,20
-Item=TA19_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA19_A,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,144,16
 Text=Contrepartie en argent
  
 [EndColumn]
@@ -1285,19 +511,17 @@ Text=Contrepartie en argent
 Width=569
   
 [HeaderText]
-Position=482,224,569,280
-Text=Contrepartie en autre chose
+Position=482,272,569,328
+Text=Contrepartie en nature préciser
  
 [Field]
 Name=TA19_AC
 Position=0,0,561,20
-Item=TA19_AC,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA19_AC,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,179,16
 Text=Contrepartie en nature préciser
  
 [EndColumn]
@@ -1306,14 +530,13 @@ Text=Contrepartie en nature préciser
 Width=93
   
 [HeaderText]
-Position=0,176,93,280
+Position=0,224,93,328
 Text=TA20_1 La Contrepartie d’acquisition si location à TA7 est en argent?
  
 [Field]
 Name=TA20_1
 Position=70,0,85,20
-Item=TA20_1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA20_1,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -1325,18 +548,16 @@ Text=TA20_1 La Contrepartie d’acquisition si location à TA7 est en argent?
 Width=135
   
 [HeaderText]
-Position=48,240,135,280
+Position=48,288,135,328
 Text=Contrepartie en argent
  
 [Field]
 Name=TA20_A
 Position=0,0,127,20
-Item=TA20_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA20_A,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,144,16
 Text=Contrepartie en argent
  
 [EndColumn]
@@ -1345,39 +566,35 @@ Text=Contrepartie en argent
 Width=569
   
 [HeaderText]
-Position=482,224,569,280
+Position=482,272,569,328
 Text=Contrepartie en autre chose
  
 [Field]
 Name=TA20_AC
 Position=0,0,561,20
-Item=TA20_AC,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA20_AC,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,179,16
 Text=Contrepartie en autre chose
  
 [EndColumn]
   
 [Column]
-Width=78
+Width=76
   
 [HeaderText]
-Position=0,176,78,280
+Position=0,208,76,328
 Text=TA21.Quel document atteste de vos droits de propriété ?
  
 [Field]
 Name=TA21
-Position=41,0,70,20
-Item=TA21,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=39,0,68,20
+Item=TA21,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,364,16
 Text=TA21.Quel document atteste de vos droits de propriété ?
  
 [EndColumn]
@@ -1386,14 +603,13 @@ Text=TA21.Quel document atteste de vos droits de propriété ?
 Width=429
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=358,176,429,328
+Text=TA21a. Préciser autre document qui atteste de vos droits de propriété
  
 [Field]
 Name=TA21_A
 Position=0,0,421,20
-Item=TA21_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA21_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1403,21 +619,19 @@ Text=TA21a. Préciser autre document qui atteste de vos droits de propriété
 [EndColumn]
   
 [Column]
-Width=75
+Width=71
   
 [HeaderText]
-Position=0,160,75,280
+Position=0,208,71,328
 Text=TA22. Utilisation de la parcelle (sur les 12 derniers mois)
  
 [Field]
 Name=TA22
-Position=52,0,67,20
-Item=TA22,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=48,0,63,20
+Item=TA22,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,369,16
 Text=TA22. Utilisation de la parcelle (sur les 12 derniers mois)
  
 [EndColumn]
@@ -1426,14 +640,13 @@ Text=TA22. Utilisation de la parcelle (sur les 12 derniers mois)
 Width=429
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=352,224,429,328
+Text=TA22a. Préciser autre type d'utilsation de la parcelle
  
 [Field]
 Name=TA22_A
 Position=0,0,421,20
-Item=TA22_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA22_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1443,41 +656,37 @@ Text=TA22a. Préciser autre type d'utilsation de la parcelle
 [EndColumn]
   
 [Column]
-Width=96
+Width=100
   
 [HeaderText]
-Position=0,240,96,280
-Text=TA23. Mode d’exploitation
+Position=0,272,100,328
+Text=TA23. Mode d’exploitation de la parcelle
  
 [Field]
 Name=TA23
-Position=73,0,88,20
-Item=TA23,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=77,0,92,20
+Item=TA23,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,168,16
 Text=TA23. Mode d’exploitation de la parcelle
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=80
   
 [HeaderText]
-Position=0,112,86,280
+Position=0,160,80,328
 Text=TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 derniers mois.
  
 [Field]
 Name=TA24
-Position=63,0,78,20
-Item=TA24,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=57,0,72,20
+Item=TA24,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,528,16
 Text=TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 derniers mois.
  
 [EndColumn]
@@ -1486,14 +695,13 @@ Text=TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 de
 Width=429
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=369,240,429,328
+Text=TA24a. Préciser autre type de culture
  
 [Field]
 Name=TA24_A
 Position=0,0,421,20
-Item=TA24_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA24_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1506,18 +714,16 @@ Text=TA24a. Préciser autre type de culture
 Width=85
   
 [HeaderText]
-Position=0,192,85,280
+Position=0,240,85,328
 Text=TA25. Destinations des productions ?
  
 [Field]
 Name=TA25
 Position=48,0,77,20
-Item=TA25,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA25,LTP_DICT
 DataCaptureType=CheckBox
   
 [Text]
-Position=0,0,242,16
 Text=TA25. Destinations des productions ?
  
 [EndColumn]
@@ -1526,38 +732,34 @@ Text=TA25. Destinations des productions ?
 Width=121
   
 [HeaderText]
-Position=35,160,121,280
+Position=59,144,121,328
 Text=TA26. Distance de la parcelle par rapport à la maison (en mètre ou km)
  
 [Field]
 Name=TA26
 Position=0,0,113,20
-Item=TA26,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA26,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,456,16
 Text=TA26. Distance de la parcelle par rapport à la maison (en mètre ou km)
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=73
   
 [HeaderText]
-Position=0,80,84,280
+Position=0,64,73,328
 Text=TA27. Combien de temps prend-t-on pour se rendre à la parcelle en marchant à pieds à partir de la maison (en minutes) ?
  
 [Field]
 Name=TA27
-Position=19,0,76,20
-Item=TA27,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=8,0,65,20
+Item=TA27,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,783,16
 Text=TA27. Combien de temps prend-t-on pour se rendre à la parcelle en marchant à pieds à partir de la maison (en minutes) ?
  
 [EndColumn]
@@ -1566,18 +768,16 @@ Text=TA27. Combien de temps prend-t-on pour se rendre à la parcelle en marchant
 Width=91
   
 [HeaderText]
-Position=0,160,91,280
+Position=0,208,91,328
 Text=TA28a. Est-ce que la terre agricole est exposée aux contraintes de l'inondation?
  
 [Field]
 Name=TA28A
 Position=68,0,83,20
-Item=TA28A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA28A,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,518,16
 Text=TA28a. Est-ce que la terre agricole est exposée aux contraintes de l'inondation?
  
 [EndColumn]
@@ -1586,78 +786,70 @@ Text=TA28a. Est-ce que la terre agricole est exposée aux contraintes de l'inond
 Width=91
   
 [HeaderText]
-Position=0,160,91,280
+Position=0,208,91,328
 Text=TA28b. Est-ce que la terre agricole est exposée aux contraintes de la Salinisation?
  
 [Field]
 Name=TA28B
 Position=68,0,83,20
-Item=TA28B,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA28B,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,535,16
 Text=TA28b. Est-ce que la terre agricole est exposée aux contraintes de la Salinisation?
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=78
   
 [HeaderText]
-Position=0,96,86,280
+Position=0,112,78,328
 Text=TA28c. Est-ce que la terre agricole est exposée aux contraintes de Manque d’eau (nappe profonde)?
  
 [Field]
 Name=TA28C
-Position=63,0,78,20
-Item=TA28C,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=55,0,70,20
+Item=TA28C,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,646,16
 Text=TA28c. Est-ce que la terre agricole est exposée aux contraintes de Manque d’eau (nappe profonde)?
  
 [EndColumn]
   
 [Column]
-Width=82
+Width=79
   
 [HeaderText]
-Position=0,96,82,280
+Position=0,128,79,328
 Text=TA28d. Est-ce que la terre agricole est exposée aux contraintes des Terres lessivées (non productive)
  
 [Field]
 Name=TA28D
-Position=59,0,74,20
-Item=TA28D,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=56,0,71,20
+Item=TA28D,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,660,16
 Text=TA28d. Est-ce que la terre agricole est exposée aux contraintes des Terres lessivées (non productive)
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=78
   
 [HeaderText]
-Position=0,96,84,280
+Position=0,112,78,328
 Text=TA28e. Est-ce que la terre agricole est exposée aux contraintes de . Protection des cultures (clôture)?
  
 [Field]
 Name=TA28E
-Position=61,0,76,20
-Item=TA28E,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=55,0,70,20
+Item=TA28E,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,655,16
 Text=TA28e. Est-ce que la terre agricole est exposée aux contraintes de . Protection des cultures (clôture)?
  
 [EndColumn]
@@ -1666,18 +858,16 @@ Text=TA28e. Est-ce que la terre agricole est exposée aux contraintes de . Prote
 Width=83
   
 [HeaderText]
-Position=0,48,83,280
+Position=0,96,83,328
 Text=TA28f. Est-ce que la terre agricole est exposée aux contraintes de Préparation des terres pour la culture (gros arbres)
  
 [Field]
 Name=TA28F
 Position=60,0,75,20
-Item=TA28F,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA28F,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,759,16
 Text=TA28f. Est-ce que la terre agricole est exposée aux contraintes de Préparation des terres pour la culture (gros arbres)
  
 [EndColumn]
@@ -1686,38 +876,34 @@ Text=TA28f. Est-ce que la terre agricole est exposée aux contraintes de Prépar
 Width=84
   
 [HeaderText]
-Position=0,112,84,280
+Position=0,160,84,328
 Text=TA28g. Est-ce que la terre agricole est exposée aux contraintes de Exploitation minières?
  
 [Field]
 Name=TA28G
 Position=61,0,76,20
-Item=TA28G,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA28G,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,580,16
 Text=TA28g. Est-ce que la terre agricole est exposée aux contraintes de Exploitation minières?
  
 [EndColumn]
   
 [Column]
-Width=82
+Width=79
   
 [HeaderText]
-Position=0,96,82,280
+Position=0,128,79,328
 Text=TA28h. Est-ce que la terre agricole est exposée aux contraintes des Terres lessivées (non productive)
  
 [Field]
 Name=TA28H
-Position=59,0,74,20
-Item=TA28H,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=56,0,71,20
+Item=TA28H,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,660,16
 Text=TA28h. Est-ce que la terre agricole est exposée aux contraintes des Terres lessivées (non productive)
  
 [EndColumn]
@@ -1726,59 +912,53 @@ Text=TA28h. Est-ce que la terre agricole est exposée aux contraintes des Terres
 Width=429
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=353,160,429,328
+Text=TA28a. Préciser autre type de contrainte à laquelle la terre agricole est exposée
  
 [Field]
 Name=TA28_A
 Position=0,0,421,20
-Item=TA28_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA28_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,33,16
 Text=TA28a. Préciser autre type de contrainte à laquelle la terre agricole est exposée
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=78
   
 [HeaderText]
-Position=0,0,84,280
+Position=0,0,78,328
 Text=TA29. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années?
  
 [Field]
 Name=TA29
-Position=61,0,76,20
-Item=TA29,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=55,0,70,20
+Item=TA29,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1057,16
 Text=TA29. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=78
   
 [HeaderText]
-Position=0,16,84,280
+Position=0,16,78,328
 Text=TA30. Est-il probable que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années ?
  
 [Field]
 Name=TA30
-Position=61,0,76,20
-Item=TA30,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=55,0,70,20
+Item=TA30,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1042,16
 Text=TA30. Est-il probable que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années ?
  
 [EndColumn]
@@ -1787,18 +967,16 @@ Text=TA30. Est-il probable que vous pourriez perdre le droit de détention de ce
 Width=191
   
 [HeaderText]
-Position=79,0,191,280
+Position=79,48,191,328
 Text=TA31. Si TA29=4 ou 5 ou TA30=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années?
  
 [Field]
 Name=TA31
 Position=0,0,183,20
-Item=TA31,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA31,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1475,16
 Text=TA31. Si TA29=4 ou 5 ou TA30=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années?
  
 [EndColumn]
@@ -1807,14 +985,13 @@ Text=TA31. Si TA29=4 ou 5 ou TA30=4 ou 5, quelles sont les raisons pour lesquell
 Width=429
   
 [HeaderText]
-Position=387,256,429,280
-Text=Autre
+Position=321,80,429,328
+Text=TA31a. Préciser autre raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années
  
 [Field]
 Name=TA31_A
 Position=0,0,421,20
-Item=TA31_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA31_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -1827,18 +1004,16 @@ Text=TA31a. Préciser autre raisons pour lesquelles vous avez un sentiment d’i
 Width=82
   
 [HeaderText]
-Position=0,16,82,280
+Position=0,64,82,328
 Text=TA32a. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si vous avez eu un désaccord / conflit avec votre famille?
  
 [Field]
 Name=TA32A
 Position=59,0,74,20
-Item=TA32A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA32A,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,918,16
 Text=TA32a. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si vous avez eu un désaccord / conflit avec votre famille?
  
 [EndColumn]
@@ -1847,18 +1022,16 @@ Text=TA32a. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Width=82
   
 [HeaderText]
-Position=0,48,82,280
+Position=0,96,82,328
 Text=TA32b. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un dans votre ménage décède?
  
 [Field]
 Name=TA32B
 Position=59,0,74,20
-Item=TA32B,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA32B,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,812,16
 Text=TA32b. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un dans votre ménage décède?
  
 [EndColumn]
@@ -1867,18 +1040,16 @@ Text=TA32b. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Width=82
   
 [HeaderText]
-Position=0,64,82,280
+Position=0,112,82,328
 Text=TA32c. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si votre conjoint(e) décède?
  
 [Field]
 Name=TA32C
 Position=59,0,74,20
-Item=TA32C,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA32C,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,722,16
 Text=TA32c. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si votre conjoint(e) décède?
  
 [EndColumn]
@@ -1887,58 +1058,52 @@ Text=TA32c. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Width=82
   
 [HeaderText]
-Position=0,16,82,280
+Position=0,64,82,328
 Text=TA32d. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un d'autre dans votre famille a perdu son emploi?
  
 [Field]
 Name=TA32D
 Position=59,0,74,20
-Item=TA32D,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA32D,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,931,16
 Text=TA32d. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un d'autre dans votre famille a perdu son emploi?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=82
   
 [HeaderText]
-Position=0,0,84,280
+Position=0,32,82,328
 Text=TA32e. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
  
 [Field]
 Name=TA32E
-Position=61,0,76,20
-Item=TA32E,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=59,0,74,20
+Item=TA32E,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1013,16
 Text=TA32e. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=82
   
 [HeaderText]
-Position=0,0,84,280
+Position=0,32,82,328
 Text=TA32f. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si une entreprise essaie de faire la saisie contre votre volonté?
  
 [Field]
 Name=TA32F
-Position=61,0,76,20
-Item=TA32F,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=59,0,74,20
+Item=TA32F,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,952,16
 Text=TA32f. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si une entreprise essaie de faire la saisie contre votre volonté?
  
 [EndColumn]
@@ -1947,38 +1112,34 @@ Text=TA32f. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Width=102
   
 [HeaderText]
-Position=0,0,102,280
+Position=0,48,102,328
 Text=TA32g. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pole urbain)?
  
 [Field]
 Name=TA32G
 Position=79,0,94,20
-Item=TA32G,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA32G,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1335,16
 Text=TA32g. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pole urbain)?
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=82
   
 [HeaderText]
-Position=0,16,86,280
+Position=0,48,82,328
 Text=TA32h. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si une autre personne ou d'un groupe revendique la propriété?
  
 [Field]
 Name=TA32H
-Position=63,0,78,20
-Item=TA32H,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=59,0,74,20
+Item=TA32H,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,950,16
 Text=TA32h. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si une autre personne ou d'un groupe revendique la propriété?
  
 [EndColumn]
@@ -1987,38 +1148,34 @@ Text=TA32h. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Width=115
   
 [HeaderText]
-Position=0,80,115,280
+Position=0,128,115,328
 Text=TA32i. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un d'autre vend frauduleusement la propriété?
  
 [Field]
 Name=TA32I
 Position=92,0,107,20
-Item=TA32I,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TA32I,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,904,16
 Text=TA32i. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un d'autre vend frauduleusement la propriété?
  
 [EndColumn]
   
 [Column]
-Width=86
+Width=82
   
 [HeaderText]
-Position=0,16,86,280
+Position=0,64,82,328
 Text=TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si un désaccord est survenu avec les autorités locales?
  
 [Field]
 Name=TA32J
-Position=63,0,78,20
-Item=TA32J,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=59,0,74,20
+Item=TA32J,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,903,16
 Text=TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si un désaccord est survenu avec les autorités locales?
  
 [EndColumn]
@@ -2031,18 +1188,18 @@ Text=TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Required=Yes
 Name=SECTION_TH_FORM
 Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
-Form=9
+Form=3
 Max=1
   
 [Grid]
 Name=SECTION_TH000
 Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
-Form=9
+Form=3
 Required=Yes
 Type=Record
 TypeName=SECTION_TH
 Max=15
-DisplaySize=40,30,2158,511
+DisplaySize=40,30,2050,639
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2129,21 +1286,19 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=81
+Width=67
   
 [HeaderText]
-Position=0,208,81,312
+Position=0,176,67,312
 Text=TH1. Code de la personne (Rappel du nom et prénom)
  
 [Field]
 Name=TH1
-Position=44,0,73,20
-Item=TH1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=30,0,59,20
+Item=TH1,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,347,16
 Text=TH1. Code de la personne (Rappel du nom et prénom)
  
 [EndColumn]
@@ -2158,33 +1313,29 @@ Text=Nom et prénom
 [Field]
 Name=TH1_1
 Position=0,0,561,20
-Item=TH1_1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH1_1,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,99,16
 Text=Nom et prénom
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=66
   
 [HeaderText]
-Position=0,272,84,312
+Position=0,256,66,312
 Text=TH2. N° des parcelles
  
 [Field]
 Name=TH2
-Position=47,0,76,20
-Item=TH2,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=29,0,58,20
+Item=TH2,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,141,16
 Text=TH2. N° des parcelles
  
 [EndColumn]
@@ -2193,59 +1344,90 @@ Text=TH2. N° des parcelles
 Width=93
   
 [HeaderText]
-Position=9,224,93,312
+Position=20,224,93,312
 Text=TH3. Superficie de la parcelle (en m2)
  
 [Field]
 Name=TH3
 Position=0,0,85,20
-Item=TH3,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH3,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,243,16
 Text=TH3. Superficie de la parcelle (en m2)
  
 [EndColumn]
   
 [Column]
-Width=74
+Width=84
   
 [HeaderText]
-Position=0,224,74,312
-Text=TH4. Type de propriété sur la parcelle
+Position=0,192,84,312
+Text=TH4. Quel est l’état des parcelles à usage d’habitation ?
  
 [Field]
 Name=TH4
-Position=51,0,66,20
-Item=TH4,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=61,0,76,20
+Item=TH4,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,245,16
 Text=TH4. Quel est l’état des parcelles à usage d’habitation ?
  
 [EndColumn]
   
 [Column]
-Width=83
+Width=66
   
 [HeaderText]
-Position=0,224,83,312
-Text=TH5. Depuis combien de temps l’avez-vous acquis ?
+Position=0,224,66,312
+Text=TH5. Type de propriété sur la parcelle
  
 [Field]
 Name=TH5
-Position=46,0,75,20
-Item=TH5,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=43,0,58,20
+Item=TH5,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=TH5. Type de propriété sur la parcelle
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=363,192,429,312
+Text=TH5a. Préciser autre type de propriété sur la parcelle
+ 
+[Field]
+Name=TH5_A
+Position=0,0,421,20
+Item=TH5_A,LTP_DICT
+UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,342,16
-Text=TH5. Type de propriété sur la parcelle
+Text=TH5a. Préciser autre type de propriété sur la parcelle
+ 
+[EndColumn]
+  
+[Column]
+Width=79
+  
+[HeaderText]
+Position=0,208,79,312
+Text=TH5. Depuis combien de temps l’avez-vous acquis ?
+ 
+[Field]
+Name=TH6
+Position=42,0,71,20
+Item=TH6,LTP_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=TH5. Depuis combien de temps l’avez-vous acquis ?
  
 [EndColumn]
   
@@ -2254,37 +1436,89 @@ Width=89
   
 [HeaderText]
 Position=0,240,89,312
-Text=TH6. Mode d’acquisition de la parcelle ?
+Text=TH7. Mode d’acquisition de la parcelle ?
  
 [Field]
-Name=TH6
+Name=TH7SS
 Position=66,0,81,20
-Item=TH6,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH7SS,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,261,16
-Text=TH5. Depuis combien de temps l’avez-vous acquis ?
+Text=TH7. Mode d’acquisition de la parcelle ?
  
 [EndColumn]
   
 [Column]
-Width=87
+Width=429
   
 [HeaderText]
-Position=0,128,87,312
+Position=341,240,429,312
+Text=TH7a. Préciser autre mode d'acquisition
+ 
+[Field]
+Name=TH7_AS
+Position=0,0,421,20
+Item=TH7_AS,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=TH7a. Préciser autre mode d'acquisition
+ 
+[EndColumn]
+  
+[Column]
+Width=148
+  
+[HeaderText]
+Position=0,208,148,312
+Text=TH8. Si TH5=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
+ 
+[Field]
+Name=TH8S
+Position=125,0,140,20
+Item=TH8S,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=TH8. Si TH5=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=361,224,429,312
+Text=TH8a. Préciser autre type de demande
+ 
+[Field]
+Name=TH8_A
+Position=0,0,421,20
+Item=TH8_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=TH8a. Préciser autre type de demande
+ 
+[EndColumn]
+  
+[Column]
+Width=68
+  
+[HeaderText]
+Position=0,96,68,312
 Text=TH8. Si TH5=5, Depuis quand la demande a été satisfaite ? (préciser en terme de jours, mois, année)
  
 [Field]
 Name=TH8
-Position=50,0,79,20
-Item=TH8,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=31,0,60,20
+Item=TH8,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,654,16
 Text=TH8. Si TH5=5, Depuis quand la demande a été satisfaite ? (préciser en terme de jours, mois, année)
  
 [EndColumn]
@@ -2299,12 +1533,10 @@ Text=TH9. Si TH5=5,  Est-ce que la demande a été initiée ou faite grâce à l
 [Field]
 Name=TH9
 Position=121,0,136,20
-Item=TH9,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH9,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,823,16
 Text=TH9. Si TH5=5,  Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative/Coopérative ?
  
 [EndColumn]
@@ -2313,40 +1545,18 @@ Text=TH9. Si TH5=5,  Est-ce que la demande a été initiée ou faite grâce à l
 Width=569
   
 [HeaderText]
-Position=490,224,569,312
+Position=498,192,569,312
 Text=TH10. Si Oui à TH8, préciser le Nom de l’initiative
  
 [Field]
 Name=TH10
 Position=0,0,561,20
-Item=TH10,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH10,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,322,16
 Text=TH10. Si Oui à TH8, préciser le Nom de l’initiative
- 
-[EndColumn]
-  
-[Column]
-Width=429
-  
-[HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=TH21_A
-Position=0,0,421,20
-Item=TH21_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
  
 [EndColumn]
   
@@ -2360,12 +1570,10 @@ Text=TH19. Contrepartie d’acquisition si achat, prêt ou gage à TH5 en argent
 [Field]
 Name=TH19
 Position=70,0,85,20
-Item=TH19,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH19,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,467,16
 Text=TH19. Contrepartie d’acquisition si achat, prêt ou gage à TH5 en argent?
  
 [EndColumn]
@@ -2374,18 +1582,16 @@ Text=TH19. Contrepartie d’acquisition si achat, prêt ou gage à TH5 en argent
 Width=135
   
 [HeaderText]
-Position=66,288,135,312
+Position=86,272,135,312
 Text=En argent
  
 [Field]
 Name=TH19_AR
 Position=0,0,127,20
-Item=TH19_AR,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH19_AR,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,62,16
 Text=En argent
  
 [EndColumn]
@@ -2394,19 +1600,17 @@ Text=En argent
 Width=709
   
 [HeaderText]
-Position=640,288,709,312
+Position=660,272,709,312
 Text=En nature
  
 [Field]
 Name=TH19_NA
 Position=0,0,701,20
-Item=TH19_NA,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH19_NA,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,62,16
 Text=En nature
  
 [EndColumn]
@@ -2421,33 +1625,66 @@ Text=TH20. Contrepartie d’acquisition si location à TH5 ?
 [Field]
 Name=TH20
 Position=0,0,127,20
-Item=TH20,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH20,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,333,16
 Text=TH20. Contrepartie d’acquisition si location à TH5 ?
  
 [EndColumn]
   
 [Column]
-Width=82
+Width=71
   
 [HeaderText]
-Position=0,208,82,312
+Position=0,176,71,312
 Text=TH21. Quel document atteste de vos droits de propriété ?
  
 [Field]
 Name=TH21
-Position=45,0,74,20
-Item=TH21,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=34,0,63,20
+Item=TH21,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,370,16
 Text=TH21. Quel document atteste de vos droits de propriété ?
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=TH21_A
+Position=0,0,421,20
+Item=TH21_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
+ 
+[EndColumn]
+  
+[Column]
+Width=71
+  
+[HeaderText]
+Position=0,192,71,312
+Text=TH22 Utilisation de la parcelle (sur les 12 derniers mois)
+ 
+[Field]
+Name=TH22
+Position=48,0,63,20
+Item=TH22,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=TH22 Utilisation de la parcelle (sur les 12 derniers mois)
  
 [EndColumn]
   
@@ -2461,33 +1698,12 @@ Text=Autre
 [Field]
 Name=TH22_A
 Position=0,0,421,20
-Item=TH22_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH22_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
 Text=Autre
- 
-[EndColumn]
-  
-[Column]
-Width=75
-  
-[HeaderText]
-Position=0,192,75,312
-Text=TH22 Utilisation de la parcelle (sur les 12 derniers mois)
- 
-[Field]
-Name=TH22
-Position=52,0,67,20
-Item=TH22,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-  
-[Text]
-Position=0,0,367,16
-Text=TH22 Utilisation de la parcelle (sur les 12 derniers mois)
  
 [EndColumn]
   
@@ -2501,8 +1717,7 @@ Text=Autre
 [Field]
 Name=TH22_A1
 Position=0,0,421,20
-Item=TH22_A1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH22_A1,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -2512,17 +1727,16 @@ Text=Autre
 [EndColumn]
   
 [Column]
-Width=84
+Width=80
   
 [HeaderText]
-Position=0,192,84,312
+Position=0,192,80,312
 Text=TH23. Si Héritage (TH7=2), est-ce un lotissement de la famille ?
  
 [Field]
 Name=TH23
-Position=61,0,76,20
-Item=TH23,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=57,0,72,20
+Item=TH23,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2540,8 +1754,7 @@ Text=TH24. Si oui, le nombre total de parcelles du lotissement
 [Field]
 Name=TH24
 Position=29,0,72,20
-Item=TH24,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH24,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
@@ -2550,17 +1763,16 @@ Text=TH24. Si oui, le nombre total de parcelles du lotissement
 [EndColumn]
   
 [Column]
-Width=81
+Width=66
   
 [HeaderText]
-Position=0,224,81,312
+Position=0,208,66,312
 Text=TH18. Si oui, le nombre de parcelles héritées
  
 [Field]
 Name=TH25
-Position=30,0,73,20
-Item=TH25,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=15,0,58,20
+Item=TH25,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
@@ -2569,17 +1781,16 @@ Text=TH18. Si oui, le nombre de parcelles héritées
 [EndColumn]
   
 [Column]
-Width=82
+Width=64
   
 [HeaderText]
-Position=0,208,82,312
+Position=0,176,64,312
 Text=TH19. Si oui, Sur quelle base ce partage a été effectué ?
  
 [Field]
 Name=TH26
-Position=45,0,74,20
-Item=TH26,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=27,0,56,20
+Item=TH26,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2591,14 +1802,13 @@ Text=TH19. Si oui, Sur quelle base ce partage a été effectué ?
 Width=429
   
 [HeaderText]
-Position=349,272,429,312
+Position=369,256,429,312
 Text=Preciser la religion
  
 [Field]
 Name=TH26_R
 Position=0,0,421,20
-Item=TH26_R,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH26_R,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -2617,8 +1827,7 @@ Text=Autre
 [Field]
 Name=TH26_A
 Position=0,0,421,20
-Item=TH26_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH26_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -2628,41 +1837,37 @@ Text=Autre
 [EndColumn]
   
 [Column]
-Width=77
+Width=61
   
 [HeaderText]
-Position=0,256,77,312
+Position=0,240,61,312
 Text=TH19bis. est-ce à part égal ?
  
 [Field]
 Name=TH27
-Position=54,0,69,20
-Item=TH27,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=38,0,53,20
+Item=TH27,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,186,16
 Text=TH19bis. est-ce à part égal ?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=80
   
 [HeaderText]
-Position=0,192,84,312
+Position=0,192,80,312
 Text=TH20. Qui a pris la décision sur les procédures de lotissement
  
 [Field]
 Name=TH28
-Position=61,0,76,20
-Item=TH28,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=57,0,72,20
+Item=TH28,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,406,16
 Text=TH20. Qui a pris la décision sur les procédures de lotissement
  
 [EndColumn]
@@ -2677,12 +1882,10 @@ Text=TH21. Si Achat (TH7=3), quelle est la source d’acquisition
 [Field]
 Name=TH29
 Position=66,0,81,20
-Item=TH29,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH29,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,371,16
 Text=TH21. Si Achat (TH7=3), quelle est la source d’acquisition
  
 [EndColumn]
@@ -2697,8 +1900,7 @@ Text=Autre
 [Field]
 Name=TH29_A
 Position=0,0,421,20
-Item=TH29_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH29_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -2717,12 +1919,10 @@ Text=TH30a. Est-ce que la terre d’habitation est exposée aux contraintes d'In
 [Field]
 Name=TH30A
 Position=72,0,87,20
-Item=TH30A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30A,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,528,16
 Text=TH30a. Est-ce que la terre d’habitation est exposée aux contraintes d'Inondation?
  
 [EndColumn]
@@ -2737,12 +1937,10 @@ Text=TH30b. Est-ce que la terre d’habitation est exposée aux contraintes de M
 [Field]
 Name=TH30B
 Position=93,0,108,20
-Item=TH30B,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30B,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,632,16
 Text=TH30b. Est-ce que la terre d’habitation est exposée aux contraintes de Manque d’assainissement
  
 [EndColumn]
@@ -2757,12 +1955,10 @@ Text=TH30c. Est-ce que la terre d’habitation est exposée aux contraintes de l
 [Field]
 Name=TH30C
 Position=65,0,80,20
-Item=TH30C,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30C,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,614,16
 Text=TH30c. Est-ce que la terre d’habitation est exposée aux contraintes de lotissement clandestin?
  
 [EndColumn]
@@ -2777,12 +1973,10 @@ Text=TH30d. Est-ce que la terre d’habitation est exposée aux contraintes de S
 [Field]
 Name=TH30D
 Position=68,0,83,20
-Item=TH30D,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30D,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,545,16
 Text=TH30d. Est-ce que la terre d’habitation est exposée aux contraintes de Salinisation?
  
 [EndColumn]
@@ -2797,12 +1991,10 @@ Text=TH30e. Est-ce que la terre d’habitation est exposée aux contraintes de N
 [Field]
 Name=TH30E
 Position=65,0,80,20
-Item=TH30E,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30E,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,654,16
 Text=TH30e. Est-ce que la terre d’habitation est exposée aux contraintes de Nappe Phréatique « proche »?
  
 [EndColumn]
@@ -2817,12 +2009,10 @@ Text=TH30f. Est-ce que la terre d’habitation est exposée aux contraintes d'El
 [Field]
 Name=TH30F
 Position=76,0,91,20
-Item=TH30F,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30F,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,608,16
 Text=TH30f. Est-ce que la terre d’habitation est exposée aux contraintes d'Eloignement des écoles
  
 [EndColumn]
@@ -2837,12 +2027,10 @@ Text=TH30g. Est-ce que la terre d’habitation est exposée aux contraintes d'el
 [Field]
 Name=TH30G
 Position=80,0,95,20
-Item=TH30G,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30G,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,628,16
 Text=TH30g. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des hôpitaux?
  
 [EndColumn]
@@ -2857,12 +2045,10 @@ Text=TH30h. Est-ce que la terre d’habitation est exposée aux contraintes d'el
 [Field]
 Name=TH30H
 Position=80,0,95,20
-Item=TH30H,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30H,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,628,16
 Text=TH30h. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des marchés?
  
 [EndColumn]
@@ -2877,12 +2063,10 @@ Text=TH30i. Est-ce que la terre d’habitation est exposée aux contraintes d'el
 [Field]
 Name=TH30I
 Position=79,0,94,20
-Item=TH30I,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30I,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,658,16
 Text=TH30i. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des routes/Voiries?
  
 [EndColumn]
@@ -2897,12 +2081,10 @@ Text=TH30j. Est-ce que la terre d’habitation est exposée aux autre contrainte
 [Field]
 Name=TH30J
 Position=65,0,80,20
-Item=TH30J,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30J,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,546,16
 Text=TH30j. Est-ce que la terre d’habitation est exposée aux autre contraintes à preciser?
  
 [EndColumn]
@@ -2917,8 +2099,7 @@ Text=Autre
 [Field]
 Name=TH30_A
 Position=0,0,421,20
-Item=TH30_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH30_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -2937,12 +2118,10 @@ Text=TH23. Etes-vous inquiet que vous pourriez perdre le droit de détention de 
 [Field]
 Name=TH31
 Position=61,0,76,20
-Item=TH31,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH31,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1083,16
 Text=TH23. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années?
  
 [EndColumn]
@@ -2957,12 +2136,10 @@ Text=TH24. Est-il probable que vous pourriez perdre le droit de détention de ce
 [Field]
 Name=TH32
 Position=61,0,76,20
-Item=TH32,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH32,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1068,16
 Text=TH24. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?
  
 [EndColumn]
@@ -2977,12 +2154,10 @@ Text=TH25. Si TH24=4 ou 5 ou TH25=4 ou 5, quelles sont les raisons pour lesquell
 [Field]
 Name=TH33
 Position=0,0,183,20
-Item=TH33,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH33,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1505,16
 Text=TH25. Si TH24=4 ou 5 ou TH25=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années?
  
 [EndColumn]
@@ -2997,8 +2172,7 @@ Text=Autre
 [Field]
 Name=TH34
 Position=0,0,421,20
-Item=TH34,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH34,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -3017,12 +2191,10 @@ Text=TH26a. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35A
 Position=61,0,76,20
-Item=TH35A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35A,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,944,16
 Text=TH26a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous avez eu un désaccord / conflit avec votre famille?
  
 [EndColumn]
@@ -3037,12 +2209,10 @@ Text=TH26b. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35B
 Position=61,0,76,20
-Item=TH35B,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35B,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,838,16
 Text=TH26b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un dans votre ménage décède?
  
 [EndColumn]
@@ -3057,12 +2227,10 @@ Text=TH26c. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35C
 Position=61,0,76,20
-Item=TH35C,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35C,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,747,16
 Text=TH26c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si votre conjoint(e) décède?
  
 [EndColumn]
@@ -3077,12 +2245,10 @@ Text=TH26d. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35D
 Position=61,0,76,20
-Item=TH35D,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35D,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,957,16
 Text=TH26d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre dans votre famille a perdu son emploi?
  
 [EndColumn]
@@ -3097,12 +2263,10 @@ Text=TH26e. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35E
 Position=61,0,76,20
-Item=TH35E,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35E,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1039,16
 Text=TH26e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
  
 [EndColumn]
@@ -3117,12 +2281,10 @@ Text=TH26f. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35F
 Position=61,0,76,20
-Item=TH35F,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35F,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,978,16
 Text=TH26f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une entreprise essaie de faire la saisie contre votre volonté?
  
 [EndColumn]
@@ -3137,12 +2299,10 @@ Text=TH26g. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35G
 Position=79,0,94,20
-Item=TH35G,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35G,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1361,16
 Text=TH26g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)?
  
 [EndColumn]
@@ -3157,12 +2317,10 @@ Text=TH26h. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35H
 Position=61,0,76,20
-Item=TH35H,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35H,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,976,16
 Text=TH26h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une autre personne ou d'un groupe revendique la propriété?
  
 [EndColumn]
@@ -3177,12 +2335,10 @@ Text=TH26i. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35I
 Position=92,0,107,20
-Item=TH35I,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35I,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,930,16
 Text=TH26i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre vend frauduleusement la propriété?
  
 [EndColumn]
@@ -3197,12 +2353,10 @@ Text=TH26j. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=TH35J
 Position=61,0,76,20
-Item=TH35J,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=TH35J,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,933,16
 Text=TH26j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si un désaccord est survenu avec les autorités locales ?
  
 [EndColumn]
@@ -3215,18 +2369,18 @@ Text=TH26j. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Required=Yes
 Name=SECTION_LM_FORM
 Label=SECTION LM: LOGEMENT DU MENAGE
-Form=10
+Form=4
 Max=1
   
 [Grid]
 Name=SECTION_LM000
 Label=SECTION LM: LOGEMENT DU MENAGE
-Form=10
+Form=4
 Required=Yes
 Type=Record
 TypeName=SECTION_LM
 Max=15
-DisplaySize=40,30,1459,527
+DisplaySize=40,30,1405,639
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -3313,21 +2467,19 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=81
+Width=67
   
 [HeaderText]
-Position=0,208,81,312
+Position=0,176,67,312
 Text=LM1. Code de la personne (Rappel du nom et prénom)
  
 [Field]
 Name=LM1
-Position=44,0,73,20
-Item=LM1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=30,0,59,20
+Item=LM1,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,349,16
 Text=LM1. Code de la personne (Rappel du nom et prénom)
  
 [EndColumn]
@@ -3342,53 +2494,47 @@ Text=Nom et prénom
 [Field]
 Name=LM1_1
 Position=0,0,561,20
-Item=LM1_1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM1_1,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,99,16
 Text=Nom et prénom
  
 [EndColumn]
   
 [Column]
-Width=80
+Width=68
   
 [HeaderText]
-Position=0,272,80,312
+Position=0,256,68,312
 Text=LM2. N° de logement
  
 [Field]
 Name=LM2
-Position=43,0,72,20
-Item=LM2,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=31,0,60,20
+Item=LM2,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,135,16
 Text=LM2. N° de logement
  
 [EndColumn]
   
 [Column]
-Width=80
+Width=76
   
 [HeaderText]
-Position=0,240,80,312
+Position=0,224,76,312
 Text=LM3. Vivez-vous dans ce logement ?
  
 [Field]
 Name=LM3
-Position=57,0,72,20
-Item=LM3,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=53,0,68,20
+Item=LM3,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,239,16
 Text=LM3. Vivez-vous dans ce logement ?
  
 [EndColumn]
@@ -3403,12 +2549,10 @@ Text=LM4. Si oui à LM3, Depuis combien de temps vivez-vous personnellement dans
 [Field]
 Name=LM4
 Position=78,0,107,20
-Item=LM4,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM4,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,815,16
 Text=LM4. Si oui à LM3, Depuis combien de temps vivez-vous personnellement dans ce logement ? (an, mettre 0 si moins d’un an)
  
 [EndColumn]
@@ -3423,12 +2567,10 @@ Text=LM5. Si oui à LM3, Combien de temps pensez-vous continuer à vivre ici ?
 [Field]
 Name=LM5
 Position=63,0,78,20
-Item=LM5,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM5,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,478,16
 Text=LM5. Si oui à LM3, Combien de temps pensez-vous continuer à vivre ici ?
  
 [EndColumn]
@@ -3443,132 +2585,65 @@ Text=LM6. Superficie du terrain (en m2)
 [Field]
 Name=LM6
 Position=0,0,113,20
-Item=LM6,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM6,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,219,16
 Text=LM6. Superficie du terrain (en m2)
  
 [EndColumn]
   
 [Column]
-Width=80
+Width=68
   
 [HeaderText]
-Position=0,256,80,312
+Position=0,240,68,312
 Text=LM7. Type de logement ?
  
 [Field]
 Name=LM7
-Position=43,0,72,20
-Item=LM7,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=31,0,60,20
+Item=LM7,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,164,16
 Text=LM7. Type de logement ?
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=73
   
 [HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=LM10_A
-Position=0,0,421,20
-Item=LM10_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
- 
-[EndColumn]
-  
-[Column]
-Width=80
-  
-[HeaderText]
-Position=0,240,80,312
+Position=0,208,73,312
 Text=LM8. A qui appartient ce logement ?
  
 [Field]
 Name=LM8
-Position=43,0,72,20
-Item=LM8,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=36,0,65,20
+Item=LM8,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,232,16
 Text=LM8. A qui appartient ce logement ?
  
 [EndColumn]
   
 [Column]
-Width=429
+Width=83
   
 [HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=LM13_A
-Position=0,0,421,20
-Item=LM13_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
- 
-[EndColumn]
-  
-[Column]
-Width=90
-  
-[HeaderText]
-Position=1,144,90,312
+Position=0,96,83,312
 Text=LM9. Si LM8 différent de 1,2,3, est-ce que vous ou quelqu'un d'autre qui vit ici payez un loyer au propriétaire ?
  
 [Field]
 Name=LM9
-Position=51,0,80,20
-Item=LM9,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=46,0,75,20
+Item=LM9,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
 Text=LM9. Si LM8 différent de 1,2,3, est-ce que vous ou quelqu'un d'autre qui vit ici payez un loyer au propriétaire ?
- 
-[EndColumn]
-  
-[Column]
-Width=429
-  
-[HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=LM14_A
-Position=0,0,421,20
-Item=LM14_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
  
 [EndColumn]
   
@@ -3582,12 +2657,10 @@ Text=LM10. Si 3,4,5,6 ou 7 à LM9, pouvez-vous expliquer les circonstances dans 
 [Field]
 Name=LM10
 Position=75,0,90,20
-Item=LM10,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM10,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,671,16
 Text=LM10. Si 3,4,5,6 ou 7 à LM9, pouvez-vous expliquer les circonstances dans lesquelles vous vivez ici ?
  
 [EndColumn]
@@ -3600,10 +2673,9 @@ Position=387,288,429,312
 Text=Autre
  
 [Field]
-Name=LM15_A
+Name=LM10_A
 Position=0,0,421,20
-Item=LM15_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM10_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -3616,39 +2688,35 @@ Text=Autre
 Width=709
   
 [HeaderText]
-Position=630,224,709,312
+Position=638,224,709,312
 Text=LM11. Expliquez votre réponse (à LM10)
  
 [Field]
 Name=LM11
 Position=0,0,701,20
-Item=LM11,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM11,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,263,16
 Text=LM11. Expliquez votre réponse (à LM10)
  
 [EndColumn]
   
 [Column]
-Width=83
+Width=79
   
 [HeaderText]
-Position=0,192,83,312
+Position=0,176,79,312
 Text=LM12. Si 1,2,3 à LM8, Depuis combien de temps l’avez-vous acquis ?
  
 [Field]
 Name=LM12
-Position=18,0,75,20
-Item=LM12,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=14,0,71,20
+Item=LM12,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,453,16
 Text=LM12. Si 1,2,3 à LM8, Depuis combien de temps l’avez-vous acquis ?
  
 [EndColumn]
@@ -3663,13 +2731,30 @@ Text=LM13. Si 1,2,3 à LM8, Mode d’acquisition du logement ?
 [Field]
 Name=LM13
 Position=52,0,81,20
-Item=LM13,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM13,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,364,16
 Text=LM13. Si 1,2,3 à LM8, Mode d’acquisition du logement ?
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM13_A
+Position=0,0,421,20
+Item=LM13_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
  
 [EndColumn]
   
@@ -3683,13 +2768,30 @@ Text=LM14. Si 1,2,3 à LM8, Mode d’acquisition du terrain (du logement
 [Field]
 Name=LM14
 Position=66,0,81,20
-Item=LM14,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM14,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,422,16
 Text=LM14. Si 1,2,3 à LM8, Mode d’acquisition du terrain (du logement
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM14_A
+Position=0,0,421,20
+Item=LM14_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
  
 [EndColumn]
   
@@ -3703,72 +2805,83 @@ Text=LM15. Si LM14=5, Est ce que s’était suite à une demande individuelle/co
 [Field]
 Name=LM15
 Position=125,0,140,20
-Item=LM15,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM15,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,720,16
 Text=LM15. Si LM14=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=429
   
 [HeaderText]
-Position=0,272,84,312
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM15_A
+Position=0,0,421,20
+Item=LM15_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
+ 
+[EndColumn]
+  
+[Column]
+Width=68
+  
+[HeaderText]
+Position=0,256,68,312
 Text=Année de la demande
  
 [Field]
 Name=LM16_AN
-Position=19,0,76,20
-Item=LM16_AN,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=3,0,60,20
+Item=LM16_AN,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,140,16
 Text=Année de la demande
  
 [EndColumn]
   
 [Column]
-Width=77
+Width=68
   
 [HeaderText]
-Position=0,272,77,312
+Position=0,256,68,312
 Text=Mois de la demande
  
 [Field]
 Name=LM16_M
-Position=40,0,69,20
-Item=LM16_M,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=31,0,60,20
+Item=LM16_M,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,132,16
 Text=Mois de la demande
  
 [EndColumn]
   
 [Column]
-Width=76
+Width=68
   
 [HeaderText]
-Position=0,272,76,312
+Position=0,256,68,312
 Text=Jour de la demande
  
 [Field]
 Name=LM16_J
-Position=39,0,68,20
-Item=LM16_J,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=31,0,60,20
+Item=LM16_J,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,128,16
 Text=Jour de la demande
  
 [EndColumn]
@@ -3783,12 +2896,10 @@ Text=LM17. Si LM14=5, est-ce que la demande a été initiée ou faite grâce à 
 [Field]
 Name=LM17
 Position=81,0,96,20
-Item=LM17,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM17,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,756,16
 Text=LM17. Si LM14=5, est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’un projet?
  
 [EndColumn]
@@ -3797,19 +2908,17 @@ Text=LM17. Si LM14=5, est-ce que la demande a été initiée ou faite grâce à 
 Width=429
   
 [HeaderText]
-Position=346,224,429,312
+Position=370,192,429,312
 Text=LM18. Si Oui à LM17, préciser le Nom du Projet
  
 [Field]
 Name=LM18
 Position=0,0,421,20
-Item=LM18,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM18,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,334,16
 Text=LM18. Si Oui à LM17, préciser le Nom du Projet
  
 [EndColumn]
@@ -3824,12 +2933,10 @@ Text=LM27. Contrepartie d’acquisition si achat, prêt ou gage à LM17en argent
 [Field]
 Name=LM27
 Position=70,0,85,20
-Item=LM27,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM27,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,479,16
 Text=LM27. Contrepartie d’acquisition si achat, prêt ou gage à LM17en argent ?
  
 [EndColumn]
@@ -3838,18 +2945,16 @@ Text=LM27. Contrepartie d’acquisition si achat, prêt ou gage à LM17en argent
 Width=135
   
 [HeaderText]
-Position=66,288,135,312
+Position=86,272,135,312
 Text=En argent
  
 [Field]
 Name=LM27_AR
 Position=0,0,127,20
-Item=LM27_AR,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM27_AR,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,62,16
 Text=En argent
  
 [EndColumn]
@@ -3858,19 +2963,17 @@ Text=En argent
 Width=709
   
 [HeaderText]
-Position=640,288,709,312
+Position=660,272,709,312
 Text=En nature
  
 [Field]
 Name=LM27_NA
 Position=0,0,701,20
-Item=LM27_NA,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM27_NA,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,62,16
 Text=En nature
  
 [EndColumn]
@@ -3885,253 +2988,47 @@ Text=LM28. Contrepartie d’acquisition si location à LM17 ?
 [Field]
 Name=LM28
 Position=0,0,127,20
-Item=LM28,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM28,LTP_DICT
 DataCaptureType=TextBox
   
 [Text]
-Position=0,0,345,16
 Text=LM28. Contrepartie d’acquisition si location à LM17 ?
  
 [EndColumn]
   
 [Column]
-Width=83
+Width=72
   
 [HeaderText]
-Position=0,224,83,312
+Position=0,208,72,312
 Text=LM21. Avez-vous un contrat de location (écrit) ?
  
 [Field]
 Name=LM28_1
-Position=60,0,75,20
-Item=LM28_1,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=49,0,64,20
+Item=LM28_1,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,307,16
 Text=LM21. Avez-vous un contrat de location (écrit) ?
  
 [EndColumn]
   
 [Column]
-Width=83
+Width=71
   
 [HeaderText]
-Position=0,208,83,312
+Position=0,176,71,312
 Text=LM29. Quel document atteste de vos droits de propriété ?
  
 [Field]
 Name=LM29
-Position=46,0,75,20
-Item=LM29,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=34,0,63,20
+Item=LM29,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,372,16
 Text=LM29. Quel document atteste de vos droits de propriété ?
- 
-[EndColumn]
-  
-[Column]
-Width=429
-  
-[HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=LM29_A
-Position=0,0,421,20
-Item=LM29_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
- 
-[EndColumn]
-  
-[Column]
-Width=84
-  
-[HeaderText]
-Position=0,192,84,312
-Text=LM23. Si Héritage (LM14=2), est-ce un lotissement de la famille ?
- 
-[Field]
-Name=LM30
-Position=61,0,76,20
-Item=LM30,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-  
-[Text]
-Position=0,0,423,16
-Text=LM23. Si Héritage (LM14=2), est-ce un lotissement de la famille ?
- 
-[EndColumn]
-  
-[Column]
-Width=80
-  
-[HeaderText]
-Position=0,192,80,312
-Text=LM24. Si oui, le nombre total de parcelles du lotissement
- 
-[Field]
-Name=LM31
-Position=29,0,72,20
-Item=LM31,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-  
-[Text]
-Position=0,0,370,16
-Text=LM24. Si oui, le nombre total de parcelles du lotissement
- 
-[EndColumn]
-  
-[Column]
-Width=81
-  
-[HeaderText]
-Position=0,224,81,312
-Text=LM25. Si oui, le nombre de parcelles héritées
- 
-[Field]
-Name=LM32
-Position=30,0,73,20
-Item=LM32,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-  
-[Text]
-Position=0,0,295,16
-Text=LM25. Si oui, le nombre de parcelles héritées
- 
-[EndColumn]
-  
-[Column]
-Width=82
-  
-[HeaderText]
-Position=0,208,82,312
-Text=LM26. Si oui, Sur quelle base ce partage a été effectué ?
- 
-[Field]
-Name=LM33
-Position=45,0,74,20
-Item=LM33,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-  
-[Text]
-Position=0,0,366,16
-Text=LM26. Si oui, Sur quelle base ce partage a été effectué ?
- 
-[EndColumn]
-  
-[Column]
-Width=429
-  
-[HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=LM33_A
-Position=0,0,421,20
-Item=LM33_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
- 
-[EndColumn]
-  
-[Column]
-Width=77
-  
-[HeaderText]
-Position=0,256,77,312
-Text=LM26bis. est-ce à part égal ?
- 
-[Field]
-Name=LM34
-Position=54,0,69,20
-Item=LM34,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-  
-[Text]
-Position=0,0,188,16
-Text=LM26bis. est-ce à part égal ?
- 
-[EndColumn]
-  
-[Column]
-Width=84
-  
-[HeaderText]
-Position=0,192,84,312
-Text=LM27. Qui a pris la décision sur les procédures de lotissement
- 
-[Field]
-Name=LM35
-Position=61,0,76,20
-Item=LM35,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-  
-[Text]
-Position=0,0,408,16
-Text=LM27. Qui a pris la décision sur les procédures de lotissement
- 
-[EndColumn]
-  
-[Column]
-Width=89
-  
-[HeaderText]
-Position=0,208,89,312
-Text=LM28. Si Achat (LM14=3), quelle est la source d’acquisition
- 
-[Field]
-Name=LM36
-Position=66,0,81,20
-Item=LM36,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-  
-[Text]
-Position=0,0,383,16
-Text=LM28. Si Achat (LM14=3), quelle est la source d’acquisition
- 
-[EndColumn]
-  
-[Column]
-Width=429
-  
-[HeaderText]
-Position=387,288,429,312
-Text=Autre
- 
-[Field]
-Name=LM36_A
-Position=0,0,421,20
-Item=LM36_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=Autre
  
 [EndColumn]
   
@@ -4145,12 +3042,10 @@ Text=LM29a. Est-ce que est le logement exposé aux contraintes d'Inondation?
 [Field]
 Name=LM29A
 Position=72,0,87,20
-Item=LM29A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29A,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,472,16
 Text=LM29a. Est-ce que est le logement exposé aux contraintes d'Inondation?
  
 [EndColumn]
@@ -4165,12 +3060,10 @@ Text=LM29b. Est-ce que le logement est exposé aux contraintes de Manque d’ass
 [Field]
 Name=LM29B
 Position=93,0,108,20
-Item=LM29B,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29B,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,576,16
 Text=LM29b. Est-ce que le logement est exposé aux contraintes de Manque d’assainissement
  
 [EndColumn]
@@ -4185,12 +3078,10 @@ Text=LM29c. Est-ce que la terre le logement est exposé aux contraintes de lotis
 [Field]
 Name=LM29C
 Position=62,0,77,20
-Item=LM29C,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29C,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,608,16
 Text=LM29c. Est-ce que la terre le logement est exposé aux contraintes de lotissement clandestin?
  
 [EndColumn]
@@ -4205,32 +3096,28 @@ Text=LM29d. Est-ce que le logement est exposé aux contraintes de Salinisation?
 [Field]
 Name=LM29D
 Position=72,0,87,20
-Item=LM29D,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29D,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,489,16
 Text=LM29d. Est-ce que le logement est exposé aux contraintes de Salinisation?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=78
   
 [HeaderText]
-Position=0,144,84,312
+Position=0,112,78,312
 Text=LM29e. Est-ce que le logement  est exposée aux contraintes de Nappe Phréatique « proche »?
  
 [Field]
 Name=LM29E
-Position=61,0,76,20
-Item=LM29E,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=55,0,70,20
+Item=LM29E,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,610,16
 Text=LM29e. Est-ce que le logement  est exposée aux contraintes de Nappe Phréatique « proche »?
  
 [EndColumn]
@@ -4245,12 +3132,10 @@ Text=LM29f. Est-ce que le logement  est exposé aux contraintes d'Eloignement de
 [Field]
 Name=LM29F
 Position=76,0,91,20
-Item=LM29F,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29F,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,560,16
 Text=LM29f. Est-ce que le logement  est exposé aux contraintes d'Eloignement des écoles?
  
 [EndColumn]
@@ -4265,12 +3150,10 @@ Text=LM29g. Est-ce que le logement  est exposé aux contraintes d'eloignement de
 [Field]
 Name=LM29G
 Position=80,0,95,20
-Item=LM29G,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29G,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,576,16
 Text=LM29g. Est-ce que le logement  est exposé aux contraintes d'eloignement des hôpitaux?
  
 [EndColumn]
@@ -4285,12 +3168,10 @@ Text=LM29h. Est-ce que le logement  est exposé aux contraintes d'eloignement de
 [Field]
 Name=LM29H
 Position=80,0,95,20
-Item=LM29H,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29H,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,576,16
 Text=LM29h. Est-ce que le logement  est exposé aux contraintes d'eloignement des marchés?
  
 [EndColumn]
@@ -4305,33 +3186,249 @@ Text=LM29i. Est-ce que le logement  est exposé aux contraintes d'eloignement de
 [Field]
 Name=LM29I
 Position=79,0,94,20
-Item=LM29I,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM29I,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,606,16
 Text=LM29i. Est-ce que le logement  est exposé aux contraintes d'eloignement des routes/Voiries?
  
 [EndColumn]
   
 [Column]
-Width=84
+Width=78
   
 [HeaderText]
-Position=0,192,84,312
+Position=0,160,78,312
 Text=LM29j. Est-ce que le logement est exposé aux autre contraintes à preciser?
  
 [Field]
 Name=LM29J
-Position=61,0,76,20
-Item=LM29J,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Position=55,0,70,20
+Item=LM29J,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,490,16
 Text=LM29j. Est-ce que le logement est exposé aux autre contraintes à preciser?
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM29_A
+Position=0,0,421,20
+Item=LM29_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
+ 
+[EndColumn]
+  
+[Column]
+Width=80
+  
+[HeaderText]
+Position=0,192,80,312
+Text=LM23. Si Héritage (LM14=2), est-ce un lotissement de la famille ?
+ 
+[Field]
+Name=LM30
+Position=57,0,72,20
+Item=LM30,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=LM23. Si Héritage (LM14=2), est-ce un lotissement de la famille ?
+ 
+[EndColumn]
+  
+[Column]
+Width=80
+  
+[HeaderText]
+Position=0,192,80,312
+Text=LM24. Si oui, le nombre total de parcelles du lotissement
+ 
+[Field]
+Name=LM31
+Position=29,0,72,20
+Item=LM31,LTP_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=LM24. Si oui, le nombre total de parcelles du lotissement
+ 
+[EndColumn]
+  
+[Column]
+Width=66
+  
+[HeaderText]
+Position=0,208,66,312
+Text=LM25. Si oui, le nombre de parcelles héritées
+ 
+[Field]
+Name=LM32
+Position=15,0,58,20
+Item=LM32,LTP_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=LM25. Si oui, le nombre de parcelles héritées
+ 
+[EndColumn]
+  
+[Column]
+Width=66
+  
+[HeaderText]
+Position=0,176,66,312
+Text=LM26. Si oui, Sur quelle base ce partage a été effectué ?
+ 
+[Field]
+Name=LM33
+Position=26,0,55,20
+Item=LM33,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=LM26. Si oui, Sur quelle base ce partage a été effectué ?
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM33_A
+Position=0,0,421,20
+Item=LM33_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
+ 
+[EndColumn]
+  
+[Column]
+Width=63
+  
+[HeaderText]
+Position=0,240,63,312
+Text=LM26bis. est-ce à part égal ?
+ 
+[Field]
+Name=LM34
+Position=40,0,55,20
+Item=LM34,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=LM26bis. est-ce à part égal ?
+ 
+[EndColumn]
+  
+[Column]
+Width=80
+  
+[HeaderText]
+Position=0,192,80,312
+Text=LM27. Qui a pris la décision sur les procédures de lotissement
+ 
+[Field]
+Name=LM35
+Position=57,0,72,20
+Item=LM35,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=LM27. Qui a pris la décision sur les procédures de lotissement
+ 
+[EndColumn]
+  
+[Column]
+Width=89
+  
+[HeaderText]
+Position=0,208,89,312
+Text=LM28. Si Achat (LM14=3), quelle est la source d’acquisition
+ 
+[Field]
+Name=LM36
+Position=66,0,81,20
+Item=LM36,LTP_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=LM28. Si Achat (LM14=3), quelle est la source d’acquisition
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM36_A
+Position=0,0,421,20
+Item=LM36_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
+ 
+[EndColumn]
+  
+[Column]
+Width=82
+  
+[HeaderText]
+Position=0,176,82,312
+Text=LM29. Est-ce que le logement est exposé aux contraintes suivantes?
+ 
+[Field]
+Name=LM37
+Position=59,0,74,20
+Item=LM37,LTP_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=LM29. Est-ce que le logement est exposé aux contraintes suivantes?
+ 
+[EndColumn]
+  
+[Column]
+Width=429
+  
+[HeaderText]
+Position=387,288,429,312
+Text=Autre
+ 
+[Field]
+Name=LM37_A
+Position=0,0,421,20
+Item=LM37_A,LTP_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=Autre
  
 [EndColumn]
   
@@ -4345,12 +3442,10 @@ Text=LM30. Etes-vous inquiet que vous pourriez perdre le droit de détention de 
 [Field]
 Name=LM38
 Position=61,0,76,20
-Item=LM38,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM38,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1085,16
 Text=LM30. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années?
  
 [EndColumn]
@@ -4365,12 +3460,10 @@ Text=LM31. Est-il probable que vous pourriez perdre le droit de détention de ce
 [Field]
 Name=LM39
 Position=61,0,76,20
-Item=LM39,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM39,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1070,16
 Text=LM31. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?
  
 [EndColumn]
@@ -4385,12 +3478,10 @@ Text=LM32. Si LM30=4 ou 5 ou LM31=4 ou 5, quelles sont les raisons pour lesquell
 [Field]
 Name=LM40
 Position=0,0,183,20
-Item=LM40,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM40,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1511,16
 Text=LM32. Si LM30=4 ou 5 ou LM31=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années?
  
 [EndColumn]
@@ -4405,8 +3496,7 @@ Text=Autre
 [Field]
 Name=LM40_A
 Position=0,0,421,20
-Item=LM40_A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM40_A,LTP_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
@@ -4425,12 +3515,10 @@ Text=LM33a. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33A
 Position=61,0,76,20
-Item=LM33A,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33A,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,946,16
 Text=LM33a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous avez eu un désaccord / conflit avec votre famille?
  
 [EndColumn]
@@ -4445,12 +3533,10 @@ Text=LM33b. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33B
 Position=61,0,76,20
-Item=LM33B,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33B,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,840,16
 Text=LM33b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un dans votre ménage décède?
  
 [EndColumn]
@@ -4465,12 +3551,10 @@ Text=LM33c. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33C
 Position=61,0,76,20
-Item=LM33C,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33C,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,749,16
 Text=LM33c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si votre conjoint(e) décède?
  
 [EndColumn]
@@ -4485,12 +3569,10 @@ Text=LM33d. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33D
 Position=61,0,76,20
-Item=LM33D,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33D,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,959,16
 Text=LM33d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre dans votre famille a perdu son emploi?
  
 [EndColumn]
@@ -4505,12 +3587,10 @@ Text=LM33e. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33E
 Position=61,0,76,20
-Item=LM33E,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33E,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1041,16
 Text=LM33e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
  
 [EndColumn]
@@ -4525,12 +3605,10 @@ Text=LM33f. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33F
 Position=61,0,76,20
-Item=LM33F,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33F,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,980,16
 Text=LM33f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une entreprise essaie de faire la saisie contre votre volonté?
  
 [EndColumn]
@@ -4545,12 +3623,10 @@ Text=LM33g. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33G
 Position=79,0,94,20
-Item=LM33G,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33G,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,1363,16
 Text=LM33g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)?
  
 [EndColumn]
@@ -4565,12 +3641,10 @@ Text=LM33h. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33H
 Position=61,0,76,20
-Item=LM33H,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33H,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,978,16
 Text=LM33h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une autre personne ou d'un groupe revendique la propriété?
  
 [EndColumn]
@@ -4585,12 +3659,10 @@ Text=LM33i. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33I
 Position=92,0,107,20
-Item=LM33I,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33I,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,932,16
 Text=LM33i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre vend frauduleusement la propriété?
  
 [EndColumn]
@@ -4605,25 +3677,30 @@ Text=LM33j. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 [Field]
 Name=LM33J
 Position=61,0,76,20
-Item=LM33J,BASELINE_DICT_DICT
-FieldLabelType=DictionaryLabel
+Item=LM33J,LTP_DICT
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,935,16
 Text=LM33j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si un désaccord est survenu avec les autorités locales ?
  
 [EndColumn]
   
 [EndGrid]
  
-[EndGroup]
   
-[Group]
-Required=Yes
-Name=FIN
-Label=FIN
-Form=11
-Max=1
+[Field]
+Name=DATE_FIN
+Position=311,388,508,408
+Item=DATE_FIN,LTP_DICT
+Protected=Yes
+ValidationMethod=NoConfirm
+DataCaptureType=TextBox
+Form=4
+  
+[Text]
+Position=217,391,265,407
+Text=date fin
+Form=4
+ 
 [EndGroup]
   

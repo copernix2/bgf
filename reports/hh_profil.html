@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Fiche ménage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<? string reportPath = path.getRelativePath(path.getDirectoryName(filename($))[1:pos("reports",filename($))+8] , 
+													path.getDirectoryName(filename($)));?>
+	<script src="/external/jquery/jquery.min.js"></script> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" /> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" /> 
+	<script src="/external/bootstrap/bootstrap.bundle.min.js"></script> 
+		<link rel="stylesheet" type="text/css" href= "~~ reportPath + "DataTables/datatables.css"~~">
+		<script type="text/javascript" charset="utf8" src= "~~ reportPath + "DataTables/datatables.js"~~"></script>
+  </head>
+  <body>
+<script>
+   $(document).ready(function() {
+    $('#example').DataTable({
+	
+			"paging":   false,
+			"info":     false
+		});
+	} );
+</script>	
+			<div class="container-fluid">
+
+				<div class="row">
+					<img src="~~ reportPath + "IPAR.png"~~" class='container-fluid'/>
+				</div>
+				<br/>
+				<? 	
+					string quote="'";
+					numeric number_ind, complet_ind;
+					number_ind=countcases(EXT_IND_DICS where ID_MEN_FICHE= EXT_ID );
+					complet_ind=countcases(EXT_IND_DICS where (STATUT_LTP= 1 and ((IS_REP_2=1 or EXT_CF5=1) and STATUT_HF=1)) and  ID_MEN_FICHE= EXT_ID);
+					if special(complet_ind) then 
+						complet_ind=0;
+					endif;
+					numeric pourcentage=int(complet_ind * 100/ number_ind);
+					string status_progress;
+					if pourcentage =100 then 
+						status_progress='success';
+					elseif pourcentage>60 then 
+						status_progress='warning';
+					else
+						status_progress='danger';
+					endif;
+								
+				?>
+				<div class="container">
+				<div class='row'>
+					<div class='col-md-12'>
+						<table class="table ">
+							<tbody> 
+							<tr><td style="text-align: right; "><i style=""><span style="font-family: &quot;Times New Roman&quot;;"><font color="#9c9c94">Village :</font></span></i></td><td>~~ getlabel(MEN_CODE_VIL,MEN_CODE_VIL)~~</td>
+							<td style="text-align: right; "><span style="font-family: &quot;Times New Roman&quot;;"><i><font color="#9c9c94">Sexe CM :&nbsp;</font></i></span></td><td>~~ getlabel(MEN_SEXECM,MEN_SEXECM) ~~</td></tr>
+							<tr><td style="text-align: right; "><font color="#9c9c94" face="Times New Roman"><i>Ménage :</i></font></td><td style="text-align: left;">~~ strip(MEN_CM) ~~</td>
+							<td style="text-align: right; "><i><span style="font-family: &quot;Times New Roman&quot;;"><font color="#9c9c94">Téléphone :&nbsp;</font></span></i></td><td> ~~ edit("99 999 99 99",MEN_TEL)~~ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr>
+							</tbody></table>
+					</div>
+					
+				</div>
+				
+				<div class='row'>
+					<div class="col-md-12">
+						
+						<div class="progress">
+						  <div class="progress-bar progress-bar-striped bg-~~ status_progress ~~" role="progressbar" style="width: ~~ maketext("%d",pourcentage) ~~%" aria-valuenow="~~ maketext("%d",pourcentage) ~~" aria-valuemin="0" aria-valuemax="100">~~ maketext("%d",pourcentage) ~~%</div>
+						</div>
+						<br>
+						<div class="table-responsive">
+							<table class="table" id="example">
+								<thead>
+									<tr>
+										
+										<th class="text-center">#</th>
+										<th>Prénom(s) et NOM</th>
+										<th>Lien avec le CM</th>
+										<th  class="text-center">Sexe</th>
+										<th >Age</th>
+										<th >Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+								<? 
+									forcase EXT_IND_DICS where  ID_MEN_FICHE= EXT_ID do
+										if special(EXT_CF5) then 
+											delcase(EXT_IND_DICS);
+											next;
+										endif;
+										
+										string statut_ind_lpt;
+										if STATUT_LTP=1 then
+											statut_ind_lpt='success';
+										else
+											statut_ind_lpt='danger';
+										endif;
+										string statut_ind_hf;
+										if STATUT_HF=1 then
+											statut_ind_hf='success';
+										else
+											statut_ind_hf='danger';
+										endif;
+										$.write("<tr><td>%02d</td>",EXT_ID_IND);
+										$.write("<td>%s</td>",STRIP(EXT_CF2));
+										$.write("<td>%s</td>",getlabel(EXT_CF5,EXT_CF5));
+										$.write("<td>%s</td>",getlabel(EXT_CF3,EXT_CF3));
+										$.write("<td>%s</td>",maketext("%02d",EXT_CF4));
+										
+										$.write("<td class='text-center'>");
+										$.write('<a type="button" rel="tooltip" class="btn btn-%s " href="javascript:CSPro.runLogicAsync(%sOpen_ltp(%d);%s);" >L.T.P.</a>',statut_ind_lpt, quote, EXT_ID_IND, quote);
+										if IS_REP_2=1 or EXT_CF5=1  then
+											$.write('<a type="button" rel="tooltip" class="btn btn-%s padding-left " href="javascript:CSPro.runLogicAsync(%sOpen_individu(%d);%s);" >Individu</a>',statut_ind_hf, quote, EXT_ID_IND, quote);
+										endif;
+										
+										$.write("</td></tr>");
+									endfor;
+								?>
+							
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+	
+					</div>
+					
+				</div>
+			</div>
+			
+			</div>
+	  
+	  <!-- - - - - -end- - - - - 
+
+    <script src="~~ reportPath + "ion/js/jquery.min.js"~~"></script>
+    <script src="~~ reportPath + "ion/js/popper.js"~~"></script>
+    <script src="~~ reportPath + "ion/js/bootstrap.min.js" ~~"></script>
+    <script src=" ~~ reportPath + "ion/js/main.js"~~"></script>-->
+  </body>
+</html>

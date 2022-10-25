@@ -1,0 +1,160 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: FR
+    label: ee
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: COMPOSITION_MENAGE_DICT.RM3
+    conditions:
+      - questionText:
+          FR: |
+            <b>~~getocclabel()~~</b><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF1
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF1. Code du membre du ménage&nbsp;</span><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF2
+    conditions:
+      - questionText:
+          FR: |
+            CF2. Prénom et Nom<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF3
+    conditions:
+      - questionText:
+          FR: |
+            CF3. Sexe<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF4
+    conditions:
+      - questionText:
+          FR: |
+            CF4. Age<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF5
+    conditions:
+      - questionText:
+          FR: |
+            CF5. Lien de parenté avec le chef de ménage<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF6
+    conditions:
+      - questionText:
+          FR: |
+            CF6. Niveau d'instruction<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF7
+    conditions:
+      - questionText:
+          FR: |
+            CF7. Activité principale<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF7_A
+    conditions:
+      - questionText:
+          FR: |
+            Preciser autre<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF7B
+    conditions:
+      - questionText:
+          FR: |
+            CF7bis. Situation matrimoniale<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CH7B_A
+    conditions:
+      - questionText:
+          FR: |
+            Preciser autre<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF8
+    conditions:
+      - questionText:
+          FR: |
+            CF8. Activité(s) secondaire(s) (plusieurs réponses)<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF8_A
+    conditions:
+      - questionText:
+          FR: |
+            Preciser autre<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF9
+    conditions:
+      - questionText:
+          FR: |
+            CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF10
+    conditions:
+      - questionText:
+          FR: |
+            <p class="MsoNormal"><span style="font-size: 11pt;">CF10. Est-ce que (NOM) &nbsp;détient (loué, emprunté
+            ou en propriété) des terres agricoles&nbsp;?<b>&nbsp;<o:p></o:p></b></span></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF13
+    conditions:
+      - questionText:
+          FR: |
+            <p class="MsoNormal"><span style="font-size: 11pt;">CF13. Est-ce que (NOM) détient (loué, emprunté ou en
+            propriété) &nbsp;une parcelle à usage
+            d’habitation ?&nbsp;<b><o:p></o:p></b></span></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF16
+    conditions:
+      - questionText:
+          FR: |
+            <p class="MsoNormal"><span style="font-size: 11pt;">CF16. Est-ce que (NOM) détient une maison/un logement ?
+            <o:p></o:p></span></p>
+            
+            <span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+            &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
+            AR-SA">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF11
+    conditions:
+      - questionText:
+          FR: |
+            CF11. Quel est le nombre de parcelles exploitées par (NOM)<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF12
+    conditions:
+      - questionText:
+          FR: |
+            CF12.&nbsp; Quelle est la surface totale des parcelles exploitées par (NOM)<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF12B
+    conditions:
+      - questionText:
+          FR: |
+            CF12bis. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)?<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF14
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF14. Si Oui à CF13, quel est le&nbsp;nombre de parcelles à usage
+            d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)?</span><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF15
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF15. Si Oui à CF13, quelle est la surface&nbsp;totale des parcelles à
+            usage d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)</span>~~CF2~~?<p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF17
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF17. Si Oui à CF16, quel est le&nbsp;nombre de maisons/logement
+            détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)?</span><p></p>
+  - name: COMPOSITION_MENAGE_DICT.CF18
+    conditions:
+      - questionText:
+          FR: |
+            CF18. Si Oui à CF16, quelle est la surface totale des maisons détenues par (NOM)?<p></p>
+...

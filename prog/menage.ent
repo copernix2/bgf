@@ -1,0 +1,24 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=MENAGE
+Name=MENAGE
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\menage.ent.apc
+[Message]
+File=.\menage.ent.mgf
+[Help]
+File=.\menage.ent.qsf
+[Forms]
+File=.\menage.fmf
+[Dictionary Types]
+Dict-Type=..\dics\menage.dcf,Input,.\menage.fmf

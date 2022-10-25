@@ -1,0 +1,43 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=fiche_menage
+Name=FICHE_MENAGE_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=17D923034861546AFD46A86FF31AA2E900992D89726BE295DEDE89CF3EC07AB8
+
+[Level]
+Label=fiche_menage Level
+Name=FICHE_MENAGE_LEVEL
+
+[IdItems]
+
+[Item]
+Label=id_men
+Name=ID_MEN_FICHE
+Start=2
+Len=32
+DataType=Alpha
+
+[Record]
+Label=fiche_menage Record
+Name=FICHE_MENAGE_REC
+RecordTypeValue='1'
+RecordLen=34
+
+[Item]
+Label=Menu fiche ménage
+Name=MENU_FICHE
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Menu fiche ménage
+Name=MENU_FICHE_VS1
+Value=1;Collecter
+Value=2;Revoir la composition
+Value=9;Retour au menu principal

@@ -1,0 +1,11 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+Description=app OMVS
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\enqueteur.ent
+InputData=.\zzz.csdb
+Paradata=.\enqueteur.cslog
