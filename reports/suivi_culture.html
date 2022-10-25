@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <? string reportPath = path.getRelativePath(path.getDirectoryName(filename($))[1:pos("reports",filename($))+8] , 
+													path.getDirectoryName(filename($)));?>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membres équipe</title>
+	<!-- Bootstrap --> 
+	<script src="/external/jquery/jquery.min.js"></script> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap.min.css" /> 
+	<link rel="stylesheet" href="/external/bootstrap/bootstrap-icons.css" /> 
+	<script src="/external/bootstrap/bootstrap.bundle.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="~~ reportPath+ "DataTables/datatables.css"~~">
+		<script type="text/javascript" charset="utf8" src="~~ reportPath + "DataTables/datatables.js"~~"></script>
+  
+    <style> 
+        .centrer { 
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        left: 65%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        
+        }
+
+        h1, h2 {
+        color: #000000;
+        }
+
+        .center-block {
+        display: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        }
+
+        img{
+        display: block;
+        margin: 0px auto;
+        }
+
+
+
+    </style>
+
+  
+    
+  </head>
+
+
+  <body>    
+     
+	
+	<script>
+    $(document).ready(function() {
+    $('#example').DataTable({
+			"paging":   false,
+			"info":     false
+		});
+	} );
+</script>
+	
+		<br/>
+	
+	<div class="center-block ">        
+        <div class="container-sm">
+            <div class="row">
+					<img src="~~ reportPath + "IPAR.png"~~" class='container-fluid'/>
+			</div> <br/>
+
+				
+				
+					
+					
+			
+
+			</div>
+		</div>
+
+	
+	
+	
+	<div class="container-sm" >        
+			<script> 
+				
+			</script> 
+			<h2>~~strip(EXT_G001)~~</td>
+					<td>~~getlabel(EXT_G002, EXT_G002)~~</td>
+					<td>~~getlabel(EXT_G003, EXT_G003)~~</td>
+				</tr>
+			</table>
+			<table class="display" id="example">
+            <thead>
+				
+				  <tr>
+					<th class="text-center">Id campagne</th>
+					<th class="text-center">id Parcelle</th>
+					<th class="text-center">Superficie</th>
+					<th class="text-center">Action</th>
+                </tr>
+            </thead>
+			<?
+				string quote="'";
+				forcase SUIVI_PARCELLE_DICT where PAR_ID_IND = GEST_ID_PROD  do 
+					string bg_but="danger";
+					if PAR_STATUT=1 then 
+						bg_but="success";
+					endif;
+					$.write("<tr><td class='text-center'> %02d</td>", PAR_ID_CAMP);
+					$.write("<td class='text-center'> %02d</td>", PAR_ID_PARCELLE);
+					$.write("<td class='text-center'> %4.2f</td>", PAR_SUPERFICIE);
+					$.write('<td class="text-center"><a class="btn btn-outline-%s" href="javascript:CSPro.runLogicAsync(%sopen_cam_parc(%d, %d);%s);" role="button"> Remplir</a> ',bg_but, quote, PAR_ID_CAMP,PAR_ID_PARCELLE , quote);
+				enddo;
+
+			?>
+			
+        </table>
+       </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,26 +1,26 @@
 ﻿[CSPro Application]
 Version=CSPro 7.7
-Label=BASELINE_APPL
-Name=BASELINE_APPL
+Label=ENQUETEUR
+Name=ENQUETEUR
 AppType=DataEntry
 OperatorID=No
 CAPI=Yes
 CreateListing=No
 CreateLog=No
-ShowFieldLabels=No
 ShowErrorMessageNumbers=No
 ComboBoxShowOnlyDiscreteValues=Yes
 ParadataCollection=AllEvents
 ParadataDeviceStateMinutes=5
 [AppCode]
-File=.\Baseline appl.ent.apc
+File=.\enqueteur.ent.apc
 [Message]
-File=.\Baseline appl.ent.mgf
+File=.\enqueteur.ent.mgf
 [Help]
-File=.\Baseline appl.ent.qsf
+File=.\enqueteur.ent.qsf
 [Forms]
-File=.\Baseline appl.fmf
+File=.\enqueteur.fmf
 [Resources]
 Folder=.\Resources
+Folder=..\report
 [Dictionary Types]
-Dict-Type=..\Dics\Baseline-Dict.dcf,Input,.\Baseline appl.fmf
+Dict-Type=..\Dics\enqueteur.dcf,Input,.\enqueteur.fmf

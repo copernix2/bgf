@@ -1,0 +1,41 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: ENQUETEUR_DICT.PAYS
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center;"><img src="../Resources/Images/omvs.JPG" style="width: 305px;"></p><p class="MsoNormal" align="center" style="margin: 6pt 0cm; text-align: center; line-height: normal;"><b><i><span style="font-family: Times, serif;">PROJET DE GESTION INTEGREE DES RESSOURCES EN EAU ET DE DEVELOPPEMENT DES USAGES MULTIPLES DANS LE BASSIN DU FLEUVE SENEGAL (PGIRE)</span></i></b></p><p class="MsoNormal" align="center" style="margin: 6pt 0cm; text-align: center; line-height: normal;"><b><i><span style="font-family: Times, serif; color: rgb(46, 116, 181);">Enquête sur les indicateurs de paludisme dans le bassin du fleuve Sénégal<o:p></o:p></span></i></b></p><div style="text-align: center;">Choisir votre pays&nbsp;</div><p></p>
+  - name: ENQUETEUR_DICT.NOM_ENQUETEUR
+    conditions:
+      - questionText:
+          EN: |
+            <p style="text-align: center; ">Choisir votre nom</p><p class="MsoNormal" align="center" style="margin-top:6.0pt;margin-right:0cm;
+            margin-bottom:6.0pt;margin-left:0cm;text-align:center;line-height:normal"><b><i><span style="font-family:&quot;Times&quot;,serif;
+            mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p><br></o:p></span></i></b></p>
+...

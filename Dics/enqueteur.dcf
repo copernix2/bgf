@@ -1,0 +1,65 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=enqueteur
+Name=ENQUETEUR_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=3476D9FC0D9696AA87386C885E8BAA18438DD26E028F60A6C01E673F1D018CFF
+
+[Level]
+Label=enqueteur Level
+Name=ENQUETEUR_LEVEL
+
+[IdItems]
+
+[Item]
+Label=enqueteur Identification
+Name=ENQUETEUR_ID
+Start=2
+Len=1
+DataType=Numeric
+
+[Record]
+Label=enqueteur Record
+Name=ENQUETEUR_REC
+RecordTypeValue='1'
+RecordLen=5
+
+[Item]
+Label=Pays
+Name=PAYS
+Start=3
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Pays
+Name=PAYS_VS1
+Value=1;Guinée
+Value=2;Mali
+Value=3;Mauritanie
+Value=4;Sénégal
+
+[Item]
+Label=Nom enquêteur
+Name=NOM_ENQUETEUR
+Start=4
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Nom enquêteur
+Name=EN_GN
+Value=1;Enquêteur 1
+Value=2;Enquêteur 2
+Value=3;Enquêteur 3
+Value=4;Enquêteur 4
+Value=5;Enquêteur 5
+Value=6;Enquêteur 6
+Value=7;Enquêteur 7
+Value=8;Enquêteur 8
+Value=9;Enquêteur 9
+Value=10;Enquêteur 10

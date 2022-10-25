@@ -13,14 +13,14 @@ ComboBoxShowOnlyDiscreteValues=Yes
 ParadataCollection=AllEvents
 ParadataDeviceStateMinutes=5
 [AppCode]
-File=.\Baseline appl.ent.apc
+File=.\ltp.ent.apc
 [Message]
-File=.\Baseline appl.ent.mgf
+File=.\ltp.ent.mgf
 [Help]
-File=.\Baseline appl.ent.qsf
+File=.\ltp.ent.qsf
 [Forms]
-File=.\Baseline appl.fmf
+File=.\ltp.fmf
 [Resources]
 Folder=.\Resources
 [Dictionary Types]
-Dict-Type=..\Dics\Baseline-Dict.dcf,Input,.\Baseline appl.fmf
+Dict-Type=..\Dics\ltp.dcf,Input,.\ltp.fmf

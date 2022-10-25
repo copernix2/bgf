@@ -1,0 +1,26 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=COMPOSITION_MENAGE
+Name=COMPOSITION_MENAGE
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Dics\ext_individus.dcf
+[AppCode]
+File=.\composition_menage.ent.apc
+[Message]
+File=.\composition_menage.ent.mgf
+[Help]
+File=.\composition_menage.ent.qsf
+[Forms]
+File=.\composition_menage.fmf
+[Dictionary Types]
+Dict-Type=..\Dics\composition_menage.dcf,Input,.\composition_menage.fmf
+Dict-Type=..\Dics\ext_individus.dcf,External

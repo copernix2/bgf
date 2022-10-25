@@ -1,0 +1,52 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Village Dictionary
+Name=VILLAGE_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=3059CE921B9CF9F35157E92BFE9F5F0A1A0E41363548C27DE0FA16994006B396
+
+[Level]
+Label=Village Level
+Name=VILLAGE_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Code Grapp
+Name=CODE_GRAPP
+Start=1
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Village Record
+Name=VILLAGE_REC
+RecordTypeValue=''
+RecordLen=106
+
+[Item]
+Label=Codedisctrict
+Name=CODEDISCTRICT
+Start=5
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Nom Dsi
+Name=NOM_DSI
+Start=7
+Len=40
+DataType=Alpha
+
+[Item]
+Label=Nom Grapp
+Name=NOM_GRAPP
+Start=47
+Len=60
+DataType=Alpha

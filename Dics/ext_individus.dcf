@@ -1,0 +1,270 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=composition mnéage
+Name=EXT_IND_DICS
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=3682DF09C06E043A780550C7BA1624EEA95E444A88627D7EA71A5B785E5A39E2
+
+[Level]
+Label=composition ménage
+Name=EXT_IND_LEVEL
+
+[IdItems]
+
+[Item]
+Label=ID_MENAGE
+Name=EXT_ID
+Start=2
+Len=32
+DataType=Alpha
+
+[Item]
+Label=ext_id_ind
+Name=EXT_ID_IND
+Start=34
+Len=2
+DataType=Numeric
+
+[Record]
+Label=MODULE G0.  COMPOSITION DU MENAGE
+Name=EXT_INDIVIDUS
+RecordTypeValue='1'
+RecordLen=122
+
+[Item]
+Label=CF2. Prénom et Nom
+Name=EXT_CF2
+Start=36
+Len=50
+DataType=Alpha
+
+[Item]
+Label=CF3. Sexe (NOM)
+Name=EXT_CF3
+Start=86
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF3. Sexe (NOM)
+Name=EXT_CF3_VS1
+Value=1;Masculin
+Value=2;Féminin
+
+[Item]
+Label=CF4. Age de (NOM)
+Name=EXT_CF4
+Start=87
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=CF5. Lien de parenté de (NOM) avec le chef de ménage
+Name=EXT_CF5
+Start=89
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=CF5. Lien de parenté de (NOM) avec le chef de ménage
+Name=EXT_CF5_VS1
+Value=1;Chef de ménage (CM)
+Value=2;1ère épouse du CM
+Value=3;2ème épouse du CM
+Value=4;3ème épouse du CM
+Value=5; 4ème épouse du  M
+Value=6;Fils/fille du  CM
+Value=7;Frère/soeur du CM
+Value=8;Mère/père du CM
+Value=9;Petit(e) fils/fill
+Value=10;Neveu/nièce
+Value=11;Oncle/tante
+Value=12;Beau-fils/belle fille
+Value=13; Autres parents du CM
+
+[Item]
+Label=CF6. Niveau d'instruction de (NOM)
+Name=EXT_CF6
+Start=91
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF6. Niveau d'instruction de (NOM)
+Name=EXT_CF6_VS1
+Value=0;Aucune
+Value=1;Alphabétisé(e) en langue national
+Value=2;Ec le coranique/arabe
+Value=3;Primaire incomplet
+Value=4;Primaire complet
+Value=5;Secondaire incomplet
+Value=6;Secondaire complet
+Value=7;Supérieur
+
+[Item]
+Label=CF7. Quel est l'activité principale de (NOM) ?
+Name=EXT_CF7
+Start=92
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=CF7. Quel est l'activité principale de (NOM) ?
+Name=EXT_CF7_VS1
+Value=1;Aucune
+Value=2;Elevage
+Value=3;Pêche
+Value=4;Petit commerce
+Value=5;Commerce avec installation fixe (Boutique)
+Value=6;Restauration
+Value=7;Artisanat
+Value=8;Transport
+Value=9;Etude
+Value=10;Apprentissage
+Value=11;Services domestiques
+Value=12;Retraités
+Value=13;Inactifs/chômeurs
+Value=14;Autre (à préciser)
+Value=15;NSP
+
+[Item]
+Label=CF7bis. Situation matrimoniale de (NOM)
+Name=EXT_CF7B
+Start=94
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF7bis. Situation matrimoniale de (NOM)
+Name=EXT_CF7B_VS1
+Value=1;Marié monogame
+Value=2;Marié polygame
+Value=3;1ere épouse
+Value=4;2ème épouse
+Value=5;3ème épouse
+Value=6;4ème épouse
+Value=7;Veuf (ve)
+Value=8;Divorcé(e)
+Value=9;Célibataire
+Value=0;Autre à préciser
+
+[Item]
+Label=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
+Name=EXT_CF8
+Start=95
+Len=15
+DataType=Alpha
+
+[ValueSet]
+Label=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
+Name=EXT_CF8_VS1
+Value='1              ';Aucune
+Value='2              ';Elevage
+Value='3              ';Pêche
+Value='4              ';Petit commerce
+Value='5              ';Commerce avec installation fixe (Boutique)
+Value='6              ';Restauration
+Value='7              ';Artisanat
+Value='8              ';Transport
+Value='9              ';Etude
+Value='10             ';Apprentissage
+Value='11             ';Services domestiques
+Value='12             ';Retraités
+Value='13             ';Inactifs/chômeurs
+Value='14             ';Autre (à préciser)
+Value='15             ';NSP
+
+[Item]
+Label=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
+Name=EXT_CF9
+Start=110
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
+Name=EXT_CF9_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
+Name=EXT_CF10
+Start=111
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
+Name=EXT_CF10_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Name=EXT_CF13
+Start=112
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Name=EXT_CF13_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=CF16. Est-ce que (NOM) détient une maison/un logement ?
+Name=EXT_CF16
+Start=113
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF16. Est-ce que (NOM) détient une maison/un logement ?
+Name=EXT_CF16_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=login_enqueteur
+Name=LOGIN_ENQUETEUR
+Start=114
+Len=6
+DataType=Alpha
+
+[Item]
+Label=is_rep_2
+Name=IS_REP_2
+Start=120
+Len=1
+DataType=Numeric
+
+[Item]
+Label=statut_lpt
+Name=STATUT_LTP
+Start=121
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=statut_lpt
+Name=STATUT_LTP_VS1
+Value=0;Non collecté
+Value=1;Collecté
+
+[Item]
+Label=statut_hf
+Name=STATUT_HF
+Start=122
+Len=1
+DataType=Numeric

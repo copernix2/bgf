@@ -1,0 +1,820 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=composition_menage
+Name=COMPOSITION_MENAGE_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=C1D20908CF3CC6A6161C34031521FAFE1932D7C23504B19411FF3533029E1756A95B35476F26EB08BD7DCE19B659FBB2
+
+[Level]
+Label=composition_menage Level
+Name=COMPOSITION_MENAGE_LEVEL
+
+[IdItems]
+
+[Item]
+Label=composition_menage Identification
+Name=COMPOSITION_MENAGE_ID
+Start=2
+Len=36
+DataType=Alpha
+
+[Record]
+Label=SECTION ID : IDENTIFICATION ET RENSEIGNEMENTS SUR LE MENAGE
+Name=BASELINE_DICT_REC
+RecordTypeValue='2'
+RecordLen=80
+
+[Item]
+Label=ID02. Commune
+Name=ID02
+Start=38
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=ID03. Village
+Name=ID03
+Start=40
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=ID04. Commune
+Name=ID04
+Start=43
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=ID05.Nom du chef de ménage
+Name=ID05
+Start=51
+Len=30
+DataType=Alpha
+
+[Record]
+Label=SECTION RC : RENSEIGNEMENTS SUR LA COLLECTE
+Name=SECTION_RC
+RecordTypeValue='3'
+RecordLen=200
+
+[Item]
+Label=RC07. Nom et prénom du principal répondant
+Name=RC07
+Start=38
+Len=50
+DataType=Alpha
+
+[Item]
+Label=RC08. N° de Téléphone du répondant
+Name=RC08
+Start=88
+Len=9
+DataType=Numeric
+
+[Item]
+Label=RC09.  Sexe du principal répondant
+Name=RC09
+Start=97
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=RC09.  Sexe du principal répondant
+Name=RC09_VS1
+Value=1;Masculin
+Value=2;Féminin
+
+[Item]
+Label=RC10.  Liens avec le chef de ménage (CM)
+Name=RC10
+Start=98
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=RC10.  Liens avec le chef de ménage (CM)
+Name=RC10_VS1
+Value=1;Le chef de ménage
+Value=2;Conjoint (e) du CM
+Value=3;Fils/fille du CM
+Value=4;Autre (préciser)
+
+[Item]
+Label=RC10a. Préciser autre lien avec le CM
+Name=RC10_A
+Start=100
+Len=50
+DataType=Alpha
+
+[Item]
+Label=RC11. Langue dans laquelle le questionnaire est administré
+Name=RC11
+Start=150
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=RC11. Langue dans laquelle le questionnaire est administré
+Name=RC11_VS1
+Value=1;Wolof
+Value=2;Pular
+Value=3;Sérere
+Value=4;Diola
+Value=5;Socé(Madingue/Malinké)
+Value=6;Autre (préciser)
+
+[Item]
+Label=RC11a. Préciser autre langue dans laquelle le questionnaire est administré
+Name=RC11_A
+Start=151
+Len=50
+DataType=Alpha
+
+[Record]
+Label=SECTION PM : PROFIL DU MENAGE
+Name=SECTION_PM
+RecordTypeValue='4'
+RecordLen=150
+
+[Item]
+Label=PM01. Depuis quand votre famille s’est installée dans le village ?
+Name=PM01
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PM01. Depuis quand votre famille s’est installée dans le village ?
+Name=PM01_VS1
+Value=1;Depuis le début (Cosaan)
+Value=2;Sancaan
+
+[Item]
+Label=PM01a. Préciser le nombre d’années si sancaan
+Name=PM01_A
+Start=39
+Len=2
+DataType=Numeric
+
+[Item]
+Label=PM02. Si Sancan, indiquez le lieu de provenance
+Name=PM02
+Start=41
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PM02. Si Sancan, indiquez le lieu de provenance
+Name=PM02_VS1
+Value=1;Dans la même région
+Value=2;Autre région (à préciser)
+Value=3;Hors Sénégal
+
+[Item]
+Label=PM02a. Préciser autre lieu de provenance
+Name=PM02_A
+Start=42
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PM03. Si Sancan, quelle est la principale raison de la venue dans la zone ?
+Name=PM03
+Start=92
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PM03. Si Sancan, quelle est la principale raison de la venue dans la zone ?
+Name=PM03_VS1
+Value=1;Rejoindre parent/famille
+Value=2;Meilleur accès à la terre
+Value=3;Chercher du travail
+Value=4;Scolarisation des enfants
+Value=5;Sécurité
+Value=6;Autres (préciser)
+
+[Item]
+Label=PM03a. Préciser autre principale raison de la venue dans la zone
+Name=PM03_A
+Start=93
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PM05. Combien de personnes de sexe féminin vivent dans le ménage ?
+Name=PM05
+Start=143
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=PM06. Combien de personnes de sexe féminin vivent dans le ménage ?
+Name=PM06
+Start=145
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=PM04. La taille du ménage
+Name=PM04
+Start=147
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=PM07. Est ce que votre ménage a cultivé des terres à des fins agricoles (y compris les vergers et les jardins potagers) ces 12 derniers moins pour sa propre consommation et/ou pour vendre ?
+Name=PM07
+Start=149
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=PM07. Est ce que votre ménage a cultivé des terres à des fins agricoles (y compris les vergers et les jardins potagers) ces 12 derniers moins pour sa propre consommation et/ou pour vendre ?
+Name=PM07_VS1
+Value=1;Oui
+Value=2;Non
+
+[Record]
+Label=SECTION RM : REVENUS DU MENAGE
+Name=SECTION_RM
+RecordTypeValue='5'
+RecordLen=117
+
+[Item]
+Label=RM1. Quelle est la principale source de revenu du ménage ?
+Name=RM1
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=RM1. Quelle est la principale source de revenu du ménage ?
+Name=RM1_VS1
+Value=1; Agriculture
+Value=2;Elevage
+Value=3;Pêche
+Value=4;Chasse/Cueillette
+Value=5; Artisanat
+Value=6; Transport
+Value=7;Salariat
+Value=8;Transferts migrants
+Value=9;Autres  (à préciser)
+
+[Item]
+Label=RM1a. Préciser autre principale source de revenu du ménage
+Name=RM1_A
+Start=39
+Len=50
+DataType=Alpha
+
+[Item]
+Label=RM2. Quel est le montant de la principale source de revenu du ménage sur l’année 2021 ?
+Name=RM2
+Start=89
+Len=9
+DataType=Numeric
+
+[Item]
+Label=Part de ce montant dans le revenu global(approximativement)
+Name=RM2_P
+Start=98
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous : (
+Name=RM3
+Start=100
+Len=2
+DataType=Numeric
+Occurrences=9
+ZeroFill=Yes
+OccurrenceLabel=1,Agriculture
+OccurrenceLabel=2,Elevage
+OccurrenceLabel=3,Pêche
+OccurrenceLabel=4,Chasse/ Cueillette
+OccurrenceLabel=5,Artisanat
+OccurrenceLabel=6,Transport
+OccurrenceLabel=7,Salaires
+OccurrenceLabel=8,Transferts migrants
+OccurrenceLabel=9,Autres revenus
+
+[Record]
+Label=SECTION PR : PROJET (INITIATIVE) SUR LA GOUVERNANCE FONCIERE
+Name=SECTION_PR
+RecordTypeValue='A'
+RecordLen=40
+
+[Item]
+Label=PR01. Avez-vous bénéficié ou un autre  membre du ménage d’un projet sur la gouvernance foncière en destination de la commune ?
+Name=PR01
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PR01. Avez-vous bénéficié ou un autre  membre du ménage d’un projet sur la gouvernance foncière en destination de la commune ?
+Name=PR01_VS1
+Value=1;Oui
+Value=2;Non
+
+[Item]
+Label=PR02. Si NON, Existe-t-il un projet sur la gouvernance foncière en destination de la commune ?
+Name=PR02
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PR02. Si NON, Existe-t-il un projet sur la gouvernance foncière en destination de la commune ?
+Name=PR02_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;NSP
+
+[Item]
+Label=PR03. Si OUI, Nombre de projet(s) bénéficié(s) par le ménage
+Name=PR03
+Start=40
+Len=1
+DataType=Numeric
+
+[Record]
+Label=SOUS SECTION PR : DETAILS SUR LES PROJETS BENEFICIES PAR LE MENAGE
+Name=SOUS_SEC_PR
+RecordTypeValue='B'
+MaxRecords=99
+RecordLen=430
+
+[Item]
+Label=PR04. ID_Projet
+Name=PR04
+Start=38
+Len=1
+DataType=Numeric
+
+[Item]
+Label=PR05. Si OUI, quels sont les outils et méthodes du projet […] ?
+Name=PR05
+Start=39
+Len=4
+DataType=Alpha
+
+[ValueSet]
+Label=PR05. Si OUI, quels sont les outils et méthodes du projet […] ?
+Name=PR05_VS1
+Value='1   ';outils de sécurisation
+Value='2   ';outils de gouvernance
+Value='3   ';outils de gouvernance
+Value='99  ';Autre à préciser
+
+[Item]
+Label=PR05a. Préciser autre outils et méthodes du projet
+Name=PR05_A
+Start=43
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR06. Quelles sont les activités du projet […]? (plusieurs réponses possibles)
+Name=PR06
+Start=93
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=PR06. Quelles sont les activités du projet […]? (plusieurs réponses possibles)
+Name=PR06_VS1
+Value='1         ';conventions locales
+Value='2         ';appui pour accéder à la terre  agricole
+Value='3         ';campagne de sensibilisation
+Value='4         ';Formation
+Value='5         ';octroi de crédit pour valoriser la terre
+Value='6         ';mesures spéciales de discrimination positive (quota par exemple)
+Value='7         ';octroi de matériels pour valoriser la terre
+Value='8         ';appui pour accéder au logement
+Value='9         ';appui pour accéder à la terre d’habitation
+Value='99        ';Autre à préciser
+
+[Item]
+Label=PR06a. Préciser autre les activités du projet
+Name=PR06_A
+Start=103
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR07. Quelles sont les activités du projet […] auxquelles vous a participé/bénéficié ? (plusieurs réponses possibles)
+Name=PR07
+Start=153
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=PR07. Quelles sont les activités du projet […] auxquelles vous a participé/bénéficié ? (plusieurs réponses possibles)
+Name=PR07_VS1
+Value='1         ';conventions locales
+Value='2         ';appui pour accéder à la terre  agricole
+Value='3         ';campagne de sensibilisation
+Value='4         ';Formation
+Value='5         ';octroi de crédit pour valoriser la terre agricole
+Value='6         ';mesures spéciales de discrimination positive (quota par exemple)
+Value='7         ';octroi de matériels pour valoriser la terre agricole
+Value='8         ';appui pour accéder au logement
+Value='9         ';appui pour accéder à la terre d’habitation
+Value='99        ';Autre à préciser
+
+[Item]
+Label=PR07a. Préciser autre activités du projet […] auxquelles vous a participé/bénéficié
+Name=PR07_A
+Start=163
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR08. Qui sont les porteurs du projet […]?
+Name=PR08
+Start=213
+Len=4
+DataType=Alpha
+
+[ValueSet]
+Label=PR08. Qui sont les porteurs du projet […]?
+Name=PR08_VS1
+Value='1   ';Etat - projet/programme (préciser le nom du projet ou la structure)
+Value='2   ';Collectivité locales (mairies,)
+Value='3   ';ONG (à préciser)
+Value='4   ';Autre à préciser
+
+[Item]
+Label=PR08_ong. Preciser ONG
+Name=PR08_ONG
+Start=217
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR08a. Préciser autres porteurs du projet
+Name=PR08_A
+Start=267
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR09. Qui sont les parties prenantes du projet […]?
+Name=PR09
+Start=317
+Len=7
+DataType=Alpha
+
+[ValueSet]
+Label=PR09. Qui sont les parties prenantes du projet […]?
+Name=PR09_VS1
+Value='1      ';bénéficiaires
+Value='2      ';communauté
+Value='3      ';bénéficiaires et communauté
+Value='4      ';collectivités
+Value='5      ';services étatiques
+Value='6      ';partenaires techniques et financiers
+Value='99     ';Autre à préciser
+
+[Item]
+Label=PR09a. Préciser autres parties prenantes du projet
+Name=PR09_A
+Start=324
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR10. Qui sont les bénéficiaires du projet […]?
+Name=PR10
+Start=374
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=PR10. Qui sont les bénéficiaires du projet […]?
+Name=PR10_VS1
+Value='1    ';Femmes
+Value='2    ';Hommes
+Value='3    ';Communauté
+Value='4    ';Acteurs institutionnels (formels/non formels)
+Value='99   ';Autre à préciser
+
+[Item]
+Label=PR10a. Préciser autre bénéficiaires du projet
+Name=PR10_A
+Start=379
+Len=50
+DataType=Alpha
+
+[Item]
+Label=PR11. Quelle est la période de mise en œuvre du projet […]?
+Name=PR11
+Start=429
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PR11. Quelle est la période de mise en œuvre du projet […]?
+Name=PR11_VS1
+Value=1;Finalisé
+Value=2;En cours
+
+[Item]
+Label=PR12. Quelle appréciation faites-vous du projet […]?
+Name=PR12
+Start=430
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=PR12. Quelle appréciation faites-vous du projet […]?
+Name=PR12_VS1
+Value=1;Très satisfait
+Value=2;Satisfait
+Value=3;Peu satisfait
+Value=4;Insatisfait
+Value=5;Très insatisfait
+
+[Record]
+Label=SECTION CF : CAPITAL FONCIER DU MENGAE
+Name=SECTION_CF
+RecordTypeValue='6'
+MaxRecords=99
+RecordLen=267
+
+[Item]
+Label=CF1. code individu
+Name=CF1
+Start=38
+Len=2
+DataType=Numeric
+
+[Item]
+Label=CF2. Prénom et Nom
+Name=CF2
+Start=40
+Len=50
+DataType=Alpha
+
+[Item]
+Label=CF3. Sexe (NOM)
+Name=CF3
+Start=90
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF3. Sexe (NOM)
+Name=CF3_VS1
+Value=1;Masculin
+Value=2;Féminin
+
+[Item]
+Label=CF4. Age de (NOM)
+Name=CF4
+Start=91
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=CF5. Lien de parenté de (NOM) avec le chef de ménage
+Name=CF5
+Start=93
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=CF5. Lien de parenté de (NOM) avec le chef de ménage
+Name=CF5_VS1
+Value=1;Chef de ménage (CM)
+Value=2;1ère épouse du CM
+Value=3;2ème épouse du CM
+Value=4;3ème épouse du CM
+Value=5; 4ème épouse du  M
+Value=6;Fils/fille du  CM
+Value=7;Frère/soeur du CM
+Value=8;Mère/père du CM
+Value=9;Petit(e) fils/fill
+Value=10;Neveu/nièce
+Value=11;Oncle/tante
+Value=12;Beau-fils/belle fille
+Value=13; Autres parents du CM
+
+[Item]
+Label=CF6. Niveau d'instruction de (NOM)
+Name=CF6
+Start=95
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF6. Niveau d'instruction de (NOM)
+Name=CF6_VS1
+Value=0;Aucune
+Value=1;Alphabétisé(e) en langue national
+Value=2;Ec le coranique/arabe
+Value=3;Primaire incomplet
+Value=4;Primaire complet
+Value=5;Secondaire incomplet
+Value=6;Secondaire complet
+Value=7;Supérieur
+
+[Item]
+Label=CF7. Quel est l'activité principale de (NOM) ?
+Name=CF7
+Start=96
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=CF7. Quel est l'activité principale de (NOM) ?
+Name=CF7_VS1
+Value=1;Aucune
+Value=2;Elevage
+Value=3;Pêche
+Value=4;Petit commerce
+Value=5;Commerce avec installation fixe (Boutique)
+Value=6;Restauration
+Value=7;Artisanat
+Value=8;Transport
+Value=9;Etude
+Value=10;Apprentissage
+Value=11;Services domestiques
+Value=12;Retraités
+Value=13;Inactifs/chômeurs
+Value=14;Autre (à préciser)
+Value=15;NSP
+
+[Item]
+Label=CF7a. Préciser autre activité principal de (NOM)
+Name=CF7_A
+Start=98
+Len=50
+DataType=Alpha
+
+[Item]
+Label=CF7bis. Situation matrimoniale de (NOM)
+Name=CF7B
+Start=148
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF7bis. Situation matrimoniale de (NOM)
+Name=CF7B_VS1
+Value=1;Marié monogame
+Value=2;Marié polygame
+Value=3;1ere épouse
+Value=4;2ème épouse
+Value=5;3ème épouse
+Value=6;4ème épouse
+Value=7;Veuf (ve)
+Value=8;Divorcé(e)
+Value=9;Célibataire
+Value=0;Autre à préciser
+
+[Item]
+Label=CF7bisa. Préciser autre situation matrimoniale de (NOM)
+Name=CH7B_A
+Start=149
+Len=50
+DataType=Alpha
+
+[Item]
+Label=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
+Name=CF8
+Start=199
+Len=15
+DataType=Alpha
+
+[ValueSet]
+Label=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
+Name=CF8_VS1
+Value='1              ';Aucune
+Value='2              ';Elevage
+Value='3              ';Pêche
+Value='4              ';Petit commerce
+Value='5              ';Commerce avec installation fixe (Boutique)
+Value='6              ';Restauration
+Value='7              ';Artisanat
+Value='8              ';Transport
+Value='9              ';Etude
+Value='10             ';Apprentissage
+Value='11             ';Services domestiques
+Value='12             ';Retraités
+Value='13             ';Inactifs/chômeurs
+Value='14             ';Autre (à préciser)
+Value='15             ';NSP
+
+[Item]
+Label=CF8. Préciser autre activité secondaire de (NOM)
+Name=CF8_A
+Start=214
+Len=50
+DataType=Alpha
+
+[Item]
+Label=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
+Name=CF9
+Start=264
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
+Name=CF9_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
+Name=CF10
+Start=265
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
+Name=CF10_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Name=CF13
+Start=266
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Name=CF13_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Item]
+Label=CF16. Est-ce que (NOM) détient une maison/un logement ?
+Name=CF16
+Start=267
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CF16. Est-ce que (NOM) détient une maison/un logement ?
+Name=CF16_VS1
+Value=2;Non
+Value=1;Oui
+Name=REFUSED,Special
+
+[Record]
+Label=other_var
+Name=OTHER_VAR
+RecordTypeValue='1'
+RecordLen=69
+
+[Item]
+Label=login agent
+Name=LOG_AGENT
+Start=38
+Len=2
+DataType=Numeric
+
+[Item]
+Label=date début
+Name=DATE_DEBUT
+Start=40
+Len=14
+DataType=Numeric
+
+[Item]
+Label=date fin
+Name=DATE_FIN
+Start=54
+Len=14
+DataType=Numeric
+
+[Item]
+Label=Rep2. La personne avec qui le/la chef de ménage prend les décisions ?
+Name=REP2
+Start=68
+Len=2
+DataType=Numeric

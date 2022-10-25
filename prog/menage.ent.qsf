@@ -1,0 +1,64 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: MENAGE_DICT.MEN_CODE_COM
+    conditions:
+      - questionText:
+          EN: |
+            Choisir la commune<p></p>
+  - name: MENAGE_DICT.MEN_CODE_VIL
+    conditions:
+      - questionText:
+          EN: |
+            Village<p></p>
+  - name: MENAGE_DICT.AUTRE_VILLAGE
+    conditions:
+      - questionText:
+          EN: |
+            Autre village&nbsp;<p></p>
+  - name: MENAGE_DICT.MEN_CM
+    conditions:
+      - questionText:
+          EN: |
+            Nom du CM<p></p>
+  - name: MENAGE_DICT.MEN_TYPE
+    conditions:
+      - questionText:
+          EN: |
+            Type de ménage<p></p>
+  - name: MENAGE_DICT.MEN_SEXECM
+    conditions:
+      - questionText:
+          EN: |
+            Sexe du CM<p></p>
+  - name: MENAGE_DICT.MEN_TEL
+    conditions:
+      - questionText:
+          EN: |
+            Numéro de téléphone du CM<p></p>
+...

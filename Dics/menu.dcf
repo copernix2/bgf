@@ -1,0 +1,95 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=menu
+Name=MENU_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=999D42D7897BED5F009565546D99F7D44DF25E48BCA7DB388B81F5D2D8353AF3
+
+[Level]
+Label=menu Level
+Name=MENU_LEVEL
+
+[IdItems]
+
+[Item]
+Label=menu Identification
+Name=MENU_ID
+Start=2
+Len=1
+DataType=Numeric
+
+[Record]
+Label=menu Record
+Name=MENU_REC
+RecordTypeValue='1'
+RecordLen=107
+
+[Item]
+Label=login agent
+Name=LOGIN_AGENT
+Start=3
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=login agent
+Name=LOGIN_AGENT_VS1
+Value=1;Enquêteur 1
+Value=2;Enquêteur 2
+Value=3;Enquêteur 3
+Value=4;Enquêteur 4
+Value=5;Enquêteur 5
+Value=6;Enquêteur 6
+Value=7;Enquêteur 7
+Value=8;Enquêteur 8
+Value=9;Enquêteur 9
+Value=10;Enquêteur 10
+
+[Item]
+Label=nom agent
+Name=NOM_AGENT
+Start=5
+Len=100
+DataType=Alpha
+
+[Item]
+Label=Menu Principal
+Name=MENU
+Start=105
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Menu Principal
+Name=MENU_VS2
+Value=1;Liste ménage
+Value=4;fiche village
+Value=2;Synchronisation avec le binôme
+Value=3;Envoi vers le niveau centrale
+Value=9;Quitter l'application
+
+[ValueSet]
+Label=Menu Principal
+Name=MENU_VS1
+Value=1;Liste ménage
+Value=2;Synchronisation avec le binôme
+Value=3;Envoi vers le niveau centrale
+Value=9;Quitter l'application
+
+[Item]
+Label=Mode de collecte
+Name=MODE_DE_COLLECTE
+Start=107
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Mode de collecte
+Name=MODE_DE_COLLECTE_VS1
+Value=1;Liste des ménages
+Value=2;Fiche d'informations sur le village
