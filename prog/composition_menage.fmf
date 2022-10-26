@@ -311,7 +311,7 @@ Text=RC10a. Préciser autre lien avec le CM
   
 [Field]
 Name=RC11
-Position=547,177,562,197
+Position=547,177,576,197
 Item=RC11,COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=3
@@ -393,7 +393,7 @@ Text=PM02a. Préciser autre lieu de provenance
   
 [Field]
 Name=PM03
-Position=1275,147,1290,167
+Position=1275,147,1304,167
 Item=PM03,COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=4
@@ -474,7 +474,7 @@ Max=1
   
 [Field]
 Name=RM1
-Position=644,27,659,47
+Position=644,27,673,47
 Item=RM1,COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=5
@@ -529,7 +529,7 @@ Required=Yes
 Type=Item
 TypeName=RM3
 Max=9
-DisplaySize=40,150,0,0
+DisplaySize=40,150,191,638
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -537,38 +537,47 @@ UseOccurrenceLabels=Yes
 FreeMovement=No
  
 [Text]
+Position=0,4,78,28
 Text=Agriculture
  
   
 [Text]
+Position=19,4,78,28
 Text=Elevage
  
   
 [Text]
+Position=30,4,78,28
 Text=Pêche
  
   
 [Text]
+Position=9,0,78,40
 Text=Chasse/ Cueillette
  
   
 [Text]
+Position=14,4,78,28
 Text=Artisanat
  
   
 [Text]
+Position=11,4,78,28
 Text=Transport
  
   
 [Text]
+Position=18,4,78,28
 Text=Salaires
  
   
 [Text]
+Position=5,0,78,40
 Text=Transferts migrants
  
   
 [Text]
+Position=20,0,78,40
 Text=Autres revenus
  
   
@@ -577,12 +586,15 @@ Width=10
 [EndColumn]
   
 [Column]
+Width=73
   
 [HeaderText]
+Position=0,0,73,200
 Text=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous : (
  
 [Field]
 Name=RM3
+Position=36,0,65,20
 Item=RM3,COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
   
@@ -1171,9 +1183,11 @@ Text=PR04. ID_Projet
 Name=PR04
 Position=43,0,58,20
 Item=PR04,COMPOSITION_MENAGE_DICT
+Protected=Yes
 DataCaptureType=TextBox
   
 [Text]
+Position=0,0,103,16
 Text=PR04. ID_Projet
  
 [EndColumn]

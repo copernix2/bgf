@@ -31,6 +31,48 @@ questions:
       - questionText:
           FR: |
             <b>~~getocclabel()~~</b><p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR05
+    conditions:
+      - questionText:
+          FR: |
+            <p class="MsoNormal"><span style="font-size: 11pt;">PR05.
+            </span><span style="font-size: 11pt;">Quels sont les outils et méthodes du projet<b>&nbsp;</b></span><b><font color="#ff0000">N°~~PR04~~</font></b><b><span style="font-size:11.0pt">&nbsp;?</span></b></p><p><b><span class="instruction">﻿</span><span style="font-size: 11pt;" class="instruction">(plusieurs réponses possibles)</span></b><br></p>
+  - name: COMPOSITION_MENAGE_DICT.PR06
+    conditions:
+      - questionText:
+          FR: |
+            <p>PR06. Quels sont les activités du projet <b><font color="#ff0000">N°~~PR04~~</font></b><b style="color: rgb(255, 0, 0);">&nbsp;</b>?</p><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b><br></p><p></p><p></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR07
+    conditions:
+      - questionText:
+          FR: |
+            <p><span style="font-size: 16pt; font-family: Arial;">PR07. </span><span style="font-size: 16pt; font-family: Arial;">Quelles sont les activités du projet&nbsp;</span><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;"><b>N°~~PR04~~</b></span></font><span style="font-size: 16pt; font-family: Arial;">&nbsp;auxquelles
+            vous a participé/bénéficié ?&nbsp;</span></p><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b><span style="font-size: 16pt; font-family: Arial;"><br></span></p><p></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR08
+    conditions:
+      - questionText:
+          FR: |
+            <p><span style="font-size: 16pt; font-family: Arial;">PR08. </span><span style="font-size: 16pt; font-family: Arial;">Qui sont les porteurs du projet&nbsp;</span><b><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">N°~~PR04~~</span></font></b><b><span style="font-size: 16pt; font-family: Arial;">&nbsp;?</span></b></p><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b><b><span style="font-size: 16pt; font-family: Arial;"><br></span></b><p></p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR09
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16pt; font-family: Arial;">PR09. </span><span style="font-size: 16pt; font-family: Arial;">Qui sont les parties prenantes du projet&nbsp;</span><font color="#ff0000" style=""><span style="font-size: 16pt;"><b>N°~~PR04~~</b></span></font><span style="color: rgb(255, 0, 0); font-size: 16pt;">&nbsp;</span><span style="font-size: 16pt;">?</span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR10
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16pt; font-family: Arial;">PR10. </span><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;">Qui sont les bénéficiaires du projet</span><span style="font-family: Arial; font-size: 16pt;">&nbsp;&nbsp;</span></span><b><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">N°~~PR04~~</span></font></b><b style="color: rgb(255, 0, 0);"><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b><span style="font-family: Arial; font-size: 16pt;">?</span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR11
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16pt; font-family: Arial;">PR11. </span><span style="font-size: 16pt; font-family: Arial;">Quelle est la p</span><span style="font-size: 16pt; font-family: Arial; background: white;">ériode de mise en œuvre du projet&nbsp;</span><b><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">N°~~PR04~~</span></font></b><b style="color: rgb(255, 0, 0);"><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b><span style="font-family: Arial; font-size: 16pt;">?</span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
+  - name: COMPOSITION_MENAGE_DICT.PR12
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16pt; font-family: Arial;">PR12. </span><span style="font-size: 16pt; font-family: Arial;"><span style="font-family: Arial; font-size: 16pt;">Quelle appréciation faites-vous du projet</span><b><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b></span><b><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">N°~~PR04~~</span></font></b><span style="font-size: 11pt;"><b><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b><span style="font-family: Arial; font-size: 16pt;">?</span></span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF1
     conditions:
       - questionText:
@@ -40,80 +82,80 @@ questions:
     conditions:
       - questionText:
           FR: |
-            CF2. Prénom et Nom<p></p>
+            CF2. Prénom et Nom de l'individu <b><font color="#ff0000">N°~~CF1~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF3
     conditions:
       - questionText:
           FR: |
-            CF3. Sexe<p></p>
+            <span style="font-size: 16px;">CF3. Sexe de&nbsp;</span><b><font color="#ff0000"><span style="font-size: 16px;">~~CF2~~</span></font></b><b><span style="font-size: 16px;">&nbsp;</span></b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF4
     conditions:
       - questionText:
           FR: |
-            CF4. Age<p></p>
+            CF4. Age de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF5
     conditions:
       - questionText:
           FR: |
-            CF5. Lien de parenté avec le chef de ménage<p></p>
+            CF5. Lien de parenté de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;&nbsp;</b>avec le chef de ménage<p></p>
   - name: COMPOSITION_MENAGE_DICT.CF6
     conditions:
       - questionText:
           FR: |
-            CF6. Niveau d'instruction<p></p>
+            CF6. Niveau d'instruction de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF7
     conditions:
       - questionText:
           FR: |
-            CF7. Activité principale<p></p>
+            CF7. Activité principale de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF7_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            Preciser autre activité principal de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF7B
     conditions:
       - questionText:
           FR: |
-            CF7bis. Situation matrimoniale<p></p>
+            CF7bis. Situation matrimoniale de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CH7B_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            Preciser autre situation matrimoniale de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF8
     conditions:
       - questionText:
           FR: |
-            CF8. Activité(s) secondaire(s) (plusieurs réponses)<p></p>
+            <p>CF8. Activité(s) secondaire(s) de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b></p><p><span class="instruction"><b>﻿Plusieurs réponses possibles</b></span><b><br></b><p></p></p>
   - name: COMPOSITION_MENAGE_DICT.CF8_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            Preciser autre activité secondaire de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF9
     conditions:
       - questionText:
           FR: |
-            CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?<p></p>
+            CF9. Est ce <b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b>&nbsp;à l’habitude d’exploiter de la terre pour l’agriculture ?<p></p>
   - name: COMPOSITION_MENAGE_DICT.CF10
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal"><span style="font-size: 11pt;">CF10. Est-ce que (NOM) &nbsp;détient (loué, emprunté
+            <p class="MsoNormal"><span style="font-size: 11pt;">CF10. Est-ce que&nbsp;</span><b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><span style="font-size: 11pt;">&nbsp;&nbsp;détient (loué, emprunté
             ou en propriété) des terres agricoles&nbsp;?<b>&nbsp;<o:p></o:p></b></span></p><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF13
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal"><span style="font-size: 11pt;">CF13. Est-ce que (NOM) détient (loué, emprunté ou en
+            <p class="MsoNormal"><span style="font-size: 11pt;">CF13. Est-ce que&nbsp;</span><b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><span style="font-size: 11pt;">&nbsp;détient (loué, emprunté ou en
             propriété) &nbsp;une parcelle à usage
             d’habitation ?&nbsp;<b><o:p></o:p></b></span></p><p></p>
   - name: COMPOSITION_MENAGE_DICT.CF16
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal"><span style="font-size: 11pt;">CF16. Est-ce que (NOM) détient une maison/un logement ?
+            <p class="MsoNormal"><span style="font-size: 11pt;">CF16. Est-ce que&nbsp;</span><b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><span style="font-size: 11pt;">&nbsp;détient une maison/un logement ?
             <o:p></o:p></span></p>
             
             <span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:

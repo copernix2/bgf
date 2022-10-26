@@ -133,6 +133,11 @@ else
 endif; 
 
 gps(close);
+PROC LM1_1
+if length(strip($))=0 then
+	errmsg("Veuiller entrer le nom ");
+	reenter;
+endif;
 PROC PM01_C
 
 preproc
@@ -293,6 +298,35 @@ PROC SECTION_CF_FORM
 preproc
 
 	ask if CF10=1;
+PROC TA19_A
+
+preproc
+	ask if TA19_1=1;
+PROC TA19_AC
+preproc
+	ask if TA19_1=2;
+PROC TA20_A
+preproc
+
+	ask if TA20_1=1;
+PROC TA20_AC
+
+preproc
+
+	ask if TA20_1=2;
+PROC TH19_AR
+ 
+preproc
+ 
+	ask if TH19=1;
+PROC TH19_NA
+preproc
+ 
+	ask if TH19=2;
+PROC TH22_A1
+preproc
+ 
+	ask if TH22=7;
 PROC TH4_A
 preproc
 
@@ -301,14 +335,12 @@ PROC TH6_A
 preproc
 
 ask if TH4=9;
-PROC TH7
+PROC TH7_AS
 preproc
-
-ask if TH5=5;
-PROC TH7_A
+	ask if TH7SS=9;
+PROC TH8S
 preproc
-
-ask if TH7=4;
+	ask if TH5=5;
 PROC BASELINE_DICT_FF
 
 PROC LOG_AGENT
@@ -320,15 +352,12 @@ preproc
 		$=timestamp();
 	endif;
 PROC TA1
-if $<0 then
-	errmsg("Le code n'est pas valide");
-	reenter;
-endif;
+preproc
+	$=curocc();
 PROC TA2
-if $<0 then
-	errmsg("Le numero de la parclle n'est pas valide");
-	reenter;
-endif;
+preproc
+	$=curocc();
+
 PROC TA4
 if $<=0 then
 	errmsg("La surface ne peut pas etre nulle ou negative");
@@ -371,56 +400,55 @@ preproc
 Postproc
 
 	if length(strip($))=0 then
-		errmsg("Vueillez preciser le nom de la Cooperative");
+		errmsg("Veuillez preciser le nom de la Cooperative");
 		reenter;
 	endif;
 PROC TA12
 preproc
 
 	ask if TA10=1;
-PROC TA19_A
-
+PROC TA19
 preproc
-	ask if TA19_1=1;
-PROC TA19_AC
+	ask if TA7=3 or TA7=6 or TA7=7;
+PROC TA20
 preproc
-	ask if TA19_1=2;
-PROC TA20_A
-preproc
-
-	ask if TA20_1=1;
-PROC TA20_AC
-
-preproc
-
-	ask if TA20_1=2;
+	ask if TA7=4;
 PROC TA21_A
 
 preproc
 
 	ask if TA21=99;
+PROC TA22_A
+preproc
+	ask if pos("99",TA22);
 PROC TA24_A
 preproc
-
-	ask if TA24=7;
+	ask if pos("99",TA24);
 PROC TA26
-if $<0 then
+if $<0 and $>100 then
 	errmsg("Entrez une distance valide");
 	reenter;
 endif;
 PROC TA27
 
-if $<0 then
+if $<0 and $>1000 then
 	errmsg("Entrez un temps valide");
 	reenter;
 endif;
+PROC TA28_A
+preproc
+
+	ask if TA28H=1;
+PROC TA31
+preproc
+	ask if TA29=4 or TA29=5 or TA30=4 or TA30=5;
+PROC TA31_A
+preproc
+	ask if pos("99",TA31);
 PROC TH1
+preproc
+	$=curocc();
 
-if $<0 then
-	errmsg("Entrer un code valide");
-	reenter;
-
-endif;
 PROC TH1_1
 if length(strip($))=0 then
 	errmsg("Veuiller entrer le nom du proprietaire de la parcelle");
@@ -437,57 +465,108 @@ if $<0 then
 	errmsg("Veuillez entrer une superficie valide");
 	reenter;
 endif;
-PROC TH5
+PROC TH5_A
+preproc
+	ask if TH5=4;
+PROC TH7_A
+preproc
 
-if $<0 then
-	errmsg("Veuillez entrer un temps valide");
-	reenter;
-endif;
+ask if TH7=9;
 PROC TH8
 preproc
 
-ask if TH5=5;
+ask if TH7=5;
+PROC TH8_A
+preproc
+	ask if TH8=4;
 PROC TH9
 preproc
 
-ask if TH5=5;
+ask if TH7=5;
 PROC TH10
 preproc
 
-ask if TH9=1;
+ask if TH7=5;
 
-PROC TH19_AR
- 
+PROC TH11
 preproc
- 
-	ask if TH19=1;
-PROC TH19_NA
+
+ask if TH10=1;
+PROC TH12
 preproc
- 
-	ask if TH19=2;
+	ask if TH7=3 or TH7=6 or TH7=7;
+PROC TH13
+preproc 
+	ask if TH7=4;
+PROC TH14_A
+preproc
+	ask if TH14=99;
+PROC TH15_A
+preproc
+	ask if TH15=7;
+PROC TH16
+preproc
+	ask if TH7=2;
+PROC TH17
+preproc
+	ask if TH16=1;
+
+postproc 
+	if $<0 or $>100 then
+	errmsg("Merci de vérifier le nombre de parcelle saisie");
+	reenter;
+	endif;
+PROC TH18
+preproc
+	ask if TH16=1;
+
+postproc 
+	if $<0 or $>TH17 then
+	errmsg("le nombre de parcelle héritée ne doit pas être supérieur au nombre de parcelle du lotissement");
+	reenter;
+	endif;
+PROC TH19
+preproc
+
+ask if TH16=1;
+PROC TH19_R
+preproc
+
+ask if TH19=3;
+PROC TH19_A
+preproc
+
+ask if TH19=5;
+PROC TH19_BIS
+preproc
+
+ask if TH16=1;
+PROC TH21
+preproc
+
+ask if TH7=3;
+PROC TH21_A
+preproc
+
+ask if TH21=5;
 PROC TH22_A
 preproc
  
-	ask if TH21=99;
-PROC TH22_A1
+	ask if TH22J=1;
+PROC TH25
 preproc
- 
-	ask if TH22=7;
+	ask if TH23=4 or TH23=5 or TH24=4 or TH24=5;
+PROC TH25_A
+preproc
+	ask if pos("99",TH25);
 PROC LM1
-if $<0 then
-	errmsg("Le code est invalide");
-	reenter;
-endif;
-PROC LM1_1
-if length(strip($))=0 then
-	errmsg("Veuiller entrer le nom ");
-	reenter;
-endif;
+preproc
+	$=curocc();
+
 PROC LM2
-if $<0 then
-	errmsg("Le Numéro du logement est invalide");
-	reenter;
-endif;
+preproc
+	$=curocc();
+
 PROC LM4
 preproc
 
