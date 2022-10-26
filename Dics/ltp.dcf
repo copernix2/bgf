@@ -34,42 +34,26 @@ Label=SECTION TA : TERRES AGRICOLES DU MENAGE
 Name=SECTIO_TA
 RecordTypeValue='7'
 MaxRecords=10
-RecordLen=557
-
-[Item]
-Label=CF11.Si Oui à CF10, quel est le nombre de parcelles agricoles détenues par (NOM)
-Name=CF11
-Start=40
-Len=2
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=CF12. Si Oui à CF10, quelle est la surface totale des parcelles détenues par (NOM)
-Name=CF12
-Start=42
-Len=7
-DataType=Numeric
-ZeroFill=Yes
+RecordLen=548
 
 [Item]
 Label=TA1. Code de la personne (Rappel du nom et prénom)
 Name=TA1
-Start=49
+Start=40
 Len=2
 DataType=Numeric
 
 [Item]
 Label=TA2. N° des parcelles
 Name=TA2
-Start=51
+Start=42
 Len=2
 DataType=Numeric
 
 [Item]
 Label=TA3. Nature de la parcelle
 Name=TA3
-Start=53
+Start=44
 Len=1
 DataType=Numeric
 
@@ -84,14 +68,14 @@ Value=4;Autre (à préciser)
 [Item]
 Label=TA4. Superficie de la parcelle (en ha)
 Name=TA4
-Start=54
+Start=45
 Len=7
 DataType=Numeric
 
 [Item]
 Label=TA5. Type de propriété sur la parcelle
 Name=TA5
-Start=61
+Start=52
 Len=1
 DataType=Numeric
 
@@ -106,14 +90,14 @@ Value=4;Autre (Préciser)
 [Item]
 Label=TA5a. Préciser autre type de propriété sur la parcelle
 Name=TA5_A
-Start=62
+Start=53
 Len=50
 DataType=Alpha
 
 [Item]
 Label=TA6. Depuis combien de temps l’avez-vous acquis ?
 Name=TA6
-Start=112
+Start=103
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -121,7 +105,7 @@ ZeroFill=Yes
 [Item]
 Label=TA7. Mode d’acquisition de la parcelle ?
 Name=TA7
-Start=114
+Start=105
 Len=1
 DataType=Numeric
 
@@ -141,14 +125,14 @@ Value=9;Autre (à préciser)
 [Item]
 Label=TA7a. Préciser autre mode d'acquisition de la parcelle
 Name=TA7_A
-Start=115
+Start=106
 Len=50
 DataType=Alpha
 
 [Item]
 Label=TA8. Si TA7=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
 Name=TA8
-Start=165
+Start=156
 Len=1
 DataType=Numeric
 
@@ -163,14 +147,14 @@ Value=4;Autre (à préciser)
 [Item]
 Label=TA8a. Préciser autre type de demande
 Name=TA8_A
-Start=166
+Start=157
 Len=50
 DataType=Alpha
 
 [Item]
 Label=TA9. Si TA7=5, Depuis quand la demande a été satisfaite ?
 Name=TA9
-Start=216
+Start=207
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -178,7 +162,7 @@ ZeroFill=Yes
 [Item]
 Label=TA10. Si TA7=5, est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative ?
 Name=TA10
-Start=218
+Start=209
 Len=1
 DataType=Numeric
 
@@ -191,21 +175,21 @@ Value=2;Non
 [Item]
 Label=TA11. Si Oui à TA10, préciser le Nom de l’initiative
 Name=TA11
-Start=219
+Start=210
 Len=50
 DataType=Alpha
 
 [Item]
 Label=TA12. Si Oui à TA10, comment ?
 Name=TA12
-Start=269
+Start=260
 Len=50
 DataType=Alpha
 
 [Item]
 Label=TA19 La Contrepartie d’acquisition si achat, prêt ou gage à TA7 est en argent?
 Name=TA19
-Start=319
+Start=310
 Len=1
 DataType=Numeric
 
@@ -218,7 +202,7 @@ Value=2;En argent
 [Item]
 Label=TA20. Contrepartie d’acquisition si location à TA7 ?
 Name=TA20
-Start=320
+Start=311
 Len=1
 DataType=Numeric
 
@@ -231,7 +215,7 @@ Value=2;En argent
 [Item]
 Label=TA21.Quel document atteste de vos droits de propriété ?
 Name=TA21
-Start=321
+Start=312
 Len=2
 DataType=Numeric
 
@@ -250,14 +234,14 @@ Value=99;Autre à préciser
 [Item]
 Label=TA21a. Préciser autre document qui atteste de vos droits de propriété
 Name=TA21_A
-Start=323
+Start=314
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TA22. Utilisation de la parcelle (sur les 12 derniers mois)
 Name=TA22
-Start=353
+Start=344
 Len=7
 DataType=Alpha
 
@@ -275,14 +259,14 @@ Value='99     ';Autre (à préciser)
 [Item]
 Label=TA22a. Préciser autre type d'utilsation de la parcelle
 Name=TA22_A
-Start=360
+Start=351
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TA23. Mode d’exploitation de la parcelle
 Name=TA23
-Start=390
+Start=381
 Len=1
 DataType=Numeric
 
@@ -296,7 +280,7 @@ Value=3;Métayage
 [Item]
 Label=TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 derniers mois.
 Name=TA24
-Start=391
+Start=382
 Len=30
 DataType=Alpha
 
@@ -337,14 +321,14 @@ Value='99                            ';Autre à  préciser
 [Item]
 Label=TA24a. Préciser autre type de culture
 Name=TA24_A
-Start=421
+Start=412
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TA25. Destinations des productions ?
 Name=TA25
-Start=451
+Start=442
 Len=2
 DataType=Alpha
 
@@ -357,21 +341,21 @@ Value=02;Commercialisation
 [Item]
 Label=TA26. Distance de la parcelle par rapport à la maison (en mètre ou km)
 Name=TA26
-Start=453
+Start=444
 Len=8
 DataType=Numeric
 
 [Item]
 Label=TA27. Combien de temps prend-t-on pour se rendre à la parcelle en marchant à pieds à partir de la maison (en minutes) ?
 Name=TA27
-Start=461
+Start=452
 Len=4
 DataType=Numeric
 
 [Item]
 Label=TA28a. Est-ce que la terre agricole est exposée aux contraintes de l'inondation?
 Name=TA28A
-Start=465
+Start=456
 Len=1
 DataType=Numeric
 
@@ -384,7 +368,7 @@ Value=2;Non
 [Item]
 Label=TA28b. Est-ce que la terre agricole est exposée aux contraintes de la Salinisation?
 Name=TA28B
-Start=466
+Start=457
 Len=1
 DataType=Numeric
 
@@ -397,7 +381,7 @@ Value=2;Non
 [Item]
 Label=TA28c. Est-ce que la terre agricole est exposée aux contraintes de Manque d’eau (nappe profonde)?
 Name=TA28C
-Start=467
+Start=458
 Len=1
 DataType=Numeric
 
@@ -410,7 +394,7 @@ Value=2;Non
 [Item]
 Label=TA28d. Est-ce que la terre agricole est exposée aux contraintes des Terres lessivées (non productive)
 Name=TA28D
-Start=468
+Start=459
 Len=1
 DataType=Numeric
 
@@ -423,7 +407,7 @@ Value=2;Non
 [Item]
 Label=TA28e. Est-ce que la terre agricole est exposée aux contraintes de . Protection des cultures (clôture)?
 Name=TA28E
-Start=469
+Start=460
 Len=1
 DataType=Numeric
 
@@ -436,7 +420,7 @@ Value=2;Non
 [Item]
 Label=TA28f. Est-ce que la terre agricole est exposée aux contraintes de Préparation des terres pour la culture (gros arbres)
 Name=TA28F
-Start=470
+Start=461
 Len=1
 DataType=Numeric
 
@@ -449,7 +433,7 @@ Value=2;Non
 [Item]
 Label=TA28g. Est-ce que la terre agricole est exposée aux contraintes de Exploitation minières?
 Name=TA28G
-Start=471
+Start=462
 Len=1
 DataType=Numeric
 
@@ -462,7 +446,7 @@ Value=2;Non
 [Item]
 Label=TA28h. Est-ce que la terre agricole est exposée aux contraintes des Terres lessivées (non productive)
 Name=TA28H
-Start=472
+Start=463
 Len=1
 DataType=Numeric
 
@@ -475,14 +459,14 @@ Value=2;Non
 [Item]
 Label=TA28a. Préciser autre type de contrainte à laquelle la terre agricole est exposée
 Name=TA28_A
-Start=473
+Start=464
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TA29. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années?
 Name=TA29
-Start=503
+Start=494
 Len=1
 DataType=Numeric
 
@@ -498,7 +482,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA30. Est-il probable que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années ?
 Name=TA30
-Start=504
+Start=495
 Len=1
 DataType=Numeric
 
@@ -514,7 +498,7 @@ Value=5;Très probable
 [Item]
 Label=TA31. Quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années?
 Name=TA31
-Start=505
+Start=496
 Len=13
 DataType=Alpha
 
@@ -538,14 +522,14 @@ Value='13           ';Autre à préciser
 [Item]
 Label=TA31a. Préciser autre raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années
 Name=TA31_A
-Start=518
+Start=509
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TA32a. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si vous avez eu un désaccord / conflit avec votre famille?
 Name=TA32A
-Start=548
+Start=539
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -562,7 +546,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32b. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un dans votre ménage décède?
 Name=TA32B
-Start=549
+Start=540
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -579,7 +563,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32c. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si votre conjoint(e) décède?
 Name=TA32C
-Start=550
+Start=541
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -596,7 +580,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32d. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un d'autre dans votre famille a perdu son emploi?
 Name=TA32D
-Start=551
+Start=542
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -613,7 +597,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32e. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
 Name=TA32E
-Start=552
+Start=543
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -630,7 +614,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32f. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si une entreprise essaie de faire la saisie contre votre volonté?
 Name=TA32F
-Start=553
+Start=544
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -647,7 +631,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32g. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pole urbain)?
 Name=TA32G
-Start=554
+Start=545
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -664,7 +648,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32h. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si une autre personne ou d'un groupe revendique la propriété?
 Name=TA32H
-Start=555
+Start=546
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -681,7 +665,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32i. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si quelqu'un d'autre vend frauduleusement la propriété?
 Name=TA32I
-Start=556
+Start=547
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -698,7 +682,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole Si un désaccord est survenu avec les autorités locales?
 Name=TA32J
-Start=557
+Start=548
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -717,27 +701,12 @@ Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
 Name=SECTION_TH
 RecordTypeValue='8'
 MaxRecords=15
-RecordLen=507
-
-[Item]
-Label=CF14. Si Oui à CF13, quel est le nombre de parcelles à usage d’habitation détenues (louées, empruntées ou en propriété)  par (NOM)
-Name=CF14
-Start=40
-Len=2
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=CF15. Si Oui à CF13, quelle est la surface totale des parcelles à usage d’habitation détenues (louées, empruntées ou en propriété)  par (NOM)
-Name=CF15
-Start=42
-Len=7
-DataType=Numeric
+RecordLen=498
 
 [Item]
 Label=TH1. Code de la personne (Rappel du nom et prénom)
 Name=TH1
-Start=49
+Start=40
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -745,14 +714,14 @@ ZeroFill=Yes
 [Item]
 Label=Nom et prénom
 Name=TH1_1
-Start=51
+Start=42
 Len=40
 DataType=Alpha
 
 [Item]
 Label=TH2. N° des parcelles
 Name=TH2
-Start=91
+Start=82
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -760,14 +729,14 @@ ZeroFill=Yes
 [Item]
 Label=TH3. Superficie de la parcelle (en m2)
 Name=TH3
-Start=93
+Start=84
 Len=6
 DataType=Numeric
 
 [Item]
 Label=TH4. Quel est l’état des parcelles à usage d’habitation ?
 Name=TH4
-Start=99
+Start=90
 Len=1
 DataType=Numeric
 
@@ -780,7 +749,7 @@ Value=2;Terrain en construction
 [Item]
 Label=TH5. Type de propriété sur la parcelle
 Name=TH5
-Start=100
+Start=91
 Len=1
 DataType=Numeric
 
@@ -795,21 +764,21 @@ Value=4;Autre (Préciser)
 [Item]
 Label=TH5a. Préciser autre type de propriété sur la parcelle
 Name=TH5_A
-Start=101
+Start=92
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH6. Depuis combien de temps l’avez-vous acquis ?
 Name=TH6
-Start=131
+Start=122
 Len=2
 DataType=Numeric
 
 [Item]
 Label=TH7. Mode d’acquisition de la parcelle ?
 Name=TH7
-Start=133
+Start=124
 Len=1
 DataType=Numeric
 
@@ -829,14 +798,14 @@ Value=9;Autre (à préciser)
 [Item]
 Label=TH7a. Préciser autre mode d'acquisition
 Name=TH7_A
-Start=134
+Start=125
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH8. Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
 Name=TH8
-Start=164
+Start=155
 Len=1
 DataType=Numeric
 
@@ -851,21 +820,21 @@ Value=4;Autre (à préciser)
 [Item]
 Label=TH8a. Préciser autre type de demande
 Name=TH8_A
-Start=165
+Start=156
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH9. Depuis quand la demande a été satisfaite ? (préciser en terme de jours, mois, année)
 Name=TH9
-Start=195
+Start=186
 Len=2
 DataType=Numeric
 
 [Item]
 Label=TH10. Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative/Coopérative ?
 Name=TH10
-Start=197
+Start=188
 Len=1
 DataType=Numeric
 
@@ -878,14 +847,14 @@ Value=2;Non
 [Item]
 Label=TH11. Si Oui à TH10, préciser le Nom de l’initiative
 Name=TH11
-Start=198
+Start=189
 Len=40
 DataType=Alpha
 
 [Item]
 Label=TH12. Contrepartie d’acquisition si achat, prêt ou gage à TH7 ?
 Name=TH12
-Start=238
+Start=229
 Len=1
 DataType=Numeric
 
@@ -898,14 +867,14 @@ Value=2;En nature
 [Item]
 Label=TH13. Contrepartie d’acquisition si location à TH7 ?
 Name=TH13
-Start=239
+Start=230
 Len=9
 DataType=Numeric
 
 [Item]
 Label=TH14. Quel document atteste de vos droits de propriété ?
 Name=TH14
-Start=248
+Start=239
 Len=2
 DataType=Numeric
 
@@ -924,14 +893,14 @@ Value=99;Autre à préciser
 [Item]
 Label=TH14a. Préciser autre document qui atteste de vos droits de propriété
 Name=TH14_A
-Start=250
+Start=241
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH15 Utilisation de la parcelle (sur les 12 derniers mois)
 Name=TH15
-Start=280
+Start=271
 Len=1
 DataType=Numeric
 
@@ -949,14 +918,14 @@ Value=7;Autre (à préciser)
 [Item]
 Label=TH15a. Préciser autre utilisation de la parcelle
 Name=TH15_A
-Start=281
+Start=272
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH16. Si Héritage (TH7=2), est-ce un lotissement de la famille ?
 Name=TH16
-Start=311
+Start=302
 Len=1
 DataType=Numeric
 
@@ -969,21 +938,21 @@ Value=2;Non
 [Item]
 Label=TH17. Si oui, le nombre total de parcelles du lotissement
 Name=TH17
-Start=312
+Start=303
 Len=3
 DataType=Numeric
 
 [Item]
 Label=TH18. Si oui, le nombre de parcelles héritées
 Name=TH18
-Start=315
+Start=306
 Len=3
 DataType=Numeric
 
 [Item]
 Label=TH19. Si oui, Sur quelle base ce partage a été effectué ?
 Name=TH19
-Start=318
+Start=309
 Len=2
 DataType=Numeric
 
@@ -999,21 +968,21 @@ Value=5;Autre (à préciser)
 [Item]
 Label=TH19r. Preciser la religion
 Name=TH19_R
-Start=320
+Start=311
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH19a. Préciser autre base de partage
 Name=TH19_A
-Start=350
+Start=341
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH19bis. Est-ce à part égal ?
 Name=TH19_BIS
-Start=380
+Start=371
 Len=1
 DataType=Numeric
 
@@ -1026,7 +995,7 @@ Value=2;Non
 [Item]
 Label=TH20. Qui a pris la décision sur les procédures de lotissement
 Name=TH20
-Start=381
+Start=372
 Len=1
 DataType=Numeric
 
@@ -1041,7 +1010,7 @@ Value=4;Chef de ménage conjointement avec les hommes et les femmes
 [Item]
 Label=TH21. Si Achat (TH7=3), quelle est la source d’acquisition
 Name=TH21
-Start=382
+Start=373
 Len=1
 DataType=Numeric
 
@@ -1057,14 +1026,14 @@ Value=5;Autres à préciser
 [Item]
 Label=TH21a. Préciser autre source d'acquisition
 Name=TH21_A
-Start=383
+Start=374
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH22a. Est-ce que la terre d’habitation est exposée aux contraintes d'Inondation?
 Name=TH22A
-Start=413
+Start=404
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1078,7 +1047,7 @@ Value=2;Non
 [Item]
 Label=TH22b. Est-ce que la terre d’habitation est exposée aux contraintes de Manque d’assainissement
 Name=TH22B
-Start=414
+Start=405
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1092,7 +1061,7 @@ Value=2;Non
 [Item]
 Label=TH22c. Est-ce que la terre d’habitation est exposée aux contraintes de lotissement clandestin?
 Name=TH22C
-Start=415
+Start=406
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1106,7 +1075,7 @@ Value=2;Non
 [Item]
 Label=TH22d. Est-ce que la terre d’habitation est exposée aux contraintes de Salinisation?
 Name=TH22D
-Start=416
+Start=407
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1120,7 +1089,7 @@ Value=2;Non
 [Item]
 Label=TH22e. Est-ce que la terre d’habitation est exposée aux contraintes de Nappe Phréatique « proche »?
 Name=TH22E
-Start=417
+Start=408
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1134,7 +1103,7 @@ Value=2;Non
 [Item]
 Label=TH22f. Est-ce que la terre d’habitation est exposée aux contraintes d'Eloignement des écoles
 Name=TH22F
-Start=418
+Start=409
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1148,7 +1117,7 @@ Value=2;Non
 [Item]
 Label=TH22g. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des hôpitaux?
 Name=TH22G
-Start=419
+Start=410
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1162,7 +1131,7 @@ Value=2;Non
 [Item]
 Label=TH22h. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des marchés?
 Name=TH22H
-Start=420
+Start=411
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1176,7 +1145,7 @@ Value=2;Non
 [Item]
 Label=TH22i. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des routes/Voiries?
 Name=TH22I
-Start=421
+Start=412
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1190,7 +1159,7 @@ Value=2;Non
 [Item]
 Label=TH22j. Est-ce que la terre d’habitation est exposée aux autre contraintes à preciser?
 Name=TH22J
-Start=422
+Start=413
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1204,14 +1173,14 @@ Value=2;Non
 [Item]
 Label=TH22.autre. Préciser autre contrainte que la terre d’habitation est exposée
 Name=TH22_A
-Start=423
+Start=414
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH23. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années?
 Name=TH23
-Start=453
+Start=444
 Len=1
 DataType=Numeric
 
@@ -1227,7 +1196,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH24. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?
 Name=TH24
-Start=454
+Start=445
 Len=1
 DataType=Numeric
 
@@ -1243,7 +1212,7 @@ Value=5;Très probable
 [Item]
 Label=TH25. Quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années?
 Name=TH25
-Start=455
+Start=446
 Len=13
 DataType=Alpha
 
@@ -1267,14 +1236,14 @@ Value='99           ';Autre à préciser
 [Item]
 Label=TH25a. Préciser autre raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années
 Name=TH25_A
-Start=468
+Start=459
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TH26a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous avez eu un désaccord / conflit avec votre famille?
 Name=TH26A
-Start=498
+Start=489
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1291,7 +1260,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un dans votre ménage décède?
 Name=TH26B
-Start=499
+Start=490
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1308,7 +1277,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si votre conjoint(e) décède?
 Name=TH26C
-Start=500
+Start=491
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1325,7 +1294,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre dans votre famille a perdu son emploi?
 Name=TH26D
-Start=501
+Start=492
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1342,7 +1311,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
 Name=TH26E
-Start=502
+Start=493
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1359,7 +1328,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une entreprise essaie de faire la saisie contre votre volonté?
 Name=TH26F
-Start=503
+Start=494
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1376,7 +1345,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)?
 Name=TH26G
-Start=504
+Start=495
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1393,7 +1362,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une autre personne ou d'un groupe revendique la propriété?
 Name=TH26H
-Start=505
+Start=496
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1410,7 +1379,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre vend frauduleusement la propriété?
 Name=TH26I
-Start=506
+Start=497
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1427,7 +1396,7 @@ Value=5;Très Inquiet
 [Item]
 Label=TH26j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si un désaccord est survenu avec les autorités locales ?
 Name=TH26J
-Start=507
+Start=498
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -1446,27 +1415,12 @@ Label=SECTION LM: LOGEMENT DU MENAGE
 Name=SECTION_LM
 RecordTypeValue='9'
 MaxRecords=15
-RecordLen=558
-
-[Item]
-Label=CF17. Si Oui à CF16, quel est le nombre de maisons/logement détenues (louées, empruntées ou en propriété)  par (NOM)?
-Name=CF17
-Start=40
-Len=2
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=CF18. Si Oui à CF16, quelle est la surface totale des maisons détenues par (NOM)?
-Name=CF18
-Start=42
-Len=7
-DataType=Numeric
+RecordLen=549
 
 [Item]
 Label=LM1. Code de la personne (Rappel du nom et prénom)
 Name=LM1
-Start=49
+Start=40
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -1474,14 +1428,14 @@ ZeroFill=Yes
 [Item]
 Label=LM2. N° de logement
 Name=LM2
-Start=51
+Start=42
 Len=2
 DataType=Numeric
 
 [Item]
 Label=LM3. Vivez-vous dans ce logement ?
 Name=LM3
-Start=53
+Start=44
 Len=1
 DataType=Numeric
 
@@ -1494,14 +1448,14 @@ Value=2;Non
 [Item]
 Label=LM4. Si oui à LM3, Depuis combien de temps vivez-vous personnellement dans ce logement ?
 Name=LM4
-Start=54
+Start=45
 Len=2
 DataType=Numeric
 
 [Item]
 Label=LM5. Si oui à LM3, Combien de temps pensez-vous continuer à vivre ici ?
 Name=LM5
-Start=56
+Start=47
 Len=1
 DataType=Numeric
 
@@ -1518,14 +1472,14 @@ Value=6;Ne sait pas
 [Item]
 Label=LM6. Superficie du terrain (en m2)
 Name=LM6
-Start=57
+Start=48
 Len=8
 DataType=Numeric
 
 [Item]
 Label=LM7. Type de logement ?
 Name=LM7
-Start=65
+Start=56
 Len=2
 DataType=Numeric
 
@@ -1542,7 +1496,7 @@ Value=99;Autres à préciser
 [Item]
 Label=LM8. A qui appartient ce logement ?
 Name=LM8
-Start=67
+Start=58
 Len=2
 DataType=Numeric
 
@@ -1566,7 +1520,7 @@ Value=98;Ne sait pas
 [Item]
 Label=LM9. Si LM8 différent de 1,2,3, est-ce que vous ou quelqu'un d'autre qui vit ici payez un loyer au propriétaire ?
 Name=LM9
-Start=69
+Start=60
 Len=2
 DataType=Numeric
 
@@ -1586,7 +1540,7 @@ Value=98;Ne sait pas
 [Item]
 Label=LM10. Si 3,4,5,6 ou 7 à LM9, pouvez-vous expliquer les circonstances dans lesquelles vous vivez ici ?
 Name=LM10
-Start=71
+Start=62
 Len=1
 DataType=Numeric
 
@@ -1600,28 +1554,28 @@ Value=3;Autre à préciser
 [Item]
 Label=LM10a. Préciser autre circonstances dans lesquelles vous vivez ici
 Name=LM10_A
-Start=72
+Start=63
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM11. Expliquez votre réponse (à LM10)
 Name=LM11
-Start=102
+Start=93
 Len=50
 DataType=Alpha
 
 [Item]
 Label=LM12. Si 1,2,3 à LM8, Depuis combien de temps l’avez-vous acquis ?
 Name=LM12
-Start=152
+Start=143
 Len=4
 DataType=Numeric
 
 [Item]
 Label=LM13. Si 1,2,3 à LM8, Mode d’acquisition du logement ?
 Name=LM13
-Start=156
+Start=147
 Len=2
 DataType=Numeric
 
@@ -1644,14 +1598,14 @@ Value=12;Autre (à préciser)
 [Item]
 Label=LM13. Préciser autre mode d'acquisition du logement
 Name=LM13_A
-Start=158
+Start=149
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM14. Si 1,2,3 à LM8, Mode d’acquisition du terrain (du logement
 Name=LM14
-Start=188
+Start=179
 Len=1
 DataType=Numeric
 
@@ -1671,14 +1625,14 @@ Value=9;Autre (à préciser)
 [Item]
 Label=LM14. Préciser autre mode d'acquisition du terrain
 Name=LM14_A
-Start=189
+Start=180
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM15. Si LM14=5, Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?
 Name=LM15
-Start=219
+Start=210
 Len=1
 DataType=Numeric
 
@@ -1693,21 +1647,21 @@ Value=4;Autre (à préciser)
 [Item]
 Label=LM15. Préciser autre type de demande
 Name=LM15_A
-Start=220
+Start=211
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM16. Si LM14=5, Depuis quand la demande a été satisfaite ?
 Name=LM16
-Start=250
+Start=241
 Len=8
 DataType=Alpha
 
 [Item]
 Label=Année de la demande
 Name=LM16_AN
-Start=250
+Start=241
 Len=4
 ItemType=SubItem
 DataType=Numeric
@@ -1715,7 +1669,7 @@ DataType=Numeric
 [Item]
 Label=Mois de la demande
 Name=LM16_M
-Start=254
+Start=245
 Len=2
 ItemType=SubItem
 DataType=Numeric
@@ -1723,7 +1677,7 @@ DataType=Numeric
 [Item]
 Label=Jour de la demande
 Name=LM16_J
-Start=256
+Start=247
 Len=2
 ItemType=SubItem
 DataType=Numeric
@@ -1731,7 +1685,7 @@ DataType=Numeric
 [Item]
 Label=LM17. Si LM14=5, est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’un projet?
 Name=LM17
-Start=258
+Start=249
 Len=1
 DataType=Numeric
 
@@ -1744,14 +1698,14 @@ Value=2;Non
 [Item]
 Label=LM18. Si Oui à LM17, préciser le Nom du Projet
 Name=LM18
-Start=259
+Start=250
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM27. Contrepartie d’acquisition si achat, prêt ou gage à LM17en argent ?
 Name=LM27
-Start=289
+Start=280
 Len=1
 DataType=Numeric
 
@@ -1764,28 +1718,28 @@ Value=2;Non
 [Item]
 Label=En argent
 Name=LM27_AR
-Start=290
+Start=281
 Len=9
 DataType=Numeric
 
 [Item]
 Label=En nature
 Name=LM27_NA
-Start=299
+Start=290
 Len=50
 DataType=Alpha
 
 [Item]
 Label=LM28. Contrepartie d’acquisition si location à LM17 ?
 Name=LM28
-Start=349
+Start=340
 Len=9
 DataType=Numeric
 
 [Item]
 Label=LM21. Avez-vous un contrat de location (écrit) ?
 Name=LM28_1
-Start=358
+Start=349
 Len=1
 DataType=Numeric
 
@@ -1798,7 +1752,7 @@ Value=2;Non
 [Item]
 Label=LM29. Quel document atteste de vos droits de propriété ?
 Name=LM29
-Start=359
+Start=350
 Len=2
 DataType=Numeric
 
@@ -1817,7 +1771,7 @@ Value=99;Autre à préciser
 [Item]
 Label=LM29a. Est-ce que est le logement exposé aux contraintes d'Inondation?
 Name=LM29A
-Start=361
+Start=352
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1831,7 +1785,7 @@ Value=2;Non
 [Item]
 Label=LM29b. Est-ce que le logement est exposé aux contraintes de Manque d’assainissement
 Name=LM29B
-Start=362
+Start=353
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1845,7 +1799,7 @@ Value=2;Non
 [Item]
 Label=LM29c. Est-ce que la terre le logement est exposé aux contraintes de lotissement clandestin?
 Name=LM29C
-Start=363
+Start=354
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1859,7 +1813,7 @@ Value=2;Non
 [Item]
 Label=LM29d. Est-ce que le logement est exposé aux contraintes de Salinisation?
 Name=LM29D
-Start=364
+Start=355
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1873,7 +1827,7 @@ Value=2;Non
 [Item]
 Label=LM29e. Est-ce que le logement  est exposée aux contraintes de Nappe Phréatique « proche »?
 Name=LM29E
-Start=365
+Start=356
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1887,7 +1841,7 @@ Value=2;Non
 [Item]
 Label=LM29f. Est-ce que le logement  est exposé aux contraintes d'Eloignement des écoles?
 Name=LM29F
-Start=366
+Start=357
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1901,7 +1855,7 @@ Value=2;Non
 [Item]
 Label=LM29g. Est-ce que le logement  est exposé aux contraintes d'eloignement des hôpitaux?
 Name=LM29G
-Start=367
+Start=358
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1915,7 +1869,7 @@ Value=2;Non
 [Item]
 Label=LM29h. Est-ce que le logement  est exposé aux contraintes d'eloignement des marchés?
 Name=LM29H
-Start=368
+Start=359
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1929,7 +1883,7 @@ Value=2;Non
 [Item]
 Label=LM29i. Est-ce que le logement  est exposé aux contraintes d'eloignement des routes/Voiries?
 Name=LM29I
-Start=369
+Start=360
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1943,7 +1897,7 @@ Value=2;Non
 [Item]
 Label=LM29j. Est-ce que le logement est exposé aux autre contraintes à preciser?
 Name=LM29J
-Start=370
+Start=361
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -1957,14 +1911,14 @@ Value=2;Non
 [Item]
 Label=Autre
 Name=LM29_A
-Start=371
+Start=362
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM23. Si Héritage (LM14=2), est-ce un lotissement de la famille ?
 Name=LM30
-Start=401
+Start=392
 Len=1
 DataType=Numeric
 
@@ -1977,21 +1931,21 @@ Value=2;Non
 [Item]
 Label=LM24. Si oui, le nombre total de parcelles du lotissement
 Name=LM31
-Start=402
+Start=393
 Len=3
 DataType=Numeric
 
 [Item]
 Label=LM25. Si oui, le nombre de parcelles héritées
 Name=LM32
-Start=405
+Start=396
 Len=3
 DataType=Numeric
 
 [Item]
 Label=LM26. Si oui, Sur quelle base ce partage a été effectué ?
 Name=LM33
-Start=408
+Start=399
 Len=2
 DataType=Numeric
 
@@ -2007,14 +1961,14 @@ Value=99;Autre (à préciser)
 [Item]
 Label=Autre
 Name=LM33_A
-Start=410
+Start=401
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM26bis. est-ce à part égal ?
 Name=LM34
-Start=440
+Start=431
 Len=1
 DataType=Numeric
 
@@ -2027,7 +1981,7 @@ Value=2;Non
 [Item]
 Label=LM27. Qui a pris la décision sur les procédures de lotissement
 Name=LM35
-Start=441
+Start=432
 Len=1
 DataType=Numeric
 
@@ -2042,7 +1996,7 @@ Value=4;Chef de ménage conjointement avec les hommes et les femmes
 [Item]
 Label=LM28. Si Achat (LM14=3), quelle est la source d’acquisition
 Name=LM36
-Start=442
+Start=433
 Len=1
 DataType=Numeric
 
@@ -2058,14 +2012,14 @@ Value=5;Autres à préciser
 [Item]
 Label=Autre
 Name=LM36_A
-Start=443
+Start=434
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM29. Est-ce que le logement est exposé aux contraintes suivantes?
 Name=LM37
-Start=473
+Start=464
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Inondation
@@ -2073,14 +2027,14 @@ OccurrenceLabel=1,Inondation
 [Item]
 Label=Autre
 Name=LM37_A
-Start=474
+Start=465
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM30. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années?
 Name=LM38
-Start=504
+Start=495
 Len=1
 DataType=Numeric
 
@@ -2096,7 +2050,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM31. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?
 Name=LM39
-Start=505
+Start=496
 Len=1
 DataType=Numeric
 
@@ -2112,7 +2066,7 @@ Value=5;Très probable
 [Item]
 Label=LM32. Si LM30=4 ou 5 ou LM31=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années?
 Name=LM40
-Start=506
+Start=497
 Len=13
 DataType=Alpha
 
@@ -2136,14 +2090,14 @@ Value='13           ';Autre à préciser
 [Item]
 Label=Autre
 Name=LM40_A
-Start=519
+Start=510
 Len=30
 DataType=Alpha
 
 [Item]
 Label=LM33a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous avez eu un désaccord / conflit avec votre famille?
 Name=LM33A
-Start=549
+Start=540
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2160,7 +2114,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un dans votre ménage décède?
 Name=LM33B
-Start=550
+Start=541
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2177,7 +2131,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si votre conjoint(e) décède?
 Name=LM33C
-Start=551
+Start=542
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2194,7 +2148,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre dans votre famille a perdu son emploi?
 Name=LM33D
-Start=552
+Start=543
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2211,7 +2165,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?
 Name=LM33E
-Start=553
+Start=544
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2228,7 +2182,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une entreprise essaie de faire la saisie contre votre volonté?
 Name=LM33F
-Start=554
+Start=545
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2245,7 +2199,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)?
 Name=LM33G
-Start=555
+Start=546
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2262,7 +2216,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une autre personne ou d'un groupe revendique la propriété?
 Name=LM33H
-Start=556
+Start=547
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2279,7 +2233,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre vend frauduleusement la propriété?
 Name=LM33I
-Start=557
+Start=548
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2296,7 +2250,7 @@ Value=5;Très Inquiet
 [Item]
 Label=LM33j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si un désaccord est survenu avec les autorités locales ?
 Name=LM33J
-Start=558
+Start=549
 Len=1
 DataType=Numeric
 OccurrenceLabel=1,Si vous avez eu un désaccord / conflit avec votre famille
@@ -2314,25 +2268,71 @@ Value=5;Très Inquiet
 Label=info collecte
 Name=INFO_COLLECTE
 RecordTypeValue='1'
-RecordLen=69
+RecordLen=96
+
+[Item]
+Label=CF11.Si Oui à CF10, quel est le nombre de parcelles agricoles détenues par (NOM)
+Name=CF11
+Start=40
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=CF12. Si Oui à CF10, quelle est la surface totale des parcelles détenues par (NOM)
+Name=CF12
+Start=42
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=CF14. Si Oui à CF13, quel est le nombre de parcelles à usage d’habitation détenues (louées, empruntées ou en propriété)  par (NOM)
+Name=CF14
+Start=49
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=CF15. Si Oui à CF13, quelle est la surface totale des parcelles à usage d’habitation détenues (louées, empruntées ou en propriété)  par (NOM)
+Name=CF15
+Start=51
+Len=7
+DataType=Numeric
+
+[Item]
+Label=CF17. Si Oui à CF16, quel est le nombre de maisons/logement détenues (louées, empruntées ou en propriété)  par (NOM)?
+Name=CF17
+Start=58
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=CF18. Si Oui à CF16, quelle est la surface totale des maisons détenues par (NOM)?
+Name=CF18
+Start=60
+Len=7
+DataType=Numeric
 
 [Item]
 Label=login agent
 Name=LOG_AGENT
-Start=40
+Start=67
 Len=2
 DataType=Numeric
 
 [Item]
 Label=date début
 Name=DATE_DEBUT
-Start=42
+Start=69
 Len=14
 DataType=Numeric
 
 [Item]
 Label=date fin
 Name=DATE_FIN
-Start=56
+Start=83
 Len=14
 DataType=Numeric

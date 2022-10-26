@@ -26,5 +26,14 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
-  []
+  - name: BASELINE_INDIVIDU_DICT.CL1_1
+    conditions:
+      - questionText:
+          EN: |
+            <b><span class="instruction" style="font-size: 16px;">~~getocclabel()~~</span></b><p></p>
+  - name: BASELINE_INDIVIDU_DICT.CL2
+    conditions:
+      - questionText:
+          EN: |
+            <b><span class="instruction" style="font-size: 16px;">~~getocclabel()~~</span></b><p></p>
 ...
