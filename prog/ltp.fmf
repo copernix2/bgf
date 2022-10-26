@@ -26,9 +26,11 @@ Item=DATE_DEBUT
 Name=FORM007
 Label=SECTION TA : TERRES AGRICOLES DU MENAGE
 Level=1
-Size=2217,995
+Size=2185,1001
   
 Item=SECTIO_TA000
+Item=CF11
+Item=CF12
   
 [EndForm]
   
@@ -36,9 +38,11 @@ Item=SECTIO_TA000
 Name=FORM008
 Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
 Level=1
-Size=300,300
+Size=2163,731
   
 Item=SECTION_TH000
+Item=CF14
+Item=CF15
   
 [EndForm]
   
@@ -46,10 +50,12 @@ Item=SECTION_TH000
 Name=FORM009
 Label=SECTION LM: LOGEMENT DU MENAGE
 Level=1
-Size=300,300
+Size=1414,741
   
 Item=SECTION_LM000
 Item=DATE_FIN
+Item=CF17
+Item=CF18
   
 [EndForm]
   
@@ -127,6 +133,30 @@ Label=SECTION TA : TERRES AGRICOLES DU MENAGE
 Form=2
 Max=1
   
+[Field]
+Name=CF11
+Position=619,242,648,262
+Item=CF11,LTP_DICT
+DataCaptureType=TextBox
+Form=2
+  
+[Text]
+Position=59,245,580,261
+Text=CF11.Si Oui à CF10, quel est le nombre de parcelles agricoles détenues par (NOM)
+ 
+  
+[Field]
+Name=CF12
+Position=613,297,712,317
+Item=CF12,LTP_DICT
+DataCaptureType=TextBox
+Form=2
+  
+[Text]
+Position=83,295,601,311
+Text=CF12. Si Oui à CF10, quelle est la surface totale des parcelles détenues par (NOM)
+ 
+  
 [Grid]
 Name=SECTIO_TA000
 Label=SECTION TA : TERRES AGRICOLES DU MENAGE
@@ -135,7 +165,8 @@ Required=Yes
 Type=Record
 TypeName=SECTIO_TA
 Max=10
-DisplaySize=70,345,2192,970
+MaxField=CF11
+DisplaySize=38,351,2160,976
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -1121,6 +1152,30 @@ Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
 Form=3
 Max=1
   
+[Field]
+Name=CF14
+Position=966,58,995,78
+Item=CF14,LTP_DICT
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=83,61,923,77
+Text=CF14. Si Oui à CF13, quel est le nombre de parcelles à usage d’habitation détenues (louées, empruntées ou en propriété)  par (NOM)
+ 
+  
+[Field]
+Name=CF15
+Position=2039,54,2138,74
+Item=CF15,LTP_DICT
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1097,57,1992,73
+Text=CF15. Si Oui à CF13, quelle est la surface totale des parcelles à usage d’habitation détenues (louées, empruntées ou en propriété)  par (NOM)
+ 
+  
 [Grid]
 Name=SECTION_TH000
 Label=SECTION TH: TERRES A USAGE D’HABITATION DU MENAGE
@@ -1129,7 +1184,8 @@ Required=Yes
 Type=Record
 TypeName=SECTION_TH
 Max=15
-DisplaySize=40,30,2050,639
+MaxField=CF14
+DisplaySize=42,97,2052,706
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2230,6 +2286,30 @@ Label=SECTION LM: LOGEMENT DU MENAGE
 Form=4
 Max=1
   
+[Field]
+Name=CF17
+Position=853,25,882,45
+Item=CF17,LTP_DICT
+DataCaptureType=TextBox
+Form=4
+  
+[Text]
+Position=38,28,810,44
+Text=CF17. Si Oui à CF16, quel est le nombre de maisons/logement détenues (louées, empruntées ou en propriété)  par (NOM)?
+ 
+  
+[Field]
+Name=CF18
+Position=601,63,700,83
+Item=CF18,LTP_DICT
+DataCaptureType=TextBox
+Form=4
+  
+[Text]
+Position=38,66,558,82
+Text=CF18. Si Oui à CF16, quelle est la surface totale des maisons détenues par (NOM)?
+ 
+  
 [Grid]
 Name=SECTION_LM000
 Label=SECTION LM: LOGEMENT DU MENAGE
@@ -2238,7 +2318,8 @@ Required=Yes
 Type=Record
 TypeName=SECTION_LM
 Max=15
-DisplaySize=40,30,1405,639
+MaxField=CF17
+DisplaySize=24,107,1389,716
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2246,77 +2327,77 @@ UseOccurrenceLabels=Yes
 FreeMovement=No
  
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=1
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=2
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=3
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=4
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=5
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=6
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=7
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=8
  
   
 [Text]
-Position=7,4,22,28
+Position=0,4,87,28
 Text=9
  
   
 [Text]
-Position=0,4,22,28
+Position=0,4,87,28
 Text=10
  
   
 [Text]
-Position=1,4,22,28
+Position=0,4,87,28
 Text=11
  
   
 [Text]
-Position=0,4,22,28
+Position=0,4,87,28
 Text=12
  
   
 [Text]
-Position=0,4,22,28
+Position=0,4,87,28
 Text=13
  
   
 [Text]
-Position=0,4,22,28
+Position=0,4,87,28
 Text=14
  
   
 [Text]
-Position=0,4,22,28
+Position=0,4,87,28
 Text=15
  
   

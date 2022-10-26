@@ -11,6 +11,8 @@ ShowErrorMessageNumbers=No
 ComboBoxShowOnlyDiscreteValues=Yes
 ParadataCollection=AllEvents
 ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Dics\ext_individus.dcf
 [AppCode]
 File=.\baseline_individu.ent.apc
 [Message]
@@ -21,3 +23,4 @@ File=.\baseline_individu.ent.qsf
 File=.\baseline_individu.fmf
 [Dictionary Types]
 Dict-Type=..\Dics\baseline_individu.dcf,Input,.\baseline_individu.fmf
+Dict-Type=..\Dics\ext_individus.dcf,External
