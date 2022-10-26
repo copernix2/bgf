@@ -37,6 +37,7 @@ for numeric i in SECTION_CF000  do
 	writecase(EXT_IND_DICS);
 enddo;
 
+
 MEN_STATUT=2;
 MEN_CM=CF2(1);
 writecase(MENAGE_DICT);
@@ -67,19 +68,27 @@ PROC RC08
 
 if ! regexmatch(maketext("%d",$), "^(77|76|75|78|70|33|30)[0-9]{7}$") then
 		// 
-		errmsg("Vueillez entrer un numero de telephone correct");
+		errmsg("Veuillez entrer un numero de telephone correct");
 		reenter;
 	endif;
 PROC RC10_A
 
 preproc
 
-	ask if RC10=4;
+	ask if RC10=96;
 PROC RC11_A
 
 preproc
 
-	ask if RC11=6;
+	ask if RC11=96;
+PROC PM01_A
+preproc
+	ask if PM01=2;
+postproc
+	if $>100 then
+	errmsg("Merci de vérifier le nombre d'années saisie");
+	reenter;
+	endif;
 PROC PM02
 preproc
 
@@ -88,7 +97,7 @@ PROC PM02_A
 
 preproc
 
-	ask if PM02=3;
+	ask if PM02=2;
 PROC PM03
 preproc
 
@@ -96,7 +105,7 @@ preproc
 PROC PM03_A
 preproc
 
-	ask if PM03=6;
+	ask if PM03=96;
 PROC PM05
 if $<0 then
 		
@@ -126,9 +135,12 @@ PROC RM1_A
 
 preproc
 
-	ask if RM1=9;
+	ask if RM1=96;
 PROC RM2
-
+if $<=0 or $>10000000 then
+	errmsg("Merci de vérifier le montant de la principale source de revenu du ménage");
+	reenter;
+endif;
 PROC RM2_P
 
 if $<=0 or $>10 then
@@ -147,18 +159,53 @@ if $<0 or $>10 then
 	errmsg("La part doit etre entre 0 et 10");
 	reenter;
 endif;
+PROC PR02
 PROC SECTION_CF000
 
 PROC CF1
 preproc
-	$= curocc();
-PROC CF2
-
-If length(strip($))=0 then
-	errmsg("Vueillez entrer le nom du proprietaire");
+	ask if PR01=2;
+PROC PR03
+preproc
+	ask if PR01=1;
+	
+postproc
+if $<=0 or $>10 then
+	errmsg("Merci de vérifier le nombre de projet bénéficié par le ménage");
 	reenter;
 endif;
+PROC SOUS_SEC_PR000
+preproc
+	ask if PR03>0;
+PROC PR04
+preproc
+	$=curocc();
+PROC PR05_A
+preproc
+	ask if pos("99",PR05);
+PROC PR06_A
+preproc
+	ask if pos("99",PR06);
+PROC PR07_A
+preproc
+	ask if pos("99",PR07);
+PROC PR08_ONG
+preproc
+	ask if pos("3",PR08);
+PROC PR08_A
+preproc
+	ask if pos("99",PR08);
+PROC PR09_A
+preproc
+	ask if pos("99",PR09);
+PROC PR10_A
+preproc
+	ask if pos("99",PR10);
+PROC CF1
+preproc
+	$= curocc();
 PROC CF4
+
 if $<18 or $>100 then
 
 	errmsg("Veuillez entre un age au moins supérieur à 18 ans.");
@@ -168,10 +215,18 @@ PROC CF7_A
 preproc
 
 	ask if CF7=12;
+PROC CH7B_A
+preproc
+	ask if CF7B=10;
+PROC CF8
+Postproc
+	if length(strip($))>1 and (ischecked("1",$)<>0 or ischecked("15",$)<>0) then
+		errmsg("Modalités incompatibles");
+	    reenter;
+	endif;
 PROC CF8_A
 preproc
-
-	ask if pos("14",CF8)<>0;
+	ask if pos("15",CF8);
 	
 PROC CF16
 preproc
