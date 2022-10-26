@@ -4,6 +4,8 @@ Label=COMPOSITION_MENAGE
 Name=COMPOSITION_MENAGE
 AppType=DataEntry
 OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
 CAPI=Yes
 CreateListing=No
 CreateLog=No
@@ -13,6 +15,7 @@ ParadataCollection=AllEvents
 ParadataDeviceStateMinutes=5
 [External Dictionaries]
 File=..\Dics\ext_individus.dcf
+File=..\Dics\menage.dcf
 [AppCode]
 File=.\composition_menage.ent.apc
 [Message]
@@ -24,3 +27,4 @@ File=.\composition_menage.fmf
 [Dictionary Types]
 Dict-Type=..\Dics\composition_menage.dcf,Input,.\composition_menage.fmf
 Dict-Type=..\Dics\ext_individus.dcf,External
+Dict-Type=..\Dics\menage.dcf,External
