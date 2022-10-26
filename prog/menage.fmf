@@ -13,10 +13,11 @@ File=..\dics\menage.dcf
 Name=FORM000
 Label=(Id Items)
 Level=1
-Size=489,180
+Size=489,321
   
 Item=MEN_ID
 Item=MEN_CREATE_DATE
+Item=LOGIN_ENQUETEUR
   
 [EndForm]
   
@@ -29,7 +30,6 @@ Size=1097,376
 Item=MEN_CODE_COM
 Item=MEN_CODE_VIL
 Item=MEN_CM
-Item=MEN_TYPE
 Item=MEN_SEXECM
 Item=MEN_TEL
 Item=MEN_STATUT
@@ -74,6 +74,19 @@ Form=1
 Position=130,138,240,154
 Text=men_create_date
  
+  
+[Field]
+Name=LOGIN_ENQUETEUR
+Position=295,276,324,296
+Item=LOGIN_ENQUETEUR,MENAGE_DICT
+Protected=Yes
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=121,279,225,295
+Text=login_enqueteur
+ 
 [EndGroup]
   
 [Group]
@@ -97,7 +110,7 @@ Text=men_code_com
   
 [Field]
 Name=MEN_CODE_VIL
-Position=262,57,319,77
+Position=262,57,291,77
 Item=MEN_CODE_VIL,MENAGE_DICT
 DataCaptureType=RadioButton
 Form=2
@@ -131,18 +144,6 @@ Form=2
 [Text]
 Position=50,90,240,106
 Text=Nom Prénom chef de ménage
- 
-  
-[Field]
-Name=MEN_TYPE
-Position=262,117,277,137
-Item=MEN_TYPE,MENAGE_DICT
-DataCaptureType=RadioButton
-Form=2
-  
-[Text]
-Position=50,120,137,136
-Text=Type ménage
  
   
 [Field]

@@ -26,7 +26,7 @@ DataType=Alpha
 Label=SECTION ID : IDENTIFICATION ET RENSEIGNEMENTS SUR LE MENAGE
 Name=BASELINE_DICT_REC
 RecordTypeValue='2'
-RecordLen=80
+RecordLen=71
 
 [Item]
 Label=ID02. Commune
@@ -40,22 +40,13 @@ ZeroFill=Yes
 Label=ID03. Village
 Name=ID03
 Start=40
-Len=3
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=ID04. Commune
-Name=ID04
-Start=43
-Len=8
-DataType=Numeric
-ZeroFill=Yes
+Len=2
+DataType=Alpha
 
 [Item]
 Label=ID05.Nom du chef de ménage
 Name=ID05
-Start=51
+Start=42
 Len=30
 DataType=Alpha
 
@@ -376,10 +367,11 @@ DataType=Alpha
 [ValueSet]
 Label=PR05. Quels sont les outils et méthodes du projet […] ?
 Name=PR05_VS1
-Value='01  ';outils de sécurisation
-Value='02  ';outils de gouvernance
-Value='03  ';outils de gouvernance
-Value='99  ';Autre à préciser
+
+Value='1   ';outils de sécurisation
+Value='2   ';outils de gouvernance
+Value='3   ';outils de gouvernance
+Value='9   ';Autre à préciser
 
 [Item]
 Label=PR05a. Préciser autre outils et méthodes du projet
@@ -409,6 +401,7 @@ Value='08        ';Appui pour accéder au logement
 Value='09        ';Appui pour accéder à la terre d’habitation
 Value='99        ';Autre à préciser
 
+
 [Item]
 Label=PR06a. Préciser autre les activités du projet
 Name=PR06_A
@@ -436,6 +429,7 @@ Value='07        ';Octroi de matériels pour valoriser la terre
 Value='08        ';Appui pour accéder au logement
 Value='09        ';Appui pour accéder à la terre d’habitation
 Value='99        ';Autre à préciser
+
 
 [Item]
 Label=PR07a. Préciser autre activités du projet […] auxquelles vous a participé/bénéficié
@@ -491,6 +485,7 @@ Value='05     ';Services étatiques
 Value='06     ';Partenaires techniques et financiers
 Value='99     ';Autre à préciser
 
+
 [Item]
 Label=PR09a. Préciser autres parties prenantes du projet
 Name=PR09_A
@@ -513,6 +508,7 @@ Value='02   ';Hommes
 Value='03   ';Communauté
 Value='04   ';Acteurs institutionnels (formels/non formels)
 Value='99   ';Autre à préciser
+
 
 [Item]
 Label=PR10a. Préciser autre bénéficiaires du projet
@@ -555,7 +551,8 @@ Label=SECTION CF : CAPITAL FONCIER DU MENGAE
 Name=SECTION_CF
 RecordTypeValue='6'
 MaxRecords=99
-RecordLen=268
+
+RecordLen=269
 
 [Item]
 Label=CF1. code individu
@@ -699,8 +696,9 @@ DataType=Alpha
 [Item]
 Label=CF8. Quels sont les activité(s) secondaire(s)
 Name=CF8
-Start=200
-Len=15
+
+Start=199
+Len=16
 DataType=Alpha
 
 [ValueSet]
@@ -722,6 +720,7 @@ Value='13             ';Inactifs/chômeurs
 Value='14             ';Autre (à préciser)
 Value='15             ';NSP
 
+
 [Item]
 Label=CF8. Préciser autre activité secondaire 
 Name=CF8_A
@@ -739,9 +738,8 @@ DataType=Numeric
 [ValueSet]
 Label=CF9. Est ce qu'il l’habitude d’exploiter de la terre pour l’agriculture ?
 Name=CF9_VS1
-Value=2;Non
 Value=1;Oui
-Name=REFUSED,Special
+Value=2;Non
 
 [Item]
 Label=CF10. Est-ce qu'il détient (loué, emprunté ou en propriété) des terres agricoles ?
@@ -753,12 +751,12 @@ DataType=Numeric
 [ValueSet]
 Label=CF10. Est-ce qu'il détient (loué, emprunté ou en propriété) des terres agricoles ?
 Name=CF10_VS1
-Value=2;Non
 Value=1;Oui
-Name=REFUSED,Special
+Value=2;Non
 
 [Item]
 Label=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ? 
+
 Name=CF13
 Start=267
 Len=1
@@ -766,10 +764,10 @@ DataType=Numeric
 
 [ValueSet]
 Label=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ? 
+
 Name=CF13_VS1
-Value=2;Non
 Value=1;Oui
-Name=REFUSED,Special
+Value=2;Non
 
 [Item]
 Label=CF16. Est-ce qu'il détient une maison/un logement ?
@@ -781,9 +779,21 @@ DataType=Numeric
 [ValueSet]
 Label=CF16. Est-ce qu'il détient une maison/un logement ?
 Name=CF16_VS1
-Value=2;Non
 Value=1;Oui
-Name=REFUSED,Special
+Value=2;Non
+
+[Item]
+Label=Ajouter un autre individu
+Name=AJOUTER_UN_AUTRE_INDIVIDU
+Start=269
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Ajouter un autre individu
+Name=AJOUTER_UN_AUTRE_INDIVIDU_VS1
+Value=1;Oui
+Value=2;Non
 
 [Record]
 Label=other_var

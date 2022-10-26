@@ -38,16 +38,21 @@ DataType=Numeric
 [ValueSet]
 Label=login agent
 Name=LOGIN_AGENT_VS1
-Value=1;Enquêteur 1
-Value=2;Enquêteur 2
-Value=3;Enquêteur 3
-Value=4;Enquêteur 4
-Value=5;Enquêteur 5
-Value=6;Enquêteur 6
-Value=7;Enquêteur 7
-Value=8;Enquêteur 8
-Value=9;Enquêteur 9
-Value=10;Enquêteur 10
+Value=11;Ibrahima Sambou
+Value=12;Moustapha NDIAYE
+Value=13;Bah FALL
+Value=51;Cheikh Abdou Khadre Dieylani DIOP
+Value=52;Gorgui Thiaw
+Value=53;Adama DIAW
+Value=31;Abou DIA
+Value=32;Maimouna DIA
+Value=33;Awa SALL
+Value=21;Ndatté FALL
+Value=22;Djibril ba
+Value=23;Abdou aziz DIENG
+Value=41;Ndeye NGOM
+Value=42;Landing Cissé
+Value=43;Kounama SADIO
 
 [Item]
 Label=nom agent
@@ -66,17 +71,17 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Menu Principal
-Name=MENU_VS2
+Name=MENU_VS1
 Value=1;Liste ménage
-Value=4;fiche village
 Value=2;Synchronisation avec le binôme
 Value=3;Envoi vers le niveau centrale
 Value=9;Quitter l'application
 
 [ValueSet]
 Label=Menu Principal
-Name=MENU_VS1
+Name=MENU_VS2
 Value=1;Liste ménage
+Value=4;fiche village
 Value=2;Synchronisation avec le binôme
 Value=3;Envoi vers le niveau centrale
 Value=9;Quitter l'application

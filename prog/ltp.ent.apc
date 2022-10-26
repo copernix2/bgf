@@ -341,8 +341,14 @@ preproc
 PROC TH8S
 preproc
 	ask if TH5=5;
+
 PROC BASELINE_DICT_FF
 
+PROC ID_INDIVIDU_LTP
+	if ! loadcase(EXT_IND_DICS, ID, ID_INDIVIDU_LTP) then 
+		errmsg("Informations de l'individu introuvables.");
+		exit;
+	 endif;
 PROC LOG_AGENT
 preproc
 	$=tonumber(getoperatorid());

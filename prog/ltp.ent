@@ -12,6 +12,8 @@ ShowErrorMessageNumbers=No
 ComboBoxShowOnlyDiscreteValues=Yes
 ParadataCollection=AllEvents
 ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Dics\ext_individus.dcf
 [AppCode]
 File=.\ltp.ent.apc
 [Message]
@@ -24,3 +26,4 @@ File=.\ltp.fmf
 Folder=.\Resources
 [Dictionary Types]
 Dict-Type=..\Dics\ltp.dcf,Input,.\ltp.fmf
+Dict-Type=..\Dics\ext_individus.dcf,External

@@ -15,7 +15,7 @@ postproc
 	open_menu.setproperty("inputdata","zzzz.csdb");
 	open_menu.setproperty("StartMode","ADD");
 	open_menu.setproperty("operatorid",$);
-	open_menu.setproperty("ExternalFiles.INFO_MENAGE_DICT", pathname(application)+"../data/" + maketext('info_menage_%02d.csdb',$));
+	open_menu.setproperty("ExternalFiles.MENAGE_DICT", pathname(application)+"../data/" + maketext('menage_%02d.csdb',$));
 	open_menu.setproperty("ExternalFiles.SUIVI_MERE_DICT", PathInput+maketext("suivi_mere_%02d.csdb", $));
 	//composition 
 	open_menu.setproperty("ExternalFiles.COMPOSITION_MENAGE_DICT", PathData + maketext('composition_%02d.csdb',$));
@@ -30,5 +30,5 @@ postproc
 
 	open_menu.setproperty("HtmlDialogs", pathname(application)+"../report");
 
-	open_menu.save(pathname(temp)+"men.pff");
+	open_menu.save(pathname(temp)+"menu.pff");
 open_menu.exec();

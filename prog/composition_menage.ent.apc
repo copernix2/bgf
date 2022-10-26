@@ -28,6 +28,7 @@ for numeric i in SECTION_CF000  do
 	EXT_CF16=CF16;
 	STATUT_LTP=0;
 	STATUT_HF=0;
+	EXT_IND_DICS.LOGIN_ENQUETEUR=tonumber(getoperatorid());
 	if REP2 = CF1 then 
 		IS_REP_2=1;
 	else
@@ -36,6 +37,33 @@ for numeric i in SECTION_CF000  do
 	writecase(EXT_IND_DICS);
 enddo;
 
+
+MEN_STATUT=2;
+MEN_CM=CF2(1);
+writecase(MENAGE_DICT);
+
+PROC COMPOSITION_MENAGE_ID
+if ! loadcase(MENAGE_DICT,$) then 
+	errmsg("Informations sur le ménage introuvables");
+	stop(1);
+endif;
+PROC LOG_AGENT
+PReproc
+	$=tonumber(getoperatorid());
+PROC DATE_DEBUT
+preproc
+	if special(visualvalue($)) then 
+		$=timestamp();
+	endif;
+PROC ID02
+preproc
+	$=MEN_CODE_COM;
+PROC ID03
+preproc
+	$=MEN_CODE_VIL;
+PROC ID05
+preproc
+	$=MEN_CM;
 PROC RC08
 
 if ! regexmatch(maketext("%d",$), "^(77|76|75|78|70|33|30)[0-9]{7}$") then
@@ -132,6 +160,9 @@ if $<0 or $>10 then
 	reenter;
 endif;
 PROC PR02
+PROC SECTION_CF000
+
+PROC CF1
 preproc
 	ask if PR01=2;
 PROC PR03
@@ -174,9 +205,10 @@ PROC CF1
 preproc
 	$= curocc();
 PROC CF4
-if $<18 then
 
-	errmsg("l'individu doit avoir minimum 18 ans");
+if $<18 or $>100 then
+
+	errmsg("Veuillez entre un age au moins supérieur à 18 ans.");
 	reenter;
 endif;
 PROC CF7_A
@@ -199,6 +231,18 @@ preproc
 PROC CF16
 preproc
 	ask if 1=2;
+PROC AJOUTER_UN_AUTRE_INDIVIDU
+if $=2 then
+	if PM07=1 and  count(SECTION_CF000 where CF10=1)=0 then 
+		errmsg("Il doit exister au moins un membre du ménage ayant, louant ou empreuntant des terres pour l'agriculture.");
+		reenter;
+	endif;
+	if PM07=0 and  count(SECTION_CF000 where CF10=1)>0 then 
+		errmsg("Il ne doit pas exister au moins un membre du ménage ayant, louant ou empreuntant des terres pour l'agriculture.");
+		reenter;
+	endif;
+	endgroup;
+endif;
 PROC REP2
 preproc
 valueset preneur_decision_vs;
@@ -207,3 +251,15 @@ for numeric i in SECTION_CF000 where CF3 <> CF3(1)  do
 enddo;
 
 setvalueset($, preneur_decision_vs);
+
+if preneur_decision_vs.length()=0 then
+	IF CF3(1)=1 then 
+		errmsg("Il doit avoir au moins une femme dans le ménage pour le ménage soit éligible.");
+	else
+		errmsg("Il doit avoir au moins un homme dans le ménage pour le ménage soit éligible.");
+	endif;
+	reenter AJOUTER_UN_AUTRE_INDIVIDU(totocc(SECTION_CF000));
+endif;
+PROC DATE_FIN
+preproc
+	$=timestamp();

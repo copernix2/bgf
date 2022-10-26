@@ -7,12 +7,15 @@ PROC MENAGE_FF
 PROC MEN_CREATE_DATE
 preproc
 	$=timestamp();
+PROC LOGIN_ENQUETEUR
+preproc
+	$=tonumber(getoperatorid());
 PROC MEN_CODE_COM
 preproc
 	string commune_string = loadsetting("commune","6");
 	
 postproc
-	if $<>6 and tonumber(commune_string)<>$ then 
+	if tonumber(maketext("%d", LOGIN_ENQUETEUR)[1:1])<>$ then 
 		errmsg("Il semble que vous soyez hors de votre commune.")
 		select("Continuer", continue, "Reprendre", $);
 	endif;
@@ -24,15 +27,15 @@ preproc
 	vil_file.open(pathname(application)+"../resources/vil.txt");
 	string vil_string;
 	while vil_file.read(vil_string) do
-		if tonumber(vil_string[1:2])=MEN_CODE_COM then
-			vil_vs.add(strip(vil_string[5:50]), vil_string[1:4]);
+		if tonumber(vil_string[1:1])=MEN_CODE_COM then
+			vil_vs.add(strip(vil_string[3:50]), vil_string[1:2]);
 		endif;
 	enddo;
-	vil_vs.add("Autre village", "9999");
+	vil_vs.add("Autre village", "99");
 	setvalueset($,vil_vs);
 PROC AUTRE_VILLAGE
 preproc
-	ask if MEN_CODE_VIL="9999";
+	ask if MEN_CODE_VIL="99";
 PROC MEN_TEL
 postproc
 
