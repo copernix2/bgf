@@ -30,7 +30,7 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <b>~~getocclabel()~~</b><p></p>
+            <b><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><p></p>
   - name: COMPOSITION_MENAGE_DICT.PR05
     conditions:
       - questionText:
@@ -165,7 +165,7 @@ questions:
     conditions:
       - questionText:
           FR: |
-            Ajouter un&nbsp;<b>~~curocc()+1~~ème</b> individu<p></p>
+            Ajouter un&nbsp;<b><font color="#ff0000">~~curocc()+1~~ème</font></b> individu<p></p>
   - name: COMPOSITION_MENAGE_DICT.CF11
     conditions:
       - questionText:

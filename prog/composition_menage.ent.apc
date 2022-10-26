@@ -83,7 +83,10 @@ preproc
 	ask if RC11=96;
 PROC PM01_A
 preproc
+
 	ask if PM01=2;
+
+
 postproc
 	if $>100 then
 	errmsg("Merci de vérifier le nombre d'années saisie");
@@ -127,10 +130,6 @@ if $<=0 then
 	endif;
 PROC PM07
 
-if $=2 then
-
-	endlevel;
-endif;
 PROC RM1_A
 
 preproc
@@ -143,26 +142,27 @@ if $<=0 or $>10000000 then
 endif;
 PROC RM2_P
 
-if $<=0 or $>10 then
+preproc
+	ask if 1=2;
+	
+{if $<=0 or $>10 then
 	errmsg("La part de la source principale doit etre entre 1 et 10");
 	reenter;
-endif;
+endif;}
+
 
 PROC RM3
 
-preproc
+{preproc
 if curocc()=RM1 then
 		$=RM2_P;
-	endif;
+	endif;}
 postproc
 if $<0 or $>10 then
 	errmsg("La part doit etre entre 0 et 10");
 	reenter;
 endif;
 PROC PR02
-PROC SECTION_CF000
-
-PROC CF1
 preproc
 	ask if PR01=2;
 PROC PR03
@@ -182,28 +182,33 @@ preproc
 	$=curocc();
 PROC PR05_A
 preproc
-	ask if pos("99",PR05);
+	ask if pos("9",PR05);
 PROC PR06_A
 preproc
 	ask if pos("99",PR06);
 PROC PR07_A
 preproc
 	ask if pos("99",PR07);
+PROC PR08S
+preproc
+	ask if pos("1",PR08);
 PROC PR08_ONG
 preproc
 	ask if pos("3",PR08);
 PROC PR08_A
 preproc
-	ask if pos("99",PR08);
+	ask if pos("96",PR08);
 PROC PR09_A
 preproc
-	ask if pos("99",PR09);
+	ask if pos("9",PR09);
 PROC PR10_A
 preproc
-	ask if pos("99",PR10);
+	ask if pos("9",PR10);
+PROC SECTION_CF000
+
 PROC CF1
 preproc
-	$= curocc();
+	$=curocc();
 PROC CF4
 
 if $<18 or $>100 then

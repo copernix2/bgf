@@ -30,13 +30,13 @@ function open_individu(numeric id)
 	 compostion_pff.setproperty("operatorid", getoperatorid());
 	 compostion_pff.setproperty("StartMode", "ADD");
 	 compostion_pff.setproperty("key", key(EXT_IND_DICS));
-	 compostion_pff.setproperty("Application", PathProg + 'culture.pen');
+	 compostion_pff.setproperty("Application", PathProg + 'baseline_individu.pen');
 	 compostion_pff.setproperty("InputData", PathData + maketext('individu_%02d.csdb',LOGIN_AGENT));
 	 compostion_pff.setproperty("Description", strip(EXT_CF2));
 	 compostion_pff.setproperty("ExternalFiles.EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
 	 compostion_pff.setproperty("ExternalFiles.MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
 	 //compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
-	 compostion_pff.save(pathname(temp)+"gestion.pff");
+	 compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
 	 compostion_pff.exec();
 end;
 function Open_ltp(numeric id)

@@ -1,0 +1,43 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "BASELINE_Genre_Foncier",
+  "description": "Questionnaire sur le genre et le foncier",
+  "files": [
+    {
+      "path": "..\\prog\\baseline_individu.pen"
+    },
+    {
+      "path": "..\\prog\\composition_menage.pen"
+    },
+    {
+      "path": "..\\prog\\enqueteur.ent"
+    },
+    {
+      "path": "..\\prog\\enqueteur.pff"
+    },
+    {
+      "path": "..\\prog\\fiche_menage.pen"
+    },
+    {
+      "path": "..\\prog\\ltp.pen"
+    },
+    {
+      "path": "..\\prog\\menage.pen"
+    },
+    {
+      "path": "..\\prog\\menu.pen"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": "..\\Dics\\enqueteur.dcf",
+      "uploadForSync": true
+    }
+  ],
+  "deployment": {
+    "type": "CSWeb",
+    "cswebUrl": "http:\/\/174.138.32.222\/recettes\/api",
+    "ftpUrl": "ftp:\/\/"
+  }
+}

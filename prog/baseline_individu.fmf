@@ -1239,7 +1239,7 @@ Form=5
   
 [Text]
 Position=50,330,362,346
-Text=PSL8. Si oui à PSL7, quel est le statut juridique ?
+Text=PSL8. Si oui à PSL6, quel est le statut juridique ?
  
   
 [Field]
@@ -1414,7 +1414,7 @@ Name=CA05
 Position=757,237,884,257
 Item=CA05,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
 Form=6
   
 [Text]
@@ -1440,7 +1440,7 @@ Name=CA07
 Position=757,297,884,317
 Item=CA07,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
 Form=6
   
 [Text]

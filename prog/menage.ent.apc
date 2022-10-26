@@ -31,7 +31,7 @@ preproc
 			vil_vs.add(strip(vil_string[3:50]), vil_string[1:2]);
 		endif;
 	enddo;
-	vil_vs.add("Autre village", "99");
+	{vil_vs.add("Autre village", "99");}
 	setvalueset($,vil_vs);
 PROC AUTRE_VILLAGE
 preproc

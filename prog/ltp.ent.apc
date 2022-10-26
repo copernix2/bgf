@@ -23,6 +23,10 @@ PROC TA2
 preproc
 	$=curocc();
 
+PROC TA3_A
+preproc
+
+	ask if TA3=4;
 PROC TA4
 if $<=0 then
 	errmsg("La surface ne peut pas etre nulle ou negative");
@@ -50,7 +54,7 @@ PROC TA8_A
 preproc
 
 	ask if TA8=4;
-PROC TA9
+PROC BLOCK000_TA9
 preproc
 
 	ask if TA7=5;
@@ -86,6 +90,12 @@ preproc
 PROC TA22_A
 preproc
 	ask if pos("99",TA22);
+PROC TA24
+Postproc
+	if length(strip($))>1 and ischecked("1",$)<>0  then
+		errmsg("Modalités incompatibles");
+	    reenter;
+	endif;
 PROC TA24_A
 preproc
 	ask if pos("99",TA24);
@@ -109,7 +119,7 @@ preproc
 	ask if TA29=4 or TA29=5 or TA30=4 or TA30=5;
 PROC TA31_A
 preproc
-	ask if pos("99",TA31);
+	ask if pos("13",TA31);
 PROC TH1
 preproc
 	$=curocc();
