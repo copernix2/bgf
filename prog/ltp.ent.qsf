@@ -905,7 +905,7 @@ questions:
       - questionText:
           FR: |
             <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF15. Si Oui à CF13, quelle est la surface&nbsp;totale des parcelles à
-            usage d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)</span>~~CF2~~?<p></p>
+            usage d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)</span>?<p></p>
   - name: LTP_DICT.CF16
     conditions:
       - questionText:
