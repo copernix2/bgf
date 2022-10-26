@@ -287,24 +287,10 @@ PROC LM15_A
 preproc
 
 	ask if LM15=4; 
-PROC LM16_AN
-if $<0 then
-	errmsg("Vueillez entre une année valide");
-	reenter;
+PROC LM16
+preproc
 
-endif;
-PROC LM16_M
-if $<=0 or $>12 then
-	errmsg("Vueillez entre un mois valide");
-	reenter;
-
-endif;
-PROC LM16_J
-if $<=0 or $>31 then
-	errmsg("Vueillez entre un jour valide");
-	reenter;
-
-endif;
+	ask if LM14=5;
 PROC LM17
 preproc
 
@@ -313,22 +299,16 @@ PROC LM18
 preproc
 
 	ask if LM17=1;
-PROC LM27_AR
+PROC LM27
 preproc
-
-	ask if LM27=1;
-PROC LM27_NA
-preproc
-
-	ask if LM27=2;
+	ask if LM14=3 or LM14=6 or LM14=7;
 PROC LM28
-preproc
-
-	ask if LM17=1;
+preproc 
+	ask if LM14=4;
 PROC LM29_A
 preproc
 
-	ask if LM29=99;
+	ask if LM29J=99;
 PROC DATE_FIN
 preproc
 	if special(visualvalue($)) then 
