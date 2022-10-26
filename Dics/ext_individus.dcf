@@ -19,13 +19,13 @@ Name=EXT_IND_LEVEL
 Label=ID_MENAGE
 Name=EXT_ID
 Start=2
-Len=32
+Len=36
 DataType=Alpha
 
 [Item]
 Label=ext_id_ind
 Name=EXT_ID_IND
-Start=34
+Start=38
 Len=2
 DataType=Numeric
 
@@ -38,14 +38,14 @@ RecordLen=122
 [Item]
 Label=CF2. Prénom et Nom
 Name=EXT_CF2
-Start=36
+Start=40
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CF3. Sexe (NOM)
 Name=EXT_CF3
-Start=86
+Start=90
 Len=1
 DataType=Numeric
 
@@ -58,7 +58,7 @@ Value=2;Féminin
 [Item]
 Label=CF4. Age de (NOM)
 Name=EXT_CF4
-Start=87
+Start=91
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -66,7 +66,7 @@ ZeroFill=Yes
 [Item]
 Label=CF5. Lien de parenté de (NOM) avec le chef de ménage
 Name=EXT_CF5
-Start=89
+Start=93
 Len=2
 DataType=Numeric
 
@@ -90,7 +90,7 @@ Value=13; Autres parents du CM
 [Item]
 Label=CF6. Niveau d'instruction de (NOM)
 Name=EXT_CF6
-Start=91
+Start=95
 Len=1
 DataType=Numeric
 
@@ -109,7 +109,7 @@ Value=7;Supérieur
 [Item]
 Label=CF7. Quel est l'activité principale de (NOM) ?
 Name=EXT_CF7
-Start=92
+Start=96
 Len=2
 DataType=Numeric
 
@@ -135,7 +135,7 @@ Value=15;NSP
 [Item]
 Label=CF7bis. Situation matrimoniale de (NOM)
 Name=EXT_CF7B
-Start=94
+Start=98
 Len=1
 DataType=Numeric
 
@@ -156,7 +156,7 @@ Value=0;Autre à préciser
 [Item]
 Label=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
 Name=EXT_CF8
-Start=95
+Start=99
 Len=15
 DataType=Alpha
 
@@ -182,7 +182,7 @@ Value='15             ';NSP
 [Item]
 Label=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
 Name=EXT_CF9
-Start=110
+Start=114
 Len=1
 DataType=Numeric
 
@@ -196,7 +196,7 @@ Name=REFUSED,Special
 [Item]
 Label=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
 Name=EXT_CF10
-Start=111
+Start=115
 Len=1
 DataType=Numeric
 
@@ -210,7 +210,7 @@ Name=REFUSED,Special
 [Item]
 Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
 Name=EXT_CF13
-Start=112
+Start=116
 Len=1
 DataType=Numeric
 
@@ -224,7 +224,7 @@ Name=REFUSED,Special
 [Item]
 Label=CF16. Est-ce que (NOM) détient une maison/un logement ?
 Name=EXT_CF16
-Start=113
+Start=117
 Len=1
 DataType=Numeric
 
@@ -238,9 +238,9 @@ Name=REFUSED,Special
 [Item]
 Label=login_enqueteur
 Name=LOGIN_ENQUETEUR
-Start=114
-Len=6
-DataType=Alpha
+Start=118
+Len=2
+DataType=Numeric
 
 [Item]
 Label=is_rep_2

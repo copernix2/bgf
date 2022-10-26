@@ -97,8 +97,7 @@
                 <tr>
                     <th class="text-center">Commune</th>
 					<th class="text-center">Village</th>
-                    <th class="text-center">Nom du CM</th>
-					 <th class="text-center">Type</th>
+                    <th >Nom du CM</th>
 					<th class="text-center">Sexe du CM</th>
 					<th class="text-center">Contact</th>
                     <th class="text-center">Action</th>
@@ -116,15 +115,15 @@
 					$.write("<tr><td class='text-center'> %s</td>", getlabel(MEN_CODE_COM,MEN_CODE_COM));
 					$.write("<td class='text-center'> %s</td>", getlabel(MEN_CODE_VIL,MEN_CODE_VIL));
 					$.write("<td> %s</td>", MEN_CM);
-					$.write("<td><span class='badge badge-info'> %s </span></td> ", getlabel(MEN_TYPE,MEN_TYPE));
-					$.write("<td><span class='text-center'> %s </span></td> ", getlabel(MEN_SEXECM,MEN_SEXECM));
-					$.write("<td> %s</td>", edit("99 999 99 99", MEN_TEL));
+					//$.write("<td><span class='badge badge-info'> %s </span></td> ", getlabel(MEN_TYPE,MEN_TYPE));
+					$.write("<td class='text-center'><span > %s </span></td> ", getlabel(MEN_SEXECM,MEN_SEXECM));
+					$.write("<td class='text-center'> %s</td>", edit("99 999 99 99", MEN_TEL));
 					
 					$.write('<td>');
 				
 					if MEN_STATUT <= 1  or special(MEN_STATUT) then //concrétisé
 						$.write('<a class="btn btn-outline-danger" href="javascript:CSPro.runLogicAsync(%scomposition_function(%d);%s);" role="button">Composition</a> ', quote, i, quote);
-					elseif MEN_STATUT=2 then
+					elseif MEN_STATUT=3 then
 						$.write('<a class="btn btn-outline-success" href="javascript:CSPro.runLogicAsync(%sOpen_hh_function(%d);%s);" role="button">Ouvrir</a> ', quote, i, quote);
 					else
 						$.write('<a class="btn btn-outline-warning" href="javascript:CSPro.runLogicAsync(%sOpen_hh_function(%d);%s);" role="button">Ouvrir</a> ', quote, i, quote);

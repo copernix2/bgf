@@ -119,6 +119,11 @@ questions:
             <span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
             &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
             AR-SA">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><p></p>
+  - name: COMPOSITION_MENAGE_DICT.AJOUTER_UN_AUTRE_INDIVIDU
+    conditions:
+      - questionText:
+          FR: |
+            Ajouter un&nbsp;<b>~~curocc()+1~~ème</b> individu<p></p>
   - name: COMPOSITION_MENAGE_DICT.CF11
     conditions:
       - questionText:

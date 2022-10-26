@@ -19,19 +19,19 @@ Name=FICHE_MENAGE_LEVEL
 Label=id_men
 Name=ID_MEN_FICHE
 Start=2
-Len=32
+Len=36
 DataType=Alpha
 
 [Record]
 Label=fiche_menage Record
 Name=FICHE_MENAGE_REC
 RecordTypeValue='1'
-RecordLen=34
+RecordLen=38
 
 [Item]
 Label=Menu fiche ménage
 Name=MENU_FICHE
-Start=34
+Start=38
 Len=1
 DataType=Numeric
 
