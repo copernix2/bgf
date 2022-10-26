@@ -3,6 +3,9 @@ PROC GLOBAL
 
 PROC BASELINE_DICT_FF
 
+PROC LTP_DICT_LEVEL
+STATUT_LTP=1;
+writecase(EXT_IND_DICS);
 PROC ID_INDIVIDU_LTP
 	if ! loadcase(EXT_IND_DICS, ID, ID_INDIVIDU_LTP) then 
 		errmsg("Informations de l'individu introuvables.");
@@ -16,6 +19,15 @@ preproc
 	if special(visualvalue($)) then 
 		$=timestamp();
 	endif;
+PROC CF11
+preproc
+	ask if EXT_CF10=1;
+PROC CF12
+preproc
+	ask if highlighted(CF11) ;
+PROC SECTIO_TA000
+preproc
+	ask if highlighted(CF11) ;
 PROC TA1
 preproc
 	$=curocc();
@@ -110,6 +122,15 @@ preproc
 PROC TA31_A
 preproc
 	ask if pos("99",TA31);
+PROC CF14
+preproc
+	ask if EXT_CF13=1;
+PROC CF15
+preproc
+	ask if highlighted(CF14) ;
+PROC SECTION_TH000
+preproc
+	ask if highlighted(CF14) ;
 PROC TH1
 preproc
 	$=curocc();
@@ -224,6 +245,12 @@ preproc
 PROC TH25_A
 preproc
 	ask if pos("99",TH25);
+PROC CF18
+preproc
+	ask if highlighted(CF17) ;
+PROC SECTION_LM000
+preproc
+	ask if highlighted(CF17) ;
 PROC LM1
 preproc
 	$=curocc();

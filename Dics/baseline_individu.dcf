@@ -16,22 +16,29 @@ Name=BASELINE_INDIVIDU_LEVEL
 [IdItems]
 
 [Item]
-Label=baseline_individu Identification
-Name=BASELINE_INDIVIDU_ID
+Label=id_men
+Name=ID_MEN
 Start=2
 Len=36
 DataType=Alpha
+
+[Item]
+Label=id_ind
+Name=ID_IND
+Start=38
+Len=2
+DataType=Numeric
 
 [Record]
 Label=SECTION IR- IDENTIFICATION ET RENSEIGNEMENTS SUR L’INDIVIDU
 Name=BASELINE_INDIVIDU_REC
 RecordTypeValue='1'
-RecordLen=38
+RecordLen=40
 
 [Item]
 Label=IR3. Type d’individu
 Name=IR3
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -45,12 +52,12 @@ Value=2;Répondant secondaire
 Label=SECTION AC- ACCES, CONTROLE ET PARTICIPATION A LA PRISE DE DECISION SUR LE CAPITAL PRODUCTIF
 Name=SECTION_AC
 RecordTypeValue='2'
-RecordLen=1194
+RecordLen=1196
 
 [Item]
 Label=AC1. Le capital foncier est-il partagé entre les membres ?
 Name=AC1
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -63,7 +70,7 @@ Value=2;Non
 [Item]
 Label=AC2. Si oui à AC1, à qui ?
 Name=AC2
-Start=39
+Start=41
 Len=2
 DataType=Numeric
 
@@ -77,21 +84,21 @@ Value=96;Autre (à préciser)
 [Item]
 Label=AC2a. Préciser autre personne qui partage le capital foncier
 Name=AC2_A
-Start=41
+Start=43
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC3. Si entre hommes adultes seulement à AC2, pourquoi ?
 Name=AC3
-Start=91
+Start=93
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC4. Si entre hommes et femmes à AC2, est-ce toutes les femmes, tout âge et situation matrimonial confondus, ont reçu leur part ?
 Name=AC4
-Start=141
+Start=143
 Len=1
 DataType=Numeric
 
@@ -104,14 +111,14 @@ Value=2;Non
 [Item]
 Label=AC5. Si Oui ou Non à AC4, pourquoi ?
 Name=AC5
-Start=142
+Start=144
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC6. Si Oui à AC4, est-ce à part égal ?
 Name=AC6
-Start=192
+Start=194
 Len=1
 DataType=Numeric
 
@@ -124,7 +131,7 @@ Value=2;Non
 [Item]
 Label=AC7. Si Oui à AC4, Sur quelle base ce partage a été effectuée ?
 Name=AC7
-Start=193
+Start=195
 Len=2
 DataType=Numeric
 
@@ -139,14 +146,14 @@ Value=96;Autre (à préciser)
 [Item]
 Label=AC7a. Préciser autre base de partage
 Name=AC7_A
-Start=195
+Start=197
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne : la répartition entre les membres
 Name=AC8_1
-Start=245
+Start=247
 Len=2
 DataType=Numeric
 
@@ -166,7 +173,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC9.1. Si la personne qui gère la répartition entre les membres est un homme, demander si les femmes sont associées à la prise de décision ?
 Name=AC9_1
-Start=247
+Start=249
 Len=1
 DataType=Numeric
 
@@ -179,21 +186,21 @@ Value=2;Non
 [Item]
 Label=AC9.1.1. Si oui, pour quoi ?
 Name=AC9_1_1
-Start=248
+Start=250
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC9.1.2 Si non, pour, quoi ?
 Name=AC9_1_2
-Start=298
+Start=300
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne : les prêts
 Name=AC8_2
-Start=348
+Start=350
 Len=2
 DataType=Numeric
 
@@ -213,7 +220,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC9.2. Si la personne qui gère les prêts est un homme, demander si les femmes sont associées à la prise de décision ?
 Name=AC9_2
-Start=350
+Start=352
 Len=1
 DataType=Numeric
 
@@ -226,21 +233,21 @@ Value=2;Non
 [Item]
 Label=AC9.2.1. Si oui, pour quoi ?
 Name=AC9_2_1
-Start=351
+Start=353
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC9.2.2. Si non, pour, quoi ?
 Name=AC9_2_2
-Start=401
+Start=403
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la vente
 Name=AC8_3
-Start=451
+Start=453
 Len=2
 DataType=Numeric
 
@@ -260,7 +267,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC9.3. Si la personne qui gère la vente est un homme, demander si les femmes sont associées à la prise de décision ?
 Name=AC9_3
-Start=453
+Start=455
 Len=1
 DataType=Numeric
 
@@ -273,21 +280,21 @@ Value=2;Non
 [Item]
 Label=AC9.3.1. Si oui, pour quoi ?
 Name=AC9_3_1
-Start=454
+Start=456
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC9.3.2 Si non, pour, quoi ?
 Name=AC9_3_2
-Start=504
+Start=506
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la location
 Name=AC8_4
-Start=554
+Start=556
 Len=2
 DataType=Numeric
 
@@ -307,7 +314,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC9.4. Si la personne qui gère la location est un homme, demander si les femmes sont associées à la prise de décision ?
 Name=AC9_4
-Start=556
+Start=558
 Len=1
 DataType=Numeric
 
@@ -320,21 +327,21 @@ Value=2;Non
 [Item]
 Label=AC9.4.1. Si oui, pour quoi ?
 Name=AC9_4_1
-Start=557
+Start=559
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC9.4.2 Si non, pour, quoi ?
 Name=AC9_4_2
-Start=607
+Start=609
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne : des spéculations à planter
 Name=AC8_5
-Start=657
+Start=659
 Len=2
 DataType=Numeric
 
@@ -354,7 +361,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC9.5. Si la personne qui gère les spéculations à planter est un homme, demander si les femmes sont associées à la prise de décision ?
 Name=AC9_5
-Start=659
+Start=661
 Len=1
 DataType=Numeric
 
@@ -367,21 +374,21 @@ Value=2;Non
 [Item]
 Label=AC9.5.1. Si oui, pour quoi ?
 Name=AC9_5_1
-Start=660
+Start=662
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC9.5.2 Si non, pour, quoi ?
 Name=AC9_5_2
-Start=710
+Start=712
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC10. De manière générale, est ce que les femmes sont libres de gérer (prendre des décision sur) les terres ?
 Name=AC10
-Start=760
+Start=762
 Len=1
 DataType=Numeric
 
@@ -394,21 +401,21 @@ Value=2;Non
 [Item]
 Label=AC10.1. Si Oui, expliquer ?
 Name=AC10_1
-Start=761
+Start=763
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC10.2. Si non, expliquer ?
 Name=AC10_2
-Start=811
+Start=813
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC11. Avez-vous accès à la terre ?
 Name=AC11
-Start=861
+Start=863
 Len=1
 DataType=Numeric
 
@@ -421,7 +428,7 @@ Value=2;Non
 [Item]
 Label=AC12. Si non à AC11, pourquoi ?
 Name=AC12
-Start=862
+Start=864
 Len=50
 DataType=Alpha
 
@@ -439,7 +446,7 @@ Value='7                                                 ';Autre (à préciser)
 [Item]
 Label=AC13. Si oui à AC11, est-ce au sein du ménage ?
 Name=AC13
-Start=912
+Start=914
 Len=1
 DataType=Numeric
 
@@ -452,14 +459,14 @@ Value=2;Non
 [Item]
 Label=AC14. Si oui à AC11, Combien de parcelles ?
 Name=AC14
-Start=913
+Start=915
 Len=2
 DataType=Numeric
 
 [Item]
 Label=AC15. Si oui à AC11 quel usage faites-vous des terres obtenues de votre ménage
 Name=AC15
-Start=915
+Start=917
 Len=2
 DataType=Numeric
 
@@ -473,14 +480,14 @@ Value=96;Autre à préciser
 [Item]
 Label=AC15a. Préciser autre usage des terres obtenus de votre ménage
 Name=AC15_A
-Start=917
+Start=919
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC16.  Si usage agricole à AC15, est-ce que vous cultivez seul(e) ou conjointement sur des terres ?
 Name=AC16
-Start=967
+Start=969
 Len=1
 DataType=Numeric
 
@@ -495,7 +502,7 @@ Value=4;Non
 [Item]
 Label=AC16.a. Si Non, expliquer pourquoi
 Name=AC16_1
-Start=968
+Start=970
 Len=7
 DataType=Alpha
 
@@ -513,14 +520,14 @@ Value='96     ';Autre (à préciser)
 [Item]
 Label=AC16a. Préciser autre raison pour laquelle vous ne cultivez pas ces terres
 Name=AC16_A
-Start=975
+Start=977
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC17. Qui prend généralement des décisions sur ce qu'il faut cultiver sur les terres que vous cultivez vous-même ?
 Name=AC17
-Start=1025
+Start=1027
 Len=2
 DataType=Numeric
 
@@ -540,7 +547,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC18. Est-ce que vous possédez personnellement une partie des terres appartenant ou cultivées par votre ménage ?
 Name=AC18
-Start=1027
+Start=1029
 Len=1
 DataType=Numeric
 
@@ -555,21 +562,21 @@ Value=4;Non
 [Item]
 Label=AC19.1. Si Oui, tout seul, quelle est la surface (en ha) que vous en possédez ?
 Name=AC19_1
-Start=1028
+Start=1030
 Len=3
 DataType=Numeric
 
 [Item]
 Label=AC19.2. Et quel est le nombre de parcelles correspondantes ?
 Name=AC19_2
-Start=1031
+Start=1033
 Len=3
 DataType=Numeric
 
 [Item]
 Label=AC20. Avez-vous accès à la terre en dehors de votre ménage ?
 Name=AC20
-Start=1034
+Start=1036
 Len=1
 DataType=Numeric
 
@@ -582,7 +589,7 @@ Value=2;Non
 [Item]
 Label=AC21. Si Oui à AC20, selon quelles modalités ?
 Name=AC21
-Start=1035
+Start=1037
 Len=5
 DataType=Alpha
 
@@ -598,14 +605,14 @@ Value='96   ';Autre (à préciser)
 [Item]
 Label=AC21a. Préciser autre modalité
 Name=AC21_A
-Start=1040
+Start=1042
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC22. Si Oui à AC20, quel usage faites-vous des terres ?
 Name=AC22
-Start=1090
+Start=1092
 Len=2
 DataType=Numeric
 
@@ -619,14 +626,14 @@ Value=96;Autre à préciser
 [Item]
 Label=AC22a. Préciser autre usage des terres obtenus en dehors de votre ménage
 Name=AC22_A
-Start=1092
+Start=1094
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC23. Les terres dont vous êtes en possession sont-elles suffisantes pour vous ?
 Name=AC23
-Start=1142
+Start=1144
 Len=1
 DataType=Numeric
 
@@ -639,7 +646,7 @@ Value=2;Non
 [Item]
 Label=AC24. Comment appréciez-vous la qualité des terres que vous disposez ?
 Name=AC24
-Start=1143
+Start=1145
 Len=1
 DataType=Numeric
 
@@ -656,14 +663,14 @@ Value=6;Ne sait pas
 [Item]
 Label=AC24.a. Pourquoi ?
 Name=AC24_A
-Start=1144
+Start=1146
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC25. Quelle appréciation avez-vous des moyens que vous utilisez pour cultiver ?
 Name=AC25
-Start=1194
+Start=1196
 Len=1
 DataType=Numeric
 
@@ -681,12 +688,12 @@ Value=6;Ne sait pas
 Label=SECTION PS : POSSESSION ET SECURISATION DE TERRES AGRICOLES
 Name=SECTION_PS
 RecordTypeValue='3'
-RecordLen=99
+RecordLen=101
 
 [Item]
 Label=PS1. Avez-vous un document reconnu et légal qui permet de protéger vos droits de propriété foncier ?
 Name=PS1
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -699,7 +706,7 @@ Value=2;Non
 [Item]
 Label=PS1.a. Si Non, pour quoi vous n’avez pas un document reconnu et légal ?
 Name=PS1_A
-Start=39
+Start=41
 Len=2
 DataType=Numeric
 
@@ -716,14 +723,14 @@ Value=98;Ne sait pas
 [Item]
 Label=PS1.1. Préciser autre pour laquelle vous n’avez pas un document reconnu et légal
 Name=PS1_AUTRE
-Start=41
+Start=43
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PS2. Sur ce document, vous figurez en tant que propriétaire ou affectataire ?
 Name=PS2
-Start=91
+Start=93
 Len=2
 DataType=Numeric
 
@@ -739,7 +746,7 @@ Value=98;Ne sait pas
 [Item]
 Label=PS3. Sur ce document légalement reconnus, votre nom y figure seul ou conjointement avec une autre personne ?
 Name=PS3
-Start=93
+Start=95
 Len=2
 DataType=Numeric
 
@@ -754,7 +761,7 @@ Value=98;Ne sais pas
 [Item]
 Label=PS4. Avez-vous le droit de vendre cette terre ?
 Name=PS4
-Start=95
+Start=97
 Len=2
 DataType=Numeric
 
@@ -769,7 +776,7 @@ Value=98;Ne sait pas
 [Item]
 Label=PS5. Le document vous donne-t-il le droit de léguer cette terre ?
 Name=PS5
-Start=97
+Start=99
 Len=2
 DataType=Numeric
 
@@ -784,7 +791,7 @@ Value=98;Ne sait pas
 [Item]
 Label=PS6. Quelle appréciation faites-vous de l’accès des femmes aux terres agricoles ?
 Name=PS6
-Start=99
+Start=101
 Len=1
 DataType=Numeric
 
@@ -802,12 +809,12 @@ Value=6;Ne sait pas
 Label=SECTION PSL : POSSESSION ET SECURISATION DE LOGEMENT
 Name=SECTION_PSL
 RecordTypeValue='4'
-RecordLen=260
+RecordLen=262
 
 [Item]
 Label=PSL1. Si possession de terres à usage d’habitation, est-ce :
 Name=PSL1
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -821,7 +828,7 @@ Value=3;Un terrain construit
 [Item]
 Label=PSL2. Quelles sont les modalités d’acquisition ?
 Name=PSL2
-Start=39
+Start=41
 Len=6
 DataType=Alpha
 
@@ -838,14 +845,14 @@ Value='96    ';Autre (à préciser)
 [Item]
 Label=PSL2a. Préciser autre modalité d'acquisition
 Name=PSL2_A
-Start=45
+Start=47
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PSL3. Si Achat (PSL2=2), quelle est la source d’acquisition
 Name=PSL3
-Start=95
+Start=97
 Len=2
 DataType=Numeric
 
@@ -861,14 +868,14 @@ Value=96;Autres à préciser
 [Item]
 Label=PSL3a. Préciser autre source d'acquisition
 Name=PSL3_A
-Start=97
+Start=99
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PSL4. Les terres d’habitation sont –elles situées dans un endroit ayant des commodités ?
 Name=PSL4
-Start=147
+Start=149
 Len=1
 DataType=Numeric
 
@@ -881,14 +888,14 @@ Value=2;Non
 [Item]
 Label=PSL5. Si non pourquoi ?
 Name=PSL5
-Start=148
+Start=150
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PSL6. Avez-vous un document reconnu et légal qui permet de protéger vos droits de propriété de votre logement ?
 Name=PSL6
-Start=198
+Start=200
 Len=1
 DataType=Numeric
 
@@ -901,7 +908,7 @@ Value=2;Non
 [Item]
 Label=PSL7. Si Non, pour quoi vous n’avez pas un document reconnu et légal ?
 Name=PSL7
-Start=199
+Start=201
 Len=2
 DataType=Numeric
 
@@ -918,14 +925,14 @@ Value=98;Ne sait pas
 [Item]
 Label=PSL7.a. Préciser autre pour laquelle vous n’avez pas un document reconnu et légal
 Name=PSL7_A
-Start=201
+Start=203
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PSL8. Si oui à PSL6, quel est le statut juridique ?
 Name=PSL8
-Start=251
+Start=253
 Len=1
 DataType=Numeric
 
@@ -939,7 +946,7 @@ Value=3;Titre foncier
 [Item]
 Label=PSL9. Quelle appréciation faites-vous de l’accès les femmes au logement ?
 Name=PSL9
-Start=252
+Start=254
 Len=1
 DataType=Numeric
 
@@ -956,7 +963,7 @@ Value=6;Ne sait pas
 [Item]
 Label=PSL10. Sur ce document, vous figurez en tant que propriétaire ou affectataire ?
 Name=PSL10
-Start=253
+Start=255
 Len=2
 DataType=Numeric
 
@@ -972,7 +979,7 @@ Value=98;Ne sait pas
 [Item]
 Label=PSL11. Sur ce document légalement reconnus, votre nom y figure seul ou conjointement avec une autre personne ?
 Name=PSL11
-Start=255
+Start=257
 Len=2
 DataType=Numeric
 
@@ -987,7 +994,7 @@ Value=98;Ne sais pas
 [Item]
 Label=PSL12. Avez-vous le droit de vendre ce logement ?
 Name=PSL12
-Start=257
+Start=259
 Len=2
 DataType=Numeric
 
@@ -1002,7 +1009,7 @@ Value=98;Ne sait pas
 [Item]
 Label=PSL13. Le document vous donne-t-il le droit de léguer ce logement ?
 Name=PSL13
-Start=259
+Start=261
 Len=2
 DataType=Numeric
 
@@ -1018,12 +1025,12 @@ Value=98;Ne sait pas
 Label=SECTION CA: CONTRAINTES D’ACCES AU FONCIER
 Name=SECTION_CA
 RecordTypeValue='5'
-RecordLen=220
+RecordLen=222
 
 [Item]
 Label=CA01. Selon vous, à quel niveau les contraintes d’accès sont plus prononcées ?
 Name=CA01
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -1038,7 +1045,7 @@ Value=4;Au niveau personnel
 [Item]
 Label=CA02. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre ménage ?
 Name=CA02
-Start=39
+Start=41
 Len=2
 DataType=Numeric
 
@@ -1052,14 +1059,14 @@ Value=96;Autre à préciser
 [Item]
 Label=CA02a. Préciser autre contrainte en matière d’accès au foncier au sein de votre ménage
 Name=CA02_A
-Start=41
+Start=43
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CA03. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre commune ?
 Name=CA03
-Start=91
+Start=93
 Len=8
 DataType=Alpha
 
@@ -1079,14 +1086,14 @@ Value='99      ';Autre (à préciser)
 [Item]
 Label=CA03.1. Préciser autre contrainte en matière d’accès au foncier au sein de votre commune
 Name=CA03_A
-Start=99
+Start=101
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CA04. Parmi ces dernières, quelle est la plus fréquente ?
 Name=CA04
-Start=149
+Start=151
 Len=2
 DataType=Numeric
 
@@ -1106,14 +1113,14 @@ Value=99;Autre (à préciser)
 [Item]
 Label=CA04.1. Préciser autre contrainte la plus fréquente en matière d’accès au foncier au sein de votre commune
 Name=CA04_A
-Start=151
+Start=153
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CA05. Quelles sont les contraintes d’accès au logement pour les femmes ?
 Name=CA05
-Start=201
+Start=203
 Len=9
 DataType=Alpha
 
@@ -1133,7 +1140,7 @@ Value='09       ';Considérations socioculturelles sur l’acquisition de logeme
 [Item]
 Label=CA06. Parmi ces dernières, quelle est la plus fréquente ?
 Name=CA06
-Start=210
+Start=212
 Len=1
 DataType=Numeric
 
@@ -1153,7 +1160,7 @@ Value=9;Considérations socioculturelles sur l’acquisition de logement par les
 [Item]
 Label=CA07. Quelles sont les contraintes d’accès au logement pour les femmes ?
 Name=CA07
-Start=211
+Start=213
 Len=9
 DataType=Alpha
 
@@ -1173,7 +1180,7 @@ Value='09       ';Considérations socioculturelles sur l’acquisition de logeme
 [Item]
 Label=CA08. Parmi ces dernières, quelle est la plus fréquente ?
 Name=CA08
-Start=220
+Start=222
 Len=1
 DataType=Numeric
 
@@ -1194,12 +1201,21 @@ Value=9;Considérations socioculturelles sur l’acquisition de logement par les
 Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
 Name=SECTION_CL
 RecordTypeValue='6'
-RecordLen=95
+MaxRecords=8
+RecordLen=40
+OccurrenceLabel=1,a.Groupe de producteurs agricoles/éleveurs/
+OccurrenceLabel=2,b. Groupe d'usagers de l'eau
+OccurrenceLabel=3,c. Groupe de gestion du foncier de la communauté ou Commission domaniale
+OccurrenceLabel=4,d. Groupe de crédit ou de microfinance (notamment les mutuels/tontines )
+OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle 
+OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) 
+OccurrenceLabel=7,g. Groupe religieux
+OccurrenceLabel=8,h. Autre (à préciser) :
 
 [Item]
 Label=CL1.1. Avez-vous un Groupe de producteurs agricoles/éleveurs au sein de votre communauté ?
 Name=CL1_1
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -1210,121 +1226,25 @@ Value=1;Oui
 Value=2;Non
 Value=3;Ne sait pas
 
-[Item]
-Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
-Name=CL1_2
-Start=39
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
-Name=CL1_2_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
-Name=CL1_3
-Start=40
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
-Name=CL1_3_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
-Name=CL1_4
-Start=41
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
-Name=CL1_4_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
-Name=CL1_5
-Start=42
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
-Name=CL1_5_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
-Name=CL1_6
-Start=43
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
-Name=CL1_6_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
-Name=CL1_7
-Start=44
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
-Name=CL1_7_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.7. Avez-vous un autre Groupe au sein de votre communauté ?
-Name=CL1_8
-Start=45
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.7. Avez-vous un autre Groupe au sein de votre communauté ?
-Name=CL1_8_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL.A. Préciser autre groupe qui existe au sein de votre communauté
-Name=CL_AUTRE
-Start=46
-Len=50
-DataType=Alpha
-
 [Record]
 Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
 Name=INFO_GROUPE
 RecordTypeValue='7'
-RecordLen=457
+MaxRecords=8
+RecordLen=459
+OccurrenceLabel=1,a.Groupe de producteurs agricoles/éleveurs/
+OccurrenceLabel=2,b. Groupe d'usagers de l'eau
+OccurrenceLabel=3,c. Groupe de gestion du foncier de la communauté ou Commission domaniale
+OccurrenceLabel=4,d. Groupe de crédit ou de microfinance (notamment les mutuels/tontines )
+OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle 
+OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) 
+OccurrenceLabel=7,g. Groupe religieux
+OccurrenceLabel=8,h. Autre (à préciser) :
 
 [Item]
 Label=CL2. Êtes-vous un membre actif de ce [GROUPE] ?
 Name=CL2
-Start=38
+Start=40
 Len=1
 DataType=Numeric
 
@@ -1337,7 +1257,7 @@ Value=2;Non
 [Item]
 Label=CL3. Si oui, Ce [GROUPE] est-il composé exclusivement de femmes, d'hommes ou est-il mixte ?
 Name=CL3
-Start=39
+Start=41
 Len=1
 DataType=Numeric
 
@@ -1352,7 +1272,7 @@ Value=4;NSP
 [Item]
 Label=CL4. Si oui, occupez-vous un poste de responsabilité dans ce [GROUPE] ?
 Name=CL4
-Start=40
+Start=42
 Len=1
 DataType=Numeric
 
@@ -1365,14 +1285,14 @@ Value=2;Non
 [Item]
 Label=CL5. Si oui à CL4, citez le poste en question ?
 Name=CL5
-Start=41
+Start=43
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CL6. Dans quelle mesure pensez-vous pouvoir influer sur les décisions de ce [GROUPE] ?
 Name=CL6
-Start=91
+Start=93
 Len=1
 DataType=Numeric
 
@@ -1387,7 +1307,7 @@ Value=4;BEAUCOUP
 [Item]
 Label=CL7. Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
 Name=CL7
-Start=92
+Start=94
 Len=1
 DataType=Numeric
 
@@ -1402,7 +1322,7 @@ Value=4;BEAUCOUP
 [Item]
 Label=CL8. Le [GROUPE] a-t-il bénéficié d’un quelconque accompagnement/initiative/ soutien visant à améliorer les droits foncier et la participation à la gouvernance ?
 Name=CL8
-Start=93
+Start=95
 Len=1
 DataType=Numeric
 
@@ -1415,14 +1335,14 @@ Value=2;Non
 [Item]
 Label=CL9. Si Oui à CL8, Préciser le type de soutien/accompagnement/initiative ?
 Name=CL9
-Start=94
+Start=96
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CL10. Si Oui à CL8, auprès de quels acteurs ?
 Name=CL10
-Start=144
+Start=146
 Len=5
 DataType=Alpha
 
@@ -1438,14 +1358,14 @@ Value='5    ';ONG/PTF (à préciser)
 [Item]
 Label=CL10.1. Préciser autre ONG/PTF
 Name=CL10_A
-Start=149
+Start=151
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CL11. Si Oui à CL8, le [GROUPE] est -il satisfait du soutien/accompagnement/initiative bénéficié ?
 Name=CL11
-Start=199
+Start=201
 Len=1
 DataType=Numeric
 
@@ -1461,28 +1381,28 @@ Value=5;Très insatisfait
 [Item]
 Label=CL12. Si Oui à CL8, Donnez les raisons ?
 Name=CL12
-Start=200
+Start=202
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CL13a. Quelles sont les actions menées pour la promotion des droits fonciers des femmes dans la communauté ?
 Name=CL13_A
-Start=250
+Start=252
 Len=100
 DataType=Alpha
 
 [Item]
 Label=CL13b. Quelles sont les actions menées en faveur de la participation des femmes à la gouvernance locale ?
 Name=CL13_B
-Start=350
+Start=352
 Len=100
 DataType=Alpha
 
 [Item]
 Label=CL14. Parmi les modalités suivantes, quelles sont celles qui s’appliquent aux femmes de votre communauté par rapport à leur participation aux instances de prise de décisions liées au foncier ?
 Name=CL14
-Start=450
+Start=452
 Len=8
 DataType=Alpha
 
@@ -1497,3 +1417,30 @@ Value='5       ';Contraintes familiales (réticence du mari, charge de travail d
 Value='6       ';Pratiques discriminatoires des politiques
 Value='7       ';Manque d’intérêts pour les questions foncières
 Value='8       ';Sensibilité de la question foncière
+
+[Record]
+Label=autre info
+Name=AUTRE_INFO
+RecordTypeValue='8'
+RecordLen=69
+
+[Item]
+Label=id_agent
+Name=ID_AGENT
+Start=40
+Len=2
+DataType=Numeric
+
+[Item]
+Label=date debut
+Name=DATE_DEBUT
+Start=42
+Len=14
+DataType=Numeric
+
+[Item]
+Label=date fin
+Name=DATE_FIN
+Start=56
+Len=14
+DataType=Numeric

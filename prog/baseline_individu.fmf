@@ -13,19 +13,12 @@ File=..\Dics\baseline_individu.dcf
 Name=FORM000
 Label=(Id Items)
 Level=1
-Size=948,300
+Size=594,435
   
-Item=BASELINE_INDIVIDU_ID
-  
-[EndForm]
-  
-[Form]
-Name=FORM001
-Label=SECTION IR- IDENTIFICATION ET RENSEIGNEMENTS SUR L’INDIVIDU
-Level=1
-Size=948,300
-  
-Item=IR3
+Item=ID_MEN
+Item=ID_IND
+Item=ID_AGENT
+Item=DATE_DEBUT
   
 [EndForm]
   
@@ -158,17 +151,10 @@ Item=CA08
 Name=FORM006
 Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
 Level=1
+Repeat=SECTION_CL
 Size=1142,300
   
 Item=CL1_1
-Item=CL1_2
-Item=CL1_3
-Item=CL1_4
-Item=CL1_5
-Item=CL1_6
-Item=CL1_7
-Item=CL1_8
-Item=CL_AUTRE
   
 [EndForm]
   
@@ -176,6 +162,7 @@ Item=CL_AUTRE
 Name=FORM007
 Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
 Level=1
+Repeat=INFO_GROUPE
 Size=1625,480
   
 Item=CL2
@@ -196,6 +183,16 @@ Item=CL14
   
 [EndForm]
   
+[Form]
+Name=FORM008
+Label=New Form
+Level=1
+Size=422,258
+  
+Item=DATE_FIN
+  
+[EndForm]
+  
 [Level]
 Name=BASELINE_INDIVIDU_LEVEL
 Label=baseline_individu Level
@@ -208,9 +205,9 @@ Form=1
 Max=1
   
 [Field]
-Name=BASELINE_INDIVIDU_ID
+Name=ID_MEN
 Position=271,27,569,47
-Item=BASELINE_INDIVIDU_ID,BASELINE_INDIVIDU_DICT
+Item=ID_MEN,BASELINE_INDIVIDU_DICT
 Protected=Yes
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -218,29 +215,47 @@ DataCaptureType=TextBox
 Form=1
   
 [Text]
-Position=50,30,249,46
-Text=baseline_individu Identification
+Position=50,30,97,46
+Text=id_men
  
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=BASELINE_INDIVIDU_REC_FORM
-Label=SECTION IR- IDENTIFICATION ET RENSEIGNEMENTS SUR L’INDIVIDU
-Form=2
-Max=1
   
 [Field]
-Name=IR3
-Position=198,27,213,47
-Item=IR3,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=2
+Name=ID_IND
+Position=289,139,318,159
+Item=ID_IND,BASELINE_INDIVIDU_DICT
+Protected=Yes
+DataCaptureType=TextBox
+Form=1
   
 [Text]
-Position=50,30,176,46
-Text=IR3. Type d’individu
+Position=115,142,154,158
+Text=id_ind
+ 
+  
+[Field]
+Name=ID_AGENT
+Position=294,262,323,282
+Item=ID_AGENT,BASELINE_INDIVIDU_DICT
+Protected=Yes
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=120,265,175,281
+Text=id_agent
+ 
+  
+[Field]
+Name=DATE_DEBUT
+Position=288,390,485,410
+Item=DATE_DEBUT,BASELINE_INDIVIDU_DICT
+Protected=Yes
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=210,393,278,409
+Text=date debut
  
 [EndGroup]
   
@@ -248,7 +263,7 @@ Text=IR3. Type d’individu
 Required=Yes
 Name=SECTION_AC_FORM
 Label=SECTION AC- ACCES, CONTROLE ET PARTICIPATION A LA PRISE DE DECISION SUR LE CAPITAL PRODUCTIF
-Form=3
+Form=2
 Max=1
   
 [Field]
@@ -257,7 +272,7 @@ Position=977,27,992,47
 Item=AC1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,30,415,46
@@ -270,7 +285,7 @@ Position=977,57,1006,77
 Item=AC2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,60,213,76
@@ -284,7 +299,7 @@ Item=AC2_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,90,431,106
@@ -298,7 +313,7 @@ Item=AC3,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,120,429,136
@@ -311,7 +326,7 @@ Position=977,147,992,167
 Item=AC4,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,150,879,166
@@ -325,7 +340,7 @@ Item=AC5,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,180,289,196
@@ -338,7 +353,7 @@ Position=977,207,992,227
 Item=AC6,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,210,293,226
@@ -351,7 +366,7 @@ Position=977,237,1006,257
 Item=AC7,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,240,454,256
@@ -365,7 +380,7 @@ Item=AC7_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,270,287,286
@@ -378,7 +393,7 @@ Position=977,297,1006,317
 Item=AC8_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,300,763,316
@@ -391,7 +406,7 @@ Position=977,327,992,347
 Item=AC9_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,330,955,346
@@ -405,7 +420,7 @@ Item=AC9_1_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,360,223,376
@@ -419,7 +434,7 @@ Item=AC9_1_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,390,227,406
@@ -432,7 +447,7 @@ Position=977,417,1006,437
 Item=AC8_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,420,612,436
@@ -445,7 +460,7 @@ Position=977,447,992,467
 Item=AC9_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,450,804,466
@@ -459,7 +474,7 @@ Item=AC9_2_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,480,223,496
@@ -473,7 +488,7 @@ Item=AC9_2_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,510,231,526
@@ -486,7 +501,7 @@ Position=977,537,1006,557
 Item=AC8_3,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,540,630,556
@@ -499,7 +514,7 @@ Position=977,567,992,587
 Item=AC9_3,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,570,802,586
@@ -513,7 +528,7 @@ Item=AC9_3_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,600,223,616
@@ -527,7 +542,7 @@ Item=AC9_3_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,630,227,646
@@ -540,7 +555,7 @@ Position=977,657,1006,677
 Item=AC8_4,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,660,646,676
@@ -553,7 +568,7 @@ Position=977,687,992,707
 Item=AC9_4,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,690,818,706
@@ -567,7 +582,7 @@ Item=AC9_4_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,720,223,736
@@ -581,7 +596,7 @@ Item=AC9_4_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,750,227,766
@@ -594,7 +609,7 @@ Position=977,777,1006,797
 Item=AC8_5,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,780,725,796
@@ -607,7 +622,7 @@ Position=977,807,992,827
 Item=AC9_5,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,810,913,826
@@ -621,7 +636,7 @@ Item=AC9_5_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,840,223,856
@@ -635,7 +650,7 @@ Item=AC9_5_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,870,227,886
@@ -648,7 +663,7 @@ Position=977,897,992,917
 Item=AC10,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,900,743,916
@@ -662,7 +677,7 @@ Item=AC10_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,930,221,946
@@ -676,7 +691,7 @@ Item=AC10_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,960,223,976
@@ -689,7 +704,7 @@ Position=977,987,992,1007
 Item=AC11,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,990,268,1006
@@ -702,7 +717,7 @@ Position=977,1017,1678,1037
 Item=AC12,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1020,256,1036
@@ -715,7 +730,7 @@ Position=977,1047,992,1067
 Item=AC13,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1050,358,1066
@@ -728,7 +743,7 @@ Position=977,1077,1006,1097
 Item=AC14,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1080,334,1096
@@ -741,7 +756,7 @@ Position=977,1107,1006,1127
 Item=AC15,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1110,560,1126
@@ -755,7 +770,7 @@ Item=AC15_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1140,461,1156
@@ -768,7 +783,7 @@ Position=977,1167,992,1187
 Item=AC16,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1170,674,1186
@@ -781,7 +796,7 @@ Position=977,1197,1076,1217
 Item=AC16_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1200,274,1216
@@ -795,7 +810,7 @@ Item=AC16_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1230,516,1246
@@ -808,7 +823,7 @@ Position=977,1257,1006,1277
 Item=AC17,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1260,775,1276
@@ -821,7 +836,7 @@ Position=977,1287,992,1307
 Item=AC18,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1290,787,1306
@@ -834,7 +849,7 @@ Position=977,1317,1020,1337
 Item=AC19_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1320,542,1336
@@ -847,7 +862,7 @@ Position=977,1347,1020,1367
 Item=AC19_2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1350,439,1366
@@ -860,7 +875,7 @@ Position=977,1377,992,1397
 Item=AC20,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1380,447,1396
@@ -873,7 +888,7 @@ Position=977,1407,1048,1427
 Item=AC21,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1410,347,1426
@@ -887,7 +902,7 @@ Item=AC21_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1440,247,1456
@@ -900,7 +915,7 @@ Position=977,1467,1006,1487
 Item=AC22,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1470,404,1486
@@ -914,7 +929,7 @@ Item=AC22_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1500,528,1516
@@ -927,7 +942,7 @@ Position=977,1527,992,1547
 Item=AC23,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1530,551,1546
@@ -940,7 +955,7 @@ Position=977,1557,992,1577
 Item=AC24,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1560,513,1576
@@ -954,7 +969,7 @@ Item=AC24_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,1590,172,1606
@@ -967,7 +982,7 @@ Position=977,1617,992,1637
 Item=AC25,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,1620,568,1636
@@ -979,7 +994,7 @@ Text=AC25. Quelle appréciation avez-vous des moyens que vous utilisez pour cult
 Required=Yes
 Name=SECTION_PS_FORM
 Label=SECTION PS : POSSESSION ET SECURISATION DE TERRES AGRICOLES
-Form=4
+Form=3
 Max=1
   
 [Field]
@@ -988,7 +1003,7 @@ Position=794,27,809,47
 Item=PS1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,30,699,46
@@ -1001,7 +1016,7 @@ Position=794,57,823,77
 Item=PS1_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,60,518,76
@@ -1015,7 +1030,7 @@ Item=PS1_AUTRE,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,90,572,106
@@ -1028,7 +1043,7 @@ Position=794,117,823,137
 Item=PS2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,120,539,136
@@ -1041,7 +1056,7 @@ Position=794,147,823,167
 Item=PS3,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,150,772,166
@@ -1054,7 +1069,7 @@ Position=794,177,823,197
 Item=PS4,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,180,345,196
@@ -1067,7 +1082,7 @@ Position=794,207,823,227
 Item=PS5,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,210,458,226
@@ -1080,7 +1095,7 @@ Position=794,237,809,257
 Item=PS6,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,240,570,256
@@ -1092,7 +1107,7 @@ Text=PS6. Quelle appréciation faites-vous de l’accès des femmes aux terres a
 Required=Yes
 Name=SECTION_PSL_FORM
 Label=SECTION PSL : POSSESSION ET SECURISATION DE LOGEMENT
-Form=5
+Form=4
 Max=1
   
 [Field]
@@ -1101,7 +1116,7 @@ Position=809,27,824,47
 Item=PSL1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,30,423,46
@@ -1114,7 +1129,7 @@ Position=809,57,894,77
 Item=PSL2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
-Form=5
+Form=4
   
 [Text]
 Position=50,60,354,76
@@ -1128,7 +1143,7 @@ Item=PSL2_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=5
+Form=4
   
 [Text]
 Position=50,90,332,106
@@ -1141,7 +1156,7 @@ Position=809,117,838,137
 Item=PSL3,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,120,421,136
@@ -1155,7 +1170,7 @@ Item=PSL3_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=5
+Form=4
   
 [Text]
 Position=50,150,318,166
@@ -1168,7 +1183,7 @@ Position=809,177,824,197
 Item=PSL4,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,180,613,196
@@ -1182,7 +1197,7 @@ Item=PSL5,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=5
+Form=4
   
 [Text]
 Position=50,210,205,226
@@ -1195,7 +1210,7 @@ Position=809,237,824,257
 Item=PSL6,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,240,779,256
@@ -1208,7 +1223,7 @@ Position=809,267,838,287
 Item=PSL7,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,270,514,286
@@ -1222,7 +1237,7 @@ Item=PSL7_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=5
+Form=4
   
 [Text]
 Position=50,300,581,316
@@ -1235,11 +1250,11 @@ Position=809,327,824,347
 Item=PSL8,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,330,362,346
-Text=PSL8. Si oui à PSL7, quel est le statut juridique ?
+Text=PSL8. Si oui à PSL6, quel est le statut juridique ?
  
   
 [Field]
@@ -1248,7 +1263,7 @@ Position=809,357,824,377
 Item=PSL9,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,360,528,376
@@ -1261,7 +1276,7 @@ Position=809,387,838,407
 Item=PSL10,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,390,554,406
@@ -1274,7 +1289,7 @@ Position=809,417,838,437
 Item=PSL11,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,420,787,436
@@ -1287,7 +1302,7 @@ Position=809,447,838,467
 Item=PSL12,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,450,374,466
@@ -1300,7 +1315,7 @@ Position=809,477,838,497
 Item=PSL13,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=5
+Form=4
   
 [Text]
 Position=50,480,487,496
@@ -1312,7 +1327,7 @@ Text=PSL13. Le document vous donne-t-il le droit de léguer ce logement ?
 Required=Yes
 Name=SECTION_CA_FORM
 Label=SECTION CA: CONTRAINTES D’ACCES AU FONCIER
-Form=6
+Form=5
 Max=1
   
 [Field]
@@ -1321,7 +1336,7 @@ Position=757,27,772,47
 Item=CA01,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,30,553,46
@@ -1334,7 +1349,7 @@ Position=757,57,786,77
 Item=CA02,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,60,685,76
@@ -1348,7 +1363,7 @@ Item=CA02_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=6
+Form=5
   
 [Text]
 Position=50,90,610,106
@@ -1361,7 +1376,7 @@ Position=757,117,870,137
 Item=CA03,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
-Form=6
+Form=5
   
 [Text]
 Position=50,120,696,136
@@ -1375,7 +1390,7 @@ Item=CA03_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=6
+Form=5
   
 [Text]
 Position=50,150,624,166
@@ -1388,7 +1403,7 @@ Position=757,177,786,197
 Item=CA04,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,180,410,196
@@ -1402,7 +1417,7 @@ Item=CA04_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=6
+Form=5
   
 [Text]
 Position=50,210,735,226
@@ -1415,7 +1430,7 @@ Position=757,237,884,257
 Item=CA05,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,240,521,256
@@ -1428,7 +1443,7 @@ Position=757,267,772,287
 Item=CA06,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,270,410,286
@@ -1441,7 +1456,7 @@ Position=757,297,884,317
 Item=CA07,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,300,521,316
@@ -1454,7 +1469,7 @@ Position=757,327,772,347
 Item=CA08,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=6
+Form=5
   
 [Text]
 Position=50,330,410,346
@@ -1466,8 +1481,10 @@ Text=CA08. Parmi ces dernières, quelle est la plus fréquente ?
 Required=Yes
 Name=SECTION_CL_FORM
 Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
-Form=7
-Max=1
+Form=6
+Type=Record
+TypeName=SECTION_CL
+Max=8
   
 [Field]
 Name=CL1_1
@@ -1475,116 +1492,11 @@ Position=1095,27,1110,47
 Item=CL1_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=7
+Form=6
   
 [Text]
 Position=50,30,652,46
 Text=CL1.1. Avez-vous un Groupe de producteurs agricoles/éleveurs au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_2
-Position=1095,57,1110,77
-Item=CL1_2,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,60,552,76
-Text=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_3
-Position=1095,87,1110,107
-Item=CL1_3,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,90,867,106
-Text=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_4
-Position=1095,117,1110,137
-Item=CL1_4,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,120,838,136
-Text=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_5
-Position=1095,147,1110,167
-Item=CL1_5,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,150,736,166
-Text=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_6
-Position=1095,177,1110,197
-Item=CL1_6,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,180,1073,196
-Text=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_7
-Position=1095,207,1110,227
-Item=CL1_7,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,210,494,226
-Text=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL1_8
-Position=1095,237,1110,257
-Item=CL1_8,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,240,470,256
-Text=CL1.7. Avez-vous un autre Groupe au sein de votre communauté ?
- 
-  
-[Field]
-Name=CL_AUTRE
-Position=1095,267,1505,287
-Item=CL_AUTRE,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,270,485,286
-Text=CL.A. Préciser autre groupe qui existe au sein de votre communauté
  
 [EndGroup]
   
@@ -1592,8 +1504,10 @@ Text=CL.A. Préciser autre groupe qui existe au sein de votre communauté
 Required=Yes
 Name=INFO_GROUPE_FORM
 Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
-Form=8
-Max=1
+Form=7
+Type=Record
+TypeName=INFO_GROUPE
+Max=8
   
 [Field]
 Name=CL2
@@ -1601,7 +1515,7 @@ Position=1299,27,1314,47
 Item=CL2,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,30,367,46
@@ -1614,7 +1528,7 @@ Position=1299,57,1314,77
 Item=CL3,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,60,655,76
@@ -1627,7 +1541,7 @@ Position=1299,87,1314,107
 Item=CL4,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,90,516,106
@@ -1641,7 +1555,7 @@ Item=CL5,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=8
+Form=7
   
 [Text]
 Position=50,120,341,136
@@ -1654,7 +1568,7 @@ Position=1299,147,1314,167
 Item=CL6,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,150,613,166
@@ -1667,7 +1581,7 @@ Position=1299,177,1314,197
 Item=CL7,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,180,565,196
@@ -1680,7 +1594,7 @@ Position=1299,207,1314,227
 Item=CL8,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,210,1073,226
@@ -1694,7 +1608,7 @@ Item=CL9,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=8
+Form=7
   
 [Text]
 Position=50,240,527,256
@@ -1707,7 +1621,7 @@ Position=1299,267,1370,287
 Item=CL10,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
-Form=8
+Form=7
   
 [Text]
 Position=50,270,339,286
@@ -1721,7 +1635,7 @@ Item=CL10_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=8
+Form=7
   
 [Text]
 Position=50,300,251,316
@@ -1734,7 +1648,7 @@ Position=1299,327,1314,347
 Item=CL11,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
-Form=8
+Form=7
   
 [Text]
 Position=50,330,667,346
@@ -1748,7 +1662,7 @@ Item=CL12,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=8
+Form=7
   
 [Text]
 Position=50,360,307,376
@@ -1762,7 +1676,7 @@ Item=CL13_A,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=8
+Form=7
   
 [Text]
 Position=50,390,766,406
@@ -1776,7 +1690,7 @@ Item=CL13_B,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=8
+Form=7
   
 [Text]
 Position=50,420,734,436
@@ -1789,11 +1703,32 @@ Position=1299,447,1412,467
 Item=CL14,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
-Form=8
+Form=7
   
 [Text]
 Position=50,450,1277,466
 Text=CL14. Parmi les modalités suivantes, quelles sont celles qui s’appliquent aux femmes de votre communauté par rapport à leur participation aux instances de prise de décisions liées au foncier ?
+ 
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=GROUP000
+Label=New Form
+Form=8
+Max=1
+  
+[Field]
+Name=DATE_FIN
+Position=200,213,397,233
+Item=DATE_FIN,BASELINE_INDIVIDU_DICT
+Protected=Yes
+DataCaptureType=TextBox
+Form=8
+  
+[Text]
+Position=123,216,171,232
+Text=date fin
  
 [EndGroup]
   
