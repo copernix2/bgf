@@ -26,7 +26,8 @@ Item=DATE_DEBUT
 Name=FORM007
 Label=SECTION TA : TERRES AGRICOLES DU MENAGE
 Level=1
-Size=2185,1001
+
+Size=2217,978
   
 Item=SECTIO_TA000
 Item=CF11
@@ -167,8 +168,8 @@ Required=Yes
 Type=Record
 TypeName=SECTIO_TA
 Max=10
-MaxField=CF11
-DisplaySize=38,351,2160,976
+
+DisplaySize=70,345,2192,953
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -284,6 +285,26 @@ DataCaptureType=RadioButton
   
 [Text]
 Text=TA3. Nature de la parcelle
+ 
+[EndColumn]
+  
+[Column]
+Width=709
+  
+[HeaderText]
+Position=649,224,709,328
+Text=TA3a. Préciser autre nature de la parcelle
+ 
+[Field]
+Name=TA3_A
+Position=0,0,701,20
+Item=TA3_A,LTP_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=TA3a. Préciser autre nature de la parcelle
  
 [EndColumn]
   
@@ -547,15 +568,15 @@ Text=TA12. Si Oui à TA10, comment ?
 [EndColumn]
   
 [Column]
-Width=94
+Width=205
   
 [HeaderText]
-Position=0,208,94,328
+Position=111,208,205,328
 Text=TA19 La Contrepartie d’acquisition si achat, prêt ou gage à TA7 est en argent?
  
 [Field]
 Name=TA19
-Position=70,0,85,20
+Position=70,0,197,20
 Item=TA19,LTP_DICT
 DataCaptureType=RadioButton
   
@@ -565,20 +586,21 @@ Text=TA19 La Contrepartie d’acquisition si achat, prêt ou gage à TA7 est en 
 [EndColumn]
   
 [Column]
-Width=93
+Width=135
   
 [HeaderText]
-Position=0,224,93,328
-Text=TA20_1 La Contrepartie d’acquisition si location à TA7 est en argent?
+Position=42,240,135,328
+Text=TA20. Contrepartie d’acquisition si location à TA7 ?
  
 [Field]
 Name=TA20
-Position=70,0,85,20
+Position=0,0,127,20
 Item=TA20,LTP_DICT
-DataCaptureType=RadioButton
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
   
 [Text]
-Text=TA20_1 La Contrepartie d’acquisition si location à TA7 est en argent?
+Text=TA20. Contrepartie d’acquisition si location à TA7 ?
  
 [EndColumn]
   
@@ -685,9 +707,10 @@ Text=TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 de
 Name=TA24
 Position=57,0,478,20
 Item=TA24,LTP_DICT
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
   
 [Text]
+Position=0,0,528,16
 Text=TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 derniers mois.
  
 [EndColumn]
@@ -725,6 +748,7 @@ Item=TA25,LTP_DICT
 DataCaptureType=CheckBox
   
 [Text]
+Position=0,0,242,16
 Text=TA25. Destinations des productions ?
  
 [EndColumn]
@@ -744,6 +768,25 @@ DataCaptureType=TextBox
   
 [Text]
 Text=TA26. Distance de la parcelle par rapport à la maison (en mètre ou km)
+ 
+[EndColumn]
+  
+[Column]
+Width=60
+  
+[HeaderText]
+Position=0,240,60,328
+Text=TA26a. Préciser l'unité de mesure 
+ 
+[Field]
+Name=TA26_A
+Position=37,0,52,20
+Item=TA26_A,LTP_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+  
+[Text]
+Text=TA26a. Préciser l'unité de mesure 
  
 [EndColumn]
   
@@ -975,9 +1018,10 @@ Text=TA31. Si TA29=4 ou 5 ou TA30=4 ou 5, quelles sont les raisons pour lesquell
 Name=TA31
 Position=0,0,183,20
 Item=TA31,LTP_DICT
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
   
 [Text]
+Position=0,0,1475,16
 Text=TA31. Si TA29=4 ou 5 ou TA30=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années?
  
 [EndColumn]
@@ -1185,14 +1229,21 @@ Text=TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette ter
 Name=BLOCK000_TA6
 Label=TA6
 DisplayTogether=Yes
-Position=6
+Position=7
 Length=2
   
 [Block]
 Name=BLOCK000_TA9
 Label=TA9
 DisplayTogether=Yes
-Position=13
+Position=14
+Length=2
+  
+[Block]
+Name=BLOCK000_TA26
+Label=TA26
+DisplayTogether=Yes
+Position=30
 Length=2
   
 [EndGrid]
@@ -3418,7 +3469,7 @@ Width=429
   
 [HeaderText]
 Position=347,176,429,312
-Text=LM29.autre. Préciser autre contraintes auxquelles le logement est exposé 
+Text=LM29.autre. Préciser autre contraintes auxquelles le logement est exposé
  
 [Field]
 Name=LM29_A
@@ -3429,7 +3480,7 @@ UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
-Text=LM29.autre. Préciser autre contraintes auxquelles le logement est exposé 
+Text=LM29.autre. Préciser autre contraintes auxquelles le logement est exposé
  
 [EndColumn]
   

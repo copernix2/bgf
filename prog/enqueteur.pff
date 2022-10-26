@@ -1,7 +1,7 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-Description=app OMVS
+Description=BASELINE Genre et Foncier
 
 [DataEntryInit]
 StartMode=Add

@@ -1429,8 +1429,9 @@ Name=CA05
 Position=757,237,884,257
 Item=CA05,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
+
+DataCaptureType=CheckBox
+Form=6
   
 [Text]
 Position=50,240,521,256
@@ -1455,8 +1456,9 @@ Name=CA07
 Position=757,297,884,317
 Item=CA07,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
+
+DataCaptureType=CheckBox
+Form=6
   
 [Text]
 Position=50,300,521,316

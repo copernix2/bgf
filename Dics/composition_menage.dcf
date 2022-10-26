@@ -133,7 +133,7 @@ DataType=Alpha
 Label=SECTION PM : PROFIL DU MENAGE
 Name=SECTION_PM
 RecordTypeValue='4'
-RecordLen=151
+RecordLen=152
 
 [Item]
 Label=PM01. Depuis quand votre famille s’est installée dans le village ?
@@ -152,13 +152,13 @@ Value=2;Sancaan
 Label=PM01a. Préciser le nombre d’années si sancaan
 Name=PM01_A
 Start=39
-Len=2
+Len=3
 DataType=Numeric
 
 [Item]
 Label=PM02. Si Sancan, indiquez le lieu de provenance
 Name=PM02
-Start=41
+Start=42
 Len=1
 DataType=Numeric
 
@@ -172,14 +172,14 @@ Value=3;Hors Sénégal
 [Item]
 Label=PM02a. Préciser autre lieu de provenance
 Name=PM02_A
-Start=42
+Start=43
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PM03. Si Sancan, quelle est la principale raison de la venue dans la zone ?
 Name=PM03
-Start=92
+Start=93
 Len=2
 DataType=Numeric
 
@@ -196,14 +196,14 @@ Value=96;Autres (préciser)
 [Item]
 Label=PM03a. Préciser autre principale raison de la venue dans la zone
 Name=PM03_A
-Start=94
+Start=95
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PM05. Combien de personnes de sexe féminin vivent dans le ménage ?
 Name=PM05
-Start=144
+Start=145
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -211,7 +211,7 @@ ZeroFill=Yes
 [Item]
 Label=PM06. Combien de personnes de sexe féminin vivent dans le ménage ?
 Name=PM06
-Start=146
+Start=147
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -219,7 +219,7 @@ ZeroFill=Yes
 [Item]
 Label=PM04. La taille du ménage
 Name=PM04
-Start=148
+Start=149
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -227,7 +227,7 @@ ZeroFill=Yes
 [Item]
 Label=PM07. Est ce que votre ménage a cultivé des terres à des fins agricoles (y compris les vergers et les jardins potagers) ces 12 derniers moins pour sa propre consommation et/ou pour vendre ?
 Name=PM07
-Start=150
+Start=151
 Len=2
 DataType=Numeric
 
@@ -286,7 +286,7 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Item]
-Label=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous : (
+Label=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources revenus ci-dessous :
 Name=RM3
 Start=101
 Len=2
@@ -348,7 +348,7 @@ Label=SOUS SECTION PR : DETAILS SUR LES PROJETS BENEFICIES PAR LE MENAGE
 Name=SOUS_SEC_PR
 RecordTypeValue='B'
 MaxRecords=99
-RecordLen=432
+RecordLen=482
 
 [Item]
 Label=PR04. ID_Projet
@@ -358,19 +358,18 @@ Len=3
 DataType=Numeric
 
 [Item]
-Label=PR05. Quels sont les outils et méthodes du projet […] ?
+Label=PR05. Quels sont les outils et méthodes du projet ?
 Name=PR05
 Start=41
 Len=4
 DataType=Alpha
 
 [ValueSet]
-Label=PR05. Quels sont les outils et méthodes du projet […] ?
+Label=PR05. Quels sont les outils et méthodes du projet ?
 Name=PR05_VS1
-
-Value='1   ';outils de sécurisation
-Value='2   ';outils de gouvernance
-Value='3   ';outils de gouvernance
+Value='1   ';Outils de sécurisation
+Value='2   ';Outils de gouvernance
+Value='3   ';Outils de gouvernance
 Value='9   ';Autre à préciser
 
 [Item]
@@ -381,14 +380,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=PR06. Quelles sont les activités du projet […]? (plusieurs réponses possibles)
+Label=PR06. Quelles sont les activités du projet ?
 Name=PR06
 Start=95
 Len=10
 DataType=Alpha
 
 [ValueSet]
-Label=PR06. Quelles sont les activités du projet […]? (plusieurs réponses possibles)
+Label=PR06. Quelles sont les activités du projet ?
 Name=PR06_VS1
 Value='01        ';Conventions locales
 Value='02        ';Appui pour accéder à la terre  agricole
@@ -401,7 +400,6 @@ Value='08        ';Appui pour accéder au logement
 Value='09        ';Appui pour accéder à la terre d’habitation
 Value='99        ';Autre à préciser
 
-
 [Item]
 Label=PR06a. Préciser autre les activités du projet
 Name=PR06_A
@@ -410,14 +408,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=PR07. Quelles sont les activités du projet […] auxquelles vous a participé/bénéficié ? (plusieurs réponses possibles)
+Label=PR07. Quelles sont les activités du projet auxquelles vous a participé/bénéficié ?
 Name=PR07
 Start=155
 Len=10
 DataType=Alpha
 
 [ValueSet]
-Label=PR07. Quelles sont les activités du projet […] auxquelles vous a participé/bénéficié ? (plusieurs réponses possibles)
+Label=PR07. Quelles sont les activités du projet auxquelles vous a participé/bénéficié ?
 Name=PR07_VS1
 Value='01        ';Conventions locales
 Value='02        ';Appui pour accéder à la terre  agricole
@@ -430,23 +428,22 @@ Value='08        ';Appui pour accéder au logement
 Value='09        ';Appui pour accéder à la terre d’habitation
 Value='99        ';Autre à préciser
 
-
 [Item]
-Label=PR07a. Préciser autre activités du projet […] auxquelles vous a participé/bénéficié
+Label=PR07a. Préciser autre activités du projet auxquelles vous a participé/bénéficié
 Name=PR07_A
 Start=165
 Len=50
 DataType=Alpha
 
 [Item]
-Label=PR08. Qui sont les porteurs du projet […]?
+Label=PR08. Qui sont les porteurs du projet ?
 Name=PR08
 Start=215
 Len=4
 DataType=Alpha
 
 [ValueSet]
-Label=PR08. Qui sont les porteurs du projet […]?
+Label=PR08. Qui sont les porteurs du projet ?
 Name=PR08_VS1
 Value='01  ';Etat - projet/programme (préciser le nom du projet ou la structure)
 Value='02  ';Collectivité locales (mairies,)
@@ -454,73 +451,78 @@ Value='03  ';ONG (à préciser)
 Value='96  ';Autre à préciser
 
 [Item]
+Label=PR08s. Préciser le nom du projet ou la structure 
+Name=PR08S
+Start=219
+Len=50
+DataType=Alpha
+
+[Item]
 Label=PR08_ong. Preciser ONG
 Name=PR08_ONG
-Start=219
+Start=269
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PR08a. Préciser autres porteurs du projet
 Name=PR08_A
-Start=269
+Start=319
 Len=50
 DataType=Alpha
 
 [Item]
-Label=PR09. Qui sont les parties prenantes du projet […]?
+Label=PR09. Qui sont les parties prenantes du projet ?
 Name=PR09
-Start=319
+Start=369
 Len=7
 DataType=Alpha
 
 [ValueSet]
-Label=PR09. Qui sont les parties prenantes du projet […]?
-Name=PR09_VS1
-Value='01     ';Bénéficiaires
-Value='02     ';Communauté
-Value='03     ';Bénéficiaires et communauté
-Value='04     ';Collectivités
-Value='05     ';Services étatiques
-Value='06     ';Partenaires techniques et financiers
-Value='99     ';Autre à préciser
-
+Label=PR09. Qui sont les parties prenantes du projet ?
+Name=PR09_VS2
+Value='1      ';Bénéficiaires
+Value='2      ';Communauté
+Value='3      ';Bénéficiaires et communauté
+Value='4      ';Collectivités
+Value='5      ';Services étatiques
+Value='6      ';Partenaires techniques et financiers
+Value='9      ';Autre à préciser
 
 [Item]
 Label=PR09a. Préciser autres parties prenantes du projet
 Name=PR09_A
-Start=326
+Start=376
 Len=50
 DataType=Alpha
 
 [Item]
-Label=PR10. Qui sont les bénéficiaires du projet […]?
+Label=PR10. Qui sont les bénéficiaires du projet ?
 Name=PR10
-Start=376
+Start=426
 Len=5
 DataType=Alpha
 
 [ValueSet]
-Label=PR10. Qui sont les bénéficiaires du projet […]?
+Label=PR10. Qui sont les bénéficiaires du projet ?
 Name=PR10_VS1
-Value='01   ';Femmes
-Value='02   ';Hommes
-Value='03   ';Communauté
-Value='04   ';Acteurs institutionnels (formels/non formels)
-Value='99   ';Autre à préciser
-
+Value='1    ';Femmes
+Value='2    ';Hommes
+Value='3    ';Communauté
+Value='4    ';Acteurs institutionnels (formels/non formels)
+Value='9    ';Autre à préciser
 
 [Item]
 Label=PR10a. Préciser autre bénéficiaires du projet
 Name=PR10_A
-Start=381
+Start=431
 Len=50
 DataType=Alpha
 
 [Item]
 Label=PR11. Quelle est la période de mise en œuvre du projet […]?
 Name=PR11
-Start=431
+Start=481
 Len=1
 DataType=Numeric
 
@@ -533,7 +535,7 @@ Value=2;En cours
 [Item]
 Label=PR12. Quelle appréciation faites-vous du projet […]?
 Name=PR12
-Start=432
+Start=482
 Len=1
 DataType=Numeric
 
@@ -551,8 +553,7 @@ Label=SECTION CF : CAPITAL FONCIER DU MENGAE
 Name=SECTION_CF
 RecordTypeValue='6'
 MaxRecords=99
-
-RecordLen=269
+RecordLen=270
 
 [Item]
 Label=CF1. code individu
@@ -569,20 +570,20 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=CF3. Sexe 
+Label=CF3. Sexe
 Name=CF3
 Start=90
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=CF3. Sexe 
+Label=CF3. Sexe
 Name=CF3_VS1
 Value=1;Masculin
 Value=2;Féminin
 
 [Item]
-Label=CF4. Age 
+Label=CF4. Age
 Name=CF4
 Start=91
 Len=2
@@ -614,18 +615,18 @@ Value=12;Beau-fils/belle fille
 Value=13;Autres parents du CM
 
 [Item]
-Label=CF6. Niveau d'instruction 
+Label=CF6. Niveau d'instruction
 Name=CF6
 Start=95
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=CF6. Niveau d'instruction 
+Label=CF6. Niveau d'instruction
 Name=CF6_VS1
 Value=0;Aucune
 Value=1;Alphabétisé(e) en langue national
-Value=2;Ec le coranique/arabe
+Value=2;Ecole coranique/arabe
 Value=3;Primaire incomplet
 Value=4;Primaire complet
 Value=5;Secondaire incomplet
@@ -696,42 +697,40 @@ DataType=Alpha
 [Item]
 Label=CF8. Quels sont les activité(s) secondaire(s)
 Name=CF8
-
-Start=199
+Start=200
 Len=16
 DataType=Alpha
 
 [ValueSet]
 Label=CF8. Quels sont les activité(s) secondaire(s)
 Name=CF8_VS1
-Value='01             ';Aucune
-Value='02             ';Elevage
-Value='03             ';Pêche
-Value='04             ';Petit commerce
-Value='05             ';Commerce avec installation fixe (Boutique)
-Value='06             ';Restauration
-Value='07             ';Artisanat
-Value='08             ';Transport
-Value='09             ';Etude
-Value='10             ';Apprentissage
-Value='11             ';Services domestiques
-Value='12             ';Retraités
-Value='13             ';Inactifs/chômeurs
-Value='14             ';Autre (à préciser)
-Value='15             ';NSP
-
+Value='01              ';Aucune
+Value='02              ';Elevage
+Value='03              ';Pêche
+Value='04              ';Petit commerce
+Value='05              ';Commerce avec installation fixe (Boutique)
+Value='06              ';Restauration
+Value='07              ';Artisanat
+Value='08              ';Transport
+Value='09              ';Etude
+Value='10              ';Apprentissage
+Value='11              ';Services domestiques
+Value='12              ';Retraités
+Value='13              ';Inactifs/chômeurs
+Value='14              ';Autre (à préciser)
+Value='15              ';NSP
 
 [Item]
-Label=CF8. Préciser autre activité secondaire 
+Label=CF8. Préciser autre activité secondaire
 Name=CF8_A
-Start=215
+Start=216
 Len=50
 DataType=Alpha
 
 [Item]
 Label=CF9. Est ce qu'il l’habitude d’exploiter de la terre pour l’agriculture ?
 Name=CF9
-Start=265
+Start=266
 Len=1
 DataType=Numeric
 
@@ -744,7 +743,7 @@ Value=2;Non
 [Item]
 Label=CF10. Est-ce qu'il détient (loué, emprunté ou en propriété) des terres agricoles ?
 Name=CF10
-Start=266
+Start=267
 Len=1
 DataType=Numeric
 
@@ -755,16 +754,14 @@ Value=1;Oui
 Value=2;Non
 
 [Item]
-Label=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ? 
-
+Label=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ?
 Name=CF13
-Start=267
+Start=268
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ? 
-
+Label=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ?
 Name=CF13_VS1
 Value=1;Oui
 Value=2;Non
@@ -772,7 +769,7 @@ Value=2;Non
 [Item]
 Label=CF16. Est-ce qu'il détient une maison/un logement ?
 Name=CF16
-Start=268
+Start=269
 Len=1
 DataType=Numeric
 
@@ -785,7 +782,7 @@ Value=2;Non
 [Item]
 Label=Ajouter un autre individu
 Name=AJOUTER_UN_AUTRE_INDIVIDU
-Start=269
+Start=270
 Len=1
 DataType=Numeric
 

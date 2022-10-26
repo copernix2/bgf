@@ -30,7 +30,7 @@ questions:
     conditions:
       - questionText:
           EN: |
-            Choisir la commune<p></p>
+            <span style="font-size: 16px;">Choisir la commune</span><p></p>
   - name: MENAGE_DICT.MEN_CODE_VIL
     conditions:
       - questionText:
@@ -46,11 +46,6 @@ questions:
       - questionText:
           EN: |
             Nom du CM<p></p>
-  - name: MENAGE_DICT.MEN_TYPE
-    conditions:
-      - questionText:
-          EN: |
-            Type de ménage<p></p>
   - name: MENAGE_DICT.MEN_SEXECM
     conditions:
       - questionText:
@@ -61,4 +56,9 @@ questions:
       - questionText:
           EN: |
             Numéro de téléphone du CM<p></p>
+  - name: MENAGE_DICT.MEN_TYPE
+    conditions:
+      - questionText:
+          EN: |
+            Type de ménage<p></p>
 ...

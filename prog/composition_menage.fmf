@@ -98,7 +98,7 @@ Item=PR03
 Name=FORM006
 Label=SOUS SECTION PR : DETAILS SUR LES PROJETS BENEFICIES PAR LE MENAGE
 Level=1
-Size=300,300
+Size=4148,520
   
 Item=SOUS_SEC_PR000
   
@@ -348,7 +348,7 @@ Text=PM01. Depuis quand votre famille s’est installée dans le village ?
   
 [Field]
 Name=PM01_A
-Position=1275,57,1304,77
+Position=1275,57,1318,77
 Item=PM01_A,COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=4
@@ -1169,15 +1169,15 @@ Width=10
 [EndColumn]
   
 [Column]
-Width=66
+Width=94
   
 [HeaderText]
-Position=0,128,66,168
+Position=28,128,94,168
 Text=PR04. ID_Projet
  
 [Field]
 Name=PR04
-Position=43,0,58,20
+Position=43,0,86,20
 Item=PR04,COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
@@ -1329,6 +1329,27 @@ Text=PR08. Qui sont les porteurs du projet […]?
 [EndColumn]
   
 [Column]
+Width=753
+  
+[HeaderText]
+Position=686,64,753,168
+Text=PR08s. Préciser le nom du projet ou la structure 
+ 
+[Field]
+Name=PR08S
+Position=44,0,745,20
+Item=PR08S,COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Position=0,0,315,16
+Text=PR08s. Préciser le nom du projet ou la structure 
+ 
+[EndColumn]
+  
+[Column]
 Width=709
   
 [HeaderText]
@@ -1344,6 +1365,7 @@ UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
+Position=0,0,163,16
 Text=PR08_ong. Preciser ONG
  
 [EndColumn]
@@ -1420,9 +1442,10 @@ Name=PR10
 Position=11,0,82,20
 Item=PR10,COMPOSITION_MENAGE_DICT
 UpperCase=Yes
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
   
 [Text]
+Position=0,0,294,16
 Text=PR10. Qui sont les bénéficiaires du projet […]?
  
 [EndColumn]
@@ -2159,15 +2182,15 @@ Text=CF7a. Préciser autre activité principal de (NOM)
 [EndColumn]
   
 [Column]
-Width=93
+Width=107
   
 [HeaderText]
-Position=0,112,93,184
+Position=14,112,107,184
 Text=CF7bis. Situation matrimoniale de (NOM)
  
 [Field]
 Name=CF7B
-Position=70,0,85,20
+Position=70,0,99,20
 Item=CF7B,COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   

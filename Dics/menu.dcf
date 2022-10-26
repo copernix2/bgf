@@ -73,7 +73,6 @@ ZeroFill=Yes
 Label=Menu Principal
 Name=MENU_VS1
 Value=1;Liste ménage
-Value=2;Synchronisation avec le binôme
 Value=3;Envoi vers le niveau centrale
 Value=9;Quitter l'application
 

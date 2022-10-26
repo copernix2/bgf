@@ -1127,15 +1127,15 @@ DataType=Alpha
 [ValueSet]
 Label=CA05. Quelles sont les contraintes d’accès au logement pour les femmes ?
 Name=CA05_VS1
-Value='01       ';Epuisement de l’assiette foncière
-Value='02       ';Prix élevé
-Value='03       ';Faible pouvoir d’achat des femmes
-Value='04       ';Difficultés d’accès au crédit
-Value='05       ';Accaparement des terres de la commune par les populations venues d’ailleurs
-Value='06       ';Vente des terres par les familles aux plus offrants
-Value='07       ';Mainmise des promoteurs privés
-Value='08       ';Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
-Value='09       ';Considérations socioculturelles sur l’acquisition de logement par les femmes
+Value='1        ';Epuisement de l’assiette foncière
+Value='2        ';Prix élevé
+Value='3        ';Faible pouvoir d’achat des femmes
+Value='4        ';Difficultés d’accès au crédit
+Value='5        ';Accaparement des terres de la commune par les populations venues d’ailleurs
+Value='6        ';Vente des terres par les familles aux plus offrants
+Value='7        ';Mainmise des promoteurs privés
+Value='8        ';Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
+Value='9        ';Considérations socioculturelles sur l’acquisition de logement par les femmes
 
 [Item]
 Label=CA06. Parmi ces dernières, quelle est la plus fréquente ?
@@ -1167,15 +1167,15 @@ DataType=Alpha
 [ValueSet]
 Label=CA07. Quelles sont les contraintes d’accès au logement pour les femmes ?
 Name=CA07_VS1
-Value='01       ';Epuisement de l’assiette foncière
-Value='02       ';Prix élevé
-Value='03       ';Faible pouvoir d’achat des femmes
-Value='04       ';Difficultés d’accès au crédit
-Value='05       ';Accaparement des terres de la commune par les populations venues d’ailleurs
-Value='06       ';Vente des terres par les familles aux plus offrants
-Value='07       ';Mainmise des promoteurs privés
-Value='08       ';Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
-Value='09       ';Considérations socioculturelles sur l’acquisition de logement par les femmes
+Value='1        ';Epuisement de l’assiette foncière
+Value='2        ';Prix élevé
+Value='3        ';Faible pouvoir d’achat des femmes
+Value='4        ';Difficultés d’accès au crédit
+Value='5        ';Accaparement des terres de la commune par les populations venues d’ailleurs
+Value='6        ';Vente des terres par les familles aux plus offrants
+Value='7        ';Mainmise des promoteurs privés
+Value='8        ';Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
+Value='9        ';Considérations socioculturelles sur l’acquisition de logement par les femmes
 
 [Item]
 Label=CA08. Parmi ces dernières, quelle est la plus fréquente ?
@@ -1225,6 +1225,112 @@ Name=CL1_1_VS1
 Value=1;Oui
 Value=2;Non
 Value=3;Ne sait pas
+
+
+[Item]
+Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
+Name=CL1_2
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
+Name=CL1_2_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
+Name=CL1_3
+Start=40
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
+Name=CL1_3_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
+Name=CL1_4
+Start=41
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
+Name=CL1_4_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
+Name=CL1_5
+Start=42
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
+Name=CL1_5_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
+Name=CL1_6
+Start=43
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
+Name=CL1_6_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
+Name=CL1_7
+Start=44
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
+Name=CL1_7_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL1.8. Avez-vous un autre Groupe au sein de votre communauté ?
+Name=CL1_8
+Start=45
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL1.8. Avez-vous un autre Groupe au sein de votre communauté ?
+Name=CL1_8_VS1
+Value=1;Oui
+Value=2;Non
+Value=3;Ne sait pas
+
+[Item]
+Label=CL.A. Préciser autre groupe qui existe au sein de votre communauté
+Name=CL_AUTRE
+Start=46
+Len=50
+DataType=Alpha
 
 [Record]
 Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE

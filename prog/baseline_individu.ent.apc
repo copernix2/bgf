@@ -19,6 +19,7 @@ preproc
 	if special(visualvalue($)) then 
 		$=timestamp();
 	endif;
+
 PROC AC2
 preproc
 ask if AC1=1;
@@ -29,6 +30,9 @@ PROC AC3
 preproc
 ask if AC2=1;
 PROC AC4
+preproc
+ask if AC2=2;
+PROC AC5
 preproc
 ask if AC2=2;
 PROC AC6
@@ -117,7 +121,7 @@ preproc
 ask if AC15=1;
 PROC AC16_1
 preproc
-ask if AC16=2;
+ask if AC16=4;
 PROC AC16_A
 preproc
 	ask if pos("96",AC16_1);
@@ -152,12 +156,24 @@ ask if AC20=1;
 PROC AC22_A
 preproc
 ask if AC22=96;
+PROC SECTION_PS_FORM
+preproc
+ask if AC22=1;
 PROC PS1_A
 preproc
 ask if PS1=2;
 PROC PS1_AUTRE
 preproc
 ask if PS1_A=96;
+PROC PS2
+preproc
+ask if PS1=1;
+PROC PS3
+preproc
+ask if PS1=1;
+PROC PS5
+preproc
+ask if PS1=1;
 PROC SECTION_PSL_FORM
 preproc
 ask if AC22=2;
@@ -182,6 +198,9 @@ ask if PSL7=96;
 PROC PSL8
 preproc
 ask if PSL6=1;
+PROC CA02_A
+preproc
+ask if CA02=96;
 PROC CA03
 Postproc
 	if length(strip($))>1 and ischecked("98",$)<>0  then
@@ -190,7 +209,7 @@ Postproc
 	endif;
 PROC CA03_A
 preproc
-	ask if pos("96",CA03);
+	ask if pos("99",CA03);
 PROC CA04_A
 preproc
 ask if CA04=96;
@@ -199,6 +218,10 @@ preproc
 	if CL1_1(curocc())=2 then 
 		skip to next;
 	endif;
+ask if CA04=99;
+PROC CL_AUTRE
+preproc
+ask if CL1_8=1;
 PROC CL3
 preproc
 ask if CL2=1;
@@ -216,7 +239,7 @@ preproc
 ask if CL8=1;
 PROC CL10_A
 preproc
-	ask if pos("96",CL10);
+	ask if pos("5",CL10);
 PROC CL11
 preproc
 ask if CL8=1;
