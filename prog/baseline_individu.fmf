@@ -163,7 +163,7 @@ Name=FORM007
 Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
 Level=1
 Repeat=INFO_GROUPE
-Size=1625,480
+Size=2134,552
   
 Item=CL2
 Item=CL3
@@ -180,6 +180,8 @@ Item=CL12
 Item=CL13_A
 Item=CL13_B
 Item=CL14
+Item=CL15
+Item=CL16
   
 [EndForm]
   
@@ -275,8 +277,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,30,415,46
-Text=AC1. Le capital foncier est-il partagé entre les membres ?
+Position=50,30,491,46
+Text=AC1. Le capital foncier est-il partagé entre les membres du ménage ?
  
   
 [Field]
@@ -288,8 +290,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,60,213,76
-Text=AC2. Si oui à AC1, à qui ?
+Position=50,60,238,76
+Text=AC2. Si oui à AC1, entre qui ?
  
   
 [Field]
@@ -356,8 +358,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,210,293,226
-Text=AC6. Si Oui à AC4, est-ce à part égal ?
+Position=50,210,313,226
+Text=AC6. Si Oui à AC4, est-ce à parts égales ?
  
   
 [Field]
@@ -1429,9 +1431,8 @@ Name=CA05
 Position=757,237,884,257
 Item=CA05,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-
 DataCaptureType=CheckBox
-Form=6
+Form=5
   
 [Text]
 Position=50,240,521,256
@@ -1456,9 +1457,8 @@ Name=CA07
 Position=757,297,884,317
 Item=CA07,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-
 DataCaptureType=CheckBox
-Form=6
+Form=5
   
 [Text]
 Position=50,300,521,316
@@ -1710,6 +1710,33 @@ Form=7
 [Text]
 Position=50,450,1277,466
 Text=CL14. Parmi les modalités suivantes, quelles sont celles qui s’appliquent aux femmes de votre communauté par rapport à leur participation aux instances de prise de décisions liées au foncier ?
+ 
+  
+[Field]
+Name=CL15
+Position=522,473,932,493
+Item=CL15,BASELINE_INDIVIDU_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=7
+  
+[Text]
+Position=296,476,494,492
+Text=CL15. Si non à CL2, Pourquoi ?
+ 
+  
+[Field]
+Name=CL16
+Position=1027,507,1042,527
+Item=CL16,BASELINE_INDIVIDU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=7
+  
+[Text]
+Position=377,510,988,526
+Text=CL16. Si non à CL2, Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
  
 [EndGroup]
   

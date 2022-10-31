@@ -55,27 +55,27 @@ RecordTypeValue='2'
 RecordLen=1196
 
 [Item]
-Label=AC1. Le capital foncier est-il partagé entre les membres ?
+Label=AC1. Le capital foncier est-il partagé entre les membres du ménage ?
 Name=AC1
 Start=40
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=AC1. Le capital foncier est-il partagé entre les membres ?
+Label=AC1. Le capital foncier est-il partagé entre les membres du ménage ?
 Name=AC1_VS1
 Value=1;Oui
 Value=2;Non
 
 [Item]
-Label=AC2. Si oui à AC1, à qui ?
+Label=AC2. Si oui à AC1, entre qui ?
 Name=AC2
 Start=41
 Len=2
 DataType=Numeric
 
 [ValueSet]
-Label=AC2. Si oui à AC1, à qui ?
+Label=AC2. Si oui à AC1, entre qui ?
 Name=AC2_VS1
 Value=1;Entre les hommes adultes
 Value=2;Entre homme et femme
@@ -116,14 +116,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=AC6. Si Oui à AC4, est-ce à part égal ?
+Label=AC6. Si Oui à AC4, est-ce à parts égales ?
 Name=AC6
 Start=194
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=AC6. Si Oui à AC4, est-ce à part égal ?
+Label=AC6. Si Oui à AC4, est-ce à parts égales ?
 Name=AC6_VS1
 Value=1;Oui
 Value=2;Non
@@ -861,7 +861,7 @@ Label=PSL3. Si Achat (PSL2=2), quelle est la source d’acquisition
 Name=PSL3_VS1
 Value=1;Particulier
 Value=2;Coopérative d’habitat
-Value=3;Plan Epargne Logement (PEL)
+Value=3;Plan Epargne Logement (PEL)/Banque
 Value=4;Promoteur immobilier/Agence Immobilière
 Value=96;Autres à préciser
 
@@ -1041,6 +1041,7 @@ Value=1;Au sein de la famille
 Value=2;Au sein de la communauté
 Value=3;Au niveau administratif
 Value=4;Au niveau personnel
+Value=5;Aucun niveau
 
 [Item]
 Label=CA02. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre ménage ?
@@ -1202,13 +1203,13 @@ Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
 Name=SECTION_CL
 RecordTypeValue='6'
 MaxRecords=8
-RecordLen=40
+RecordLen=97
 OccurrenceLabel=1,a.Groupe de producteurs agricoles/éleveurs/
 OccurrenceLabel=2,b. Groupe d'usagers de l'eau
 OccurrenceLabel=3,c. Groupe de gestion du foncier de la communauté ou Commission domaniale
 OccurrenceLabel=4,d. Groupe de crédit ou de microfinance (notamment les mutuels/tontines )
-OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle 
-OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) 
+OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle
+OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes)
 OccurrenceLabel=7,g. Groupe religieux
 OccurrenceLabel=8,h. Autre (à préciser) :
 
@@ -1226,11 +1227,10 @@ Value=1;Oui
 Value=2;Non
 Value=3;Ne sait pas
 
-
 [Item]
 Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
 Name=CL1_2
-Start=39
+Start=41
 Len=1
 DataType=Numeric
 
@@ -1244,7 +1244,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
 Name=CL1_3
-Start=40
+Start=42
 Len=1
 DataType=Numeric
 
@@ -1258,7 +1258,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
 Name=CL1_4
-Start=41
+Start=43
 Len=1
 DataType=Numeric
 
@@ -1272,7 +1272,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
 Name=CL1_5
-Start=42
+Start=44
 Len=1
 DataType=Numeric
 
@@ -1286,7 +1286,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
 Name=CL1_6
-Start=43
+Start=45
 Len=1
 DataType=Numeric
 
@@ -1300,7 +1300,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
 Name=CL1_7
-Start=44
+Start=46
 Len=1
 DataType=Numeric
 
@@ -1314,7 +1314,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL1.8. Avez-vous un autre Groupe au sein de votre communauté ?
 Name=CL1_8
-Start=45
+Start=47
 Len=1
 DataType=Numeric
 
@@ -1328,7 +1328,7 @@ Value=3;Ne sait pas
 [Item]
 Label=CL.A. Préciser autre groupe qui existe au sein de votre communauté
 Name=CL_AUTRE
-Start=46
+Start=48
 Len=50
 DataType=Alpha
 
@@ -1337,13 +1337,13 @@ Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
 Name=INFO_GROUPE
 RecordTypeValue='7'
 MaxRecords=8
-RecordLen=459
+RecordLen=510
 OccurrenceLabel=1,a.Groupe de producteurs agricoles/éleveurs/
 OccurrenceLabel=2,b. Groupe d'usagers de l'eau
 OccurrenceLabel=3,c. Groupe de gestion du foncier de la communauté ou Commission domaniale
 OccurrenceLabel=4,d. Groupe de crédit ou de microfinance (notamment les mutuels/tontines )
-OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle 
-OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) 
+OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle
+OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes)
 OccurrenceLabel=7,g. Groupe religieux
 OccurrenceLabel=8,h. Autre (à préciser) :
 
@@ -1523,6 +1523,29 @@ Value='5       ';Contraintes familiales (réticence du mari, charge de travail d
 Value='6       ';Pratiques discriminatoires des politiques
 Value='7       ';Manque d’intérêts pour les questions foncières
 Value='8       ';Sensibilité de la question foncière
+
+[Item]
+Label=CL15. Si non à CL2, Pourquoi ?
+Name=CL15
+Start=460
+Len=50
+DataType=Alpha
+
+[Item]
+Label=CL16. Si non à CL2, Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
+Name=CL16
+Start=510
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=CL16. Si non à CL2, Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
+Name=CL16_VS1
+Value=1;PAS DU TOUT
+Value=2;FAIBLEMENT
+Value=3;MOYENNEMENT
+Value=4;BEAUCOUP
+Value=5;NE SAIT PAS
 
 [Record]
 Label=autre info

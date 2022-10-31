@@ -26,6 +26,16 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
+  - name: LTP_DICT.CF11
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16px;"><b>CF11. Quel est le nombre de parcelles exploitées par&nbsp;</b></span><b style="font-size: 16px;"><font color="#ff0000">N°~~EXT_CF2~~</font></b><b style="font-size: 16px;">&nbsp;?</b><p></p>
+  - name: LTP_DICT.CF12
+    conditions:
+      - questionText:
+          FR: |
+            <b><span style="font-size: 16px;">CF12.&nbsp; Quelle est la surface <font color="#ff0000">(en ha)</font> totale des parcelles exploitées par&nbsp;</span></b><b style="font-size: 16px;"><font color="#ff0000">N°~~EXT_CF2~~</font></b><b style="font-size: 16px;">&nbsp;?</b><p></p>
   - name: LTP_DICT.TA1
     conditions:
       - questionText:
@@ -40,67 +50,82 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA3. Nature de la parcelle&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16px;">N°~~TA2~~</span></font></b><b style="font-size: 16px;"><span style="font-size: 16px;">&nbsp;</span></b><p></p>
+            <b><span style="font-size: 18px;">TA3. Nature de la parcelle&nbsp;</span><span style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">N°~~TA2~~</span></font></span><span style="font-size: 16px;"><span style="font-size: 18px;">&nbsp;</span></span></b><p></p>
+  - name: LTP_DICT.TA3_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>TA3a. Préciser autre nature de la parcelle</b></span><p></p>
   - name: LTP_DICT.TA4
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA4. Superficie de la parcelle (en ha)</span><p></p>
+            <span style="font-size: 18px;"><b>TA4. Superficie de la parcelle <font color="#ff0000">(en ha)</font></b></span><p></p>
   - name: LTP_DICT.TA5
     conditions:
       - questionText:
           FR: |
-            <span style="font-family: Arial; font-size: 16px;">TA5. Type de propriété sur la parcelle</span><p></p>
+            <span style="font-family: Arial; font-size: 16px;"><b>TA5. Type de propriété sur la parcelle</b></span><p></p>
   - name: LTP_DICT.TA5_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-family: Arial; font-size: 16px;">Preciser autre type de propriété sur la parcelle</span><p></p>
+            <span style="font-family: Arial; font-size: 18px;"><b>Preciser autre type de propriété sur la parcelle</b></span><p></p>
   - name: LTP_DICT.TA6
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA6. Depuis combien de temps l’avez-vous acquis ?</span><p></p>
+            <span style="font-size: 18px;"><b>TA6. Depuis combien de temps l’avez-vous acquis ?</b></span><p></p>
+  - name: LTP_DICT.TA6_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>TA6a. Préciser l'unité de temps</b></span><p></p>
   - name: LTP_DICT.TA7
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA7. Mode d’acquisition de la parcelle ?</span><p></p>
+            <span style="font-size: 18px;"><b>TA7. Mode d’acquisition de la parcelle ?</b></span><p></p>
   - name: LTP_DICT.TA7_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">Preciser autre mode d'acquisition de la parcelle</span><p></p>
+            <span style="font-size: 18px;"><b>Preciser autre mode d'acquisition de la parcelle</b></span><p></p>
   - name: LTP_DICT.TA8
     conditions:
       - questionText:
           FR: |
-            TA8.Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?<p></p>
+            <span style="font-size: 18px;">TA8. Est ce que s’était suite à une demande individuelle/collective auprès du Conseil municipal ?</span><p></p>
   - name: LTP_DICT.TA8_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">TA8a. Preciser autre type de demande</span><p></p>
   - name: LTP_DICT.TA9
     conditions:
       - questionText:
           FR: |
-            TA9. Depuis quand la demande a été satisfaite ?<p></p>
+            <span style="font-size: 18px;">TA9. Depuis quand la demande a été satisfaite ?</span><p></p>
+  - name: LTP_DICT.TA9_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;">TA9a. Préciser l'unité de temps</span><p></p>
   - name: LTP_DICT.TA10
     conditions:
       - questionText:
           FR: |
-            TA10.Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative ?<p></p>
+            <span style="font-size: 18px;">TA10.Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative ?</span><p></p>
   - name: LTP_DICT.TA11
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA11.Préciser le Nom de l’initiative</span><p></p>
+            <span style="font-size: 18px;">TA11.Préciser le Nom de l’initiative</span><p></p>
   - name: LTP_DICT.TA12
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA12. Comment ?</span><p></p>
+            <span style="font-size: 18px;">TA12. Comment ?</span><p></p>
   - name: LTP_DICT.TA19
     conditions:
       - questionText:
@@ -117,107 +142,107 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA21.Quel document atteste de vos droits de propriété ?</span><p></p>
+            <span style="font-size: 18px;">TA21.Quel document atteste de vos droits de propriété ?</span><p></p>
   - name: LTP_DICT.TA21_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">Preciser autre document qui atteste de vos droits de propriété</span><p></p>
+            <span style="font-size: 18px;">Preciser autre document qui atteste de vos droits de propriété</span><p></p>
   - name: LTP_DICT.TA22
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA22. Utilisation de la parcelle (sur les 12 derniers mois)</span><p></p>
+            <span style="font-size: 18px;">TA22. Utilisation de la parcelle (sur les 12 derniers mois)</span><p></p>
   - name: LTP_DICT.TA22_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">Preciser autre type d'utilisation de la parcelle</span><p></p>
+            <span style="font-size: 18px;">Preciser autre type d'utilisation de la parcelle</span><p></p>
   - name: LTP_DICT.TA23
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA23. Mode d’exploitation</span><p></p>
+            <span style="font-size: 18px;">TA23. Mode d’exploitation</span><p></p>
   - name: LTP_DICT.TA24
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 derniers mois.</span><p></p>
+            <span style="font-size: 18px;">TA24. Répertorier les Cultures si la parcelle a été exploitée ces 12 derniers mois.</span><p></p>
   - name: LTP_DICT.TA24_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">Preciser autre&nbsp;</span><span style="font-size: 16px;">Cultures si la parcelle a été exploitée ces 12 derniers mois.</span><p></p>
+            <span style="font-size: 18px;">Preciser autre&nbsp;</span><span style="font-size: 18px;">Cultures si la parcelle a été exploitée ces 12 derniers mois.</span><p></p>
   - name: LTP_DICT.TA25
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA25. Destinations des productions ?</span><p></p>
+            <span style="font-size: 18px;">TA25. Destinations des productions ?</span><p></p>
   - name: LTP_DICT.TA26
     conditions:
       - questionText:
           FR: |
-            <p><span style="font-size: 16px;">TA26. Distance de la parcelle par rapport à la maison&nbsp;</span></p><p></p>
+            <p><span style="font-size: 18px;">TA26. Distance de la parcelle par rapport à la maison&nbsp;</span></p><p></p>
   - name: LTP_DICT.TA26_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">Préciser l'unité de mesure</span><p></p>
+            <span style="font-size: 18px;">Préciser l'unité de mesure</span><p></p>
   - name: LTP_DICT.TA27
     conditions:
       - questionText:
           FR: |
-            <p><span style="font-size: 16px;">TA27. Combien de temps prend-t-on pour se rendre à la parcelle en marchant à pieds à partir de la maison ?</span></p><p></p><p><b><span class="instruction">﻿</span><span class="instruction">(en minutes)&nbsp;</span></b><br></p><p></p>
+            <p><span style="font-size: 18px;">TA27. Combien de temps prend-t-on pour se rendre à la parcelle en marchant à pieds à partir de la maison ?</span></p><p></p><p><b><span class="instruction">﻿</span><span class="instruction">(en minutes)&nbsp;</span></b><br></p><p></p>
   - name: LTP_DICT.TA28A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28a. Est-ce que la terre agricole est exposée aux contraintes de </span><b><font color="#ff0000"><span style="font-size: 16px;">l'inondation</span></font></b><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA28a. Est-ce que la terre agricole est exposée aux contraintes de </span><b><font color="#ff0000"><span style="font-size: 18px;">l'inondation&nbsp;</span></font></b><span style="font-size: 18px;">?&nbsp;</span><p></p>
   - name: LTP_DICT.TA28B
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28c. Est-ce que la terre agricole est exposée aux contraintes <b><font color="#ff0000">de Manque d’eau (nappe profonde)</font></b> ?</span><p></p>
+            <p><span style="font-size: 18px;">TA28b. Est-ce que la terre agricole est exposée aux contraintes&nbsp;</span><font color="#ff0000" style="font-size: 16px;"><b><span style="font-size: 18px;">de la Salinisation</span></b></font><span style="font-size: 18px;">&nbsp;?</span><br></p><p></p><p></p><p></p>
   - name: LTP_DICT.TA28C
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28b. Est-ce que la terre agricole est exposée aux contraintes <font color="#ff0000"><b>de la Salinisation</b></font> ?</span><p></p>
+            <span style="font-size: 18px;">TA28c. Est-ce que la terre agricole est exposée aux contraintes&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">de Manque d’eau (nappe profonde)</span></font></b><span style="font-size: 18px;">&nbsp;?</span><br><p></p>
   - name: LTP_DICT.TA28D
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28d. Est-ce que la terre agricole est exposée aux contraintes </span><font color="#ff0000"><b><span style="font-size: 16px;">des Terres lessivées (non productive)</span></b></font><span style="font-size: 16px;"> ?</span><p></p>
+            <span style="font-size: 18px;">TA28d. Est-ce que la terre agricole est exposée aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">des Terres lessivées (non productive)</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TA28E
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28e. Est-ce que la terre agricole est exposée aux contraintes <b><font color="#ff0000">de Protection des cultures (clôture) </font></b>?</span><p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TA28e. Est-ce que la terre agricole est exposée aux contraintes </span><b><font color="#ff0000"><span style="font-size: 18px;">de Protection des cultures (clôture) </span></font></b><span style="font-size: 18px;">?</span></span><p></p>
   - name: LTP_DICT.TA28F
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28f. Est-ce que la terre agricole est exposée aux contraintes <font color="#ff0000"><b>de Préparation des terres pour la culture (gros arbres)</b></font> ?</span><p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TA28f. Est-ce que la terre agricole est exposée aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">de Préparation des terres pour la culture (gros arbres)</span></b></font><span style="font-size: 18px;"> ?</span></span><p></p>
   - name: LTP_DICT.TA28G
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28g. Est-ce que la terre agricole est exposée aux contraintes <b><font color="#ff0000">de Exploitation minières</font></b> ?</span><p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TA28g. Est-ce que la terre agricole est exposée aux contraintes </span><b><font color="#ff0000"><span style="font-size: 18px;">de Exploitation minières</span></font></b><span style="font-size: 18px;"> ?</span></span><p></p>
   - name: LTP_DICT.TA28H
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA28h. Est-ce que la terre agricole est exposée aux contraintes <font color="#ff0000"><b>des Terres lessivées (non productive)</b></font> ?</span><p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TA28h. Est-ce que la terre agricole est exposée aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">des autres terres (à préciser)</span></b></font><span style="font-size: 18px;">&nbsp;?</span></span><p></p>
   - name: LTP_DICT.TA28_A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">Préciser autre contrainte à laquelle la terre agricole est exposée</span><p></p>
+            <span style="font-size: 18px;">Préciser autre contrainte à laquelle la terre agricole est exposée</span><p></p>
   - name: LTP_DICT.TA29
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA29. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années?</span><p></p>
+            <span style="font-size: 18px;">TA29. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre agricole ou une partie contre votre volonté au cours des 5 prochaines années?</span><p></p>
   - name: LTP_DICT.TA30
     conditions:
       - questionText:
@@ -227,72 +252,74 @@ questions:
     conditions:
       - questionText:
           FR: |
-            TA31. Si TA29=4 ou 5 ou TA30=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années?<p></p>
+            <span style="font-size: 18px;">TA31. Quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années?</span><p></p>
   - name: LTP_DICT.TA31_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">TA31a. Préciser autre raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre agricole dans les 5 prochaines années</span><p></p>
   - name: LTP_DICT.TA32A
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32a. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><b><font color="#ff0000"><span style="font-size: 16px;">Si vous avez eu un désaccord / conflit avec votre famille </span></font></b><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA32a. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><b><font color="#ff0000"><span style="font-size: 18px;">Si vous avez eu un désaccord / conflit avec votre famille </span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TA32B
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32b. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 16px;">Si quelqu'un dans votre ménage décède&nbsp;</span></b></font><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA32b. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 18px;">Si quelqu'un dans votre ménage décède&nbsp;</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TA32C
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32c. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><b><font color="#ff0000"><span style="font-size: 16px;">Si votre conjoint(e) décède</span></font></b><span style="font-size: 16px;"> ?</span><p></p>
+            <span style="font-size: 18px;">TA32c. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><b><font color="#ff0000"><span style="font-size: 18px;">Si votre conjoint(e) décède</span></font></b><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TA32D
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32d. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 16px;">Si quelqu'un d'autre dans votre famille a perdu son emploi&nbsp;</span></b></font><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA32d. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 18px;">Si quelqu'un d'autre dans votre famille a perdu son emploi&nbsp;</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TA32E
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32e. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 16px;">Si vous ne pouviez pas honorer la location pendant deux mois d'affilée</span></b></font><span style="font-size: 16px;"> ?</span><p></p>
+            <span style="font-size: 18px;">TA32e. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 18px;">Si vous ne pouviez pas honorer la location pendant deux mois d'affilée</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TA32F
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32f. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 16px;">Si une entreprise essaie de faire la saisie contre votre volonté</span></b></font><span style="font-size: 16px;"> ?</span><p></p>
+            <span style="font-size: 18px;">TA32f. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 18px;">Si une entreprise essaie de faire la saisie contre votre volonté</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TA32G
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32g. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole S</span><b><font color="#ff0000"><span style="font-size: 16px;">i le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pole urbain)&nbsp;</span></font></b><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA32g. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole S</span><b><font color="#ff0000"><span style="font-size: 18px;">i le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pole urbain)&nbsp;</span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TA32H
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32h. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 16px;">Si une autre personne ou d'un groupe revendique la propriété&nbsp;</span></b></font><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA32h. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 18px;">Si une autre personne ou d'un groupe revendique la propriété&nbsp;</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TA32I
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32i. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><b><font color="#ff0000"><span style="font-size: 16px;">Si quelqu'un d'autre vend frauduleusement la propriété&nbsp;</span></font></b><span style="font-size: 16px;">?</span><p></p>
+            <span style="font-size: 18px;">TA32i. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><b><font color="#ff0000"><span style="font-size: 18px;">Si quelqu'un d'autre vend frauduleusement la propriété&nbsp;</span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TA32J
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16px;">TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 16px;">Si un désaccord est survenu avec les autorités locales&nbsp;</span></b></font><span style="font-size: 16px;">?</span><p></p>
-  - name: LTP_DICT.TH1
+            <span style="font-size: 18px;">TA32j. Seriez-vous inquiet de perdre votre droit de détention de cette terre agricole </span><font color="#ff0000"><b><span style="font-size: 18px;">Si un désaccord est survenu avec les autorités locales&nbsp;</span></b></font><span style="font-size: 18px;">?</span><p></p>
+  - name: LTP_DICT.CF14
     conditions:
       - questionText:
           FR: |
-            TH1. Code de la personne (Rappel du nom et prénom)<p></p>
-  - name: LTP_DICT.TH1_1
+            <span style="font-size: 16pt; font-family: Arial;">CF14. Quel est le&nbsp;nombre de parcelles à usage
+            d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">N°~~EXT_CF2~~&nbsp;</span></font></b><span style="font-size: 16pt; font-family: Arial;">?</span><p></p>
+  - name: LTP_DICT.CF15
     conditions:
       - questionText:
           FR: |
-            Nom et prénom<p></p>
+            <span style="font-size: 16pt; font-family: Arial;">CF15. Quelle est la surface&nbsp;totale des parcelles à
+            usage d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt; font-family: Arial;">N°~~EXT_CF2~~&nbsp;</span></font></b><span style="font-size: 16pt; font-family: Arial;">?</span><p></p>
   - name: LTP_DICT.TH2
     conditions:
       - questionText:
@@ -302,283 +329,312 @@ questions:
     conditions:
       - questionText:
           FR: |
-            TH4. Type de propriété sur la parcelle<p></p>
+            <span style="font-size: 16pt; font-family: Arial;">TH3.</span><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;"> </span><span style="font-family: Arial; font-size: 16pt;">Superficie
+            de la parcelle&nbsp;</span></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">N°~~TH2~~</span></font></b><b style="font-size: 16px;"><span style="font-size: 16pt;">&nbsp;</span></b><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;">&nbsp;<font color="#ff0000"><b>(en m2)</b></font></span></span><p></p>
   - name: LTP_DICT.TH4
     conditions:
       - questionText:
           FR: |
-            TH5. Type de propriété sur la parcelle<p></p>
+            <span style="text-align: justify;"><span style="font-size: 16pt; font-family: Arial;">TH4. Quel est l’état de la parcelle&nbsp;</span></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">N°~~TH2~~</span></font></b><span style="text-align: justify;"><span style="font-size: 16pt; font-family: Arial;">&nbsp;à usage
+            d’habitation&nbsp;?</span></span><p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="font-size:11.0pt"><o:p></o:p></span></b></p><p></p>
   - name: LTP_DICT.TH5
     conditions:
       - questionText:
           FR: |
-            TH6. Depuis combien de temps l’avez-vous acquis ?<p></p>
+            <p class="MsoNormal"><span style="font-size: 16pt;">TH5.</span><span style="font-size:11.0pt"><span style="font-size: 16pt;"> </span><span style="font-size: 16pt;">Type de
+            propriété sur la parcelle&nbsp;</span><b><o:p></o:p></b></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">N°~~TH2~~</span></font></b></p><p></p>
+  - name: LTP_DICT.TH5_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;">Préciser autre type de parcelle</span><p></p>
   - name: LTP_DICT.TH6
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal"><span style="font-size: 11pt;">TH6. Depuis combien de
-            temps l’avez-vous acquis&nbsp;?<b><o:p></o:p></b></span></p><p></p>
+            <p class="MsoNormal"><span style="font-size: 16pt;">TH6. Depuis combien de
+            temps avez-vous acquis la parcelle&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">N°~~TH2~~</span></font></b><span style="font-size: 16pt;">&nbsp;?</span></p><p></p>
   - name: LTP_DICT.TH6_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre unité de temps<p></p>
+            <span style="font-size: 16px;">Preciser autre unité de temps</span><p></p>
   - name: LTP_DICT.TH7
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16pt; font-family: Arial;">TH7</span><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;">. </span><span style="font-family: Arial; font-size: 16pt;">Mode d’acquisition de la parcelle&nbsp;?</span></span><p></p>
+            <span style="font-size: 16pt; font-family: Arial;">TH7</span><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;">. </span><span style="font-family: Arial; font-size: 16pt;">Mode d’acquisition de la parcelle&nbsp;</span></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">N°~~TH2~~</span></font></b><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;"><span style="font-size: 18px;">&nbsp;</span>?</span></span><p></p>
   - name: LTP_DICT.TH7_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre mode d'acquisition</span><p></p>
+  - name: LTP_DICT.TH8
+    conditions:
+      - questionText:
+          FR: |
+            <p class="MsoNormal"><span style="font-size: 16pt;">TH8</span><span style="font-size: 11pt;"><span style="font-size: 16pt;">. Est ce que s’était suite à une
+            demande individuelle/collective auprès du Conseil municipal&nbsp;?</span><b><o:p></o:p></b></span></p><p></p>
+  - name: LTP_DICT.TH8_A
+    conditions:
+      - questionText:
+          FR: |
+            <p><span style="font-size: 18px;">Préciser autre type de demande</span></p>
   - name: LTP_DICT.TH9
     conditions:
       - questionText:
           FR: |
-            <p>TH9.<span style="font-family: &quot;Times New Roman&quot;;">﻿</span>Depuis quand la demande a été satisfaite ?</p><p></p><p></p>
+            <p><span style="font-size: 18px;">TH9.</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 18px;">﻿</span><span style="font-size: 18px;">Depuis quand la demande a été satisfaite ?</span></p><p></p><p></p>
   - name: LTP_DICT.TH9_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre unité de temps<p></p>
+            <span style="font-size: 18px;">Preciser autre unité de temps</span><p></p>
   - name: LTP_DICT.TH10
     conditions:
       - questionText:
           FR: |
-            TH10.Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative/Coopérative ?<p></p>
+            <span style="font-size: 18px;">TH10.Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’une initiative/Coopérative ?</span><p></p>
   - name: LTP_DICT.TH11
     conditions:
       - questionText:
           FR: |
-            TH11.Préciser le Nom de l’initiative<p></p>
+            <span style="font-size: 18px;">TH11.Préciser le Nom de l’initiative</span><p></p>
   - name: LTP_DICT.TH12
     conditions:
       - questionText:
           FR: |
-            <p>TH12. Contrepartie d’acquisition si achat, prêt ou gage à TH5 en argent?</p><p><p><i><span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+            <p><span style="font-size: 16px;">TH12. Contrepartie d’acquisition si achat, prêt ou gage à TH5 en argent?</span></p><p></p><p><i><span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
             &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
-            AR-SA" class="instruction"><b>(Si c’est en nature ou en argent, estimez le montant)</b></span></i><br></p></p>
+            AR-SA" class="instruction"><b>(Si c’est en nature ou en argent, estimez le montant)</b></span></i><br></p><p></p>
   - name: LTP_DICT.TH13
     conditions:
       - questionText:
           FR: |
-            <p>TH13. Contrepartie d’acquisition si location à TH5 ?</p><p><p><i><span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+            <p><span style="font-size: 16px;">TH13. Contrepartie d’acquisition si location à TH5 ?</span></p><p></p><p><i><span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
             &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
-            AR-SA" class="instruction"><b>(Si c’est en nature ou en argent, estimez le montant mensuel)</b></span></i><br></p></p>
+            AR-SA" class="instruction"><b>(Si c’est en nature ou en argent, estimez le montant mensuel)</b></span></i><br></p><p></p>
   - name: LTP_DICT.TH14
     conditions:
       - questionText:
           FR: |
-            TH14. Quel document atteste de vos droits de propriété ?<p></p>
+            <span style="font-size: 18px;">TH14. Quel document atteste de vos droits de propriété ?</span><p></p>
   - name: LTP_DICT.TH14_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre document qui atteste de vos droit de propriété</span><p></p>
   - name: LTP_DICT.TH15
     conditions:
       - questionText:
           FR: |
-            TH15 Utilisation de la parcelle (sur les 12 derniers mois)<p></p>
+            <span style="font-size: 18px;">TH15 Utilisation de la parcelle (sur les 12 derniers mois)</span><p></p>
   - name: LTP_DICT.TH15_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre type d'utilisation de la parcelle</span><p></p>
   - name: LTP_DICT.TH16
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">TH16. Est-ce un lotissement de la famille&nbsp;?</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+            <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 18px;">TH16. Si Héritage, est-ce un </span><span style="color: red; font-family: Arial; font-size: 16px;"><b><span style="font-size: 18px;">lotissement/morcellement</span></b><span style="font-size: 18px;">
+            </span></span><span style="font-family: Arial; font-size: 18px;">de la famille&nbsp;?</span></span><span style="font-size:12.0pt;font-family:
+            &quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+            FR;mso-fareast-language:FR;mso-bidi-language:AR-SA"></span><br><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
             &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
             AR-SA"></span><p></p>
   - name: LTP_DICT.TH17
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">TH17.</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;Le
-            nombre total de parcelles du lotissement</span><p></p>
+            <span style="font-size: 12pt; font-family: Arial;">TH17.</span><span style="font-size: 12pt; font-family: Arial;">&nbsp;Le
+            nombre total de parcelles du&nbsp;</span><b style="color: rgb(255, 0, 0); font-size: 16px;"><span style="font-family: Arial;">lotissement/morcellement</span></b><p></p>
   - name: LTP_DICT.TH18
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">TH18.</span><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"> Si oui, le
+            <span style="font-size: 16pt; font-family: Arial;">TH18.</span><span style="font-size: 16pt; font-family: Arial;"> Si oui, le
             nombre de parcelles héritées</span><p></p>
   - name: LTP_DICT.TH19
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">TH19.
-            Si oui, Sur quelle base ce partage a été effectué ?<b><o:p></o:p></b></p><p></p>
+            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><span style="font-size: 16px;">TH19.
+            Si oui, Sur quelle base ce partage a été effectué ?</span><b><o:p></o:p></b></p><p></p>
   - name: LTP_DICT.TH19_R
     conditions:
       - questionText:
           FR: |
-            Preciser religion<p></p>
+            <span style="font-size: 16px;">Preciser religion</span><p></p>
   - name: LTP_DICT.TH19_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px;">Preciser autre base de partage</span><p></p>
   - name: LTP_DICT.TH19_BIS
     conditions:
       - questionText:
           FR: |
-            TH19bis. est-ce à part égal ?<p></p>
+            <span style="font-size: 16px;">TH19bis. est-ce à part égal ?</span><p></p>
   - name: LTP_DICT.TH20
     conditions:
       - questionText:
           FR: |
-            TH20. Qui a pris la décision sur les procédures de lotissement<p></p>
+            <span style="font-size: 16px;">TH20. Qui a pris la décision sur les procédures de lotissement</span><p></p>
+  - name: LTP_DICT.TH20_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16px;">Préciser autre personne qui prend la décision sur les procédures de lotissement</span><p></p>
   - name: LTP_DICT.TH21
     conditions:
       - questionText:
           FR: |
-            TH21. Si Achat (TH7=3), quelle est la source d’acquisition<p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TH21. Si </span><b><font color="#ff0000"><span style="font-size: 18px;">Achat</span></font></b><span style="font-size: 18px;"> (TH7=3), quelle est la source d’acquisition</span></span><p></p>
   - name: LTP_DICT.TH21_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre source d'acquisition</span><p></p>
   - name: LTP_DICT.TH22A
     conditions:
       - questionText:
           FR: |
-            TH30a. Est-ce que la terre d’habitation est exposée aux contraintes d'Inondation?<p></p>
+            <span style="font-size: 18px;">TH22a. Est-ce que la terre d’habitation est exposée aux contraintes </span><b><font color="#ff0000"><span style="font-size: 18px;">d'Inondation&nbsp;</span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH22B
     conditions:
       - questionText:
           FR: |
-            TH30b. Est-ce que la terre d’habitation est exposée aux contraintes de Manque d’assainissement<p></p>
+            <span style="font-size: 18px;">TH22b. Est-ce que la terre d’habitation est exposée aux contraintes de </span><span style="font-size: 16px;"><b style="color: rgb(255, 0, 0);"><span style="font-size: 18px;">Manque d’assainissement </span></b><span style="font-size: 18px;">?</span></span><p></p>
   - name: LTP_DICT.TH22C
     conditions:
       - questionText:
           FR: |
-            TH30c. Est-ce que la terre d’habitation est exposée aux contraintes de lotissement clandestin?<p></p>
+            <span style="font-size: 18px;">TH22c. Est-ce que la terre d’habitation est exposée aux contraintes </span><span style="font-size: 18px;"><font color="#ff0000"><b>de lotissement clandestin</b></font></span><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH22D
     conditions:
       - questionText:
           FR: |
-            TH30d. Est-ce que la terre d’habitation est exposée aux contraintes de Salinisation?<p></p>
+            <span style="font-size: 18px;">TH22d. Est-ce que la terre d’habitation est exposée aux contraintes </span><b><font color="#ff0000"><span style="font-size: 18px;">de Salinisation </span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH22E
     conditions:
       - questionText:
           FR: |
-            TH30e. Est-ce que la terre d’habitation est exposée aux contraintes de Nappe Phréatique « proche »?<p></p>
+            <span style="font-size: 18px;">TH22e. Est-ce que la terre d’habitation est exposée aux contraintes de </span><b><font color="#ff0000"><span style="font-size: 18px;">Nappe Phréatique « proche »</span></font></b><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH22F
     conditions:
       - questionText:
           FR: |
-            TH30f. Est-ce que la terre d’habitation est exposée aux contraintes d'Eloignement des écoles&nbsp;<p></p>
+            <span style="font-size: 18px;">TH22f. Est-ce que la terre d’habitation est exposée aux contraintes </span><b><span style="font-size: 18px;"><font color="#ff0000">d'Eloignement des écoles</font></span><span style="font-size: 18px;"> </span></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH22G
     conditions:
       - questionText:
           FR: |
-            TH30g. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des hôpitaux?<p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TH22g. Est-ce que la terre d’habitation est exposée aux contraintes </span><b><font color="#ff0000"><span style="font-size: 18px;">d'eloignement des hôpitaux</span></font></b><span style="font-size: 18px;"> ?&nbsp;</span></span><p></p>
   - name: LTP_DICT.TH22H
     conditions:
       - questionText:
           FR: |
-            TH30h. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des marchés?<p></p>
+            <span style="font-size: 18px;">TH22h. Est-ce que la terre d’habitation est exposée aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">d'eloignement des marchés</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH22I
     conditions:
       - questionText:
           FR: |
-            TH30i. Est-ce que la terre d’habitation est exposée aux contraintes d'eloignement des routes/Voiries?<p></p>
+            <span style="font-size: 18px;">TH22i. Est-ce que la terre d’habitation est exposée aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">d'eloignement des routes/Voiries</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH22J
     conditions:
       - questionText:
           FR: |
-            TH30j. Est-ce que la terre d’habitation est exposée aux autre contraintes à preciser?<p></p>
+            <span style="font-size: 18px;">TH22j. Est-ce que la terre d’habitation est exposée aux autres&nbsp;</span><font color="#ff0000"><b><span style="font-size: 18px;">contraintes à preciser</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH22_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre contrainte</span><p></p>
   - name: LTP_DICT.TH23
     conditions:
       - questionText:
           FR: |
-            TH23. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années?<p></p>
+            <span style="font-size: 16px;">TH23. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?</span><p></p>
   - name: LTP_DICT.TH24
     conditions:
       - questionText:
           FR: |
-            TH24. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?<p></p>
+            <span style="font-size: 16px;">TH24. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?</span><p></p>
   - name: LTP_DICT.TH25
     conditions:
       - questionText:
           FR: |
-            TH25. Si TH24=4 ou 5 ou TH25=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années?<p></p>
+            <span style="font-size: 16px;">TH25. Quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années ?</span><p></p>
   - name: LTP_DICT.TH25_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px; font-family: Arial;">Preciser autre&nbsp;</span><span style="font-size: 16px; font-family: Arial;">raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il
+            est probable que vous perdiez le droit de détention cette terre d’habitation dans
+            les 5 prochaines années</span><p></p>
   - name: LTP_DICT.TH26A
     conditions:
       - questionText:
           FR: |
-            TH26a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous avez eu un désaccord / conflit avec votre famille?<p></p>
+            <span style="font-size: 18px;">TH26a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><b style="color: rgb(255, 0, 0);"><span style="font-size: 18px;">Si vous avez eu un désaccord / conflit avec votre famille</span></b><span style="color: rgb(255, 0, 0); font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH26B
     conditions:
       - questionText:
           FR: |
-            TH26b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un dans votre ménage décède?<p></p>
+            <span style="font-size: 18px;">TH26b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><b><font color="#ff0000"><span style="font-size: 18px;">Si quelqu'un dans votre ménage décède&nbsp;</span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH26C
     conditions:
       - questionText:
           FR: |
-            TH26c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si votre conjoint(e) décède?<p></p>
+            <span style="font-size: 18px;">TH26c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">si votre conjoint(e) décède</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH26D
     conditions:
       - questionText:
           FR: |
-            TH26d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre dans votre famille a perdu son emploi?<p></p>
+            <span style="font-size: 18px;">TH26d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si quelqu'un d'autre dans votre famille a perdu son emploi</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH26E
     conditions:
       - questionText:
           FR: |
-            TH26e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?<p></p>
+            <span style="font-size: 18px;">TH26e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><span style="font-size: 18px;"><font color="#ff0000"><b>Si vous ne pouviez pas honorer la location pendant deux mois d'affilée</b></font></span><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH26F
     conditions:
       - questionText:
           FR: |
-            TH26f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une entreprise essaie de faire la saisie contre votre volonté?<p></p>
+            <span style="font-size: 18px;">TH26f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si une entreprise essaie de faire la saisie contre votre volonté</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.TH26G
     conditions:
       - questionText:
           FR: |
-            TH26g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)?<p></p>
+            <span style="font-size: 18px;">TH26g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><span style="font-size: 16px;"><b><span style="font-size: 18px;">Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)</span></b><span style="font-size: 18px;">&nbsp;</span></span></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH26H
     conditions:
       - questionText:
           FR: |
-            TH26h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une autre personne ou d'un groupe revendique la propriété?<p></p>
+            <span style="font-size: 18px;">TH26h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si une autre personne ou d'un groupe revendique la propriété</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.TH26I
     conditions:
       - questionText:
           FR: |
-            TH26i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre vend frauduleusement la propriété?<p></p>
+            <span style="font-size: 18px;">TH26i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si quelqu'un d'autre vend frauduleusement la propriété</span></b></font><span style="font-size: 18px;">?</span><p></p>
+  - name: LTP_DICT.TH26J
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16px;"><span style="font-size: 18px;">TH26j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si un désaccord est survenu avec les autorités locales</span></b></font><span style="font-size: 18px;"> ?</span></span><p></p>
   - name: LTP_DICT.CF17
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF17. Si Oui à CF16, quel est le&nbsp;nombre de maisons/logement
-            détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)?</span><p></p>
+            <span style="font-size: 16pt; font-family: Arial;">CF17. Quel est le&nbsp;nombre de maisons/logement
+            détenues (louées, empruntées ou en propriété) par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">N°~~EXT_CF2~~</span></font></b><span style="font-size: 16pt; font-family: Arial;">&nbsp;?</span><p></p>
   - name: LTP_DICT.CF18
     conditions:
       - questionText:
           FR: |
-            CF18. Si Oui à CF16, quelle est la surface totale des maisons détenues par (NOM)?<p></p>
-  - name: LTP_DICT.LM1
-    conditions:
-      - questionText:
-          FR: |
-            LM1. Code de la personne (Rappel du nom et prénom)<p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">CF18. Quelle est la surface </span><font color="#ff0000"><b><span style="font-size: 18px;">(en m²)</span></b></font><span style="font-size: 18px;"> totale des maisons détenues par&nbsp;</span></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">N°~~EXT_CF2~~</span></font></b><span style="font-size: 16px;"><span style="font-size: 18px;">&nbsp;?</span></span><p></p>
   - name: LTP_DICT.LM2
     conditions:
       - questionText:
@@ -588,67 +644,87 @@ questions:
     conditions:
       - questionText:
           FR: |
-            LM3. Vivez-vous dans ce logement ?<p></p>
+            <span style="font-size: 18px;">LM3. Vivez-vous dans ce logement ?</span><p></p>
   - name: LTP_DICT.LM4
     conditions:
       - questionText:
           FR: |
-            <p>LM4.Depuis combien de temps vivez-vous personnellement dans ce logement ?</p><p><p><span class="instruction"><b>﻿(an, mettre 0 si moins d’un an)</b></span><br></p></p>
+            <p><span style="font-size: 18px;">LM4.Depuis combien de temps vivez-vous personnellement dans ce logement ?</span></p><p></p><p><span class="instruction"><b>﻿(an, mettre 0 si moins d’un an)</b></span><br></p><p></p>
   - name: LTP_DICT.LM5
     conditions:
       - questionText:
           FR: |
-            LM5.Combien de temps pensez-vous continuer à vivre ici ?<p></p>
+            <span style="font-size: 18px;">LM5.Combien de temps pensez-vous continuer à vivre ici ?</span><p></p>
   - name: LTP_DICT.LM6
     conditions:
       - questionText:
           FR: |
-            LM6. Superficie du terrain (en m2)<p></p>
+            <span style="font-size: 16px;"><span style="font-size: 18px;">LM6. Superficie du terrain </span><b><font color="#ff0000"><span style="font-size: 18px;">(en m2)</span></font></b></span><p></p>
   - name: LTP_DICT.LM7
     conditions:
       - questionText:
           FR: |
-            LM7. Type de logement ?<p></p>
+            <span style="font-size: 18px;">LM7. Type de logement ?</span><p></p>
+  - name: LTP_DICT.LM7_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;">LM7a. Préciser autre type de logement</span><p></p>
   - name: LTP_DICT.LM8
     conditions:
       - questionText:
           FR: |
-            LM8. A qui appartient ce logement ?<p></p>
+            <span style="font-size: 18px;">LM8. A qui appartient ce logement ?</span><p></p>
+  - name: LTP_DICT.LM8_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;">LM8a. Préciser autre petrsonne qui posséde ce logement</span><p></p>
   - name: LTP_DICT.LM9
     conditions:
       - questionText:
           FR: |
-            LM9.Est-ce que vous ou quelqu'un d'autre qui vit ici payez un loyer au propriétaire ?<p></p>
+            <span style="font-size: 18px;">LM9. Est-ce que vous ou quelqu'un d'autre qui vit ici payez un loyer au propriétaire ?</span><p></p>
+  - name: LTP_DICT.LM9_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16px;">LM9a. Préciser autre personne qui paie le logement au propriétaire</span><p></p>
   - name: LTP_DICT.LM10
     conditions:
       - questionText:
           FR: |
-            LM10.Pouvez-vous expliquer les circonstances dans lesquelles vous vivez ici ?<p></p>
+            <span style="font-size: 16px;">LM10. Pouvez-vous expliquer les circonstances dans lesquelles vous vivez ici ?</span><p></p>
   - name: LTP_DICT.LM10_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px;">Preciser autre circonstance dans laquelle vous vivez ici</span><p></p>
   - name: LTP_DICT.LM11
     conditions:
       - questionText:
           FR: |
-            LM11. Expliquez votre réponse (à LM10)<p></p>
+            <span style="font-size: 16px;">LM11. Expliquez votre réponse (à LM10)</span><p></p>
   - name: LTP_DICT.LM12
     conditions:
       - questionText:
           FR: |
-            LM12. Depuis combien de temps l’avez-vous acquis ?<p></p>
+            <span style="font-size: 16px;">LM12. Depuis combien de temps l’avez-vous acquis ?</span><p></p>
+  - name: LTP_DICT.LM12_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16px;">Préciser l'unité de temps</span><p></p>
   - name: LTP_DICT.LM13
     conditions:
       - questionText:
           FR: |
-            LM13. Mode d’acquisition du logement ?<p></p>
+            <span style="font-size: 16px;">LM13. Mode d’acquisition du logement ?</span><p></p>
   - name: LTP_DICT.LM13_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px;">Preciser autre mode d'acquisition du logement</span><p></p>
   - name: LTP_DICT.LM14
     conditions:
       - questionText:
@@ -658,7 +734,7 @@ questions:
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px;">Preciser autre mode d'acquisition du terrain</span><p></p>
   - name: LTP_DICT.LM15
     conditions:
       - questionText:
@@ -668,209 +744,242 @@ questions:
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px;">Preciser autre type de demande</span><p></p>
+  - name: LTP_DICT.LM16
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16pt; font-family: Arial;">LM16</span><span style="font-size: 16pt; font-family: Arial;">. Si </span><span style="font-size: 16pt; font-family: Arial;">LM14</span><span style="font-size: 16pt; font-family: Arial;">=5, Depuis quand la demande a été satisfaite&nbsp;?<b>&nbsp;</b></span><p></p>
   - name: LTP_DICT.LM17
     conditions:
       - questionText:
           FR: |
-            LM17. Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’un projet ?<p></p>
+            <span style="font-size: 16px;">LM17. Est-ce que la demande a été initiée ou faite grâce à l’impulsion ou l’encadrement d’un projet ?</span><p></p>
   - name: LTP_DICT.LM18
     conditions:
       - questionText:
           FR: |
-            LM18. Préciser le Nom du projet<p></p>
+            <span style="font-size: 16px;">LM18. Préciser le Nom du projet</span><p></p>
   - name: LTP_DICT.LM19
     conditions:
       - questionText:
           FR: |
-            LM19. Comment ?<p></p>
+            <p class="MsoNormal"><span style="font-size: 16pt; font-family: Arial;">LM19</span><span style="font-size: 16pt; font-family: Arial;">.
+            Contrepartie d’acquisition si achat ou gage </span><span style="font-size: 16pt; font-family: Arial;">à LM14</span><span style="font-size: 16pt; font-family: Arial;">&nbsp;?</span></p><p class="MsoNormal"><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+            &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
+            AR-SA" class="instruction"><b>(Si c’est en nature ou en argent, estimez le montant)</b></span></i><span style="font-size: 16pt; font-family: Arial;"><br></span><b><o:p></o:p></b></p><p></p>
   - name: LTP_DICT.LM20
     conditions:
       - questionText:
           FR: |
-            <p>LM20. Contrepartie d’acquisition si location à LM17 ?</p><p><p><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
-            &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
-            AR-SA" class="instruction"><b>(Si c’est en nature ou en argent, estimez le montant mensuel)</b></span></i><br></p></p>
+            <p><span style="font-size: 16pt; font-family: Arial;">LM20</span><span style="font-size: 16pt; font-family: Arial;">. Contrepartie d’acquisition si location&nbsp;</span></p><p><i><span class="instruction" style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;"><b>(Si c’est en nature ou en argent, estimez le montant mensuel)</b></span></i><span style="font-size: 16pt; font-family: Arial;"><br></span><p></p></p>
   - name: LTP_DICT.LM21
     conditions:
       - questionText:
           FR: |
-            LM21. Avez-vous un contrat de location (écrit) ?<p></p>
+            <p class="MsoNormal"><b><span style="font-size:11.0pt"><span style="font-size: 16pt;">LM21. </span><span style="color: red; font-size: 16pt;">Si </span></span></b><b><span style="color: red; font-size: 16pt;">LM9=1,2,3,4,5 ou 6,
+            </span></b><b><span style="font-size:11.0pt"><span style="font-size: 16pt;">Avez-vous un contrat de location
+            (écrit)&nbsp;?</span><o:p></o:p></span></b></p><p></p>
   - name: LTP_DICT.LM22
     conditions:
       - questionText:
           FR: |
-            LM22. Quel document atteste de vos droits de propriété ?<p></p>
+            <p class="MsoNormal"><b><span style="font-size:11.0pt"><span style="font-size: 16pt; font-family: Arial;">LM22. </span><span style="color: red; font-size: 16pt; font-family: Arial;">Si 1,2 ou 3 à LM8, </span></span><span style="font-size: 16pt; font-family: Arial;">quel document atteste de vos
+            droits de propriété&nbsp;?</span><o:p></o:p></b></p><p></p>
   - name: LTP_DICT.LM23
     conditions:
       - questionText:
           FR: |
-            LM23. Si Héritage (LM14=2), est-ce un lotissement de la famille ?<p></p>
+            <span style="font-size: 16px;">LM23. Si <b><font color="#ff0000">Héritage</font></b> (LM14=2), est-ce un&nbsp;</span><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+            &quot;Times New Roman&quot;;color:red;mso-ansi-language:FR;mso-fareast-language:FR;
+            mso-bidi-language:AR-SA"><span style="font-family: Arial;">lotissement/morcellement</span>&nbsp;</span></b><span style="font-size: 16px;">&nbsp;de la famille ?</span><p></p>
   - name: LTP_DICT.LM24
     conditions:
       - questionText:
           FR: |
-            LM24. Si oui, le nombre total de parcelles du lotissement<p></p>
+            <span style="font-size: 16px;">LM24. Si oui, le nombre total de parcelles du&nbsp;</span><b><span style="font-size: 16px; font-family: Arial; color: red;">lotissement/morcellement&nbsp;</span></b><p></p>
   - name: LTP_DICT.LM25
     conditions:
       - questionText:
           FR: |
-            LM25. Si oui, le nombre de parcelles héritées<p></p>
+            <span style="font-size: 16px;">LM25. Si oui, le nombre de parcelles héritées</span><p></p>
   - name: LTP_DICT.LM26
     conditions:
       - questionText:
           FR: |
-            LM26. Si oui, Sur quelle base ce partage a été effectué ?<p></p>
+            <span style="font-size: 16px;">LM26. Si oui, Sur quelle base ce partage a été effectué ?</span><p></p>
   - name: LTP_DICT.LM26_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 16px;">Preciser autre base de partage</span><p></p>
   - name: LTP_DICT.LM26_BIS
     conditions:
       - questionText:
           FR: |
-            LM26bis. est-ce à part égal ?<p></p>
+            <span style="font-size: 16px;">LM26bis. est-ce à part égal ?</span><p></p>
   - name: LTP_DICT.LM27
     conditions:
       - questionText:
           FR: |
-            LM27. Qui a pris la décision sur les procédures de lotissement<p></p>
+            <p class="MsoCommentText"><b><span style="font-size: 18px;">LM27. Qui a pris
+            la décision sur les procédures de lotissement</span><o:p></o:p></b></p><p></p>
+  - name: LTP_DICT.LM27_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 16px;">LM27a. Préciser autre personne qui prend la décision sur les procédures de lotissement</span><p></p>
   - name: LTP_DICT.LM28
     conditions:
       - questionText:
           FR: |
-            LM28. Si Achat (LM14=3), quelle est la source d’acquisition<p></p>
+            <p class="MsoCommentText"><span style="font-size: 18px;">LM28. Si <font color="#ff0000"><b>Achat
+            </b></font>(LM14=3), quelle est la source d’acquisition</span><b><o:p></o:p></b></p><p></p>
   - name: LTP_DICT.LM28_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre source d'acquisition</span><p></p>
   - name: LTP_DICT.LM29A
     conditions:
       - questionText:
           FR: |
-            LM29a. Est-ce que est le logement exposé aux contraintes d'Inondation?<p></p>
+            <span style="font-size: 18px;">LM29a. Est-ce que est le logement exposé aux contraintes </span><b><font color="#ff0000"><span style="font-size: 18px;">d'Inondation </span></font></b><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM29B
     conditions:
       - questionText:
           FR: |
-            LM29b. Est-ce que le logement est exposé aux contraintes de Manque d’assainissement<p></p>
+            <span style="font-size: 18px;">LM29b. Est-ce que le logement est exposé aux contraintes de </span><b><font color="#ff0000"><span style="font-size: 18px;">Manque d’assainissement</span></font></b><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29C
     conditions:
       - questionText:
           FR: |
-            LM29c. Est-ce que la terre le logement est exposé aux contraintes de lotissement clandestin?<p></p>
+            <span style="font-size: 18px;">LM29c. Est-ce que la terre le logement est exposé aux contraintes de </span><span style="font-size: 18px;"><font color="#ff0000"><b>lotissement clandestin</b></font></span><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29D
     conditions:
       - questionText:
           FR: |
-            LM29d. Est-ce que le logement est exposé aux contraintes de Salinisation?<p></p>
+            <span style="font-size: 18px;">LM29d. Est-ce que le logement est exposé aux contraintes de </span><font color="#ff0000"><b><span style="font-size: 18px;">Salinisation</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29E
     conditions:
       - questionText:
           FR: |
-            LM29e. Est-ce que le logement&nbsp; est exposée aux contraintes de Nappe Phréatique « proche »?<p></p>
+            <span style="font-size: 18px;">LM29e. Est-ce que le logement&nbsp; est exposée aux contraintes de </span><font color="#ff0000"><b><span style="font-size: 18px;">Nappe Phréatique « proche »</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM29F
     conditions:
       - questionText:
           FR: |
-            LM29f. Est-ce que le logement&nbsp; est exposé aux contraintes d'Eloignement des écoles?<p></p>
+            <span style="font-size: 18px;">LM29f. Est-ce que le logement&nbsp; est exposé aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">d'Eloignement des écoles</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29G
     conditions:
       - questionText:
           FR: |
-            LM29g. Est-ce que le logement&nbsp; est exposé aux contraintes d'eloignement des hôpitaux?<p></p>
+            <span style="font-size: 18px;">LM29g. Est-ce que le logement&nbsp; est exposé aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">d'eloignement des hôpitaux</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29H
     conditions:
       - questionText:
           FR: |
-            LM29h. Est-ce que le logement&nbsp; est exposé aux contraintes d'eloignement des marchés?<p></p>
+            <span style="font-size: 18px;">LM29h. Est-ce que le logement&nbsp; est exposé aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">d'eloignement des marchés</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29I
     conditions:
       - questionText:
           FR: |
-            LM29i. Est-ce que le logement&nbsp; est exposé aux contraintes d'eloignement des routes/Voiries?<p></p>
+            <span style="font-size: 18px;">LM29i. Est-ce que le logement&nbsp; est exposé aux contraintes </span><font color="#ff0000"><b><span style="font-size: 18px;">d'eloignement des routes/Voiries</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29J
     conditions:
       - questionText:
           FR: |
-            LM29j. Est-ce que le logement est exposé aux autre contraintes à preciser?<p></p>
+            <span style="font-size: 18px;">LM29j. Est-ce que le logement est exposé aux autre </span><font color="#ff0000"><b><span style="font-size: 18px;">contraintes à preciser</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
   - name: LTP_DICT.LM29_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-size: 18px;">Preciser autre contraintes auxquelles le logement est exposé</span><p></p>
   - name: LTP_DICT.LM30
     conditions:
       - questionText:
           FR: |
-            LM30. Etes-vous inquiet que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années?<p></p>
+            <p class="MsoNormal"><span style="font-size: 11pt;"><span style="font-size: 16pt;">LM30. Etes-vous inquiet que vous pourriez perdre le
+            droit de détention de cette terre d’habitation ou une partie contre votre
+            volonté au cours des 5 prochaines années?</span><b><o:p></o:p></b></span></p><p></p>
   - name: LTP_DICT.LM31
     conditions:
       - questionText:
           FR: |
-            LM31. Est-il probable que vous pourriez perdre le droit de détention de cette terre d’habitation ou une partie contre votre volonté au cours des 5 prochaines années ?<p></p>
+            <p class="MsoNormal"><span style="font-size: 11pt;"><span style="font-size: 16pt;">LM31. Est-il probable que vous pourriez perdre le
+            droit de détention de cette terre d’habitation ou une partie contre votre
+            volonté au cours des 5 prochaines années ?</span><b><o:p></o:p></b></span></p><p></p>
   - name: LTP_DICT.LM32
     conditions:
       - questionText:
           FR: |
-            LM32. Si LM30=4 ou 5 ou LM31=4 ou 5, quelles sont les raisons pour lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous perdiez le droit de détention cette terre d’habitation dans les 5 prochaines années?<p></p>
+            <span style="font-size: 16pt; font-family: Arial;">LM32. Quelles sont les raisons pour
+            lesquelles vous avez un sentiment d’inquiétude/dit qu’il est probable que vous
+            perdiez le droit de détention cette terre d’habitation dans les 5 prochaines
+            années?&nbsp;</span><p></p>
   - name: LTP_DICT.LM32_A
     conditions:
       - questionText:
           FR: |
-            Preciser autre<p></p>
+            <span style="font-family: Arial; font-size: 18px;">Préciser autre raisons pour lesquelles&nbsp;</span><span style="font-size: 18px; font-family: Arial;">&nbsp;vous avez un sentiment d’inquiétude/dit qu’il
+            est probable que vous perdiez le droit de détention cette terre d’habitation dans
+            les 5 prochaines années</span><p></p>
   - name: LTP_DICT.LM33A
     conditions:
       - questionText:
           FR: |
-            LM33a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous avez eu un désaccord / conflit avec votre famille?<p></p>
+            <span style="font-size: 18px;">LM33a. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si vous avez eu un désaccord / conflit avec votre famille</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33B
     conditions:
       - questionText:
           FR: |
-            LM33b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un dans votre ménage décède?<p></p>
+            <span style="font-size: 18px;">LM33b. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si quelqu'un dans votre ménage décède</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33C
     conditions:
       - questionText:
           FR: |
-            LM33c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si votre conjoint(e) décède?<p></p>
+            <span style="font-size: 18px;">LM33c. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation si </span><font color="#ff0000"><span style="font-size: 18px;"><b>votre conjoint(e) décède</b></span></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33D
     conditions:
       - questionText:
           FR: |
-            LM33d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre dans votre famille a perdu son emploi?<p></p>
+            <span style="font-size: 18px;">LM33d. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si quelqu'un d'autre dans votre famille a perdu son emploi</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33E
     conditions:
       - questionText:
           FR: |
-            LM33e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si vous ne pouviez pas honorer la location pendant deux mois d'affilée?<p></p>
+            <span style="font-size: 18px;">LM33e. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si vous ne pouviez pas honorer la location pendant deux mois d'affilée</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33F
     conditions:
       - questionText:
           FR: |
-            LM33f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une entreprise essaie de faire la saisie contre votre volonté?<p></p>
+            <span style="font-size: 18px;">LM33f. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si une entreprise essaie de faire la saisie contre votre volonté</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33G
     conditions:
       - questionText:
           FR: |
-            LM33g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)?<p></p>
+            <span style="font-size: 18px;">LM33g. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si le gouvernement tente de faire la saisie (par exemple construction d’une route ou d'autres infrastructures, pôle urbain)</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33H
     conditions:
       - questionText:
           FR: |
-            LM33h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si une autre personne ou d'un groupe revendique la propriété?<p></p>
+            <span style="font-size: 18px;">LM33h. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si une autre personne ou d'un groupe revendique la propriété</span></b></font><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33I
     conditions:
       - questionText:
           FR: |
-            LM33i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si quelqu'un d'autre vend frauduleusement la propriété?<p></p>
+            <span style="font-size: 18px;">LM33i. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><span style="font-size: 18px;"><font color="#ff0000"><b>Si quelqu'un d'autre vend frauduleusement la propriété</b></font></span><span style="font-size: 18px;">?</span><p></p>
   - name: LTP_DICT.LM33J
     conditions:
       - questionText:
           FR: |
-            LM33j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation Si un désaccord est survenu avec les autorités locales ?<p></p>
+            <span style="font-size: 18px;">LM33j. Seriez-vous inquiet de perdre votre droit de détention de cette terre d’habitation </span><font color="#ff0000"><b><span style="font-size: 18px;">Si un désaccord est survenu avec les autorités locales</span></b></font><span style="font-size: 18px;"> ?</span><p></p>
+  - name: BLOCK000_LM16
+    conditions:
+      - questionText:
+          FR: |
+            <p class="MsoNormal"><span style="font-size: 16pt;">LM12</span><span style="font-size: 16pt;">. Si 1,2,3 à </span><span style="font-size: 16pt;">LM8,</span><span style="font-size: 16pt;"> Depuis combien de temps l’avez-vous
+            acquis&nbsp;?</span><b><o:p></o:p></b></p><p></p>
   - name: LTP_DICT.CF1
     conditions:
       - questionText:
@@ -882,16 +991,6 @@ questions:
           FR: |
             <p class="MsoNormal"><span style="font-size: 11pt;">CF10. Est-ce que (NOM) &nbsp;détient (loué, emprunté
             ou en propriété) des terres agricoles&nbsp;?<b>&nbsp;<o:p></o:p></b></span></p><p></p>
-  - name: LTP_DICT.CF11
-    conditions:
-      - questionText:
-          FR: |
-            CF11. Quel est le nombre de parcelles exploitées par (NOM)<p></p>
-  - name: LTP_DICT.CF12
-    conditions:
-      - questionText:
-          FR: |
-            CF12.&nbsp; Quelle est la surface totale des parcelles exploitées par (NOM)<p></p>
   - name: LTP_DICT.CF12B
     conditions:
       - questionText:
@@ -904,18 +1003,6 @@ questions:
             <p class="MsoNormal"><span style="font-size: 11pt;">CF13. Est-ce que (NOM) détient (loué, emprunté ou en
             propriété) &nbsp;une parcelle à usage
             d’habitation ?&nbsp;<b><o:p></o:p></b></span></p><p></p>
-  - name: LTP_DICT.CF14
-    conditions:
-      - questionText:
-          FR: |
-            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF14. Si Oui à CF13, quel est le&nbsp;nombre de parcelles à usage
-            d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)?</span><p></p>
-  - name: LTP_DICT.CF15
-    conditions:
-      - questionText:
-          FR: |
-            <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF15. Si Oui à CF13, quelle est la surface&nbsp;totale des parcelles à
-            usage d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)</span>?<p></p>
   - name: LTP_DICT.CF16
     conditions:
       - questionText:
@@ -1128,6 +1215,11 @@ questions:
       - questionText:
           FR: |
             <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">ID07. Coordonnées géographiques (GPS)</span><p></p>
+  - name: LTP_DICT.LM1
+    conditions:
+      - questionText:
+          FR: |
+            LM1. Code de la personne (Rappel du nom et prénom)<p></p>
   - name: LTP_DICT.LM16_AN
     conditions:
       - questionText:
@@ -1579,6 +1671,11 @@ questions:
       - questionText:
           FR: |
             Contrepartie en autre chose<p></p>
+  - name: LTP_DICT.TH1
+    conditions:
+      - questionText:
+          FR: |
+            TH1. Code de la personne (Rappel du nom et prénom)<p></p>
   - name: LTP_DICT.TH12_AR
     conditions:
       - questionText:
@@ -1604,6 +1701,11 @@ questions:
       - questionText:
           FR: |
             Preciser autre<p></p>
+  - name: LTP_DICT.TH1_1
+    conditions:
+      - questionText:
+          FR: |
+            Nom et prénom<p></p>
   - name: LTP_DICT.TH22_A1
     conditions:
       - questionText:

@@ -203,9 +203,8 @@ DataType=Numeric
 [ValueSet]
 Label=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
 Name=EXT_CF10_VS1
-Value=2;Non
 Value=1;Oui
-Name=REFUSED,Special
+Value=2;Non
 
 [Item]
 Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
@@ -217,9 +216,8 @@ DataType=Numeric
 [ValueSet]
 Label=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
 Name=EXT_CF13_VS1
-Value=2;Non
 Value=1;Oui
-Name=REFUSED,Special
+Value=2;Non
 
 [Item]
 Label=CF16. Est-ce que (NOM) détient une maison/un logement ?

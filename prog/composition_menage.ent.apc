@@ -101,6 +101,10 @@ PROC PM02_A
 preproc
 
 	ask if PM02=2;
+PROC PM02_B
+preproc
+
+	ask if PM02=3;
 PROC PM03
 preproc
 
@@ -122,14 +126,20 @@ if $<0 then
 		reenter;
 	endif;
 PROC PM04
+preproc
+	$=PM05+PM06
 
-if $<=0 then
-		
-		errmsg("Veuillez entrer une taille valide");
-		reenter;
-	endif;
 PROC PM07
+{if $=1 and tonumber(maketext("%d",LOG_AGENT)[1:1])>1 then
+	
+	endlevel;
+endif;
 
+
+if $=1 and tonumber(maketext("%d",LOG_AGENT)[1:1])=1 then
+	
+	endlevel;
+endif;}
 PROC RM1_A
 
 preproc
@@ -180,12 +190,34 @@ preproc
 PROC PR04
 preproc
 	$=curocc();
+PROC PR05
+preproc
+	ask if 1=2;
 PROC PR05_A
 preproc
-	ask if pos("9",PR05);
+	ask if 1=2;
+{preproc
+	ask if pos("9",PR05);}
 PROC PR06_A
 preproc
 	ask if pos("99",PR06);
+PROC PR07
+onfocus
+	valueset string secondaire_vs=PR06_VS1;
+	numeric i=1;
+	numeric num_mod;
+	while i<=15 do
+		num_mod=i;
+		if i=15 then 
+			num_mod=99;
+		endif;
+		if ! ischecked(maketext("%02d", num_mod),PR06) then 
+			secondaire_vs.remove(maketext("%02d", num_mod));
+		endif;
+		inc(i);
+	enddo;
+	
+	setvalueset($, secondaire_vs);
 PROC PR07_A
 preproc
 	ask if pos("99",PR07);
@@ -216,34 +248,56 @@ if $<18 or $>100 then
 	errmsg("Veuillez entre un age au moins supérieur à 18 ans.");
 	reenter;
 endif;
+PROC CF5
+if curocc()=1 and $<>1 then 
+	errmsg("La première ligne doit être occupée par le CM");
+	reenter;
+endif;
+
+if curocc()>1 and $ =1 then 
+	errmsg("Il faut un seul CM dans le ménage");
+	reenter;
+endif;
+PROC CF5_A
+preproc
+
+	ask if CF5=13;
 PROC CF7_A
 preproc
 
-	ask if CF7=12;
-PROC CH7B_A
-preproc
-	ask if CF7B=10;
+	ask if CF7=14;
 PROC CF8
+preproc
+	ask if CF7<>0;
 Postproc
-	if length(strip($))>1 and (ischecked("1",$)<>0 or ischecked("15",$)<>0) then
+	if length(strip($))>1 and ischecked("00",$)<>0  then
 		errmsg("Modalités incompatibles");
 	    reenter;
 	endif;
+
 PROC CF8_A
 preproc
-	ask if pos("15",CF8);
+	ask if pos("14",CF8);
 	
+PROC CF7B
+if CF5=2 and ($=7 or $=8 or $=9) then
+errmsg("L'époux/épouse ne peut qu'être marié(e)");
+reenter;
+endif; 
+PROC CH7B_A
+preproc
+	ask if CF7B=10;
 PROC CF16
 preproc
 	ask if 1=2;
 PROC AJOUTER_UN_AUTRE_INDIVIDU
 if $=2 then
 	if PM07=1 and  count(SECTION_CF000 where CF10=1)=0 then 
-		errmsg("Il doit exister au moins un membre du ménage ayant, louant ou empreuntant des terres pour l'agriculture.");
+		errmsg("Il doit exister au moins un membre du ménage ayant, louant ou empruntant des terres pour l'agriculture.");
 		reenter;
 	endif;
 	if PM07=0 and  count(SECTION_CF000 where CF10=1)>0 then 
-		errmsg("Il ne doit pas exister au moins un membre du ménage ayant, louant ou empreuntant des terres pour l'agriculture.");
+		errmsg("Il ne doit pas exister au moins un membre du ménage ayant, louant ou empruntant des terres pour l'agriculture.");
 		reenter;
 	endif;
 	endgroup;
