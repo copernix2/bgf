@@ -8,7 +8,7 @@ PROC GLOBAL
 
 PROC COMPOSITION_MENAGE_FF
 
-PROC COMPOSITION_MENAGE_LEVEL
+PROC BGF_COMPOSITION_MENAGE_LEVEL
 //for numeric i in SECTION_CF000 where CF10=1 or CF13=1 or CF16=1  or REP2=CF1 do 
 for numeric i in SECTION_CF000  do 
 
@@ -28,22 +28,22 @@ for numeric i in SECTION_CF000  do
 	EXT_CF16=CF16;
 	STATUT_LTP=0;
 	STATUT_HF=0;
-	EXT_IND_DICS.LOGIN_ENQUETEUR=tonumber(getoperatorid());
+	BGF_EXT_IND_DICS.LOGIN_ENQUETEUR=tonumber(getoperatorid());
 	if REP2 = CF1 then 
 		IS_REP_2=1;
 	else
 		IS_REP_2=notappl;
 	endif;
-	writecase(EXT_IND_DICS);
+	writecase(BGF_EXT_IND_DICS);
 enddo;
 
 
 MEN_STATUT=2;
 MEN_CM=CF2(1);
-writecase(MENAGE_DICT);
+writecase(BGF_MENAGE_DICT);
 
 PROC COMPOSITION_MENAGE_ID
-if ! loadcase(MENAGE_DICT,$) then 
+if ! loadcase(BGF_MENAGE_DICT,$) then 
 	errmsg("Informations sur le ménage introuvables");
 	stop(1);
 endif;

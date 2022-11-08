@@ -14,47 +14,47 @@ function  open_composition(string idmen)
 	 hh_pff.setproperty("Description", "Composition ménage");
 	 hh_pff.setproperty("Paradata", PathLogs + "ParaMenu_" + getoperatorid() + ".cslog");
 	 hh_pff.setproperty("ExternalFiles.EXT_LOGIN_DICT", resources + 'login_expert.csdb');
-	 hh_pff.setproperty("ExternalFiles.EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
-	 hh_pff.setproperty("ExternalFiles.MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
+	 hh_pff.setproperty("ExternalFiles.BGF_EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
+	 hh_pff.setproperty("ExternalFiles.BGF_MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
 	 hh_pff.setproperty("OnExit", pathname(temp) + "menu.pff");
 	 hh_pff.exec();
 end; 
 
 {function open_individu(numeric id)
 	EXT_ID_IND=id;
-	if ! loadcase(EXT_IND_DICS, ID_MEN_FICHE, EXT_ID_IND) then 
+	if ! loadcase(BGF_EXT_IND_DICS, ID_MEN_FICHE, EXT_ID_IND) then 
 		errmsg("Informations de l'individus introuvable");
 		exit;
 	 endif;
 	 pff compostion_pff;
 	 compostion_pff.setproperty("operatorid", getoperatorid());
 	 compostion_pff.setproperty("StartMode", "ADD");
-	 compostion_pff.setproperty("key", key(EXT_IND_DICS));
+	 compostion_pff.setproperty("key", key(BGF_EXT_IND_DICS));
 	 compostion_pff.setproperty("Application", PathProg + 'baseline_individu.pen');
 	 compostion_pff.setproperty("InputData", PathData + maketext('individu_%02d.csdb',LOGIN_AGENT));
 	 compostion_pff.setproperty("Description", strip(EXT_CF2));
-	 compostion_pff.setproperty("ExternalFiles.EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
-	 compostion_pff.setproperty("ExternalFiles.MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
+	 compostion_pff.setproperty("ExternalFiles.BGF_EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
+	 compostion_pff.setproperty("ExternalFiles.BGF_MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
 	 //compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
 	 compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
 	 compostion_pff.exec();
 end;}
 function Open_ltp(numeric id)
 	EXT_ID_IND=id;
-	if ! loadcase(EXT_IND_DICS, ID_MEN_FICHE, EXT_ID_IND) then 
+	if ! loadcase(BGF_EXT_IND_DICS, ID_MEN_FICHE, EXT_ID_IND) then 
 		errmsg("Informations de l'individus introuvable");
 		exit;
 	 endif;
 	 pff compostion_pff;
 	 compostion_pff.setproperty("operatorid", getoperatorid());
 	 compostion_pff.setproperty("StartMode", "ADD");
-	 compostion_pff.setproperty("key", key(EXT_IND_DICS));
+	 compostion_pff.setproperty("key", key(BGF_EXT_IND_DICS));
 	 compostion_pff.setproperty("Application", PathProg + 'ltp.pen');
 	 compostion_pff.setproperty("InputData", PathData + maketext('lpt_%02d.csdb',LOGIN_AGENT));
 	 compostion_pff.setproperty("Description", strip(EXT_CF2) );
 	 compostion_pff.setproperty("Paradata", PathLogs + "ParaComposition_" + getoperatorid() + ".cslog");
-	 compostion_pff.setproperty("ExternalFiles.EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
-	 compostion_pff.setproperty("ExternalFiles.MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
+	 compostion_pff.setproperty("ExternalFiles.BGF_EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
+	 compostion_pff.setproperty("ExternalFiles.BGF_MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
 	 compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
 	 compostion_pff.exec();
 end;
@@ -83,20 +83,20 @@ postproc
 
 PROC ID_MEN_FICHE
 postproc
-if !loadcase(MENAGE_DICT, $) then 
+if !loadcase(BGF_MENAGE_DICT, $) then 
 	errmsg("Information  du ménage introuvables");
 	//stop(1);
 endif;
 
 numeric uncompleted=0;
-forcase EXT_IND_DICS where EXT_ID=ID_MEN_FICHE do 
-	if STATUT_LTP=0 or  ((IS_REP_2 =1 or EXT_CF5=1) and STATUT_HF=0) then 
+forcase BGF_EXT_IND_DICS where EXT_ID=ID_MEN_FICHE do 
+	if STATUT_LTP=0  then 
 		inc(uncompleted);
 	endif;
 endfor;
 if uncompleted=0 then 
 	MEN_STATUT=3;
-	writecase(MENAGE_DICT);
+	writecase(BGF_MENAGE_DICT);
 endif;
 PROC MENU_FICHE
 

@@ -22,6 +22,6 @@ File=.\enqueteur.fmf
 [Resources]
 Folder=.\Resources
 Folder=..\reports
-Folder=..\resources\
+Folder=..\resources
 [Dictionary Types]
 Dict-Type=..\Dics\enqueteur.dcf,Input,.\enqueteur.fmf

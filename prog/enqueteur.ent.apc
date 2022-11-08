@@ -15,20 +15,12 @@ postproc
 	open_menu.setproperty("inputdata","zzzz.csdb");
 	open_menu.setproperty("StartMode","ADD");
 	open_menu.setproperty("operatorid",$);
-	open_menu.setproperty("ExternalFiles.MENAGE_DICT", pathname(application)+"../data/" + maketext('menage_%02d.csdb',$));
-	open_menu.setproperty("ExternalFiles.SUIVI_MERE_DICT", PathInput+maketext("suivi_mere_%02d.csdb", $));
+	open_menu.setproperty("ExternalFiles.BGF_MENAGE_DICT", pathname(application)+"../data/" + maketext('menage_%02d.csdb',$));
 	//composition 
-	open_menu.setproperty("ExternalFiles.COMPOSITION_MENAGE_DICT", PathData + maketext('composition_%02d.csdb',$));
-	//Mere enfant
-	open_menu.setproperty("ExternalFiles.MERE_DENFANT_DICT", PathData + maketext('mere_enfant_%02d.csdb',$));
-
-	//femme enceite 
-	open_menu.setproperty("ExternalFiles.FEMME_ENCEINTE_DICT", PathData + maketext('femme_enceinte_%02d.csdb',$));
-
-	//fiches bio
-	open_menu.setproperty("ExternalFiles.FICHE_BIOLOGIQUE_DICT", PathData + maketext('fiche_bio_%02d.csdb',$));
-
+	open_menu.setproperty("ExternalFiles.BGF_COMPOSITION_MENAGE_DICT", PathData + maketext('composition_%02d.csdb',$));
+	open_menu.setproperty("ExternalFiles.BGF_EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',$));
 	open_menu.setproperty("HtmlDialogs", pathname(application)+"../report");
+	open_menu.setproperty("ExternalFiles.LTP_DICT", PathData + maketext('lpt_%02d.csdb',$));
 
 	open_menu.save(pathname(temp)+"menu.pff");
 open_menu.exec();

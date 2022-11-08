@@ -1,17 +1,17 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=composition mnéage
-Name=EXT_IND_DICS
+Label=BGF individus
+Name=BGF_EXT_IND_DICS
 RecordTypeStart=1
 RecordTypeLen=1
 Positions=Relative
 ZeroFill=No
 DecimalChar=Yes
-SecurityOptions=3682DF09C06E043A780550C7BA1624EEA95E444A88627D7EA71A5B785E5A39E2
+SecurityOptions=8302403A1E564B4D789EE65FB6976511B886106ECBE49BB648DE042CF965736E
 
 [Level]
 Label=composition ménage
-Name=EXT_IND_LEVEL
+Name=BGF_EXT_IND_LEVEL
 
 [IdItems]
 

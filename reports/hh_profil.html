@@ -32,8 +32,8 @@
 				<? 	
 					string quote="'";
 					numeric number_ind, complet_ind;
-					number_ind=countcases(EXT_IND_DICS where ID_MEN_FICHE= EXT_ID );
-					complet_ind=countcases(EXT_IND_DICS where (STATUT_LTP= 1 and ((IS_REP_2=1 or EXT_CF5=1) and STATUT_HF=1)) and  ID_MEN_FICHE= EXT_ID);
+					number_ind=countcases(BGF_EXT_IND_DICS where ID_MEN_FICHE= EXT_ID );
+					complet_ind=countcases(BGF_EXT_IND_DICS where STATUT_LTP= 1  and  ID_MEN_FICHE= EXT_ID);
 					if special(complet_ind) then 
 						complet_ind=0;
 					endif;
@@ -84,9 +84,9 @@
 								</thead>
 								<tbody>
 								<? 
-									forcase EXT_IND_DICS where  ID_MEN_FICHE= EXT_ID do
+									forcase BGF_EXT_IND_DICS where  ID_MEN_FICHE= EXT_ID do
 										if special(EXT_CF5) then 
-											delcase(EXT_IND_DICS);
+											delcase(BGF_EXT_IND_DICS);
 											next;
 										endif;
 										
@@ -109,7 +109,7 @@
 										$.write("<td>%s</td>",maketext("%02d",EXT_CF4));
 										
 										$.write("<td class='text-center'>");
-										$.write('<a type="button" rel="tooltip" class="btn btn-%s " href="javascript:CSPro.runLogicAsync(%sOpen_ltp(%d);%s);" >L.T.P.</a>',statut_ind_lpt, quote, EXT_ID_IND, quote);
+										$.write('<a type="button" rel="tooltip" class="btn btn-%s " href="javascript:CSPro.runLogicAsync(%sOpen_ltp(%d);%s);" >Remplir</a>',statut_ind_lpt, quote, EXT_ID_IND, quote);
 										{if IS_REP_2=1 or EXT_CF5=1  then
 											$.write('<a type="button" rel="tooltip" class="btn btn-%s padding-left " href="javascript:CSPro.runLogicAsync(%sOpen_individu(%d);%s);" >Individu</a>',statut_ind_hf, quote, EXT_ID_IND, quote);
 										endif;}

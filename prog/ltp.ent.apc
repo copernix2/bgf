@@ -11,9 +11,9 @@ PROC BASELINE_DICT_FF
 
 PROC LTP_DICT_LEVEL
 STATUT_LTP=1;
-writecase(EXT_IND_DICS);
+writecase(BGF_EXT_IND_DICS);
 PROC ID_INDIVIDU_LTP
-	if ! loadcase(EXT_IND_DICS, ID, ID_INDIVIDU_LTP) then 
+	if ! loadcase(BGF_EXT_IND_DICS, ID, ID_INDIVIDU_LTP) then 
 		errmsg("Informations de l'individu introuvables.");
 		exit;
 	 endif;

@@ -26,139 +26,139 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
-  - name: COMPOSITION_MENAGE_DICT.RM3
+  - name: BGF_COMPOSITION_MENAGE_DICT.RM3
     conditions:
       - questionText:
           FR: |
             <b><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.NOM_PROJET
+  - name: BGF_COMPOSITION_MENAGE_DICT.NOM_PROJET
     conditions:
       - questionText:
           FR: |
             Nom du projet&nbsp;&nbsp;<b><font color="#ff0000">N°~~PR04~~</font></b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR05
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR05
     conditions:
       - questionText:
           FR: |
             <p class="MsoNormal"><span style="font-size: 11pt;">PR05.
             </span><span style="font-size: 11pt;">Quels sont les outils et méthodes du projet<b>&nbsp;</b></span><b><font color="#ff0000">N°~~PR04~~</font></b><b><span style="font-size:11.0pt">&nbsp;?</span></b></p><p><b><span class="instruction">﻿</span><span style="font-size: 11pt;" class="instruction">(plusieurs réponses possibles)</span></b><br></p>
-  - name: COMPOSITION_MENAGE_DICT.PR06
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR06
     conditions:
       - questionText:
           FR: |
             <p>PR06. Quels sont les activités du projet <b><font color="#ff0000">~~NOM_PROJET~~</font></b><b style="color: rgb(255, 0, 0);">&nbsp;</b>?</p><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b><br></p><p></p><p></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR07
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR07
     conditions:
       - questionText:
           FR: |
             <p><span style="font-size: 16pt; font-family: Arial;">PR07. </span><span style="font-size: 16pt; font-family: Arial;">Quelles sont les activités du projet&nbsp;</span><b><font color="#ff0000"><span style="font-size: 16pt;">~~NOM_PROJET~~</span></font></b><span style="font-size: 16pt; font-family: Arial;">&nbsp;auxquelles
             vous a participé/bénéficié ?&nbsp;</span></p><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b><span style="font-size: 16pt; font-family: Arial;"><br></span></p><p></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR08
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR08
     conditions:
       - questionText:
           FR: |
             <p><span style="font-size: 16pt; font-family: Arial;">PR08. </span><span style="font-size: 16pt; font-family: Arial;">Qui sont les porteurs du projet&nbsp;</span><b><font color="#ff0000"><span style="font-size: 16pt;">~~NOM_PROJET~~</span></font></b><b><span style="font-size: 16pt; font-family: Arial;">&nbsp;?</span></b></p><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b><b><span style="font-size: 16pt; font-family: Arial;"><br></span></b></p><p></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR09
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR09
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 16pt; font-family: Arial;">PR09. </span><span style="font-size: 16pt; font-family: Arial;">Qui sont les parties prenantes du projet&nbsp;</span><b><font color="#ff0000"><span style="font-size: 16pt;">~~NOM_PROJET~~</span></font></b><span style="color: rgb(255, 0, 0); font-size: 16pt;">&nbsp;</span><span style="font-size: 16pt;">?</span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR10
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR10
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 16pt; font-family: Arial;">PR10. </span><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;"><span style="font-family: Arial; font-size: 16pt;">Qui sont les bénéficiaires du projet</span><span style="font-family: Arial; font-size: 16pt;">&nbsp;&nbsp;</span></span><b><font color="#ff0000"><span style="font-size: 16pt;">~~NOM_PROJET~~</span></font></b><b style="color: rgb(255, 0, 0);"><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b><span style="font-family: Arial; font-size: 16pt;">?</span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR11
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR11
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 16pt; font-family: Arial;">PR11. </span><span style="font-size: 16pt; font-family: Arial;">Quelle est la p</span><span style="font-size: 16pt; font-family: Arial; background: white;">ériode de mise en œuvre du projet&nbsp;</span><b><font color="#ff0000"><span style="font-size: 16pt;">~~NOM_PROJET~~</span></font></b><b style="color: rgb(255, 0, 0);"><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b><span style="font-family: Arial; font-size: 16pt;">?</span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.PR12
+  - name: BGF_COMPOSITION_MENAGE_DICT.PR12
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 16pt; font-family: Arial;">PR12. </span><span style="font-size: 16pt; font-family: Arial;"><span style="font-family: Arial; font-size: 16pt;">Quelle appréciation faites-vous du projet</span><b><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b></span><b><font color="#ff0000"><span style="font-size: 16pt;">~~NOM_PROJET~~</span></font></b><span style="font-size: 11pt;"><b><span style="font-family: Arial; font-size: 16pt;">&nbsp;</span></b><span style="font-family: Arial; font-size: 16pt;">?</span></span><p><b><span class="instruction">﻿</span><span class="instruction" style="font-size: 11pt;">(plusieurs réponses possibles)</span></b></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF1
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF1
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF1. Code du membre du ménage&nbsp;</span><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF2
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF2
     conditions:
       - questionText:
           FR: |
             <p>CF2. Prénom et Nom de l'individu <b><font color="#ff0000">N°~~CF1~~</font></b><b>&nbsp;</b></p><p><span class="instruction">﻿</span><b><i><u><span style="color:#0070C0">S’il
             vous plait, lister l’ensemble des membres du ménage adultes âgés 18ans ou plus
             y compris les preneurs de décisions ainsi que leurs actifs fonciers</span></u></i></b><b><br></b><p></p></p><p class="MsoNormal" style="background:#E6E6E6"><b><i><u><span style="color:#0070C0"><o:p></o:p></span></u></i></b></p>
-  - name: COMPOSITION_MENAGE_DICT.CF3
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF3
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 16px;">CF3. Sexe de&nbsp;</span><b><font color="#ff0000"><span style="font-size: 16px;">~~CF2~~</span></font></b><b><span style="font-size: 16px;">&nbsp;</span></b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF4
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF4
     conditions:
       - questionText:
           FR: |
             CF4. Age de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF5
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF5
     conditions:
       - questionText:
           FR: |
             CF5. Lien de parenté de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;&nbsp;</b>avec le chef de ménage<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF6
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF6
     conditions:
       - questionText:
           FR: |
             CF6. Niveau d'instruction de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF7
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF7
     conditions:
       - questionText:
           FR: |
             CF7. Activité principale de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF7_A
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF7_A
     conditions:
       - questionText:
           FR: |
             Preciser autre activité principal de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF8
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF8
     conditions:
       - questionText:
           FR: |
             <p>CF8. Activité(s) secondaire(s) de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b></p><p><span class="instruction"><b>﻿Plusieurs réponses possibles</b></span><b><br></b><p></p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF8_A
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF8_A
     conditions:
       - questionText:
           FR: |
             Preciser autre activité secondaire de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF7B
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF7B
     conditions:
       - questionText:
           FR: |
             CF7bis. Situation matrimoniale de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CH7B_A
+  - name: BGF_COMPOSITION_MENAGE_DICT.CH7B_A
     conditions:
       - questionText:
           FR: |
             Preciser autre situation matrimoniale de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF9
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF9
     conditions:
       - questionText:
           FR: |
             CF9. Est ce <b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b>&nbsp;à l’habitude d’exploiter de la terre pour l’agriculture ?<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF10
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF10
     conditions:
       - questionText:
           FR: |
             <p class="MsoNormal"><span style="font-size: 11pt;">CF10. Est-ce que&nbsp;</span><b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><span style="font-size: 11pt;">&nbsp;&nbsp;détient (loué, emprunté
             ou en propriété) des terres agricoles&nbsp;?<b>&nbsp;<o:p></o:p></b></span></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF13
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF13
     conditions:
       - questionText:
           FR: |
             <p class="MsoNormal"><span style="font-size: 11pt;">CF13. Est-ce que&nbsp;</span><b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;</b><span style="font-size: 11pt;">&nbsp;détient (loué, emprunté ou en
             propriété) &nbsp;une parcelle à usage
             d’habitation ?&nbsp;<b><o:p></o:p></b></span></p><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF16
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF16
     conditions:
       - questionText:
           FR: |
@@ -168,45 +168,45 @@ questions:
             <span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
             &quot;Times New Roman&quot;;mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:
             AR-SA">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><p></p>
-  - name: COMPOSITION_MENAGE_DICT.AJOUTER_UN_AUTRE_INDIVIDU
+  - name: BGF_COMPOSITION_MENAGE_DICT.AJOUTER_UN_AUTRE_INDIVIDU
     conditions:
       - questionText:
           FR: |
             Ajouter un&nbsp;<b><font color="#ff0000">~~curocc()+1~~ème</font></b> individu<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF11
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF11
     conditions:
       - questionText:
           FR: |
             CF11. Quel est le nombre de parcelles exploitées par (NOM)<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF12
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF12
     conditions:
       - questionText:
           FR: |
             CF12.&nbsp; Quelle est la surface totale des parcelles exploitées par (NOM)<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF12B
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF12B
     conditions:
       - questionText:
           FR: |
             CF12bis. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)?<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF14
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF14
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF14. Si Oui à CF13, quel est le&nbsp;nombre de parcelles à usage
             d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)?</span><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF15
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF15
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF15. Si Oui à CF13, quelle est la surface&nbsp;totale des parcelles à
             usage d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)</span>~~CF2~~?<p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF17
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF17
     conditions:
       - questionText:
           FR: |
             <span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif;">CF17. Si Oui à CF16, quel est le&nbsp;nombre de maisons/logement
             détenues (louées, empruntées ou en propriété) &nbsp;par (NOM)?</span><p></p>
-  - name: COMPOSITION_MENAGE_DICT.CF18
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF18
     conditions:
       - questionText:
           FR: |

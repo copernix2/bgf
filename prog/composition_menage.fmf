@@ -127,7 +127,7 @@ Item=DATE_FIN
 [EndForm]
   
 [Level]
-Name=COMPOSITION_MENAGE_LEVEL
+Name=BGF_COMPOSITION_MENAGE_LEVEL
 Label=composition_menage Level
   
 [Group]
@@ -140,7 +140,7 @@ Max=1
 [Field]
 Name=COMPOSITION_MENAGE_ID
 Position=295,27,593,47
-Item=COMPOSITION_MENAGE_ID,COMPOSITION_MENAGE_DICT
+Item=COMPOSITION_MENAGE_ID,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 UpperCase=Yes
 UseUnicodeTextBox=Yes
@@ -155,7 +155,7 @@ Text=composition_menage Identification
 [Field]
 Name=LOG_AGENT
 Position=536,37,565,57
-Item=LOG_AGENT,COMPOSITION_MENAGE_DICT
+Item=LOG_AGENT,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
 Form=1
@@ -169,7 +169,7 @@ Form=1
 [Field]
 Name=DATE_DEBUT
 Position=536,67,733,87
-Item=DATE_DEBUT,COMPOSITION_MENAGE_DICT
+Item=DATE_DEBUT,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
 Form=1
@@ -191,7 +191,7 @@ Max=1
 [Field]
 Name=ID02
 Position=259,27,288,47
-Item=ID02,COMPOSITION_MENAGE_DICT
+Item=ID02,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
 Form=2
@@ -204,7 +204,7 @@ Text=ID02. Commune
 [Field]
 Name=ID03
 Position=259,57,288,77
-Item=ID03,COMPOSITION_MENAGE_DICT
+Item=ID03,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 UpperCase=Yes
 DataCaptureType=TextBox
@@ -218,7 +218,7 @@ Text=ID03. Village
 [Field]
 Name=ID05
 Position=259,117,509,137
-Item=ID05,COMPOSITION_MENAGE_DICT
+Item=ID05,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -240,7 +240,7 @@ Max=1
 [Field]
 Name=RC07
 Position=547,27,957,47
-Item=RC07,COMPOSITION_MENAGE_DICT
+Item=RC07,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -254,7 +254,7 @@ Text=RC07. Nom et prénom du principal répondant
 [Field]
 Name=RC08
 Position=547,57,674,77
-Item=RC08,COMPOSITION_MENAGE_DICT
+Item=RC08,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=3
   
@@ -266,7 +266,7 @@ Text=RC08. N° de Téléphone du répondant
 [Field]
 Name=RC09
 Position=547,87,562,107
-Item=RC09,COMPOSITION_MENAGE_DICT
+Item=RC09,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -278,7 +278,7 @@ Text=RC09.  Sexe du principal répondant
 [Field]
 Name=RC10
 Position=547,117,576,137
-Item=RC10,COMPOSITION_MENAGE_DICT
+Item=RC10,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -290,7 +290,7 @@ Text=RC10.  Liens avec le chef de ménage (CM)
 [Field]
 Name=RC10_A
 Position=547,147,957,167
-Item=RC10_A,COMPOSITION_MENAGE_DICT
+Item=RC10_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -304,7 +304,7 @@ Text=RC10a. Préciser autre lien avec le CM
 [Field]
 Name=RC11
 Position=547,177,576,197
-Item=RC11,COMPOSITION_MENAGE_DICT
+Item=RC11,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -316,7 +316,7 @@ Text=RC11. Langue dans laquelle le questionnaire est administré
 [Field]
 Name=RC11_A
 Position=547,207,957,227
-Item=RC11_A,COMPOSITION_MENAGE_DICT
+Item=RC11_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -338,7 +338,7 @@ Max=1
 [Field]
 Name=PM01
 Position=1275,27,1290,47
-Item=PM01,COMPOSITION_MENAGE_DICT
+Item=PM01,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=4
   
@@ -350,7 +350,7 @@ Text=PM01. Depuis quand votre famille s’est installée dans le village ?
 [Field]
 Name=PM01_A
 Position=1275,57,1318,77
-Item=PM01_A,COMPOSITION_MENAGE_DICT
+Item=PM01_A,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=4
   
@@ -362,7 +362,7 @@ Text=PM01a. Préciser le nombre d’années si sancaan
 [Field]
 Name=PM02
 Position=1275,87,1290,107
-Item=PM02,COMPOSITION_MENAGE_DICT
+Item=PM02,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=4
   
@@ -374,7 +374,7 @@ Text=PM02. Si Sancan, indiquez le lieu de provenance
 [Field]
 Name=PM02_A
 Position=1275,117,1685,137
-Item=PM02_A,COMPOSITION_MENAGE_DICT
+Item=PM02_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -388,7 +388,7 @@ Text=PM02a. Préciser autre lieu de provenance
 [Field]
 Name=PM02_B
 Position=843,203,1544,223
-Item=PM02_B,COMPOSITION_MENAGE_DICT
+Item=PM02_B,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
@@ -402,7 +402,7 @@ Text=PM02b. Si Hors du Sénégal, préciser le lieu
 [Field]
 Name=PM03
 Position=1275,147,1304,167
-Item=PM03,COMPOSITION_MENAGE_DICT
+Item=PM03,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=4
   
@@ -414,7 +414,7 @@ Text=PM03. Si Sancan, quelle est la principale raison de la venue dans la zone ?
 [Field]
 Name=PM03_A
 Position=1275,177,1685,197
-Item=PM03_A,COMPOSITION_MENAGE_DICT
+Item=PM03_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -428,7 +428,7 @@ Text=PM03a. Préciser autre principale raison de la venue dans la zone
 [Field]
 Name=PM05
 Position=1275,207,1304,227
-Item=PM05,COMPOSITION_MENAGE_DICT
+Item=PM05,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=4
   
@@ -440,7 +440,7 @@ Text=PM05. Combien de personnes de sexe féminin vivent dans le ménage ?
 [Field]
 Name=PM06
 Position=787,260,816,280
-Item=PM06,COMPOSITION_MENAGE_DICT
+Item=PM06,BGF_COMPOSITION_MENAGE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=4
@@ -453,7 +453,7 @@ Text=PM06. Combien de personnes de sexe masculin vivent dans le ménage ?
 [Field]
 Name=PM04
 Position=1275,267,1304,287
-Item=PM04,COMPOSITION_MENAGE_DICT
+Item=PM04,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
 Form=4
@@ -466,7 +466,7 @@ Text=PM04. La taille du ménage
 [Field]
 Name=PM07
 Position=1614,456,1643,476
-Item=PM07,COMPOSITION_MENAGE_DICT
+Item=PM07,BGF_COMPOSITION_MENAGE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=4
@@ -487,7 +487,7 @@ Max=1
 [Field]
 Name=RM1
 Position=644,27,673,47
-Item=RM1,COMPOSITION_MENAGE_DICT
+Item=RM1,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=5
   
@@ -499,7 +499,7 @@ Text=RM1. Quelle est la principale source de revenu du ménage ?
 [Field]
 Name=RM1_A
 Position=644,57,1054,77
-Item=RM1_A,COMPOSITION_MENAGE_DICT
+Item=RM1_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -513,7 +513,7 @@ Text=RM1a. Préciser autre principale source de revenu du ménage
 [Field]
 Name=RM2
 Position=644,87,771,107
-Item=RM2,COMPOSITION_MENAGE_DICT
+Item=RM2,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=5
   
@@ -525,7 +525,7 @@ Text=RM2. Quel est le montant de la principale source de revenu du ménage sur l
 [Field]
 Name=RM2_P
 Position=644,117,673,137
-Item=RM2_P,COMPOSITION_MENAGE_DICT
+Item=RM2_P,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=5
   
@@ -613,7 +613,7 @@ Text=RM3. Quelles sont les parts sur une échelle de 0 à 10 des autres sources 
 [Field]
 Name=RM3
 Position=36,0,65,20
-Item=RM3,COMPOSITION_MENAGE_DICT
+Item=RM3,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
   
 [Text]
@@ -635,7 +635,7 @@ Max=1
 [Field]
 Name=PR01
 Position=917,27,932,47
-Item=PR01,COMPOSITION_MENAGE_DICT
+Item=PR01,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=6
   
@@ -647,7 +647,7 @@ Text=PR01. Avez-vous bénéficié ou un autre  membre du ménage d’un projet s
 [Field]
 Name=PR02
 Position=917,57,932,77
-Item=PR02,COMPOSITION_MENAGE_DICT
+Item=PR02,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=6
   
@@ -659,7 +659,7 @@ Text=PR02. Si NON, Existe-t-il un projet sur la gouvernance foncière en destina
 [Field]
 Name=PR03
 Position=917,87,932,107
-Item=PR03,COMPOSITION_MENAGE_DICT
+Item=PR03,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
 Form=6
   
@@ -1201,7 +1201,7 @@ Text=PR04. ID_Projet
 [Field]
 Name=PR04
 Position=43,0,86,20
-Item=PR04,COMPOSITION_MENAGE_DICT
+Item=PR04,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
   
@@ -1221,7 +1221,7 @@ Text=Nom du projet
 [Field]
 Name=NOM_PROJET
 Position=38,0,739,20
-Item=NOM_PROJET,COMPOSITION_MENAGE_DICT
+Item=NOM_PROJET,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
@@ -1242,7 +1242,7 @@ Text=PR05. Si OUI, quels sont les outils et méthodes du projet […] ?
 [Field]
 Name=PR05
 Position=5,0,62,20
-Item=PR05,COMPOSITION_MENAGE_DICT
+Item=PR05,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -1262,7 +1262,7 @@ Text=PR05a. Préciser autre outils et méthodes du projet
 [Field]
 Name=PR05_A
 Position=0,0,701,20
-Item=PR05_A,COMPOSITION_MENAGE_DICT
+Item=PR05_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1282,7 +1282,7 @@ Text=PR06. Quelles sont les activités du projet […]? (plusieurs réponses pos
 [Field]
 Name=PR06
 Position=0,0,141,20
-Item=PR06,COMPOSITION_MENAGE_DICT
+Item=PR06,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -1302,7 +1302,7 @@ Text=PR06a. Préciser autre les activités du projet
 [Field]
 Name=PR06_A
 Position=0,0,701,20
-Item=PR06_A,COMPOSITION_MENAGE_DICT
+Item=PR06_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1322,7 +1322,7 @@ Text=PR07. Quelles sont les activités du projet […] auxquelles vous a partici
 [Field]
 Name=PR07
 Position=0,0,141,20
-Item=PR07,COMPOSITION_MENAGE_DICT
+Item=PR07,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -1342,7 +1342,7 @@ Text=PR07a. Préciser autre activités du projet […] auxquelles vous a partici
 [Field]
 Name=PR07_A
 Position=0,0,701,20
-Item=PR07_A,COMPOSITION_MENAGE_DICT
+Item=PR07_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1362,7 +1362,7 @@ Text=PR08. Qui sont les porteurs du projet […]?
 [Field]
 Name=PR08
 Position=0,0,57,20
-Item=PR08,COMPOSITION_MENAGE_DICT
+Item=PR08,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -1382,7 +1382,7 @@ Text=PR08s. Préciser le nom du projet ou la structure
 [Field]
 Name=PR08S
 Position=44,0,745,20
-Item=PR08S,COMPOSITION_MENAGE_DICT
+Item=PR08S,BGF_COMPOSITION_MENAGE_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1403,7 +1403,7 @@ Text=PR08_ong. Preciser ONG
 [Field]
 Name=PR08_ONG
 Position=0,0,701,20
-Item=PR08_ONG,COMPOSITION_MENAGE_DICT
+Item=PR08_ONG,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1424,7 +1424,7 @@ Text=PR08a. Préciser autres porteurs du projet
 [Field]
 Name=PR08_A
 Position=0,0,701,20
-Item=PR08_A,COMPOSITION_MENAGE_DICT
+Item=PR08_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1444,7 +1444,7 @@ Text=PR09. Qui sont les parties prenantes du projet […]?
 [Field]
 Name=PR09
 Position=0,0,99,20
-Item=PR09,COMPOSITION_MENAGE_DICT
+Item=PR09,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -1464,7 +1464,7 @@ Text=PR09a. Préciser autres parties prenantes du projet
 [Field]
 Name=PR09_A
 Position=0,0,701,20
-Item=PR09_A,COMPOSITION_MENAGE_DICT
+Item=PR09_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1484,7 +1484,7 @@ Text=PR10. Qui sont les bénéficiaires du projet […]?
 [Field]
 Name=PR10
 Position=11,0,82,20
-Item=PR10,COMPOSITION_MENAGE_DICT
+Item=PR10,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -1504,7 +1504,7 @@ Text=PR10a. Préciser autre bénéficiaires du projet
 [Field]
 Name=PR10_A
 Position=0,0,701,20
-Item=PR10_A,COMPOSITION_MENAGE_DICT
+Item=PR10_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -1524,7 +1524,7 @@ Text=PR11. Quelle est la période de mise en œuvre du projet […]?
 [Field]
 Name=PR11
 Position=35,0,50,20
-Item=PR11,COMPOSITION_MENAGE_DICT
+Item=PR11,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -1542,7 +1542,7 @@ Text=PR12. Quelle appréciation faites-vous du projet […]?
 [Field]
 Name=PR12
 Position=65,0,80,20
-Item=PR12,COMPOSITION_MENAGE_DICT
+Item=PR12,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2085,7 +2085,7 @@ Text=CF1. code individu
 [Field]
 Name=CF1
 Position=22,0,51,20
-Item=CF1,COMPOSITION_MENAGE_DICT
+Item=CF1,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
   
@@ -2105,7 +2105,7 @@ Text=CF2. Prénom et Nom
 [Field]
 Name=CF2
 Position=0,0,141,20
-Item=CF2,COMPOSITION_MENAGE_DICT
+Item=CF2,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -2125,7 +2125,7 @@ Text=CF3. Sexe (NOM)
 [Field]
 Name=CF3
 Position=23,0,38,20
-Item=CF3,COMPOSITION_MENAGE_DICT
+Item=CF3,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2143,7 +2143,7 @@ Text=CF4. Age de (NOM)
 [Field]
 Name=CF4
 Position=20,0,49,20
-Item=CF4,COMPOSITION_MENAGE_DICT
+Item=CF4,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=TextBox
   
 [Text]
@@ -2161,7 +2161,7 @@ Text=CF5. Lien de parenté de (NOM) avec le chef de ménage
 [Field]
 Name=CF5
 Position=23,0,52,20
-Item=CF5,COMPOSITION_MENAGE_DICT
+Item=CF5,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2179,7 +2179,7 @@ Text=CF5a. Préciser autre lien de parenté avec le CM
 [Field]
 Name=CF5_A
 Position=0,0,701,20
-Item=CF5_A,COMPOSITION_MENAGE_DICT
+Item=CF5_A,BGF_COMPOSITION_MENAGE_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -2199,7 +2199,7 @@ Text=CF6. Niveau d'instruction de (NOM)
 [Field]
 Name=CF6
 Position=66,0,81,20
-Item=CF6,COMPOSITION_MENAGE_DICT
+Item=CF6,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2217,7 +2217,7 @@ Text=CF7. Quel est l'activité principale de (NOM) ?
 [Field]
 Name=CF7
 Position=35,0,64,20
-Item=CF7,COMPOSITION_MENAGE_DICT
+Item=CF7,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2235,7 +2235,7 @@ Text=CF7a. Préciser autre activité principal de (NOM)
 [Field]
 Name=CF7_A
 Position=0,0,64,20
-Item=CF7_A,COMPOSITION_MENAGE_DICT
+Item=CF7_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -2255,7 +2255,7 @@ Text=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (
 [Field]
 Name=CF8
 Position=0,0,225,20
-Item=CF8,COMPOSITION_MENAGE_DICT
+Item=CF8,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 DataCaptureType=CheckBox
   
@@ -2275,7 +2275,7 @@ Text=CF8. Préciser autre activité secondaire de (NOM)
 [Field]
 Name=CF8_A
 Position=0,0,113,20
-Item=CF8_A,COMPOSITION_MENAGE_DICT
+Item=CF8_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -2295,7 +2295,7 @@ Text=CF7bis. Situation matrimoniale de (NOM)
 [Field]
 Name=CF7B
 Position=70,0,99,20
-Item=CF7B,COMPOSITION_MENAGE_DICT
+Item=CF7B,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2313,7 +2313,7 @@ Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
 [Field]
 Name=CH7B_A
 Position=0,0,50,20
-Item=CH7B_A,COMPOSITION_MENAGE_DICT
+Item=CH7B_A,BGF_COMPOSITION_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -2333,7 +2333,7 @@ Text=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agricu
 [Field]
 Name=CF9
 Position=62,0,77,20
-Item=CF9,COMPOSITION_MENAGE_DICT
+Item=CF9,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2351,7 +2351,7 @@ Text=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des t
 [Field]
 Name=CF10
 Position=51,0,66,20
-Item=CF10,COMPOSITION_MENAGE_DICT
+Item=CF10,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2369,7 +2369,7 @@ Text=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une par
 [Field]
 Name=CF13
 Position=61,0,76,20
-Item=CF13,COMPOSITION_MENAGE_DICT
+Item=CF13,BGF_COMPOSITION_MENAGE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
@@ -2388,7 +2388,7 @@ Text=CF16. Est-ce que (NOM) détient une maison/un logement ?
 [Field]
 Name=CF16
 Position=51,0,66,20
-Item=CF16,COMPOSITION_MENAGE_DICT
+Item=CF16,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2406,7 +2406,7 @@ Text=Ajouter un autre individu
 [Field]
 Name=AJOUTER_UN_AUTRE_INDIVIDU
 Position=36,0,51,20
-Item=AJOUTER_UN_AUTRE_INDIVIDU,COMPOSITION_MENAGE_DICT
+Item=AJOUTER_UN_AUTRE_INDIVIDU,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2428,7 +2428,7 @@ Max=1
 [Field]
 Name=REP2
 Position=526,117,555,137
-Item=REP2,COMPOSITION_MENAGE_DICT
+Item=REP2,BGF_COMPOSITION_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=9
   
@@ -2440,7 +2440,7 @@ Text=Rep2. La personne avec qui le/la chef de ménage prend les décisions ?
 [Field]
 Name=DATE_FIN
 Position=219,292,416,312
-Item=DATE_FIN,COMPOSITION_MENAGE_DICT
+Item=DATE_FIN,BGF_COMPOSITION_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
 Form=9

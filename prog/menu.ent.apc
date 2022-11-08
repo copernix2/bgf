@@ -15,8 +15,8 @@ function Open_hh_function(numeric id_num_men)
 	compostion_pff.setproperty("Application", PathProg + 'fiche_menage.pen');
 	compostion_pff.setproperty("InputData", pathname(temp) + 'astou.csdb');
 	compostion_pff.setproperty("Description", "Fiche ménage " );
-	compostion_pff.setproperty("ExternalFiles.EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
-	compostion_pff.setproperty("ExternalFiles.MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
+	compostion_pff.setproperty("ExternalFiles.BGF_EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
+	compostion_pff.setproperty("ExternalFiles.BGF_MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
 	compostion_pff.setproperty("OnExit", pathname(temp) + "menu.pff");
 	compostion_pff.save(pathname(temp)+"fiche_menage.pff");
 	compostion_pff.exec();
@@ -53,8 +53,8 @@ function  open_composition(string idmen)
 	 hh_pff.setproperty("InputData", PathData + maketext('composition_%02d.csdb',LOGIN_AGENT));
 	 hh_pff.setproperty("Description", "Composition ménage");
 	 hh_pff.setproperty("Paradata", PathLogs + "ParaMenu_" + getoperatorid() + ".cslog");
-	 hh_pff.setproperty("ExternalFiles.EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
-	 hh_pff.setproperty("ExternalFiles.MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
+	 hh_pff.setproperty("ExternalFiles.BGF_EXT_IND_DICS", PathData + maketext('ext_ind_%02d.csdb',LOGIN_AGENT));
+	 hh_pff.setproperty("ExternalFiles.BGF_MENAGE_DICT", PathData + maketext('menage_%02d.csdb',LOGIN_AGENT));
 	 hh_pff.setproperty("OnExit", pathname(temp) + "menu.pff");
 	 hh_pff.exec();
 end; 
@@ -66,7 +66,7 @@ function delete_hh_function(numeric id_num_men)
 	string idmen = list_MenId(id_num_men);
 	errmsg("La suppression du ménage va entrainer la suppression de l'ensemble des informations rattachées. Voulez-vous continuer?")
 	select("Oui", continue, "Non", Menu) default(2);
-	if delcase(MENAGE_DICT, idmen) then 
+	if delcase(BGF_MENAGE_DICT, idmen) then 
 		errmsg("Supression réussie");
 		reenter;
 	else
@@ -146,7 +146,7 @@ endif;
 endif;}
 
 if $=3 then 
-	{if ! connection() then 
+	if ! connection() then 
 			errmsg("La connexion internet n'est pas disponible");
 			reenter;
 		endif;
@@ -154,36 +154,27 @@ if $=3 then
 			errmsg("La connexion au serveur a échouée");
 			reenter;
 		endif;
-		if ! syncdata(PUT, VILLAGE_DICT) then 
-			errmsg("Erreur de transmission de la base village.");
-			reenter;
-		endif;
 		
-		if ! syncdata(PUT, COM_MEN_DICS) then 
+		
+		if ! syncdata(PUT, BGF_COMPOSITION_MENAGE_DICT) then 
 			errmsg("Erreur de transmission de la base composition.");
 			reenter;
 		endif;
-		if ! syncdata(PUT, EXT_IND_DICS) then 
+		if ! syncdata(PUT, BGF_EXT_IND_DICS) then 
 			errmsg("Erreur de transmission de la base individu.");
 			reenter;
 		endif;
-		if ! syncdata(PUT, WEAI_DICT_DICT) then 
-			errmsg("Erreur de transmission de la base weai.");
+		
+		
+		if ! syncdata(PUT, LTP_DICT) then 
+			errmsg("Erreur de transmission de la base.");
 			reenter;
 		endif;
-		if ! syncdata(PUT, DICT_WEAI_2_DICT) then 
-			errmsg("Erreur de transmission de la base culture.");
-			reenter;
-		endif;
-		if ! syncdata(PUT, DICT_PRODUCTION_DICT) then 
-			errmsg("Erreur de transmission de la base production.");
-			reenter;
-		endif;
-		if ! syncdata(PUT, MENAGE_DICT) then 
+		if ! syncdata(PUT, BGF_MENAGE_DICT) then 
 			errmsg("Erreur de transmission de la base ménage.");
 			reenter;
 		endif;
-	errmsg("Synchronisation réussie");}
+	errmsg("Synchronisation réussie");
 	reenter;
 endif;
 if $=4 then 

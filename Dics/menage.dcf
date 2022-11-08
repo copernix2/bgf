@@ -1,17 +1,17 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=menage
-Name=MENAGE_DICT
+Label=BGF menage
+Name=BGF_MENAGE_DICT
 RecordTypeStart=1
 RecordTypeLen=1
 Positions=Relative
 ZeroFill=No
 DecimalChar=Yes
-SecurityOptions=C10F89B838E099C9475C5FCFEAC1DB3AA1D023E181F63BF488156C8700AC1AA4
+SecurityOptions=AD2700444076E04EBA2D45E7966DA9231672588753F4AA8FB0C53A0195588AFE
 
 [Level]
 Label=menage Level
-Name=MENAGE_LEVEL
+Name=BGF_MENAGE_LEVEL
 
 [IdItems]
 
