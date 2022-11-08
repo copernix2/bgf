@@ -53,18 +53,19 @@ Item=RC11_A
 Name=FORM003
 Label=SECTION PM : PROFIL DU MENAGE
 Level=1
-Size=1349,330
+Size=1710,501
   
 Item=PM01
 Item=PM01_A
 Item=PM02
 Item=PM02_A
+Item=PM02_B
 Item=PM03
 Item=PM03_A
 Item=PM05
-Item=PM06
 Item=PM04
 Item=PM07
+Item=PM06
   
 [EndForm]
   
@@ -385,6 +386,20 @@ Text=PM02a. Préciser autre lieu de provenance
  
   
 [Field]
+Name=PM02_B
+Position=843,203,1544,223
+Item=PM02_B,COMPOSITION_MENAGE_DICT
+UpperCase=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+Form=4
+  
+[Text]
+Position=535,206,810,222
+Text=PM02b. Si Hors du Sénégal, préciser le lieu
+ 
+  
+[Field]
 Name=PM03
 Position=1275,147,1304,167
 Item=PM03,COMPOSITION_MENAGE_DICT
@@ -424,20 +439,22 @@ Text=PM05. Combien de personnes de sexe féminin vivent dans le ménage ?
   
 [Field]
 Name=PM06
-Position=1275,237,1304,257
+Position=787,260,816,280
 Item=PM06,COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=4
   
 [Text]
-Position=50,240,504,256
-Text=PM06. Combien de personnes de sexe féminin vivent dans le ménage ?
+Position=284,263,747,279
+Text=PM06. Combien de personnes de sexe masculin vivent dans le ménage ?
  
   
 [Field]
 Name=PM04
 Position=1275,267,1304,287
 Item=PM04,COMPOSITION_MENAGE_DICT
+Protected=Yes
 DataCaptureType=TextBox
 Form=4
   
@@ -448,14 +465,15 @@ Text=PM04. La taille du ménage
   
 [Field]
 Name=PM07
-Position=1275,297,1304,317
+Position=1614,456,1643,476
 Item=PM07,COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=4
   
 [Text]
-Position=50,300,1253,316
-Text=PM07. Est ce que votre ménage a cultivé des terres à des fins agricoles (y compris les vergers et les jardins potagers) ces 12 derniers moins pour sa propre consommation et/ou pour vendre ?
+Position=340,459,1545,475
+Text=PM07. Est ce que votre ménage a exploité des terres à des fins agricoles (y compris les vergers et les jardins potagers) ces 12 derniers mois pour sa propre consommation et/ou pour vendre ?
  
 [EndGroup]
   
@@ -523,8 +541,8 @@ Form=5
 Required=Yes
 Type=Item
 TypeName=RM3
-Max=9
-DisplaySize=40,150,191,638
+Max=10
+DisplaySize=40,150,208,638
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -569,6 +587,11 @@ Text=Salaires
 [Text]
 Position=5,0,78,40
 Text=Transferts migrants
+ 
+  
+[Text]
+Position=1,0,78,40
+Text=Commerce
  
   
 [Text]
@@ -1189,6 +1212,27 @@ Text=PR04. ID_Projet
 [EndColumn]
   
 [Column]
+Width=747
+  
+[HeaderText]
+Position=686,128,747,168
+Text=Nom du projet
+ 
+[Field]
+Name=NOM_PROJET
+Position=38,0,739,20
+Item=NOM_PROJET,COMPOSITION_MENAGE_DICT
+UpperCase=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+  
+[Text]
+Position=0,0,91,16
+Text=Nom du projet
+ 
+[EndColumn]
+  
+[Column]
 Width=70
   
 [HeaderText]
@@ -1332,8 +1376,8 @@ Text=PR08. Qui sont les porteurs du projet […]?
 Width=753
   
 [HeaderText]
-Position=686,64,753,168
-Text=PR08s. Préciser le nom du projet ou la structure 
+Position=688,64,753,168
+Text=PR08s. Préciser le nom du projet ou la structure
  
 [Field]
 Name=PR08S
@@ -1345,7 +1389,7 @@ DataCaptureType=TextBox
   
 [Text]
 Position=0,0,315,16
-Text=PR08s. Préciser le nom du projet ou la structure 
+Text=PR08s. Préciser le nom du projet ou la structure
  
 [EndColumn]
   
@@ -2035,7 +2079,7 @@ Width=10
 Width=59
   
 [HeaderText]
-Position=0,128,59,184
+Position=0,144,59,200
 Text=CF1. code individu
  
 [Field]
@@ -2055,7 +2099,7 @@ Text=CF1. code individu
 Width=149
   
 [HeaderText]
-Position=10,160,149,184
+Position=10,176,149,200
 Text=CF2. Prénom et Nom
  
 [Field]
@@ -2075,7 +2119,7 @@ Text=CF2. Prénom et Nom
 Width=46
   
 [HeaderText]
-Position=0,128,46,184
+Position=0,144,46,200
 Text=CF3. Sexe (NOM)
  
 [Field]
@@ -2093,7 +2137,7 @@ Text=CF3. Sexe (NOM)
 Width=57
   
 [HeaderText]
-Position=0,128,57,184
+Position=0,144,57,200
 Text=CF4. Age de (NOM)
  
 [Field]
@@ -2111,7 +2155,7 @@ Text=CF4. Age de (NOM)
 Width=60
   
 [HeaderText]
-Position=0,48,60,184
+Position=0,64,60,200
 Text=CF5. Lien de parenté de (NOM) avec le chef de ménage
  
 [Field]
@@ -2126,10 +2170,30 @@ Text=CF5. Lien de parenté de (NOM) avec le chef de ménage
 [EndColumn]
   
 [Column]
+Width=709
+  
+[HeaderText]
+Position=645,80,709,200
+Text=CF5a. Préciser autre lien de parenté avec le CM
+ 
+[Field]
+Name=CF5_A
+Position=0,0,701,20
+Item=CF5_A,COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=CF5a. Préciser autre lien de parenté avec le CM
+ 
+[EndColumn]
+  
+[Column]
 Width=89
   
 [HeaderText]
-Position=0,128,89,184
+Position=0,144,89,200
 Text=CF6. Niveau d'instruction de (NOM)
  
 [Field]
@@ -2147,7 +2211,7 @@ Text=CF6. Niveau d'instruction de (NOM)
 Width=72
   
 [HeaderText]
-Position=0,80,72,184
+Position=0,96,72,200
 Text=CF7. Quel est l'activité principale de (NOM) ?
  
 [Field]
@@ -2165,7 +2229,7 @@ Text=CF7. Quel est l'activité principale de (NOM) ?
 Width=72
   
 [HeaderText]
-Position=2,80,72,184
+Position=2,96,72,200
 Text=CF7a. Préciser autre activité principal de (NOM)
  
 [Field]
@@ -2182,48 +2246,10 @@ Text=CF7a. Préciser autre activité principal de (NOM)
 [EndColumn]
   
 [Column]
-Width=107
-  
-[HeaderText]
-Position=14,112,107,184
-Text=CF7bis. Situation matrimoniale de (NOM)
- 
-[Field]
-Name=CF7B
-Position=70,0,99,20
-Item=CF7B,COMPOSITION_MENAGE_DICT
-DataCaptureType=RadioButton
-  
-[Text]
-Text=CF7bis. Situation matrimoniale de (NOM)
- 
-[EndColumn]
-  
-[Column]
-Width=93
-  
-[HeaderText]
-Position=0,80,93,184
-Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
- 
-[Field]
-Name=CH7B_A
-Position=0,0,50,20
-Item=CH7B_A,COMPOSITION_MENAGE_DICT
-UpperCase=Yes
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-  
-[Text]
-Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
- 
-[EndColumn]
-  
-[Column]
 Width=233
   
 [HeaderText]
-Position=141,48,233,184
+Position=141,64,233,200
 Text=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
  
 [Field]
@@ -2243,7 +2269,7 @@ Text=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (
 Width=121
   
 [HeaderText]
-Position=19,112,121,184
+Position=19,128,121,200
 Text=CF8. Préciser autre activité secondaire de (NOM)
  
 [Field]
@@ -2260,10 +2286,48 @@ Text=CF8. Préciser autre activité secondaire de (NOM)
 [EndColumn]
   
 [Column]
+Width=107
+  
+[HeaderText]
+Position=14,128,107,200
+Text=CF7bis. Situation matrimoniale de (NOM)
+ 
+[Field]
+Name=CF7B
+Position=70,0,99,20
+Item=CF7B,COMPOSITION_MENAGE_DICT
+DataCaptureType=RadioButton
+  
+[Text]
+Text=CF7bis. Situation matrimoniale de (NOM)
+ 
+[EndColumn]
+  
+[Column]
+Width=93
+  
+[HeaderText]
+Position=0,96,93,200
+Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
+ 
+[Field]
+Name=CH7B_A
+Position=0,0,50,20
+Item=CH7B_A,COMPOSITION_MENAGE_DICT
+UpperCase=Yes
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
+ 
+[EndColumn]
+  
+[Column]
 Width=85
   
 [HeaderText]
-Position=0,48,85,184
+Position=0,64,85,200
 Text=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
  
 [Field]
@@ -2281,7 +2345,7 @@ Text=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agricu
 Width=77
   
 [HeaderText]
-Position=0,0,77,184
+Position=0,16,77,200
 Text=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
  
 [Field]
@@ -2296,20 +2360,21 @@ Text=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des t
 [EndColumn]
   
 [Column]
-Width=78
+Width=84
   
 [HeaderText]
-Position=0,32,78,184
-Text=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Position=0,0,84,200
+Text=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ?
  
 [Field]
 Name=CF13
-Position=55,0,70,20
+Position=61,0,76,20
 Item=CF13,COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Text=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ?
  
 [EndColumn]
   
@@ -2317,7 +2382,7 @@ Text=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées p
 Width=74
   
 [HeaderText]
-Position=0,48,74,184
+Position=0,64,74,200
 Text=CF16. Est-ce que (NOM) détient une maison/un logement ?
  
 [Field]
@@ -2335,7 +2400,7 @@ Text=CF16. Est-ce que (NOM) détient une maison/un logement ?
 Width=59
   
 [HeaderText]
-Position=0,112,59,184
+Position=0,128,59,200
 Text=Ajouter un autre individu
  
 [Field]

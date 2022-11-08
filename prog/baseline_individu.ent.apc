@@ -98,6 +98,9 @@ ask if AC10=2;
 PROC AC12
 preproc
 ask if AC11=2;
+PROC AC12_A
+preproc
+	ask if pos("7",AC12);
 PROC AC13
 preproc
 ask if AC11=1;
@@ -149,13 +152,22 @@ preproc
 ask if AC20=1;
 PROC AC21_A
 preproc
-	ask if pos("96",AC21);
+ask if AC21=96;
 PROC AC22
 preproc
 ask if AC20=1;
 PROC AC22_A
 preproc
 ask if AC22=96;
+PROC AC23
+preproc
+ask if AC20=1;
+PROC AC24
+preproc
+ask if AC20=1;
+PROC AC25
+preproc
+ask if AC21=1;
 PROC SECTION_PS_FORM
 preproc
 ask if AC22=1;
@@ -198,54 +210,6 @@ ask if PSL7=96;
 PROC PSL8
 preproc
 ask if PSL6=1;
-PROC CA02_A
-preproc
-ask if CA02=96;
-PROC CA03
-Postproc
-	if length(strip($))>1 and ischecked("98",$)<>0  then
-		errmsg("Modalités incompatibles");
-	    reenter;
-	endif;
-PROC CA03_A
-preproc
-	ask if pos("99",CA03);
-PROC CA04_A
-preproc
-ask if CA04=96;
-PROC CL2
-preproc
-	if CL1_1(curocc())=2 then 
-		skip to next;
-	endif;
-ask if CA04=99;
-PROC CL_AUTRE
-preproc
-ask if CL1_8=1;
-PROC CL3
-preproc
-ask if CL2=1;
-PROC CL4
-preproc
-ask if CL2=1;
-PROC CL5
-preproc
-ask if CL4=1;
-PROC CL9
-preproc
-ask if CL8=1;
-PROC CL10
-preproc
-ask if CL8=1;
-PROC CL10_A
-preproc
-	ask if pos("5",CL10);
-PROC CL11
-preproc
-ask if CL8=1;
-PROC CL12
-preproc
-ask if CL8=1;
 PROC DATE_FIN
 preproc
 	$=timestamp();
