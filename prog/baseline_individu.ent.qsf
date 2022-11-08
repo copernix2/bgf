@@ -26,6 +26,34 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
+  - name: BASELINE_INDIVIDU_DICT.AC8_1
+    conditions:
+      - questionText:
+          EN: |
+            <p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;
+            mso-list:l0 level1 lfo1"><!--[if !supportLists]--><b>1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;<span class="instruction">&nbsp;<span style="font-size: 18px;">L</span></span></span><span class="instruction" style="font-size: 18px;"><span style="font-size: 18px;">a
+            </span>répartition entre les membres</span></b><o:p></o:p></p><p></p>
+  - name: BASELINE_INDIVIDU_DICT.AC8_2
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 18px; font-family: Arial;" class="instruction"><b>Les prêts&nbsp;</b></span><p></p>
+  - name: BASELINE_INDIVIDU_DICT.AC8_3
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 16pt; font-family: Arial;" class="instruction"><b>La vente&nbsp;</b></span><p></p>
+  - name: BASELINE_INDIVIDU_DICT.AC8_4
+    conditions:
+      - questionText:
+          EN: |
+            <p class="MsoListParagraph" style="text-indent:-18.0pt;line-height:150%;
+            mso-list:l0 level1 lfo1"><!--[if !supportLists]-->1.<span style="font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &quot;Times New Roman&quot;;">&nbsp;<b> &nbsp; <span style="font-family: Arial; font-size: 18px;" class="instruction">&nbsp;L</span></b></span><span style="font-family: Arial; font-size: 18px;" class="instruction"><b>a location</b></span><o:p></o:p></p><p></p>
+  - name: BASELINE_INDIVIDU_DICT.AC8_5
+    conditions:
+      - questionText:
+          EN: |
+            <b><span style="font-size: 16pt; font-family: Arial; color: red;" class="instruction"><span class="instruction" style="font-size: 18px;">Les</span><span style="font-size: 18px;"> </span><span class="instruction" style="font-size: 18px;">spéculations </span><span class="instruction" style="font-size: 18px;">à </span><span class="instruction" style="font-size: 18px;">planter</span></span></b><p></p>
   - name: BASELINE_INDIVIDU_DICT.CL1_1
     conditions:
       - questionText:

@@ -96,12 +96,12 @@
 										else
 											statut_ind_lpt='danger';
 										endif;
-										string statut_ind_hf;
+										{string statut_ind_hf;
 										if STATUT_HF=1 then
 											statut_ind_hf='success';
 										else
 											statut_ind_hf='danger';
-										endif;
+										endif;}
 										$.write("<tr><td>%02d</td>",EXT_ID_IND);
 										$.write("<td>%s</td>",STRIP(EXT_CF2));
 										$.write("<td>%s</td>",getlabel(EXT_CF5,EXT_CF5));
@@ -110,9 +110,9 @@
 										
 										$.write("<td class='text-center'>");
 										$.write('<a type="button" rel="tooltip" class="btn btn-%s " href="javascript:CSPro.runLogicAsync(%sOpen_ltp(%d);%s);" >L.T.P.</a>',statut_ind_lpt, quote, EXT_ID_IND, quote);
-										if IS_REP_2=1 or EXT_CF5=1  then
+										{if IS_REP_2=1 or EXT_CF5=1  then
 											$.write('<a type="button" rel="tooltip" class="btn btn-%s padding-left " href="javascript:CSPro.runLogicAsync(%sOpen_individu(%d);%s);" >Individu</a>',statut_ind_hf, quote, EXT_ID_IND, quote);
-										endif;
+										endif;}
 										
 										$.write("</td></tr>");
 									endfor;

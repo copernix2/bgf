@@ -172,6 +172,11 @@ if $<0 or $>10 then
 	errmsg("La part doit etre entre 0 et 10");
 	reenter;
 endif;
+
+if RM3(1) + RM3(2) + RM3(3) + RM3(4) + RM3(5) + RM3(6) + RM3(7) + RM3(8) + RM3(9) + RM3(10) >10 then
+	errmsg("La somme ne doit être égal à 10");
+	reenter;
+endif;
 PROC PR02
 preproc
 	ask if PR01=2;
@@ -206,9 +211,9 @@ onfocus
 	valueset string secondaire_vs=PR06_VS1;
 	numeric i=1;
 	numeric num_mod;
-	while i<=15 do
+	while i<=16 do
 		num_mod=i;
-		if i=15 then 
+		if i=16 then 
 			num_mod=99;
 		endif;
 		if ! ischecked(maketext("%02d", num_mod),PR06) then 
@@ -270,7 +275,7 @@ PROC CF8
 preproc
 	ask if CF7<>0;
 Postproc
-	if length(strip($))>1 and ischecked("00",$)<>0  then
+	if length(strip($))>1 and ischecked("16",$)<>0  then
 		errmsg("Modalités incompatibles");
 	    reenter;
 	endif;

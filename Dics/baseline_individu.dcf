@@ -52,7 +52,7 @@ Value=2;Répondant secondaire
 Label=SECTION AC- ACCES, CONTROLE ET PARTICIPATION A LA PRISE DE DECISION SUR LE CAPITAL PRODUCTIF
 Name=SECTION_AC
 RecordTypeValue='2'
-RecordLen=1196
+RecordLen=1243
 
 [Item]
 Label=AC1. Le capital foncier est-il partagé entre les membres du ménage ?
@@ -151,14 +151,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne : la répartition entre les membres
+Label=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_1
 Start=247
 Len=2
 DataType=Numeric
 
 [ValueSet]
-Label=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne : la répartition entre les membres
+Label=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_1_VS1
 Value=1;Moi-meme
 Value=2;Principal homme adulte ou mar
@@ -198,14 +198,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne : les prêts
+Label=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_2
 Start=350
 Len=2
 DataType=Numeric
 
 [ValueSet]
-Label=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne : les prêts
+Label=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_2_VS1
 Value=1;Moi-meme
 Value=2;Principal homme adulte ou mar
@@ -245,14 +245,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la vente
+Label=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_3
 Start=453
 Len=2
 DataType=Numeric
 
 [ValueSet]
-Label=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la vente
+Label=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_3_VS1
 Value=1;Moi-meme
 Value=2;Principal homme adulte ou mar
@@ -292,14 +292,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la location
+Label=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_4
 Start=556
 Len=2
 DataType=Numeric
 
 [ValueSet]
-Label=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la location
+Label=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_4_VS1
 Value=1;Moi-meme
 Value=2;Principal homme adulte ou mar
@@ -339,14 +339,14 @@ Len=50
 DataType=Alpha
 
 [Item]
-Label=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne : des spéculations à planter
+Label=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_5
 Start=659
 Len=2
 DataType=Numeric
 
 [ValueSet]
-Label=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne : des spéculations à planter
+Label=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
 Name=AC8_5_VS1
 Value=1;Moi-meme
 Value=2;Principal homme adulte ou mar
@@ -444,9 +444,16 @@ Value='6                                                 ';Actif (ve) dans un au
 Value='7                                                 ';Autre (à préciser)
 
 [Item]
+Label=AC12.a. Préciser autre raison pour laquelle vous n'avez pas accés à la terre
+Name=AC12_A
+Start=914
+Len=50
+DataType=Alpha
+
+[Item]
 Label=AC13. Si oui à AC11, est-ce au sein du ménage ?
 Name=AC13
-Start=914
+Start=964
 Len=1
 DataType=Numeric
 
@@ -459,14 +466,14 @@ Value=2;Non
 [Item]
 Label=AC14. Si oui à AC11, Combien de parcelles ?
 Name=AC14
-Start=915
+Start=965
 Len=2
 DataType=Numeric
 
 [Item]
 Label=AC15. Si oui à AC11 quel usage faites-vous des terres obtenues de votre ménage
 Name=AC15
-Start=917
+Start=967
 Len=2
 DataType=Numeric
 
@@ -480,14 +487,14 @@ Value=96;Autre à préciser
 [Item]
 Label=AC15a. Préciser autre usage des terres obtenus de votre ménage
 Name=AC15_A
-Start=919
+Start=969
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC16.  Si usage agricole à AC15, est-ce que vous cultivez seul(e) ou conjointement sur des terres ?
 Name=AC16
-Start=969
+Start=1019
 Len=1
 DataType=Numeric
 
@@ -500,34 +507,34 @@ Value=3;Oui, tout seul et conjointement
 Value=4;Non
 
 [Item]
-Label=AC16.a. Si Non, expliquer pourquoi
+Label=AC16.1. Si Non, expliquer pourquoi
 Name=AC16_1
-Start=970
+Start=1020
 Len=7
 DataType=Alpha
 
 [ValueSet]
-Label=AC16.a. Si Non, expliquer pourquoi
+Label=AC16.1. Si Non, expliquer pourquoi
 Name=AC16_1_VS1
-Value='01     ';Absence d’un capital foncier au sein du ménage
-Value='02     ';Faiblesse du capital foncier du ménage
-Value='03     ';Non implication dans les activités productives agricoles
-Value='04     ';Réticences familiales
-Value='05     ';Pratiques coutumières communautaires
-Value='06     ';Actif (ve) dans un autre emploi
-Value='96     ';Autre (à préciser)
+Value='1      ';Absence d’un capital foncier au sein du ménage
+Value='2      ';Faiblesse du capital foncier du ménage
+Value='3      ';Non implication dans les activités productives agricoles
+Value='4      ';Réticences familiales
+Value='5      ';Pratiques coutumières communautaires
+Value='6      ';Actif (ve) dans un autre emploi
+Value='7      ';Autre (à préciser)
 
 [Item]
 Label=AC16a. Préciser autre raison pour laquelle vous ne cultivez pas ces terres
 Name=AC16_A
-Start=977
+Start=1027
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC17. Qui prend généralement des décisions sur ce qu'il faut cultiver sur les terres que vous cultivez vous-même ?
 Name=AC17
-Start=1027
+Start=1077
 Len=2
 DataType=Numeric
 
@@ -547,7 +554,7 @@ Value=98;Aucune décision prise
 [Item]
 Label=AC18. Est-ce que vous possédez personnellement une partie des terres appartenant ou cultivées par votre ménage ?
 Name=AC18
-Start=1029
+Start=1079
 Len=1
 DataType=Numeric
 
@@ -562,21 +569,21 @@ Value=4;Non
 [Item]
 Label=AC19.1. Si Oui, tout seul, quelle est la surface (en ha) que vous en possédez ?
 Name=AC19_1
-Start=1030
+Start=1080
 Len=3
 DataType=Numeric
 
 [Item]
 Label=AC19.2. Et quel est le nombre de parcelles correspondantes ?
 Name=AC19_2
-Start=1033
+Start=1083
 Len=3
 DataType=Numeric
 
 [Item]
 Label=AC20. Avez-vous accès à la terre en dehors de votre ménage ?
 Name=AC20
-Start=1036
+Start=1086
 Len=1
 DataType=Numeric
 
@@ -589,30 +596,30 @@ Value=2;Non
 [Item]
 Label=AC21. Si Oui à AC20, selon quelles modalités ?
 Name=AC21
-Start=1037
-Len=5
-DataType=Alpha
+Start=1087
+Len=2
+DataType=Numeric
 
 [ValueSet]
 Label=AC21. Si Oui à AC20, selon quelles modalités ?
 Name=AC21_VS1
-Value='01   ';Achat
-Value='02   ';Location
-Value='03   ';Emprunt
-Value='04   ';Par le biais de groupement
-Value='96   ';Autre (à préciser)
+Value=1;Achat
+Value=2;Location
+Value=3;Emprunt
+Value=4;Par le biais de groupement
+Value=96;Autre (à préciser)
 
 [Item]
 Label=AC21a. Préciser autre modalité
 Name=AC21_A
-Start=1042
+Start=1089
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC22. Si Oui à AC20, quel usage faites-vous des terres ?
 Name=AC22
-Start=1092
+Start=1139
 Len=2
 DataType=Numeric
 
@@ -626,14 +633,14 @@ Value=96;Autre à préciser
 [Item]
 Label=AC22a. Préciser autre usage des terres obtenus en dehors de votre ménage
 Name=AC22_A
-Start=1094
+Start=1141
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC23. Les terres dont vous êtes en possession sont-elles suffisantes pour vous ?
 Name=AC23
-Start=1144
+Start=1191
 Len=1
 DataType=Numeric
 
@@ -646,7 +653,7 @@ Value=2;Non
 [Item]
 Label=AC24. Comment appréciez-vous la qualité des terres que vous disposez ?
 Name=AC24
-Start=1145
+Start=1192
 Len=1
 DataType=Numeric
 
@@ -663,14 +670,14 @@ Value=6;Ne sait pas
 [Item]
 Label=AC24.a. Pourquoi ?
 Name=AC24_A
-Start=1146
+Start=1193
 Len=50
 DataType=Alpha
 
 [Item]
 Label=AC25. Quelle appréciation avez-vous des moyens que vous utilisez pour cultiver ?
 Name=AC25
-Start=1196
+Start=1243
 Len=1
 DataType=Numeric
 
@@ -1020,532 +1027,6 @@ Value=1;Oui en tout
 Value=2;Oui, mais en partie
 Value=3;Non
 Value=98;Ne sait pas
-
-[Record]
-Label=SECTION CA: CONTRAINTES D’ACCES AU FONCIER
-Name=SECTION_CA
-RecordTypeValue='5'
-RecordLen=222
-
-[Item]
-Label=CA01. Selon vous, à quel niveau les contraintes d’accès sont plus prononcées ?
-Name=CA01
-Start=40
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CA01. Selon vous, à quel niveau les contraintes d’accès sont plus prononcées ?
-Name=CA01_VS1
-Value=1;Au sein de la famille
-Value=2;Au sein de la communauté
-Value=3;Au niveau administratif
-Value=4;Au niveau personnel
-Value=5;Aucun niveau
-
-[Item]
-Label=CA02. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre ménage ?
-Name=CA02
-Start=41
-Len=2
-DataType=Numeric
-
-[ValueSet]
-Label=CA02. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre ménage ?
-Name=CA02_VS1
-Value=1;Non héritage des femmes
-Value=2;Non implication dans les prises de décision
-Value=96;Autre à préciser
-
-[Item]
-Label=CA02a. Préciser autre contrainte en matière d’accès au foncier au sein de votre ménage
-Name=CA02_A
-Start=43
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CA03. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre commune ?
-Name=CA03
-Start=93
-Len=8
-DataType=Alpha
-
-[ValueSet]
-Label=CA03. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre commune ?
-Name=CA03_VS1
-Value='01      ';Méconnaissance des procédures de demandes
-Value='02      ';Manque de moyens de valorisation
-Value='03      ';Pratiques coutumières communautaires
-Value='04      ';Faiblesse des demandes des femmes pour les délibérations
-Value='05      ';Méconnaissance de l’intérêt de la sécurisation
-Value='06      ';Exploitation minière
-Value='07      ';Absence de besoin de contrôler les terres
-Value='98      ';Ne Sait Pas
-Value='99      ';Autre (à préciser)
-
-[Item]
-Label=CA03.1. Préciser autre contrainte en matière d’accès au foncier au sein de votre commune
-Name=CA03_A
-Start=101
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CA04. Parmi ces dernières, quelle est la plus fréquente ?
-Name=CA04
-Start=151
-Len=2
-DataType=Numeric
-
-[ValueSet]
-Label=CA04. Parmi ces dernières, quelle est la plus fréquente ?
-Name=CA04_VS1
-Value=1;Méconnaissance des procédures de demandes
-Value=2;Manque de moyens de valorisation
-Value=3;Pratiques coutumières communautaires
-Value=4;Faiblesse des demandes des femmes pour les délibérations
-Value=5;Méconnaissance de l’intérêt de la sécurisation
-Value=6;Exploitation minière
-Value=7;Absence de besoin de contrôler les terres
-Value=98;Ne Sait Pas
-Value=99;Autre (à préciser)
-
-[Item]
-Label=CA04.1. Préciser autre contrainte la plus fréquente en matière d’accès au foncier au sein de votre commune
-Name=CA04_A
-Start=153
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CA05. Quelles sont les contraintes d’accès au logement pour les femmes ?
-Name=CA05
-Start=203
-Len=9
-DataType=Alpha
-
-[ValueSet]
-Label=CA05. Quelles sont les contraintes d’accès au logement pour les femmes ?
-Name=CA05_VS1
-Value='1        ';Epuisement de l’assiette foncière
-Value='2        ';Prix élevé
-Value='3        ';Faible pouvoir d’achat des femmes
-Value='4        ';Difficultés d’accès au crédit
-Value='5        ';Accaparement des terres de la commune par les populations venues d’ailleurs
-Value='6        ';Vente des terres par les familles aux plus offrants
-Value='7        ';Mainmise des promoteurs privés
-Value='8        ';Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
-Value='9        ';Considérations socioculturelles sur l’acquisition de logement par les femmes
-
-[Item]
-Label=CA06. Parmi ces dernières, quelle est la plus fréquente ?
-Name=CA06
-Start=212
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CA06. Parmi ces dernières, quelle est la plus fréquente ?
-Name=CA06_VS1
-Value=1;Epuisement de l’assiette foncière
-Value=2;Prix élevé
-Value=3;Faible pouvoir d’achat des femmes
-Value=4;Difficultés d’accès au crédit
-Value=5;Accaparement des terres de la commune par les populations venues d’ailleurs
-Value=6;Vente des terres par les familles aux plus offrants
-Value=7;Mainmise des promoteurs privés
-Value=8;Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
-Value=9;Considérations socioculturelles sur l’acquisition de logement par les femmes
-
-[Item]
-Label=CA07. Quelles sont les contraintes d’accès au logement pour les femmes ?
-Name=CA07
-Start=213
-Len=9
-DataType=Alpha
-
-[ValueSet]
-Label=CA07. Quelles sont les contraintes d’accès au logement pour les femmes ?
-Name=CA07_VS1
-Value='1        ';Epuisement de l’assiette foncière
-Value='2        ';Prix élevé
-Value='3        ';Faible pouvoir d’achat des femmes
-Value='4        ';Difficultés d’accès au crédit
-Value='5        ';Accaparement des terres de la commune par les populations venues d’ailleurs
-Value='6        ';Vente des terres par les familles aux plus offrants
-Value='7        ';Mainmise des promoteurs privés
-Value='8        ';Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
-Value='9        ';Considérations socioculturelles sur l’acquisition de logement par les femmes
-
-[Item]
-Label=CA08. Parmi ces dernières, quelle est la plus fréquente ?
-Name=CA08
-Start=222
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CA08. Parmi ces dernières, quelle est la plus fréquente ?
-Name=CA08_VS1
-Value=1;Epuisement de l’assiette foncière
-Value=2;Prix élevé
-Value=3;Faible pouvoir d’achat des femmes
-Value=4;Difficultés d’accès au crédit
-Value=5;Accaparement des terres de la commune par les populations venues d’ailleurs
-Value=6;Vente des terres par les familles aux plus offrants
-Value=7;Mainmise des promoteurs privés
-Value=8;Méconnaissance des procédures pour acquérir un logement auprès des promoteurs
-Value=9;Considérations socioculturelles sur l’acquisition de logement par les femmes
-
-[Record]
-Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
-Name=SECTION_CL
-RecordTypeValue='6'
-MaxRecords=8
-RecordLen=97
-OccurrenceLabel=1,a.Groupe de producteurs agricoles/éleveurs/
-OccurrenceLabel=2,b. Groupe d'usagers de l'eau
-OccurrenceLabel=3,c. Groupe de gestion du foncier de la communauté ou Commission domaniale
-OccurrenceLabel=4,d. Groupe de crédit ou de microfinance (notamment les mutuels/tontines )
-OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle
-OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes)
-OccurrenceLabel=7,g. Groupe religieux
-OccurrenceLabel=8,h. Autre (à préciser) :
-
-[Item]
-Label=CL1.1. Avez-vous un Groupe de producteurs agricoles/éleveurs au sein de votre communauté ?
-Name=CL1_1
-Start=40
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.1. Avez-vous un Groupe de producteurs agricoles/éleveurs au sein de votre communauté ?
-Name=CL1_1_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
-Name=CL1_2
-Start=41
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.2. Avez-vous un Groupe d'usagers de l'eau au sein de votre communauté ?
-Name=CL1_2_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
-Name=CL1_3
-Start=42
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.3. Avez-vous un Groupe de gestion du foncier de la communauté ou Commission domaniale au sein de votre communauté ?
-Name=CL1_3_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
-Name=CL1_4
-Start=43
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.4. Avez-vous un Groupe de crédit ou de microfinance (notamment les mutuels/tontines ) au sein de votre communauté ?
-Name=CL1_4_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
-Name=CL1_5
-Start=44
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.5. Avez-vous un Groupe ou association commerciale ou professionnelle au sein de votre communauté ?
-Name=CL1_5_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
-Name=CL1_6
-Start=45
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.6. Avez-vous un Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes) au sein de votre communauté ?
-Name=CL1_6_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
-Name=CL1_7
-Start=46
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.7. Avez-vous un Groupe religieux au sein de votre communauté ?
-Name=CL1_7_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL1.8. Avez-vous un autre Groupe au sein de votre communauté ?
-Name=CL1_8
-Start=47
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL1.8. Avez-vous un autre Groupe au sein de votre communauté ?
-Name=CL1_8_VS1
-Value=1;Oui
-Value=2;Non
-Value=3;Ne sait pas
-
-[Item]
-Label=CL.A. Préciser autre groupe qui existe au sein de votre communauté
-Name=CL_AUTRE
-Start=48
-Len=50
-DataType=Alpha
-
-[Record]
-Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
-Name=INFO_GROUPE
-RecordTypeValue='7'
-MaxRecords=8
-RecordLen=510
-OccurrenceLabel=1,a.Groupe de producteurs agricoles/éleveurs/
-OccurrenceLabel=2,b. Groupe d'usagers de l'eau
-OccurrenceLabel=3,c. Groupe de gestion du foncier de la communauté ou Commission domaniale
-OccurrenceLabel=4,d. Groupe de crédit ou de microfinance (notamment les mutuels/tontines )
-OccurrenceLabel=5,e. Groupe ou association commerciale ou professionnelle
-OccurrenceLabel=6,f. Groupes de citoyens (visant à améliorer la communauté) ou groupes de bienfaisance (d'aide aux personnes)
-OccurrenceLabel=7,g. Groupe religieux
-OccurrenceLabel=8,h. Autre (à préciser) :
-
-[Item]
-Label=CL2. Êtes-vous un membre actif de ce [GROUPE] ?
-Name=CL2
-Start=40
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL2. Êtes-vous un membre actif de ce [GROUPE] ?
-Name=CL2_VS1
-Value=1;Oui
-Value=2;Non
-
-[Item]
-Label=CL3. Si oui, Ce [GROUPE] est-il composé exclusivement de femmes, d'hommes ou est-il mixte ?
-Name=CL3
-Start=41
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL3. Si oui, Ce [GROUPE] est-il composé exclusivement de femmes, d'hommes ou est-il mixte ?
-Name=CL3_VS1
-Value=1;HOMMES SEULEMENT
-Value=2;FEMMES SEULEMENT
-Value=3;MIXTE
-Value=4;NSP
-
-[Item]
-Label=CL4. Si oui, occupez-vous un poste de responsabilité dans ce [GROUPE] ?
-Name=CL4
-Start=42
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL4. Si oui, occupez-vous un poste de responsabilité dans ce [GROUPE] ?
-Name=CL4_VS1
-Value=1;Oui
-Value=2;Non
-
-[Item]
-Label=CL5. Si oui à CL4, citez le poste en question ?
-Name=CL5
-Start=43
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CL6. Dans quelle mesure pensez-vous pouvoir influer sur les décisions de ce [GROUPE] ?
-Name=CL6
-Start=93
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL6. Dans quelle mesure pensez-vous pouvoir influer sur les décisions de ce [GROUPE] ?
-Name=CL6_VS1
-Value=1;PAS DU TOUT
-Value=2;FAIBLEMENT
-Value=3;MOYENNEMENT
-Value=4;BEAUCOUP
-
-[Item]
-Label=CL7. Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
-Name=CL7
-Start=94
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL7. Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
-Name=CL7_VS1
-Value=1;PAS DU TOUT
-Value=2;FAIBLEMENT
-Value=3;MOYENNEMENT
-Value=4;BEAUCOUP
-
-[Item]
-Label=CL8. Le [GROUPE] a-t-il bénéficié d’un quelconque accompagnement/initiative/ soutien visant à améliorer les droits foncier et la participation à la gouvernance ?
-Name=CL8
-Start=95
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL8. Le [GROUPE] a-t-il bénéficié d’un quelconque accompagnement/initiative/ soutien visant à améliorer les droits foncier et la participation à la gouvernance ?
-Name=CL8_VS1
-Value=1;Oui
-Value=2;Non
-
-[Item]
-Label=CL9. Si Oui à CL8, Préciser le type de soutien/accompagnement/initiative ?
-Name=CL9
-Start=96
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CL10. Si Oui à CL8, auprès de quels acteurs ?
-Name=CL10
-Start=146
-Len=5
-DataType=Alpha
-
-[ValueSet]
-Label=CL10. Si Oui à CL8, auprès de quels acteurs ?
-Name=CL10_VS1
-Value='1    ';Etat (projet/programme à préciser)
-Value='2    ';Organisations au niveau local/national / (OP, Coopérative, GIE, …)
-Value='3    ';Mairie/collectivité territoriale
-Value='4    ';Personne privée (famille, amis, …)
-Value='5    ';ONG/PTF (à préciser)
-
-[Item]
-Label=CL10.1. Préciser autre ONG/PTF
-Name=CL10_A
-Start=151
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CL11. Si Oui à CL8, le [GROUPE] est -il satisfait du soutien/accompagnement/initiative bénéficié ?
-Name=CL11
-Start=201
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL11. Si Oui à CL8, le [GROUPE] est -il satisfait du soutien/accompagnement/initiative bénéficié ?
-Name=CL11_VS1
-Value=1;Très satisfait
-Value=2;Satisfait
-Value=3;Ni satisfait ni insatisfait
-Value=4;Plutôt insatisfait
-Value=5;Très insatisfait
-
-[Item]
-Label=CL12. Si Oui à CL8, Donnez les raisons ?
-Name=CL12
-Start=202
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CL13a. Quelles sont les actions menées pour la promotion des droits fonciers des femmes dans la communauté ?
-Name=CL13_A
-Start=252
-Len=100
-DataType=Alpha
-
-[Item]
-Label=CL13b. Quelles sont les actions menées en faveur de la participation des femmes à la gouvernance locale ?
-Name=CL13_B
-Start=352
-Len=100
-DataType=Alpha
-
-[Item]
-Label=CL14. Parmi les modalités suivantes, quelles sont celles qui s’appliquent aux femmes de votre communauté par rapport à leur participation aux instances de prise de décisions liées au foncier ?
-Name=CL14
-Start=452
-Len=8
-DataType=Alpha
-
-[ValueSet]
-Label=CL14. Parmi les modalités suivantes, quelles sont celles qui s’appliquent aux femmes de votre communauté par rapport à leur participation aux instances de prise de décisions liées au foncier ?
-Name=CL14_VS1
-Value='1       ';Il n’y a pas de contraintes pour les femmes
-Value='2       ';Manque de leadership des femmes
-Value='3       ';Faiblesse de l’engagement politique des femmes
-Value='4       ';Manque de compétences des femmes
-Value='5       ';Contraintes familiales (réticence du mari, charge de travail domestique
-Value='6       ';Pratiques discriminatoires des politiques
-Value='7       ';Manque d’intérêts pour les questions foncières
-Value='8       ';Sensibilité de la question foncière
-
-[Item]
-Label=CL15. Si non à CL2, Pourquoi ?
-Name=CL15
-Start=460
-Len=50
-DataType=Alpha
-
-[Item]
-Label=CL16. Si non à CL2, Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
-Name=CL16
-Start=510
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=CL16. Si non à CL2, Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
-Name=CL16_VS1
-Value=1;PAS DU TOUT
-Value=2;FAIBLEMENT
-Value=3;MOYENNEMENT
-Value=4;BEAUCOUP
-Value=5;NE SAIT PAS
 
 [Record]
 Label=autre info

@@ -4,6 +4,7 @@ Label=BASELINE_APPL
 Name=BASELINE_APPL
 AppType=DataEntry
 OperatorID=No
+PartialSave=Yes
 CAPI=Yes
 CreateListing=No
 CreateLog=No

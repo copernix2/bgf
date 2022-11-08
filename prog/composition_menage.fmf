@@ -389,6 +389,7 @@ Text=PM02a. Préciser autre lieu de provenance
 Name=PM02_B
 Position=843,203,1544,223
 Item=PM02_B,COMPOSITION_MENAGE_DICT
+UpperCase=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=4
@@ -2078,7 +2079,7 @@ Width=10
 Width=59
   
 [HeaderText]
-Position=0,128,59,184
+Position=0,144,59,200
 Text=CF1. code individu
  
 [Field]
@@ -2098,7 +2099,7 @@ Text=CF1. code individu
 Width=149
   
 [HeaderText]
-Position=10,160,149,184
+Position=10,176,149,200
 Text=CF2. Prénom et Nom
  
 [Field]
@@ -2118,7 +2119,7 @@ Text=CF2. Prénom et Nom
 Width=46
   
 [HeaderText]
-Position=0,128,46,184
+Position=0,144,46,200
 Text=CF3. Sexe (NOM)
  
 [Field]
@@ -2136,7 +2137,7 @@ Text=CF3. Sexe (NOM)
 Width=57
   
 [HeaderText]
-Position=0,128,57,184
+Position=0,144,57,200
 Text=CF4. Age de (NOM)
  
 [Field]
@@ -2154,7 +2155,7 @@ Text=CF4. Age de (NOM)
 Width=60
   
 [HeaderText]
-Position=0,48,60,184
+Position=0,64,60,200
 Text=CF5. Lien de parenté de (NOM) avec le chef de ménage
  
 [Field]
@@ -2172,7 +2173,7 @@ Text=CF5. Lien de parenté de (NOM) avec le chef de ménage
 Width=709
   
 [HeaderText]
-Position=645,64,709,184
+Position=645,80,709,200
 Text=CF5a. Préciser autre lien de parenté avec le CM
  
 [Field]
@@ -2192,7 +2193,7 @@ Text=CF5a. Préciser autre lien de parenté avec le CM
 Width=89
   
 [HeaderText]
-Position=0,128,89,184
+Position=0,144,89,200
 Text=CF6. Niveau d'instruction de (NOM)
  
 [Field]
@@ -2210,7 +2211,7 @@ Text=CF6. Niveau d'instruction de (NOM)
 Width=72
   
 [HeaderText]
-Position=0,80,72,184
+Position=0,96,72,200
 Text=CF7. Quel est l'activité principale de (NOM) ?
  
 [Field]
@@ -2228,7 +2229,7 @@ Text=CF7. Quel est l'activité principale de (NOM) ?
 Width=72
   
 [HeaderText]
-Position=2,80,72,184
+Position=2,96,72,200
 Text=CF7a. Préciser autre activité principal de (NOM)
  
 [Field]
@@ -2248,7 +2249,7 @@ Text=CF7a. Préciser autre activité principal de (NOM)
 Width=233
   
 [HeaderText]
-Position=141,48,233,184
+Position=141,64,233,200
 Text=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (plusieurs réponses)
  
 [Field]
@@ -2268,7 +2269,7 @@ Text=CF8. Si différent de 0 à CF7, Quesl sont les activité(s) secondaire(s) (
 Width=121
   
 [HeaderText]
-Position=19,112,121,184
+Position=19,128,121,200
 Text=CF8. Préciser autre activité secondaire de (NOM)
  
 [Field]
@@ -2288,7 +2289,7 @@ Text=CF8. Préciser autre activité secondaire de (NOM)
 Width=107
   
 [HeaderText]
-Position=14,112,107,184
+Position=14,128,107,200
 Text=CF7bis. Situation matrimoniale de (NOM)
  
 [Field]
@@ -2306,7 +2307,7 @@ Text=CF7bis. Situation matrimoniale de (NOM)
 Width=93
   
 [HeaderText]
-Position=0,80,93,184
+Position=0,96,93,200
 Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
  
 [Field]
@@ -2326,7 +2327,7 @@ Text=CF7bisa. Préciser autre situation matrimoniale de (NOM)
 Width=85
   
 [HeaderText]
-Position=0,48,85,184
+Position=0,64,85,200
 Text=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agriculture ?
  
 [Field]
@@ -2344,7 +2345,7 @@ Text=CF9. Est ce (NOM) à l’habitude d’exploiter de la terre pour l’agricu
 Width=77
   
 [HeaderText]
-Position=0,0,77,184
+Position=0,16,77,200
 Text=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des terres agricoles ?
  
 [Field]
@@ -2359,20 +2360,21 @@ Text=CF10. Est-ce que (NOM)  détient (loué, emprunté ou en propriété) des t
 [EndColumn]
   
 [Column]
-Width=78
+Width=84
   
 [HeaderText]
-Position=0,32,78,184
-Text=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Position=0,0,84,200
+Text=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ?
  
 [Field]
 Name=CF13
-Position=55,0,70,20
+Position=61,0,76,20
 Item=CF13,COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
   
 [Text]
-Text=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées par (NOM)
+Text=CF13. Est-ce qu'il ( détient (loué, emprunté ou en propriété)  une parcelle à usage d’habitation ?
  
 [EndColumn]
   
@@ -2380,7 +2382,7 @@ Text=CF13. Si Oui à CF10, quelle est la surface totale des terres exploitées p
 Width=74
   
 [HeaderText]
-Position=0,48,74,184
+Position=0,64,74,200
 Text=CF16. Est-ce que (NOM) détient une maison/un logement ?
  
 [Field]
@@ -2398,7 +2400,7 @@ Text=CF16. Est-ce que (NOM) détient une maison/un logement ?
 Width=59
   
 [HeaderText]
-Position=0,112,59,184
+Position=0,128,59,200
 Text=Ajouter un autre individu
  
 [Field]

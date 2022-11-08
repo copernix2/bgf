@@ -4,6 +4,7 @@ Label=BASELINE_INDIVIDU
 Name=BASELINE_INDIVIDU
 AppType=DataEntry
 OperatorID=No
+PartialSave=Yes
 CAPI=Yes
 CreateListing=No
 CreateLog=No

@@ -20,7 +20,7 @@ function  open_composition(string idmen)
 	 hh_pff.exec();
 end; 
 
-function open_individu(numeric id)
+{function open_individu(numeric id)
 	EXT_ID_IND=id;
 	if ! loadcase(EXT_IND_DICS, ID_MEN_FICHE, EXT_ID_IND) then 
 		errmsg("Informations de l'individus introuvable");
@@ -38,7 +38,7 @@ function open_individu(numeric id)
 	 //compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
 	 compostion_pff.setproperty("OnExit", pathname(temp) + "fiche_menage.pff");
 	 compostion_pff.exec();
-end;
+end;}
 function Open_ltp(numeric id)
 	EXT_ID_IND=id;
 	if ! loadcase(EXT_IND_DICS, ID_MEN_FICHE, EXT_ID_IND) then 

@@ -26,7 +26,7 @@ Item=DATE_DEBUT
 Name=FORM002
 Label=SECTION AC- ACCES, CONTROLE ET PARTICIPATION A LA PRISE DE DECISION SUR LE CAPITAL PRODUCTIF
 Level=1
-Size=1025,1650
+Size=1703,1662
   
 Item=AC1
 Item=AC2
@@ -82,6 +82,7 @@ Item=AC23
 Item=AC24
 Item=AC24_A
 Item=AC25
+Item=AC12_A
   
 [EndForm]
   
@@ -124,64 +125,6 @@ Item=PSL10
 Item=PSL11
 Item=PSL12
 Item=PSL13
-  
-[EndForm]
-  
-[Form]
-Name=FORM005
-Label=SECTION CA: CONTRAINTES D’ACCES AU FONCIER
-Level=1
-Size=1181,360
-  
-Item=CA01
-Item=CA02
-Item=CA02_A
-Item=CA03
-Item=CA03_A
-Item=CA04
-Item=CA04_A
-Item=CA05
-Item=CA06
-Item=CA07
-Item=CA08
-  
-[EndForm]
-  
-[Form]
-Name=FORM006
-Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
-Level=1
-Repeat=SECTION_CL
-Size=1142,300
-  
-Item=CL1_1
-  
-[EndForm]
-  
-[Form]
-Name=FORM007
-Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
-Level=1
-Repeat=INFO_GROUPE
-Size=2134,552
-  
-Item=CL2
-Item=CL3
-Item=CL4
-Item=CL5
-Item=CL6
-Item=CL7
-Item=CL8
-Item=CL9
-Item=CL10
-Item=CL10_A
-Item=CL11
-Item=CL12
-Item=CL13_A
-Item=CL13_B
-Item=CL14
-Item=CL15
-Item=CL16
   
 [EndForm]
   
@@ -398,8 +341,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,300,763,316
-Text=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne : la répartition entre les membres
+Position=50,300,559,316
+Text=AC8.1. Qui dans le ménage décide de la gestion des terres en ce qui concerne : 
  
   
 [Field]
@@ -452,8 +395,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,420,612,436
-Text=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne : les prêts
+Position=50,420,555,436
+Text=AC8.2. Qui dans le ménage décide de la gestion des terres en ce qui concerne :
  
   
 [Field]
@@ -506,8 +449,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,540,630,556
-Text=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la vente
+Position=50,540,559,556
+Text=AC8.3. Qui dans le ménage décide de la gestion des terres en ce qui concerne : 
  
   
 [Field]
@@ -560,8 +503,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,660,646,676
-Text=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne : de la location
+Position=50,660,559,676
+Text=AC8.4. Qui dans le ménage décide de la gestion des terres en ce qui concerne : 
  
   
 [Field]
@@ -614,8 +557,8 @@ DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=50,780,725,796
-Text=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne : des spéculations à planter
+Position=50,780,559,796
+Text=AC8.5. Qui dans le ménage décide de la gestion des terres en ce qui concerne : 
  
   
 [Field]
@@ -727,6 +670,20 @@ Text=AC12. Si non à AC11, pourquoi ?
  
   
 [Field]
+Name=AC12_A
+Position=808,349,1218,369
+Item=AC12_A,BASELINE_INDIVIDU_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=2
+  
+[Text]
+Position=289,352,768,368
+Text=AC12.a. Préciser autre raison pour laquelle vous n'avez pas accés à la terre
+ 
+  
+[Field]
 Name=AC13
 Position=977,1047,992,1067
 Item=AC13,BASELINE_INDIVIDU_DICT
@@ -797,12 +754,12 @@ Name=AC16_1
 Position=977,1197,1076,1217
 Item=AC16_1,BASELINE_INDIVIDU_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
 Form=2
   
 [Text]
-Position=50,1200,274,1216
-Text=AC16.a. Si Non, expliquer pourquoi
+Position=50,1200,276,1216
+Text=AC16.1. Si Non, expliquer pourquoi
  
   
 [Field]
@@ -1327,424 +1284,9 @@ Text=PSL13. Le document vous donne-t-il le droit de léguer ce logement ?
   
 [Group]
 Required=Yes
-Name=SECTION_CA_FORM
-Label=SECTION CA: CONTRAINTES D’ACCES AU FONCIER
-Form=5
-Max=1
-  
-[Field]
-Name=CA01
-Position=757,27,772,47
-Item=CA01,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=50,30,553,46
-Text=CA01. Selon vous, à quel niveau les contraintes d’accès sont plus prononcées ?
- 
-  
-[Field]
-Name=CA02
-Position=757,57,786,77
-Item=CA02,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=50,60,685,76
-Text=CA02. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre ménage ?
- 
-  
-[Field]
-Name=CA02_A
-Position=757,87,1167,107
-Item=CA02_A,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=5
-  
-[Text]
-Position=50,90,610,106
-Text=CA02a. Préciser autre contrainte en matière d’accès au foncier au sein de votre ménage
- 
-  
-[Field]
-Name=CA03
-Position=757,117,870,137
-Item=CA03,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=CheckBox
-Form=5
-  
-[Text]
-Position=50,120,696,136
-Text=CA03. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre commune ?
- 
-  
-[Field]
-Name=CA03_A
-Position=757,147,1167,167
-Item=CA03_A,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=5
-  
-[Text]
-Position=50,150,624,166
-Text=CA03.1. Préciser autre contrainte en matière d’accès au foncier au sein de votre commune
- 
-  
-[Field]
-Name=CA04
-Position=757,177,786,197
-Item=CA04,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=50,180,410,196
-Text=CA04. Parmi ces dernières, quelle est la plus fréquente ?
- 
-  
-[Field]
-Name=CA04_A
-Position=757,207,1167,227
-Item=CA04_A,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=5
-  
-[Text]
-Position=50,210,735,226
-Text=CA04.1. Préciser autre contrainte la plus fréquente en matière d’accès au foncier au sein de votre commune
- 
-  
-[Field]
-Name=CA05
-Position=757,237,884,257
-Item=CA05,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=CheckBox
-Form=5
-  
-[Text]
-Position=50,240,521,256
-Text=CA05. Quelles sont les contraintes d’accès au logement pour les femmes ?
- 
-  
-[Field]
-Name=CA06
-Position=757,267,772,287
-Item=CA06,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=50,270,410,286
-Text=CA06. Parmi ces dernières, quelle est la plus fréquente ?
- 
-  
-[Field]
-Name=CA07
-Position=757,297,884,317
-Item=CA07,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=CheckBox
-Form=5
-  
-[Text]
-Position=50,300,521,316
-Text=CA07. Quelles sont les contraintes d’accès au logement pour les femmes ?
- 
-  
-[Field]
-Name=CA08
-Position=757,327,772,347
-Item=CA08,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=5
-  
-[Text]
-Position=50,330,410,346
-Text=CA08. Parmi ces dernières, quelle est la plus fréquente ?
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=SECTION_CL_FORM
-Label=SECTION CL : CAPITAL SOCIAL ET LEADERSHIP
-Form=6
-Type=Record
-TypeName=SECTION_CL
-Max=8
-  
-[Field]
-Name=CL1_1
-Position=1095,27,1110,47
-Item=CL1_1,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=6
-  
-[Text]
-Position=50,30,652,46
-Text=CL1.1. Avez-vous un Groupe de producteurs agricoles/éleveurs au sein de votre communauté ?
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
-Name=INFO_GROUPE_FORM
-Label=INFORMATIONS SUR LES GROUPES EXISTANT AU SEIN DE LA COMMUNATE
-Form=7
-Type=Record
-TypeName=INFO_GROUPE
-Max=8
-  
-[Field]
-Name=CL2
-Position=1299,27,1314,47
-Item=CL2,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,30,367,46
-Text=CL2. Êtes-vous un membre actif de ce [GROUPE] ?
- 
-  
-[Field]
-Name=CL3
-Position=1299,57,1314,77
-Item=CL3,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,60,655,76
-Text=CL3. Si oui, Ce [GROUPE] est-il composé exclusivement de femmes, d'hommes ou est-il mixte ?
- 
-  
-[Field]
-Name=CL4
-Position=1299,87,1314,107
-Item=CL4,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,90,516,106
-Text=CL4. Si oui, occupez-vous un poste de responsabilité dans ce [GROUPE] ?
- 
-  
-[Field]
-Name=CL5
-Position=1299,117,1709,137
-Item=CL5,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,120,341,136
-Text=CL5. Si oui à CL4, citez le poste en question ?
- 
-  
-[Field]
-Name=CL6
-Position=1299,147,1314,167
-Item=CL6,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,150,613,166
-Text=CL6. Dans quelle mesure pensez-vous pouvoir influer sur les décisions de ce [GROUPE] ?
- 
-  
-[Field]
-Name=CL7
-Position=1299,177,1314,197
-Item=CL7,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,180,565,196
-Text=CL7. Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
- 
-  
-[Field]
-Name=CL8
-Position=1299,207,1314,227
-Item=CL8,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,210,1073,226
-Text=CL8. Le [GROUPE] a-t-il bénéficié d’un quelconque accompagnement/initiative/ soutien visant à améliorer les droits foncier et la participation à la gouvernance ?
- 
-  
-[Field]
-Name=CL9
-Position=1299,237,1709,257
-Item=CL9,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,240,527,256
-Text=CL9. Si Oui à CL8, Préciser le type de soutien/accompagnement/initiative ?
- 
-  
-[Field]
-Name=CL10
-Position=1299,267,1370,287
-Item=CL10,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=CheckBox
-Form=7
-  
-[Text]
-Position=50,270,339,286
-Text=CL10. Si Oui à CL8, auprès de quels acteurs ?
- 
-  
-[Field]
-Name=CL10_A
-Position=1299,297,1709,317
-Item=CL10_A,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,300,251,316
-Text=CL10.1. Préciser autre ONG/PTF
- 
-  
-[Field]
-Name=CL11
-Position=1299,327,1314,347
-Item=CL11,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=50,330,667,346
-Text=CL11. Si Oui à CL8, le [GROUPE] est -il satisfait du soutien/accompagnement/initiative bénéficié ?
- 
-  
-[Field]
-Name=CL12
-Position=1299,357,1709,377
-Item=CL12,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,360,307,376
-Text=CL12. Si Oui à CL8, Donnez les raisons ?
- 
-  
-[Field]
-Name=CL13_A
-Position=1299,387,2109,407
-Item=CL13_A,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,390,766,406
-Text=CL13a. Quelles sont les actions menées pour la promotion des droits fonciers des femmes dans la communauté ?
- 
-  
-[Field]
-Name=CL13_B
-Position=1299,417,2109,437
-Item=CL13_B,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=50,420,734,436
-Text=CL13b. Quelles sont les actions menées en faveur de la participation des femmes à la gouvernance locale ?
- 
-  
-[Field]
-Name=CL14
-Position=1299,447,1412,467
-Item=CL14,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=CheckBox
-Form=7
-  
-[Text]
-Position=50,450,1277,466
-Text=CL14. Parmi les modalités suivantes, quelles sont celles qui s’appliquent aux femmes de votre communauté par rapport à leur participation aux instances de prise de décisions liées au foncier ?
- 
-  
-[Field]
-Name=CL15
-Position=522,473,932,493
-Item=CL15,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=7
-  
-[Text]
-Position=296,476,494,492
-Text=CL15. Si non à CL2, Pourquoi ?
- 
-  
-[Field]
-Name=CL16
-Position=1027,507,1042,527
-Item=CL16,BASELINE_INDIVIDU_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=7
-  
-[Text]
-Position=377,510,988,526
-Text=CL16. Si non à CL2, Dans quelle mesure ce [GROUPE] influence-t-il la vie dans la communauté ?
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
 Name=GROUP000
 Label=New Form
-Form=8
+Form=5
 Max=1
   
 [Field]
@@ -1753,7 +1295,7 @@ Position=200,213,397,233
 Item=DATE_FIN,BASELINE_INDIVIDU_DICT
 Protected=Yes
 DataCaptureType=TextBox
-Form=8
+Form=5
   
 [Text]
 Position=123,216,171,232
