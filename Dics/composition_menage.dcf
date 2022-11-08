@@ -451,7 +451,7 @@ Value='03  ';ONG (à préciser)
 Value='96  ';Autre à préciser
 
 [Item]
-Label=PR08s. Préciser le nom du projet ou la structure 
+Label=PR08s. Préciser le nom du projet ou la structure
 Name=PR08S
 Start=219
 Len=50
@@ -601,7 +601,7 @@ DataType=Numeric
 Label=CF5. Lien de parenté avec le chef de ménage
 Name=CF5_VS1
 Value=1;Chef de ménage (CM)
-Value=2;1ère épouse du CM
+Value=2;Epoux / 1ère épouse du CM
 Value=3;2ème épouse du CM
 Value=4;3ème épouse du CM
 Value=5;4ème épouse du  M

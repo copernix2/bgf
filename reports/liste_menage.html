@@ -119,7 +119,7 @@
 					$.write("<td class='text-center'><span > %s </span></td> ", getlabel(MEN_SEXECM,MEN_SEXECM));
 					$.write("<td class='text-center'> %s</td>", edit("99 999 99 99", MEN_TEL));
 					
-					$.write('<td>');
+					$.write('<td class="text-center">');
 				
 					if MEN_STATUT <= 1  or special(MEN_STATUT) then //concrétisé
 						$.write('<a class="btn btn-outline-danger" href="javascript:CSPro.runLogicAsync(%scomposition_function(%d);%s);" role="button">Composition</a> ', quote, i, quote);
