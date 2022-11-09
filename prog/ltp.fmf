@@ -1171,9 +1171,10 @@ Name=TA28_B2_MEN
 Position=24,0,53,20
 Item=TA28_B2_MEN,LTP_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,362,16
 Text=Préciser le membre du ménage qui prend cette décision
  
 [EndColumn]
@@ -4727,7 +4728,7 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=597,488,966,504
+Position=597,488,957,504
 Text=CA06. Parmi ces dernières, quelle est la plus fréquente ?
  
   
@@ -4781,7 +4782,7 @@ DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=597,608,966,624
+Position=597,608,957,624
 Text=CA08. Parmi ces dernières, quelle est la plus fréquente ?
  
   

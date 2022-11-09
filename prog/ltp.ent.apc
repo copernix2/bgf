@@ -190,9 +190,13 @@ preproc
 onfocus 
 	valueset ind_vs;
 	forcase BGF_EXT_IND_DICS do
-		ind_vs.	add(strip(EXT_CF2), EXT_ID_IND);
+		ind_vs.	add(strip(EXT_CF2),EXT_ID_IND);
 	endfor;
 	setvalueset($, ind_vs);
+if ! loadcase(BGF_EXT_IND_DICS, ID, ID_INDIVIDU_LTP) then 
+	errmsg("Informations de l'individu introuvables.");
+	exit;
+ endif;
 PROC TA31
 preproc
 	ask if TA29=4 or TA29=5 or TA30=4 or TA30=5;
