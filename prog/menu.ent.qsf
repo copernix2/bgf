@@ -30,5 +30,5 @@ questions:
     conditions:
       - questionText:
           EN: |
-            <p style="text-align: center;"><img src="../Resources/Images/IPAR.png" style="width: 300px;"><br></p><p style="text-align: center;"><span style="font-size: 36px; text-transform: uppercase; color: rgb(0, 42, 108); font-family: &quot;Courier New&quot;;">SENEGAL DOOLEEL MBAY</span><br></p><hr><p style="text-align: center;"><font face="Courier New" color="#9c9c94"><span style="font-size: 24px;">Menu Principal</span></font></p><p></p>
+            <p style="text-align: center;"><img src="../Resources/Images/IPAR.png" style="width: 300px;"><br></p><p style="text-align: center;"><font color="#002a6c" face="Courier New"><span style="font-size: 24px; text-transform: uppercase;">pROJET : « Droit des femmes au Logement, à la Terre et à la Propriété au Sénégal : Analyse de la situation et propositions d’outils de réduction des inégalités de genre (WLR) »</span></font><br></p><hr><p style="text-align: center;"><font face="Courier New"><span style="font-size: 24px;">Menu Principal</span></font></p><p></p>
 ...

@@ -36,6 +36,10 @@ preproc
 PROC AUTRE_VILLAGE
 preproc
 	ask if MEN_CODE_VIL="99";
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC MEN_TEL
 postproc
 

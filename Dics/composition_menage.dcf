@@ -714,7 +714,6 @@ DataType=Alpha
 [ValueSet]
 Label=CF8. Quels sont les activité(s) secondaire(s)
 Name=CF8_VS1
-Value='16              ';Aucune
 Value='01              ';Agriculture
 Value='02              ';Elevage
 Value='03              ';Pêche
@@ -728,8 +727,9 @@ Value='10              ';Apprentissage
 Value='11              ';Services domestiques
 Value='12              ';Retraités
 Value='13              ';Inactifs/chômeurs
-Value='14              ';Autre (à préciser)
-Value='15              ';NSP
+Value='14              ';Ne Sait Pas
+Value='15              ';Aucune activité secondaire
+Value='99              ';Autre (à préciser)
 
 [Item]
 Label=CF8. Préciser autre activité secondaire

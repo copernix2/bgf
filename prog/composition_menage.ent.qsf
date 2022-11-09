@@ -105,6 +105,11 @@ questions:
       - questionText:
           FR: |
             CF5. Lien de parenté de&nbsp;<b><font color="#ff0000">~~CF2~~</font></b><b>&nbsp;&nbsp;</b>avec le chef de ménage<p></p>
+  - name: BGF_COMPOSITION_MENAGE_DICT.CF5_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>Préciser autre lien avec le CM</b></span><p></p>
   - name: BGF_COMPOSITION_MENAGE_DICT.CF6
     conditions:
       - questionText:

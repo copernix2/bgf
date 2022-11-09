@@ -2,6 +2,7 @@
 PROC GLOBAL
 
 
+
 PROC LM1
 preproc
 	$=curocc();
@@ -10,6 +11,10 @@ preproc
 PROC BASELINE_DICT_FF
 
 PROC LTP_DICT_LEVEL
+if ! loadcase(BGF_EXT_IND_DICS, ID, ID_INDIVIDU_LTP) then 
+	errmsg("Informations de l'individu introuvables.");
+	exit;
+ endif;
 STATUT_LTP=1;
 writecase(BGF_EXT_IND_DICS);
 PROC ID_INDIVIDU_LTP
@@ -38,6 +43,10 @@ PROC TA3_A
 preproc
 
 	ask if TA3=5;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA4
 if $<=0 then
 	errmsg("La surface ne peut pas etre nulle ou negative");
@@ -47,6 +56,10 @@ PROC TA5_A
 preproc
 
 	ask if TA5=4;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA6
 if $<0 then
 	errmsg("Veuillez entrer un temps valide");
@@ -57,6 +70,10 @@ PROC TA7_A
 preproc
 
 	ask if TA7=9;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA8
 preproc
 
@@ -65,6 +82,10 @@ PROC TA8_A
 preproc
 
 	ask if TA8=4;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC BLOCK000_TA9
 preproc
 
@@ -98,6 +119,10 @@ PROC TA21_A
 preproc
 
 	ask if TA21=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA21_B1
 preproc
 	ask if TA21=4 or TA21=5 or TA21=6 or TA21=99;
@@ -105,21 +130,38 @@ preproc
 PROC TA21_B1A
 preproc
 	ask if TA21_B1=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA21_B2
 preproc
 	ask if TA21=1 or TA21=2 or TA21=3;
 PROC TA22_A
 preproc
 	ask if pos("99",TA22);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA24
-Postproc
-	if length(strip($))>1 and ischecked("00",$)<>0  then
-		errmsg("Modalités incompatibles");
-	    reenter;
-	endif;
+
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA24_A
 preproc
 	ask if pos("99",TA24);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC TA25
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA26
 if $<0 and $>100 then
 	errmsg("Entrez une distance valide");
@@ -141,12 +183,30 @@ preproc
 PROC TA28_B2
 preproc
 	ask if TA28_B1=1 or TA28_B1=2 or TA28_B1=3;
+PROC TA28_B2_MEN
+preproc
+	ask if TA28_B2=2 or TA28_B2=3 or TA28_B2=4 or TA28_B2=5 or TA28_B2=6 or TA28_B2=7;
+	
+onfocus 
+	valueset ind_vs;
+	forcase BGF_EXT_IND_DICS do
+		ind_vs.	add(strip(EXT_CF2), EXT_ID_IND);
+	endfor;
+	setvalueset($, ind_vs);
 PROC TA31
 preproc
 	ask if TA29=4 or TA29=5 or TA30=4 or TA30=5;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TA31_A
 preproc
 	ask if pos("99",TA31);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC SECTION_TH_FORM
 preproc
 	ask if EXT_CF13=1;
@@ -168,10 +228,18 @@ endif;
 PROC TH5_A
 preproc
 	ask if TH5=4;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH7_A
 preproc
 
 ask if TH7=9;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH8
 preproc
 
@@ -179,6 +247,10 @@ ask if TH7=5;
 PROC TH8_A
 preproc
 	ask if TH8=4;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC BLOCK000_TH9
 preproc
 
@@ -192,6 +264,10 @@ PROC TH11
 preproc
 
 ask if TH10=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH12
 preproc
 	ask if TH7=3 or TH7=7;
@@ -201,18 +277,30 @@ preproc
 PROC TH14_A
 preproc
 	ask if TH14=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH14_B1
 preproc
 	ask if TH14=4 or TH14=5 or TH14=6 or TH14=99;
 PROC TH14_B1A
 preproc
 	ask if TH14_B1=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH14_B2
 preproc
 	ask if TH14=1 or TH14=2 or TH14=3;
 PROC TH15_A
 preproc
 	ask if TH15=7;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH16
 preproc
 	ask if TH7=2;
@@ -242,10 +330,18 @@ PROC TH19_R
 preproc
 
 ask if TH19=3;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH19_A
 preproc
 
 ask if TH19=5;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH19_BIS
 preproc
 
@@ -257,6 +353,10 @@ preproc
 PROC TH20_A
 preproc
 	ask if TH20=6;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH21
 preproc
 
@@ -265,16 +365,32 @@ PROC TH21_A
 preproc
 
 ask if TH21=5;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH22_A
 preproc
  
 	ask if TH22J=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH25
 preproc
 	ask if TH23=4 or TH23=5 or TH24=4 or TH24=5;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC TH25_A
 preproc
 	ask if pos("99",TH25);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF18
 preproc
 	ask if highlighted(CF17) ;
@@ -285,6 +401,11 @@ PROC LM2
 preproc
 	$=curocc();
 
+PROC LM3
+if count(SECTION_LM000 where LM3=1) >1 then
+	errmsg("La personne ne peut pas vivre dans plusieurs logements différents");
+	reenter;
+	endif;
 PROC LM4
 preproc
 
@@ -301,9 +422,17 @@ endif;
 PROC LM7_A
 preproc
 	ask if LM7=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM8_A
 preproc
 	ask if LM8=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM9
 preproc
 
@@ -311,6 +440,10 @@ preproc
 PROC LM9_A
 preproc
 	ask if LM9=8;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM10
 preproc
 
@@ -319,6 +452,10 @@ PROC LM10_A
 preproc
 
 	ask if LM10=3;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM11
 preproc
 
@@ -334,6 +471,10 @@ PROC LM13_A
 preproc
 
 	ask if LM13=12;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM14
 preproc
 	ask if LM8 in 1:3;
@@ -341,6 +482,10 @@ PROC LM14_A
 preproc
 
 	ask if LM14=9;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM15
 preproc
 
@@ -349,6 +494,10 @@ PROC LM15_A
 preproc
 
 	ask if LM15=4; 
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM16
 preproc
 
@@ -376,12 +525,23 @@ preproc
 PROC LM22_A
 preproc
 	ask if LM22=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM22_B1
 preproc
 	ask if LM22=4 or LM22=5 or LM22=6 or LM22=99;
 PROC LM22_B1A
 preproc
 	ask if LM22_B1=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC LM22_B2
+preproc
+	ask if LM22=1 or LM22=2 or LM22=3;
 PROC LM23
 preproc
 	ask if LM14=2;
@@ -409,18 +569,27 @@ preproc
 PROC LM26_B
 preproc
 	ask if LM26=3;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM26_A
 preproc
 	ask if LM26=99;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM26_BIS
 preproc
 	ask if LM23=1;
 PROC LM27
 preproc
-	ask if LM14=3 or LM14=6 or LM14=7;
+	ask if LM23=1;
 PROC LM27_A
 preproc
 	ask if LM27=6;
+
 PROC LM28
 preproc
 	ask if LM14=3;
@@ -428,31 +597,51 @@ preproc
 PROC LM28_A
 preproc
 	ask if LM28=5;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM29_A
 preproc
 
 	ask if LM29J=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC LM32
 preproc
 	ask if LM30=4 or LM30=5 or LM31=4 or LM31=5;
 PROC LM32_A
 preproc
 	ask if pos("99",LM32);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC GROUP000
 preproc 
 	ask if IS_REP_2=1 or EXT_CF5=1;
 PROC CA02_A
 preproc 
 	ask if CA02=96;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CA03
 Postproc
-	if length(strip($))>1 and ischecked("98",$)<>0  then
+	if length(strip($))>1 and ischecked("08",$)<>0  then
 		errmsg("Modalités incompatibles");
 	    reenter;
 	endif;
 PROC CA03_A
 preproc
 	ask if pos("99",CA03);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CA04
 onfocus
 	valueset string secondaire_vs=CA03_VS1;
@@ -474,14 +663,25 @@ PROC CA04_A
 preproc
 	ask if pos("99",CA04);
 
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC CA05_A
+preproc
+	ask if pos("99",CA05);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CA06
 onfocus
 	valueset string secondaire_vs=CA05_VS1;
 	numeric i=1;
 	numeric num_mod;
-	while i<=9 do
+	while i<=10 do
 		num_mod=i;
-		if i=9 then 
+		if i=10 then 
 			num_mod=99;
 		endif;
 		if ! ischecked(maketext("%02d", num_mod),CA05) then 
@@ -491,14 +691,28 @@ onfocus
 	enddo;
 	
 	setvalueset($, secondaire_vs);
+PROC CA06_A
+preproc
+	ask if pos("99",CA06);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC CA07_A
+preproc
+	ask if pos("99",CA07);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CA08
 onfocus
 	valueset string secondaire_vs=CA07_VS1;
 	numeric i=1;
 	numeric num_mod;
-	while i<=9 do
+	while i<=10 do
 		num_mod=i;
-		if i=9 then 
+		if i=10 then 
 			num_mod=99;
 		endif;
 		if ! ischecked(maketext("%02d", num_mod),CA07) then 
@@ -508,12 +722,23 @@ onfocus
 	enddo;
 	
 	setvalueset($, secondaire_vs);
+PROC CA08_A
+preproc
+	ask if pos("99",CA08);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC GROUP001
 preproc 
 	ask if IS_REP_2=1 or EXT_CF5=1;
 PROC CL_AUTRE
 preproc
 	ask if CL1(12)=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC GROUP002
 preproc 
 	ask if IS_REP_2=1 or EXT_CF5=1;
@@ -531,6 +756,10 @@ preproc
 PROC CL5
 preproc
 	ask if CL4=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL6
 preproc
 	ask if CL2=1;
@@ -546,27 +775,67 @@ preproc
 PROC CL10
 preproc
 	ask if CL8=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC CL10_0
+preproc
+	ask if pos("1",CL10);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL10_A
 preproc
 	ask if pos("5",CL10);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL11
 preproc
 	ask if CL8=1;
 PROC CL12
 preproc
 	ask if CL8=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL13_A
 preproc
- ask if CL1(3)=1 or CL1(4)=1 or CL1(5)=1 or CL1(6)=1 or CL1(7)=1; 
+if !(curocc() in 3:7) or CL2= 2 then 
+	skip to CL14
+endif;
+
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL13_B
 preproc
- ask if CL1(3)=1 or CL1(4)=1 or CL1(5)=1 or CL1(6)=1 or CL1(7)=1; 
+if !(curocc() in 3:7) or CL2= 2 then 
+	skip to CL14
+endif;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL14
 preproc
 	ask if CL2=1;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL15
 preproc
 	ask if CL2=2;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CL16
 preproc
 	ask if CL2=2;

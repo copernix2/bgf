@@ -60,7 +60,7 @@ Item=CF18
 Name=FORM005
 Label=New Form
 Level=1
-Size=1367,360
+Size=1739,680
   
 Item=CA01
 Item=CA02
@@ -70,9 +70,13 @@ Item=CA03_A
 Item=CA04
 Item=CA04_A
 Item=CA05
+Item=CA05_A
 Item=CA06
+Item=CA06_A
 Item=CA07
+Item=CA07_A
 Item=CA08
+Item=CA08_A
   
 [EndForm]
   
@@ -1152,6 +1156,25 @@ DataCaptureType=RadioButton
   
 [Text]
 Text=TA28b2. Qui prend généralement des décisions sur ce qu'il faut cultiver sur cette terre que vous cultivez vous-même?
+ 
+[EndColumn]
+  
+[Column]
+Width=61
+  
+[HeaderText]
+Position=0,176,61,328
+Text=Préciser le membre du ménage qui prend cette décision
+ 
+[Field]
+Name=TA28_B2_MEN
+Position=24,0,53,20
+Item=TA28_B2_MEN,LTP_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+  
+[Text]
+Text=Préciser le membre du ménage qui prend cette décision
  
 [EndColumn]
   
@@ -4576,33 +4599,33 @@ Max=1
   
 [Field]
 Name=CA01
-Position=728,15,743,35
+Position=1304,215,1319,235
 Item=CA01,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=21,18,524,34
+Position=597,218,1100,234
 Text=CA01. Selon vous, à quel niveau les contraintes d’accès sont plus prononcées ?
  
   
 [Field]
 Name=CA02
-Position=728,45,757,65
+Position=1304,245,1333,265
 Item=CA02,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=21,48,656,64
+Position=597,248,1232,264
 Text=CA02. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre ménage ?
  
   
 [Field]
 Name=CA02_A
-Position=728,75,1138,95
+Position=1304,275,1714,295
 Item=CA02_A,LTP_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -4610,26 +4633,26 @@ DataCaptureType=TextBox
 Form=5
   
 [Text]
-Position=21,78,581,94
+Position=597,278,1157,294
 Text=CA02a. Préciser autre contrainte en matière d’accès au foncier au sein de votre ménage
  
   
 [Field]
 Name=CA03
-Position=727,105,840,125
+Position=1304,305,1445,325
 Item=CA03,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
 Form=5
   
 [Text]
-Position=21,108,667,124
+Position=597,308,1243,324
 Text=CA03. Selon vous, quelles sont contraintes en matière d’accès au foncier au sein de votre commune ?
  
   
 [Field]
 Name=CA03_A
-Position=728,135,1138,155
+Position=1304,335,1714,355
 Item=CA03_A,LTP_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -4637,26 +4660,26 @@ DataCaptureType=TextBox
 Form=5
   
 [Text]
-Position=21,138,595,154
+Position=597,338,1171,354
 Text=CA03.1. Préciser autre contrainte en matière d’accès au foncier au sein de votre commune
  
   
 [Field]
 Name=CA04
-Position=728,165,757,185
+Position=1304,365,1333,385
 Item=CA04,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=21,168,381,184
+Position=597,368,957,384
 Text=CA04. Parmi ces dernières, quelle est la plus fréquente ?
  
   
 [Field]
 Name=CA04_A
-Position=932,282,1342,302
+Position=1304,395,1714,415
 Item=CA04_A,LTP_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
@@ -4664,60 +4687,116 @@ DataCaptureType=TextBox
 Form=5
   
 [Text]
-Position=21,198,706,214
+Position=597,398,1282,414
 Text=CA04.1. Préciser autre contrainte la plus fréquente en matière d’accès au foncier au sein de votre commune
  
   
 [Field]
 Name=CA05
-Position=728,225,855,245
+Position=1304,425,1445,445
 Item=CA05,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
 Form=5
   
 [Text]
-Position=21,228,492,244
-Text=CA05. Quelles sont les contraintes d’accès au logement pour les femmes ?
+Position=597,428,1052,444
+Text=CA05. Quelles sont les contraintes d’accès au foncier pour les femmes ?
+ 
+  
+[Field]
+Name=CA05_A
+Position=1304,455,1714,475
+Item=CA05_A,LTP_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=5
+  
+[Text]
+Position=597,458,1107,474
+Text=CA05.1. Préciser autre contrainte en matière d’accès au foncier pour les femmes
  
   
 [Field]
 Name=CA06
-Position=728,255,743,275
+Position=1304,485,1333,505
 Item=CA06,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=21,258,381,274
+Position=597,488,966,504
 Text=CA06. Parmi ces dernières, quelle est la plus fréquente ?
  
   
 [Field]
+Name=CA06_A
+Position=1304,515,1714,535
+Item=CA06_A,LTP_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=5
+  
+[Text]
+Position=597,518,1234,534
+Text=CA06.1. Préciser autre contrainte la plus fréquente en matière d’accès au logement pour les femmes
+ 
+  
+[Field]
 Name=CA07
-Position=728,285,855,305
+Position=1304,545,1445,565
 Item=CA07,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=CheckBox
 Form=5
   
 [Text]
-Position=21,288,492,304
+Position=597,548,1068,564
 Text=CA07. Quelles sont les contraintes d’accès au logement pour les femmes ?
  
   
 [Field]
+Name=CA07_A
+Position=1304,575,1714,595
+Item=CA07_A,LTP_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=5
+  
+[Text]
+Position=597,578,1123,594
+Text=CA07.1. Préciser autre contrainte en matière d’accès au logement pour les femmes
+ 
+  
+[Field]
 Name=CA08
-Position=728,315,743,335
+Position=1304,605,1333,625
 Item=CA08,LTP_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
   
 [Text]
-Position=21,318,381,334
+Position=597,608,966,624
 Text=CA08. Parmi ces dernières, quelle est la plus fréquente ?
+ 
+  
+[Field]
+Name=CA08_A
+Position=1304,635,1714,655
+Item=CA08_A,LTP_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=5
+  
+[Text]
+Position=597,638,1234,654
+Text=CA08.1. Préciser autre contrainte la plus fréquente en matière d’accès au logement pour les femmes
  
 [EndGroup]
   
@@ -5104,6 +5183,26 @@ DataCaptureType=CheckBox
   
 [Text]
 Text=CL10. Si Oui à CL8, auprès de quels acteurs ?
+ 
+[EndColumn]
+  
+[Column]
+Width=709
+  
+[HeaderText]
+Position=586,256,709,312
+Text=CL10.0. Si Etat, préciser le projet/programme
+ 
+[Field]
+Name=CL10_0
+Position=0,0,701,20
+Item=CL10_0,LTP_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+  
+[Text]
+Text=CL10.0. Si Etat, préciser le projet/programme
  
 [EndColumn]
   

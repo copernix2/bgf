@@ -30,7 +30,8 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 18px;"><b>CF11. Quel est le nombre de parcelles exploitées par&nbsp;</b></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~EXT_CF2~~</span></font></b><b style="font-size: 16px;"><span style="font-size: 18px;">&nbsp;?</span></b><p></p>
+            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">&nbsp;&nbsp;&nbsp;<b><span style="color:#0070C0"><span style="font-size: 18px;">SECTION TA : PROPRIETE
+            &nbsp;(DETENTION) DE TERRES AGRICOLES</span><o:p></o:p></span></b></p><p><span style="font-size: 18px;"><b>CF11. Quel est le nombre de parcelles exploitées par&nbsp;</b></span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~EXT_CF2~~</span></font></b><b style="font-size: 16px;"><span style="font-size: 18px;">&nbsp;?</span></b></p><p></p><p></p>
   - name: LTP_DICT.CF12
     conditions:
       - questionText:
@@ -293,6 +294,11 @@ questions:
             <p class="MsoNormal"><b><span style="font-size: 18px;">TA28b2. Q</span></b><b><span style="font-size: 18px;">ui prend généralement des
             décisions sur ce qu'il faut cultiver sur cette terre que vous cultivez
             vous-même?</span></b><i><span style="font-size: 18px;">&nbsp;&nbsp;</span></i><span style="color:red;mso-fareast-language:X-NONE"><o:p></o:p></span></p><p></p>
+  - name: LTP_DICT.TA28_B2_MEN
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>Préciser le membre du ménage qui prend cette décision</b></span><p></p>
   - name: LTP_DICT.TA28_B3_1
     conditions:
       - questionText:
@@ -413,8 +419,9 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16pt; font-family: Arial;">CF14. Quel est le&nbsp;nombre de parcelles à usage
-            d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">~~EXT_CF2~~&nbsp;</span></font></b><span style="font-size: 16pt; font-family: Arial;">?</span><p></p>
+            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="color:#0070C0"><span style="font-size: 18px;">&nbsp; SECTION TH: PROPRIETE
+            (DETENTION) DE TERRES A USAGE D’HABITATION</span><o:p></o:p></span></b></p><p><span style="font-size: 16pt; font-family: Arial;">CF14. Quel est le&nbsp;nombre de parcelles à usage
+            d’habitation détenues (louées, empruntées ou en propriété) &nbsp;par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-family: Arial; font-size: 16pt;">~~EXT_CF2~~&nbsp;</span></font></b><span style="font-size: 16pt; font-family: Arial;">?</span></p><p></p><p></p>
   - name: LTP_DICT.CF15
     conditions:
       - questionText:
@@ -794,8 +801,9 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <span style="font-size: 16pt; font-family: Arial;">CF17. Quel est le&nbsp;nombre de maisons/logement
-            détenues (louées, empruntées ou en propriété) par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">~~EXT_CF2~~</span></font></b><span style="font-size: 16pt; font-family: Arial;">&nbsp;?</span><p></p>
+            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="color:#0070C0"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SECTION LM : PROPRIETE
+            (DETENTION) DE LOGEMENT</span><o:p></o:p></span></b></p><p><span style="font-size: 16pt; font-family: Arial;">CF17. Quel est le&nbsp;nombre de maisons/logement
+            détenues (louées, empruntées ou en propriété) par&nbsp;</span><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 16pt;">~~EXT_CF2~~</span></font></b><span style="font-size: 16pt; font-family: Arial;">&nbsp;?</span><p></p></p>
   - name: LTP_DICT.CF18
     conditions:
       - questionText:
@@ -1235,7 +1243,8 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 18px;">CA01.
+            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="color:#0070C0"><span style="font-size: 18px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SECTION CA:
+            CONTRAINTES D’ACCES AU FONCIER&nbsp;</span><o:p></o:p></span></b></p><p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 18px;">CA01.
             Selon vous, à quel niveau les contraintes d’accès au foncier sont plus prononcées&nbsp;?</span><o:p></o:p></b></p><p></p>
   - name: LTP_DICT.CA02
     conditions:
@@ -1275,36 +1284,53 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 18px;">CA05.
-            Quelles sont les contraintes d’accès au logement pour les femmes&nbsp;?</span><o:p></o:p></b></p><p></p>
+            <b><span style="font-size: 18px;">CA05. Quelles sont les contraintes d’accès au foncier pour les femmes&nbsp;?</span></b><p></p>
+  - name: LTP_DICT.CA05_A
+    conditions:
+      - questionText:
+          FR: |
+            <b style="font-size: 18px;">Préciser autre contrainte d'accés au foncier pour les femmes</b><p></p>
   - name: LTP_DICT.CA06
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
-            line-height:115%"><b><span style="font-size: 18px;">CA05. Parmi ces dernières,
-            quelle est la principale contrainte&nbsp;?</span><o:p></o:p></b></p><p></p>
+            <b style="text-align: justify;"><span style="font-size: 18px;">CA06. Parmi ces dernières, quelle est la principale contrainte&nbsp;?</span></b><p></p>
+  - name: LTP_DICT.CA06_A
+    conditions:
+      - questionText:
+          FR: |
+            <b style="font-size: 18px;">Préciser autre principale contrainte&nbsp;</b><p></p>
   - name: LTP_DICT.CA07
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
-            line-height:115%"><b><span style="font-size: 18px;">CA06. Quelles sont les
-            contraintes d’accès au logement pour les femmes&nbsp;?</span></b><o:p></o:p></p><p></p>
+            <p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 18px;">CA07.
+            Quelles sont les contraintes d’accès au logement pour les femmes&nbsp;?</span><o:p></o:p></b></p><p></p>
+  - name: LTP_DICT.CA07_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>Préciser autre contrainte d'accés au logement pour les femmes</b></span><p></p>
   - name: LTP_DICT.CA08
     conditions:
       - questionText:
           FR: |
             <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph;
-            line-height:115%"><b><span style="font-size: 18px;">CA07. Parmi ces dernières,
-            quelle est la principale contrainte ?</span><o:p></o:p></b></p><p></p>
+            line-height:115%"><b><span style="font-size: 18px;">CA08. Parmi ces dernières,
+            quelle est la principale contrainte&nbsp;?</span><o:p></o:p></b></p><p></p>
+  - name: LTP_DICT.CA08_A
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>Préciser autre principale contrainte&nbsp;</b></span><p></p>
   - name: LTP_DICT.CL1
     conditions:
       - questionText:
           FR: |
-            <p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 16px;">CL1. Parmi les groupes suivants
+            <p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><b><span style="color:#0070C0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 18px;">SECTION CL :
+            CAPITAL SOCIAL ET LEADERSHIP</span><o:p></o:p></span></b></p><p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 16px;">CL1. Parmi les groupes suivants
             (formels, informels ou coutumiers) lesquels existent au sein de votre
-            communauté&nbsp;?</span><o:p></o:p></b></p><p><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><b><span style="font-size: 18px;"><br></span></b><p></p></p>
+            communauté&nbsp;?</span><o:p></o:p></b></p><p><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><b><span style="font-size: 18px;"><br></span></b></p><p></p><p></p>
   - name: LTP_DICT.CL_AUTRE
     conditions:
       - questionText:
@@ -1366,6 +1392,11 @@ questions:
           FR: |
             <p class="MsoNormal" style="line-height:115%"><b><span style="font-size: 18px;">CL10. Si
             Oui à CL8, auprès de quels acteurs ?</span></b></p><p class="MsoNormal" style="line-height:115%"><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><b><span style="font-size: 18px;"><br></span><o:p></o:p></b></p><p></p>
+  - name: LTP_DICT.CL10_0
+    conditions:
+      - questionText:
+          FR: |
+            <b><span style="font-size: 18px;">Si Etat, préciser le projet/programme</span></b><p></p>
   - name: LTP_DICT.CL10_A
     conditions:
       - questionText:
@@ -1382,7 +1413,7 @@ questions:
     conditions:
       - questionText:
           FR: |
-            <p><b><span lang="FR-SN" style="font-size: 18pt; font-family: &quot;Times New Roman&quot;, serif;">CL12. </span><span style="font-size: 18pt; font-family: &quot;Times New Roman&quot;, serif;">Si Oui à CL8, </span><span lang="FR-SN" style="font-size: 18pt; font-family: &quot;Times New Roman&quot;, serif;">Donnez les raisons&nbsp;?</span></b></p><p><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><b><span lang="FR-SN" style="font-size: 18pt; font-family: &quot;Times New Roman&quot;, serif;"><br></span></b><p></p></p>
+            <p><b><span lang="FR-SN" style="font-size: 16pt; font-family: Arial;">CL12. </span><span style="font-size: 16pt; font-family: Arial;">Si Oui à CL8, </span><span lang="FR-SN" style="font-size: 16pt; font-family: Arial;">Donnez les raisons&nbsp;?</span></b></p><p><b style="font-size: 16px;"><font color="#ff0000"><span style="font-size: 18px;">~~getocclabel()~~</span></font></b><b><span lang="FR-SN" style="font-size: 18pt; font-family: &quot;Times New Roman&quot;, serif;"><br></span></b></p><p></p><p></p>
   - name: LTP_DICT.CL13_A
     conditions:
       - questionText:

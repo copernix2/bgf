@@ -76,22 +76,28 @@ PROC RC10_A
 preproc
 
 	ask if RC10=96;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC RC11_A
 
 preproc
 
 	ask if RC11=96;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PM01_A
 preproc
-
 	ask if PM01=2;
-
-
+	
 postproc
 	if $>100 then
 	errmsg("Merci de vérifier le nombre d'années saisie");
 	reenter;
-	endif;
+endif;
 PROC PM02
 preproc
 
@@ -101,10 +107,18 @@ PROC PM02_A
 preproc
 
 	ask if PM02=2;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PM02_B
 preproc
 
 	ask if PM02=3;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PM03
 preproc
 
@@ -113,6 +127,10 @@ PROC PM03_A
 preproc
 
 	ask if PM03=96;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PM05
 if $<0 then
 		
@@ -145,6 +163,10 @@ PROC RM1_A
 preproc
 
 	ask if RM1=96;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC RM2
 if $<=0 or $>10000000 then
 	errmsg("Merci de vérifier le montant de la principale source de revenu du ménage");
@@ -195,6 +217,11 @@ preproc
 PROC PR04
 preproc
 	$=curocc();
+PROC NOM_PROJET
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR05
 preproc
 	ask if 1=2;
@@ -203,9 +230,18 @@ preproc
 	ask if 1=2;
 {preproc
 	ask if pos("9",PR05);}
+PROC PR06
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR06_A
 preproc
 	ask if pos("99",PR06);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR07
 onfocus
 	valueset string secondaire_vs=PR06_VS1;
@@ -223,29 +259,77 @@ onfocus
 	enddo;
 	
 	setvalueset($, secondaire_vs);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR07_A
 preproc
 	ask if pos("99",PR07);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC PR08
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR08S
 preproc
 	ask if pos("1",PR08);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR08_ONG
 preproc
 	ask if pos("3",PR08);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR08_A
 preproc
 	ask if pos("96",PR08);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC PR09
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR09_A
 preproc
 	ask if pos("9",PR09);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
+PROC PR10
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC PR10_A
 preproc
 	ask if pos("9",PR10);
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC SECTION_CF000
 
 PROC CF1
 preproc
 	$=curocc();
+PROC CF2
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF4
 
 if $<18 or $>100 then
@@ -267,23 +351,34 @@ PROC CF5_A
 preproc
 
 	ask if CF5=13;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF7_A
 preproc
 
 	ask if CF7=14;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF8
 preproc
 	ask if CF7<>0;
-Postproc
-	if length(strip($))>1 and ischecked("16",$)<>0  then
-		errmsg("Modalités incompatibles");
-	    reenter;
-	endif;
 
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF8_A
 preproc
-	ask if pos("14",CF8);
+	ask if pos("99",CF8);
 	
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF7B
 if CF5=2 and ($=7 or $=8 or $=9) then
 errmsg("L'époux/épouse ne peut qu'être marié(e)");
@@ -292,6 +387,10 @@ endif;
 PROC CH7B_A
 preproc
 	ask if CF7B=10;
+postproc
+if $="" then 	
+	errmsg("Le champs est obligatoire");
+endif;
 PROC CF16
 preproc
 	ask if 1=2;

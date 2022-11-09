@@ -26,16 +26,36 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
-  - name: MENAGE_DICT.MEN_CODE_COM
+  - name: BGF_MENAGE_DICT.MEN_CODE_COM
     conditions:
       - questionText:
           EN: |
-            <span style="font-size: 16px;">Choisir la commune</span><p></p>
-  - name: MENAGE_DICT.MEN_CODE_VIL
+            <span style="font-size: 18px;"><b>Commune&nbsp;</b></span><p></p>
+  - name: BGF_MENAGE_DICT.MEN_CODE_VIL
     conditions:
       - questionText:
           EN: |
-            Village<p></p>
+            <span style="font-size: 18px;"><b>Village&nbsp;</b></span><p></p>
+  - name: BGF_MENAGE_DICT.AUTRE_VILLAGE
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 18px;"><b>Préciser autre village</b></span><p></p>
+  - name: BGF_MENAGE_DICT.MEN_CM
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 18px;"><b>Nom du Chef de ménage</b></span><p></p>
+  - name: BGF_MENAGE_DICT.MEN_SEXECM
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 18px;"><b>Sexe du chef de ménage</b></span><p></p>
+  - name: BGF_MENAGE_DICT.MEN_TEL
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 18px;"><b>Numéro téléphone du chef de ménage</b></span><p></p>
   - name: MENAGE_DICT.AUTRE_VILLAGE
     conditions:
       - questionText:
@@ -46,6 +66,16 @@ questions:
       - questionText:
           EN: |
             Nom du CM<p></p>
+  - name: MENAGE_DICT.MEN_CODE_COM
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 16px;">Choisir la commune</span><p></p>
+  - name: MENAGE_DICT.MEN_CODE_VIL
+    conditions:
+      - questionText:
+          EN: |
+            Village<p></p>
   - name: MENAGE_DICT.MEN_SEXECM
     conditions:
       - questionText:

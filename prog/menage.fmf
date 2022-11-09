@@ -38,7 +38,7 @@ Item=AUTRE_VILLAGE
 [EndForm]
   
 [Level]
-Name=MENAGE_LEVEL
+Name=BGF_MENAGE_LEVEL
 Label=menage Level
   
 [Group]
@@ -51,7 +51,7 @@ Max=1
 [Field]
 Name=MEN_ID
 Position=178,27,444,47
-Item=MEN_ID,MENAGE_DICT
+Item=MEN_ID,BGF_MENAGE_DICT
 Protected=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -65,7 +65,7 @@ Text=Identifiant du DR
 [Field]
 Name=MEN_CREATE_DATE
 Position=267,135,464,155
-Item=MEN_CREATE_DATE,MENAGE_DICT
+Item=MEN_CREATE_DATE,BGF_MENAGE_DICT
 Protected=Yes
 DataCaptureType=TextBox
 Form=1
@@ -78,7 +78,7 @@ Text=men_create_date
 [Field]
 Name=LOGIN_ENQUETEUR
 Position=295,276,324,296
-Item=LOGIN_ENQUETEUR,MENAGE_DICT
+Item=LOGIN_ENQUETEUR,BGF_MENAGE_DICT
 Protected=Yes
 DataCaptureType=RadioButton
 Form=1
@@ -99,7 +99,7 @@ Max=1
 [Field]
 Name=MEN_CODE_COM
 Position=262,27,291,47
-Item=MEN_CODE_COM,MENAGE_DICT
+Item=MEN_CODE_COM,BGF_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=2
   
@@ -111,7 +111,7 @@ Text=men_code_com
 [Field]
 Name=MEN_CODE_VIL
 Position=262,57,291,77
-Item=MEN_CODE_VIL,MENAGE_DICT
+Item=MEN_CODE_VIL,BGF_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=2
   
@@ -123,7 +123,7 @@ Text=men code vil
 [Field]
 Name=AUTRE_VILLAGE
 Position=235,331,645,351
-Item=AUTRE_VILLAGE,MENAGE_DICT
+Item=AUTRE_VILLAGE,BGF_MENAGE_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=2
@@ -136,7 +136,7 @@ Text=Autre village
 [Field]
 Name=MEN_CM
 Position=262,87,1072,107
-Item=MEN_CM,MENAGE_DICT
+Item=MEN_CM,BGF_MENAGE_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -150,7 +150,7 @@ Text=Nom Prénom chef de ménage
 [Field]
 Name=MEN_SEXECM
 Position=262,147,277,167
-Item=MEN_SEXECM,MENAGE_DICT
+Item=MEN_SEXECM,BGF_MENAGE_DICT
 DataCaptureType=RadioButton
 Form=2
   
@@ -162,7 +162,7 @@ Text=Sexe chef de ménage
 [Field]
 Name=MEN_TEL
 Position=262,177,389,197
-Item=MEN_TEL,MENAGE_DICT
+Item=MEN_TEL,BGF_MENAGE_DICT
 DataCaptureType=TextBox
 Form=2
   
@@ -174,7 +174,7 @@ Text=Numéro de téléphone
 [Field]
 Name=MEN_STATUT
 Position=262,207,277,227
-Item=MEN_STATUT,MENAGE_DICT
+Item=MEN_STATUT,BGF_MENAGE_DICT
 Protected=Yes
 DataCaptureType=RadioButton
 Form=2
