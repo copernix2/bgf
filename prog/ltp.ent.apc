@@ -189,7 +189,7 @@ preproc
 	
 onfocus 
 	valueset ind_vs;
-	forcase BGF_EXT_IND_DICS do
+	 	forcase BGF_EXT_IND_DICS where ID=EXT_ID do
 		ind_vs.	add(strip(EXT_CF2),EXT_ID_IND);
 	endfor;
 	setvalueset($, ind_vs);
