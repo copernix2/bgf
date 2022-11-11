@@ -147,6 +147,10 @@ endif;
 PROC TA24
 
 postproc
+if length(strip($))>2 and pos("00",$)>0 then 
+	errmsg("Les modalités choisies sont incompatibles");
+	reenter;
+endif;
 if $="" then 	
 	errmsg("Le champs est obligatoire");
 endif;

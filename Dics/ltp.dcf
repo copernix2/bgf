@@ -1373,6 +1373,7 @@ Value=3;Mise en Location
 Value=4;Cultures pluviales
 Value=5;Cultures de contre-saison après hivernage
 Value=6;Plantations
+Value=8;Propre Habitation
 Value=7;Autre (à préciser)
 
 [Item]

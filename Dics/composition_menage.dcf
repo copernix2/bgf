@@ -835,7 +835,7 @@ Value=2;Non
 Label=other_var
 Name=OTHER_VAR
 RecordTypeValue='1'
-RecordLen=69
+RecordLen=94
 
 [Item]
 Label=login agent
@@ -864,3 +864,41 @@ Name=REP2
 Start=68
 Len=2
 DataType=Numeric
+
+[Item]
+Label=Prise des coordonnées GPS
+Name=PRISE_DES_COORDONNEES_GPS
+Start=70
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Prise des coordonnées GPS
+Name=PRISE_DES_COORDONNEES_GPS_VS1
+Value=1;Prendre le GPS du ménage
+Value=0;Passer
+
+[Item]
+Label=Coordonnées géographiques (GPS)
+Name=GP
+Start=71
+Len=24
+DataType=Alpha
+
+[Item]
+Label=LATITUDE
+Name=LAT
+Start=71
+Len=12
+ItemType=SubItem
+DataType=Numeric
+Decimal=6
+
+[Item]
+Label=LONGITUDE
+Name=LONG
+Start=83
+Len=12
+ItemType=SubItem
+DataType=Numeric
+Decimal=6

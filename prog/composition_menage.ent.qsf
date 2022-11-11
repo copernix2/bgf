@@ -178,6 +178,11 @@ questions:
       - questionText:
           FR: |
             Ajouter un&nbsp;<b><font color="#ff0000">~~curocc()+1~~ème</font></b> individu<p></p>
+  - name: BGF_COMPOSITION_MENAGE_DICT.PRISE_DES_COORDONNEES_GPS
+    conditions:
+      - questionText:
+          FR: |
+            <span style="font-size: 18px;"><b>Merci de prendre les coordonnées GPS du ménage</b></span><p></p>
   - name: BGF_COMPOSITION_MENAGE_DICT.CF11
     conditions:
       - questionText:

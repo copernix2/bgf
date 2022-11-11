@@ -119,10 +119,13 @@ Item=SECTION_CF000
 Name=FORM008
 Label=other_var
 Level=1
-Size=580,337
+Size=816,481
   
 Item=REP2
 Item=DATE_FIN
+Item=PRISE_DES_COORDONNEES_GPS
+Item=LAT
+Item=LONG
   
 [EndForm]
   
@@ -2448,6 +2451,47 @@ Form=9
 [Text]
 Position=141,295,189,311
 Text=date fin
+ 
+  
+[Field]
+Name=PRISE_DES_COORDONNEES_GPS
+Position=615,248,630,268
+Item=PRISE_DES_COORDONNEES_GPS,BGF_COMPOSITION_MENAGE_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=9
+  
+[Text]
+Position=433,251,609,267
+Text=Prise des coordonnées GPS
+ 
+  
+[Field]
+Name=LAT
+Position=467,336,650,356
+Item=LAT,BGF_COMPOSITION_MENAGE_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+Form=9
+  
+[Text]
+Position=373,339,436,355
+Text=LATITUDE
+ 
+  
+[Field]
+Name=LONG
+Position=608,436,791,456
+Item=LONG,BGF_COMPOSITION_MENAGE_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+DataCaptureType=TextBox
+Form=9
+  
+[Text]
+Position=514,439,589,455
+Text=LONGITUDE
  
 [EndGroup]
   

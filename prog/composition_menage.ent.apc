@@ -366,8 +366,12 @@ endif;
 PROC CF8
 preproc
 	ask if CF7<>0;
-
 postproc
+if length(strip($))>2 and pos("15",$)>0 then 
+	errmsg("Les modalités choisies sont incompatibles");
+	reenter;
+endif;
+
 if $="" then 	
 	errmsg("Le champs est obligatoire");
 endif;
@@ -426,3 +430,21 @@ endif;
 PROC DATE_FIN
 preproc
 	$=timestamp();
+PROC PRISE_DES_COORDONNEES_GPS
+if $=1 then 
+		gps(open); // Android 
+
+		gps(open, 3, 4800); // Windows (COM3, 4800 baud) 
+
+		if gps(read, 15) then // attempt to read for up to 15 seconds 
+			LAT=gps(latitude);
+			LONG=gps(longitude);
+		else 
+			errmsg("Impossible de lire les coordonnées GPS."); 
+			reenter;
+		endif; 
+
+		gps(close);
+	else
+		endlevel;
+	endif;
